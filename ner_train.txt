@@ -1,0 +1,8613 @@
+0			
+; 빵종류?			
+$<빵종류:MENU>?			
+1	빵종류	NNG	B_MENU
+2	?	SF	O
+			
+; 종류?			
+$<종류:MENU>?			
+1	종류	NNG	B_MENU
+2	?	SF	O
+			
+; 음료종류?			
+$<음료종류:MENU>?			
+1	음료종류	NNG	B_MENU
+2	?	SF	O
+			
+; 커피종류?			
+$<커피종류:MENU>?			
+1	커피종류	NNG	B_MENU
+2	?	SF	O
+			
+; 식사종류?			
+$<식사종류:MENU>?			
+1	식사종류	NNG	B_MENU
+2	?	SF	O
+			
+; 에이드종류?			
+$<에이드종류:MENU>?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	?	SF	O
+			
+; 사이드메뉴는 뭐 있어?			
+$사이드<메뉴:MENU>는 뭐 있어?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 사이드 메뉴는 뭐 있어?			
+$사이드 <메뉴:MENU>는 뭐 있어?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 빵종류는 뭐 있어?			
+$<빵종류:MENU>는 뭐 있어?			
+1	빵종류	NNG	B_MENU
+2	는	JX	O
+3	뭐	NP	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 종류는 뭐 있어?			
+$<종류:MENU>는 뭐 있어?			
+1	종류	NNG	B_MENU
+2	는	JX	O
+3	뭐	NP	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 음료종류는 뭐 있어?			
+$<음료종류:MENU>는 뭐 있어?			
+1	음료종류	NNG	B_MENU
+2	는	JX	O
+3	뭐	NP	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 커피종류는 뭐 있어?			
+$<커피종류:MENU>는 뭐 있어?			
+1	커피종류	NNG	B_MENU
+2	는	JX	O
+3	뭐	NP	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 식사종류는 뭐 있어?			
+$<식사종류:MENU>는 뭐 있어?			
+1	식사종류	NNG	B_MENU
+2	는	JX	O
+3	뭐	NP	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 에이드종류는 뭐 있어?			
+$<에이드종류:MENU>는 뭐 있어?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 사이드메뉴는?			
+$사이드<메뉴:MENU>는?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 사이드 메뉴는?			
+$사이드 <메뉴:MENU>는?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 빵종류는?			
+$<빵종류:MENU>는?			
+1	빵종류	NNG	B_MENU
+2	는	JX	O
+3	?	SF	O
+			
+; 종류는?			
+$<종류:MENU>는?			
+1	종류	NNG	B_MENU
+2	는	JX	O
+3	?	SF	O
+			
+; 음료종류는?			
+$<음료종류:MENU>는?			
+1	음료종류	NNG	B_MENU
+2	는	JX	O
+3	?	SF	O
+			
+; 커피종류는?			
+$<커피종류:MENU>는?			
+1	커피종류	NNG	B_MENU
+2	는	JX	O
+3	?	SF	O
+			
+; 식사종류는?			
+$<식사종류:MENU>는?			
+1	식사종류	NNG	B_MENU
+2	는	JX	O
+3	?	SF	O
+			
+; 에이드종류는?			
+$<에이드종류:MENU>는?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 사이드메뉴 다 돼?			
+$사이드<메뉴:MENU> 다 돼?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 사이드 메뉴 다 돼?			
+$사이드 <메뉴:MENU> 다 돼?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 빵종류 다 돼?			
+$<빵종류:MENU> 다 돼?			
+1	빵종류	NNG	B_MENU
+2	다	MAG	O
+3	되	VV	O
+4	어	EF	O
+5	?	SF	O
+			
+; 종류 다 돼?			
+$<종류:MENU> 다 돼?			
+1	종류	NNG	B_MENU
+2	다	MAG	O
+3	되	VV	O
+4	어	EF	O
+5	?	SF	O
+			
+; 음료종류 다 돼?			
+$<음료종류:MENU> 다 돼?			
+1	음료종류	NNG	B_MENU
+2	다	MAG	O
+3	되	VV	O
+4	어	EF	O
+5	?	SF	O
+			
+; 커피종류 다 돼?			
+$<커피종류:MENU> 다 돼?			
+1	커피종류	NNG	B_MENU
+2	다	MAG	O
+3	되	VV	O
+4	어	EF	O
+5	?	SF	O
+			
+; 식사종류 다 돼?			
+$<식사종류:MENU> 다 돼?			
+1	식사종류	NNG	B_MENU
+2	다	MAG	O
+3	되	VV	O
+4	어	EF	O
+5	?	SF	O
+			
+; 에이드종류 다 돼?			
+$<에이드종류:MENU> 다 돼?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 사이드메뉴 다 되지?			
+$사이드<메뉴:MENU> 다 되지?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 사이드 메뉴 다 되지?			
+$사이드 <메뉴:MENU> 다 되지?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 빵종류 다 되지?			
+$<빵종류:MENU> 다 되지?			
+1	빵종류	NNG	B_MENU
+2	다	MAG	O
+3	되	VV	O
+4	지	EF	O
+5	?	SF	O
+			
+; 종류 다 되지?			
+$<종류:MENU> 다 되지?			
+1	종류	NNG	B_MENU
+2	다	MAG	O
+3	되	VV	O
+4	지	EF	O
+5	?	SF	O
+			
+; 음료종류 다 되지?			
+$<음료종류:MENU> 다 되지?			
+1	음료종류	NNG	B_MENU
+2	다	MAG	O
+3	되	VV	O
+4	지	EF	O
+5	?	SF	O
+			
+; 커피종류 다 되지?			
+$<커피종류:MENU> 다 되지?			
+1	커피종류	NNG	B_MENU
+2	다	MAG	O
+3	되	VV	O
+4	지	EF	O
+5	?	SF	O
+			
+; 식사종류 다 되지?			
+$<식사종류:MENU> 다 되지?			
+1	식사종류	NNG	B_MENU
+2	다	MAG	O
+3	되	VV	O
+4	지	EF	O
+5	?	SF	O
+			
+; 에이드종류 다 되지?			
+$<에이드종류:MENU> 다 되지?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 사이드메뉴도 있어?			
+$사이드<메뉴:MENU>도 있어?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 사이드 메뉴도 있어?			
+$사이드 <메뉴:MENU>도 있어?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 빵종류도 있어?			
+$<빵종류:MENU>도 있어?			
+1	빵종류	NNG	B_MENU
+2	도	JX	O
+3	있	VX	O
+4	어	EF	O
+5	?	SF	O
+			
+; 종류도 있어?			
+$<종류:MENU>도 있어?			
+1	종류	NNG	B_MENU
+2	도	JX	O
+3	있	VX	O
+4	어	EF	O
+5	?	SF	O
+			
+; 음료종류도 있어?			
+$<음료종류:MENU>도 있어?			
+1	음료종류	NNG	B_MENU
+2	도	JX	O
+3	있	VX	O
+4	어	EF	O
+5	?	SF	O
+			
+; 커피종류도 있어?			
+$<커피종류:MENU>도 있어?			
+1	커피종류	NNG	B_MENU
+2	도	JX	O
+3	있	VX	O
+4	어	EF	O
+5	?	SF	O
+			
+; 식사종류도 있어?			
+$<식사종류:MENU>도 있어?			
+1	식사종류	NNG	B_MENU
+2	도	JX	O
+3	있	VX	O
+4	어	EF	O
+5	?	SF	O
+			
+; 에이드종류도 있어?			
+$<에이드종류:MENU>도 있어?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 사이드메뉴도 있나?			
+$사이드<메뉴:MENU>도 있나?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 사이드 메뉴도 있나?			
+$사이드 <메뉴:MENU>도 있나?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 빵종류도 있나?			
+$<빵종류:MENU>도 있나?			
+1	빵종류	NNG	B_MENU
+2	도	JX	O
+3	있	VX	O
+4	나	EF	O
+5	?	SF	O
+			
+; 종류도 있나?			
+$<종류:MENU>도 있나?			
+1	종류	NNG	B_MENU
+2	도	JX	O
+3	있	VX	O
+4	나	EF	O
+5	?	SF	O
+			
+; 음료종류도 있나?			
+$<음료종류:MENU>도 있나?			
+1	음료종류	NNG	B_MENU
+2	도	JX	O
+3	있	VX	O
+4	나	EF	O
+5	?	SF	O
+			
+; 커피종류도 있나?			
+$<커피종류:MENU>도 있나?			
+1	커피종류	NNG	B_MENU
+2	도	JX	O
+3	있	VX	O
+4	나	EF	O
+5	?	SF	O
+			
+; 식사종류도 있나?			
+$<식사종류:MENU>도 있나?			
+1	식사종류	NNG	B_MENU
+2	도	JX	O
+3	있	VX	O
+4	나	EF	O
+5	?	SF	O
+			
+; 에이드종류도 있나?			
+$<에이드종류:MENU>도 있나?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 사이드메뉴 뭐 있지?			
+$사이드<메뉴:MENU> 뭐 있지?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 사이드 메뉴 뭐 있지?			
+$사이드 <메뉴:MENU> 뭐 있지?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 빵종류 뭐 있지?			
+$<빵종류:MENU> 뭐 있지?			
+1	빵종류	NNG	B_MENU
+2	뭐	NP	O
+3	있	VX	O
+4	지	EF	O
+5	?	SF	O
+			
+; 종류 뭐 있지?			
+$<종류:MENU> 뭐 있지?			
+1	종류	NNG	B_MENU
+2	뭐	NP	O
+3	있	VX	O
+4	지	EF	O
+5	?	SF	O
+			
+; 음료종류 뭐 있지?			
+$<음료종류:MENU> 뭐 있지?			
+1	음료종류	NNG	B_MENU
+2	뭐	NP	O
+3	있	VX	O
+4	지	EF	O
+5	?	SF	O
+			
+; 커피종류 뭐 있지?			
+$<커피종류:MENU> 뭐 있지?			
+1	커피종류	NNG	B_MENU
+2	뭐	NP	O
+3	있	VX	O
+4	지	EF	O
+5	?	SF	O
+			
+; 식사종류 뭐 있지?			
+$<식사종류:MENU> 뭐 있지?			
+1	식사종류	NNG	B_MENU
+2	뭐	NP	O
+3	있	VX	O
+4	지	EF	O
+5	?	SF	O
+			
+; 에이드종류 뭐 있지?			
+$<에이드종류:MENU> 뭐 있지?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 사이드메뉴봐봐			
+$사이드<메뉴:MENU>봐봐			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 사이드 메뉴봐봐			
+$사이드 <메뉴:MENU>봐봐			
+1	사이드	NNP	O
+2	메뉴	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 빵종류봐봐			
+$<빵종류:MENU>봐봐			
+1	빵종류	NNG	B_MENU
+2	보	VV	O
+3	아	EC	O
+4	보	VX	O
+5	아	EC	O
+			
+; 종류봐봐			
+$<종류:MENU>봐봐			
+1	종류	NNG	B_MENU
+2	보	VV	O
+3	아	EC	O
+4	보	VX	O
+5	아	EC	O
+			
+; 음료종류봐봐			
+$<음료종류:MENU>봐봐			
+1	음료종류	NNG	B_MENU
+2	보	VV	O
+3	아	EC	O
+4	보	VX	O
+5	아	EC	O
+			
+; 커피종류봐봐			
+$<커피종류:MENU>봐봐			
+1	커피종류	NNG	B_MENU
+2	보	VV	O
+3	아	EC	O
+4	보	VX	O
+5	아	EC	O
+			
+; 식사종류봐봐			
+$<식사종류:MENU>봐봐			
+1	식사종류	NNG	B_MENU
+2	보	VV	O
+3	아	EC	O
+4	보	VX	O
+5	아	EC	O
+			
+; 에이드종류봐봐			
+$<에이드종류:MENU>봐봐			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 사이드메뉴 봐봐			
+$사이드<메뉴:MENU> 봐봐			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 사이드 메뉴 봐봐			
+$사이드 <메뉴:MENU> 봐봐			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 빵종류 봐봐			
+$<빵종류:MENU> 봐봐			
+1	빵종류	NNG	B_MENU
+2	보	VV	O
+3	아	EC	O
+4	보	VX	O
+5	아	EC	O
+			
+; 종류 봐봐			
+$<종류:MENU> 봐봐			
+1	종류	NNG	B_MENU
+2	보	VV	O
+3	아	EC	O
+4	보	VX	O
+5	아	EC	O
+			
+; 음료종류 봐봐			
+$<음료종류:MENU> 봐봐			
+1	음료종류	NNG	B_MENU
+2	보	VV	O
+3	아	EC	O
+4	보	VX	O
+5	아	EC	O
+			
+; 커피종류 봐봐			
+$<커피종류:MENU> 봐봐			
+1	커피종류	NNG	B_MENU
+2	보	VV	O
+3	아	EC	O
+4	보	VX	O
+5	아	EC	O
+			
+; 식사종류 봐봐			
+$<식사종류:MENU> 봐봐			
+1	식사종류	NNG	B_MENU
+2	보	VV	O
+3	아	EC	O
+4	보	VX	O
+5	아	EC	O
+			
+; 에이드종류 봐봐			
+$<에이드종류:MENU> 봐봐			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 사이드메뉴 부탁해			
+$사이드<메뉴:MENU> 부탁해			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 사이드 메뉴 부탁해			
+$사이드 <메뉴:MENU> 부탁해			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 빵종류 부탁해			
+$<빵종류:MENU> 부탁해			
+1	빵종류	NNG	B_MENU
+2	부탁	NNG	O
+3	하	XSV	O
+4	아	EC	O
+			
+; 종류 부탁해			
+$<종류:MENU> 부탁해			
+1	종류	NNG	B_MENU
+2	부탁	NNG	O
+3	하	XSV	O
+4	아	EC	O
+			
+; 음료종류 부탁해			
+$<음료종류:MENU> 부탁해			
+1	음료종류	NNG	B_MENU
+2	부탁	NNG	O
+3	하	XSV	O
+4	아	EC	O
+			
+; 커피종류 부탁해			
+$<커피종류:MENU> 부탁해			
+1	커피종류	NNG	B_MENU
+2	부탁	NNG	O
+3	하	XSV	O
+4	아	EC	O
+			
+; 식사종류 부탁해			
+$<식사종류:MENU> 부탁해			
+1	식사종류	NNG	B_MENU
+2	부탁	NNG	O
+3	하	XSV	O
+4	아	EC	O
+			
+; 에이드종류 부탁해			
+$<에이드종류:MENU> 부탁해			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 사이드메뉴 어떤게 있나?			
+$사이드<메뉴:MENU> 어떤게 있나?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 사이드 메뉴 어떤게 있나?			
+$사이드 <메뉴:MENU> 어떤게 있나?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 빵종류 어떤게 있나?			
+$<빵종류:MENU> 어떤게 있나?			
+1	빵종류	NNG	B_MENU
+2	어떻	VA	O
+3	ㄴ	ETM	O
+4	게	EC	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 종류 어떤게 있나?			
+$<종류:MENU> 어떤게 있나?			
+1	종류	NNG	B_MENU
+2	어떻	VA	O
+3	ㄴ	ETM	O
+4	게	EC	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 음료종류 어떤게 있나?			
+$<음료종류:MENU> 어떤게 있나?			
+1	음료종류	NNG	B_MENU
+2	어떻	VA	O
+3	ㄴ	ETM	O
+4	게	EC	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 커피종류 어떤게 있나?			
+$<커피종류:MENU> 어떤게 있나?			
+1	커피종류	NNG	B_MENU
+2	어떻	VA	O
+3	ㄴ	ETM	O
+4	게	EC	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 식사종류 어떤게 있나?			
+$<식사종류:MENU> 어떤게 있나?			
+1	식사종류	NNG	B_MENU
+2	어떻	VA	O
+3	ㄴ	ETM	O
+4	게	EC	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 에이드종류 어떤게 있나?			
+$<에이드종류:MENU> 어떤게 있나?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 사이드메뉴 어떤게 있지?			
+$사이드<메뉴:MENU> 어떤게 있지?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 사이드 메뉴 어떤게 있지?			
+$사이드 <메뉴:MENU> 어떤게 있지?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 빵종류 어떤게 있지?			
+$<빵종류:MENU> 어떤게 있지?			
+1	빵종류	NNG	B_MENU
+2	어떻	VA	O
+3	ㄴ	ETM	O
+4	게	EC	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 종류 어떤게 있지?			
+$<종류:MENU> 어떤게 있지?			
+1	종류	NNG	B_MENU
+2	어떻	VA	O
+3	ㄴ	ETM	O
+4	게	EC	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 음료종류 어떤게 있지?			
+$<음료종류:MENU> 어떤게 있지?			
+1	음료종류	NNG	B_MENU
+2	어떻	VA	O
+3	ㄴ	ETM	O
+4	게	EC	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 커피종류 어떤게 있지?			
+$<커피종류:MENU> 어떤게 있지?			
+1	커피종류	NNG	B_MENU
+2	어떻	VA	O
+3	ㄴ	ETM	O
+4	게	EC	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 식사종류 어떤게 있지?			
+$<식사종류:MENU> 어떤게 있지?			
+1	식사종류	NNG	B_MENU
+2	어떻	VA	O
+3	ㄴ	ETM	O
+4	게	EC	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 에이드종류 어떤게 있지?			
+$<에이드종류:MENU> 어떤게 있지?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 사이드메뉴 어떻게 돼?			
+$사이드<메뉴:MENU> 어떻게 돼?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 사이드 메뉴 어떻게 돼?			
+$사이드 <메뉴:MENU> 어떻게 돼?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 빵종류 어떻게 돼?			
+$<빵종류:MENU> 어떻게 돼?			
+1	빵종류	NNG	B_MENU
+2	어떻	VA	O
+3	게	EC	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 종류 어떻게 돼?			
+$<종류:MENU> 어떻게 돼?			
+1	종류	NNG	B_MENU
+2	어떻	VA	O
+3	게	EC	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 음료종류 어떻게 돼?			
+$<음료종류:MENU> 어떻게 돼?			
+1	음료종류	NNG	B_MENU
+2	어떻	VA	O
+3	게	EC	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 커피종류 어떻게 돼?			
+$<커피종류:MENU> 어떻게 돼?			
+1	커피종류	NNG	B_MENU
+2	어떻	VA	O
+3	게	EC	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 식사종류 어떻게 돼?			
+$<식사종류:MENU> 어떻게 돼?			
+1	식사종류	NNG	B_MENU
+2	어떻	VA	O
+3	게	EC	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 에이드종류 어떻게 돼?			
+$<에이드종류:MENU> 어떻게 돼?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 사이드메뉴 없니?			
+$사이드<메뉴:MENU> 없니?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 사이드 메뉴 없니?			
+$사이드 <메뉴:MENU> 없니?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 빵종류 없니?			
+$<빵종류:MENU> 없니?			
+1	빵종류	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 종류 없니?			
+$<종류:MENU> 없니?			
+1	종류	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 음료종류 없니?			
+$<음료종류:MENU> 없니?			
+1	음료종류	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 커피종류 없니?			
+$<커피종류:MENU> 없니?			
+1	커피종류	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 식사종류 없니?			
+$<식사종류:MENU> 없니?			
+1	식사종류	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 에이드종류 없니?			
+$<에이드종류:MENU> 없니?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 사이드메뉴 없어?			
+$사이드<메뉴:MENU> 없어?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 사이드 메뉴 없어?			
+$사이드 <메뉴:MENU> 없어?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 빵종류 없어?			
+$<빵종류:MENU> 없어?			
+1	빵종류	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 종류 없어?			
+$<종류:MENU> 없어?			
+1	종류	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 음료종류 없어?			
+$<음료종류:MENU> 없어?			
+1	음료종류	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 커피종류 없어?			
+$<커피종류:MENU> 없어?			
+1	커피종류	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 식사종류 없어?			
+$<식사종류:MENU> 없어?			
+1	식사종류	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 에이드종류 없어?			
+$<에이드종류:MENU> 없어?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 사이드메뉴전부야?			
+$사이드<메뉴:MENU>전부야?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 사이드 메뉴전부야?			
+$사이드 <메뉴:MENU>전부야?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 빵종류전부야?			
+$<빵종류:MENU>전부야?			
+1	빵종류	NNG	B_MENU
+2	전부	NNG	O
+3	야	JKV	O
+4	?	SF	O
+			
+; 종류전부야?			
+$<종류:MENU>전부야?			
+1	종류	NNG	B_MENU
+2	전부	NNG	O
+3	야	JKV	O
+4	?	SF	O
+			
+; 음료종류전부야?			
+$<음료종류:MENU>전부야?			
+1	음료종류	NNG	B_MENU
+2	전부	NNG	O
+3	야	JKV	O
+4	?	SF	O
+			
+; 커피종류전부야?			
+$<커피종류:MENU>전부야?			
+1	커피종류	NNG	B_MENU
+2	전부	NNG	O
+3	야	JKV	O
+4	?	SF	O
+			
+; 식사종류전부야?			
+$<식사종류:MENU>전부야?			
+1	식사종류	NNG	B_MENU
+2	전부	NNG	O
+3	야	JKV	O
+4	?	SF	O
+			
+; 에이드종류전부야?			
+$<에이드종류:MENU>전부야?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 에이드종류말해줘			
+$<에이드종류:MENU>말해줘			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	주	VX	O
+7	어	EC	O
+			
+; 사이드메뉴말해봐			
+$사이드<메뉴:MENU>말해봐			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 사이드 메뉴말해봐			
+$사이드 <메뉴:MENU>말해봐			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 빵종류말해봐			
+$<빵종류:MENU>말해봐			
+1	빵종류	NNG	B_MENU
+2	말	NNG	O
+3	하	XSV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 종류말해봐			
+$<종류:MENU>말해봐			
+1	종류	NNG	B_MENU
+2	말	NNG	O
+3	하	XSV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 음료종류말해봐			
+$<음료종류:MENU>말해봐			
+1	음료종류	NNG	B_MENU
+2	말	NNG	O
+3	하	XSV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 커피종류말해봐			
+$<커피종류:MENU>말해봐			
+1	커피종류	NNG	B_MENU
+2	말	NNG	O
+3	하	XSV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 식사종류말해봐			
+$<식사종류:MENU>말해봐			
+1	식사종류	NNG	B_MENU
+2	말	NNG	O
+3	하	XSV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 에이드종류말해봐			
+$<에이드종류:MENU>말해봐			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 사이드메뉴없니?			
+$사이드<메뉴:MENU>없니?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 사이드 메뉴없니?			
+$사이드 <메뉴:MENU>없니?			
+1	사이드	NNP	O
+2	메뉴	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 빵종류없니?			
+$<빵종류:MENU>없니?			
+1	빵종류	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 종류없니?			
+$<종류:MENU>없니?			
+1	종류	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 음료종류없니?			
+$<음료종류:MENU>없니?			
+1	음료종류	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 커피종류없니?			
+$<커피종류:MENU>없니?			
+1	커피종류	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 식사종류없니?			
+$<식사종류:MENU>없니?			
+1	식사종류	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 에이드종류없니?			
+$<에이드종류:MENU>없니?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 사이드메뉴없어?			
+$사이드<메뉴:MENU>없어?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	없어	NNP	O
+4	?	SF	O
+			
+; 사이드 메뉴없어?			
+$사이드 <메뉴:MENU>없어?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	없어	NNP	O
+4	?	SF	O
+			
+; 빵종류없어?			
+$<빵종류:MENU>없어?			
+1	빵종류	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 종류없어?			
+$<종류:MENU>없어?			
+1	종류	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 음료종류없어?			
+$<음료종류:MENU>없어?			
+1	음료종류	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 커피종류없어?			
+$<커피종류:MENU>없어?			
+1	커피종류	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 식사종류없어?			
+$<식사종류:MENU>없어?			
+1	식사종류	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 에이드종류없어?			
+$<에이드종류:MENU>없어?			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 에이드종류 말해줘			
+$<에이드종류:MENU> 말해줘			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	주	VX	O
+7	어	EC	O
+			
+; 사이드메뉴 말해봐			
+$사이드<메뉴:MENU> 말해봐			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 사이드 메뉴 말해봐			
+$사이드 <메뉴:MENU> 말해봐			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 빵종류 말해봐			
+$<빵종류:MENU> 말해봐			
+1	빵종류	NNG	B_MENU
+2	말	NNG	O
+3	하	XSV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 종류 말해봐			
+$<종류:MENU> 말해봐			
+1	종류	NNG	B_MENU
+2	말	NNG	O
+3	하	XSV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 음료종류 말해봐			
+$<음료종류:MENU> 말해봐			
+1	음료종류	NNG	B_MENU
+2	말	NNG	O
+3	하	XSV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 커피종류 말해봐			
+$<커피종류:MENU> 말해봐			
+1	커피종류	NNG	B_MENU
+2	말	NNG	O
+3	하	XSV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 식사종류 말해봐			
+$<식사종류:MENU> 말해봐			
+1	식사종류	NNG	B_MENU
+2	말	NNG	O
+3	하	XSV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 에이드종류 말해봐			
+$<에이드종류:MENU> 말해봐			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 사이드메뉴			
+$오늘 사이드<메뉴:MENU>			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+			
+; 오늘 사이드 메뉴			
+$오늘 사이드 <메뉴:MENU>			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+			
+; 오늘 빵종류			
+$오늘 <빵종류:MENU>			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+			
+; 오늘 종류			
+$오늘 <종류:MENU>			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+			
+; 오늘 음료종류			
+$오늘 <음료종류:MENU>			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+			
+; 오늘 커피종류			
+$오늘 <커피종류:MENU>			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+			
+; 오늘 식사종류			
+$오늘 <식사종류:MENU>			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+			
+; 오늘 에이드종류			
+$오늘 <에이드종류:MENU>			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+			
+; 오늘 사이드메뉴?			
+$오늘 사이드<메뉴:MENU>?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	?	SF	O
+			
+; 오늘 사이드 메뉴?			
+$오늘 사이드 <메뉴:MENU>?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	?	SF	O
+			
+; 오늘 빵종류?			
+$오늘 <빵종류:MENU>?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	?	SF	O
+			
+; 오늘 종류?			
+$오늘 <종류:MENU>?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	?	SF	O
+			
+; 오늘 음료종류?			
+$오늘 <음료종류:MENU>?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	?	SF	O
+			
+; 오늘 커피종류?			
+$오늘 <커피종류:MENU>?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	?	SF	O
+			
+; 오늘 식사종류?			
+$오늘 <식사종류:MENU>?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	?	SF	O
+			
+; 오늘 에이드종류?			
+$오늘 <에이드종류:MENU>?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	?	SF	O
+			
+; 오늘 사이드메뉴는 뭐 있어?			
+$오늘 사이드<메뉴:MENU>는 뭐 있어?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 오늘 사이드 메뉴는 뭐 있어?			
+$오늘 사이드 <메뉴:MENU>는 뭐 있어?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 오늘 빵종류는 뭐 있어?			
+$오늘 <빵종류:MENU>는 뭐 있어?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 종류는 뭐 있어?			
+$오늘 <종류:MENU>는 뭐 있어?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 음료종류는 뭐 있어?			
+$오늘 <음료종류:MENU>는 뭐 있어?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 커피종류는 뭐 있어?			
+$오늘 <커피종류:MENU>는 뭐 있어?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 식사종류는 뭐 있어?			
+$오늘 <식사종류:MENU>는 뭐 있어?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 에이드종류는 뭐 있어?			
+$오늘 <에이드종류:MENU>는 뭐 있어?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 오늘 사이드메뉴는?			
+$오늘 사이드<메뉴:MENU>는?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 오늘 사이드 메뉴는?			
+$오늘 사이드 <메뉴:MENU>는?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 오늘 빵종류는?			
+$오늘 <빵종류:MENU>는?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 오늘 종류는?			
+$오늘 <종류:MENU>는?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 오늘 음료종류는?			
+$오늘 <음료종류:MENU>는?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 오늘 커피종류는?			
+$오늘 <커피종류:MENU>는?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 오늘 식사종류는?			
+$오늘 <식사종류:MENU>는?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 오늘 에이드종류는?			
+$오늘 <에이드종류:MENU>는?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 오늘 사이드메뉴 다 돼?			
+$오늘 사이드<메뉴:MENU> 다 돼?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 사이드 메뉴 다 돼?			
+$오늘 사이드 <메뉴:MENU> 다 돼?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 빵종류 다 돼?			
+$오늘 <빵종류:MENU> 다 돼?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 종류 다 돼?			
+$오늘 <종류:MENU> 다 돼?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 음료종류 다 돼?			
+$오늘 <음료종류:MENU> 다 돼?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 커피종류 다 돼?			
+$오늘 <커피종류:MENU> 다 돼?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 식사종류 다 돼?			
+$오늘 <식사종류:MENU> 다 돼?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 에이드종류 다 돼?			
+$오늘 <에이드종류:MENU> 다 돼?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 사이드메뉴 다 되지?			
+$오늘 사이드<메뉴:MENU> 다 되지?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 오늘 사이드 메뉴 다 되지?			
+$오늘 사이드 <메뉴:MENU> 다 되지?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 오늘 빵종류 다 되지?			
+$오늘 <빵종류:MENU> 다 되지?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 오늘 종류 다 되지?			
+$오늘 <종류:MENU> 다 되지?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 오늘 음료종류 다 되지?			
+$오늘 <음료종류:MENU> 다 되지?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 오늘 커피종류 다 되지?			
+$오늘 <커피종류:MENU> 다 되지?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 오늘 식사종류 다 되지?			
+$오늘 <식사종류:MENU> 다 되지?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 오늘 에이드종류 다 되지?			
+$오늘 <에이드종류:MENU> 다 되지?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 오늘 사이드메뉴도 있어?			
+$오늘 사이드<메뉴:MENU>도 있어?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 사이드 메뉴도 있어?			
+$오늘 사이드 <메뉴:MENU>도 있어?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 빵종류도 있어?			
+$오늘 <빵종류:MENU>도 있어?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 종류도 있어?			
+$오늘 <종류:MENU>도 있어?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 음료종류도 있어?			
+$오늘 <음료종류:MENU>도 있어?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 커피종류도 있어?			
+$오늘 <커피종류:MENU>도 있어?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 식사종류도 있어?			
+$오늘 <식사종류:MENU>도 있어?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 에이드종류도 있어?			
+$오늘 <에이드종류:MENU>도 있어?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 사이드메뉴도 있나?			
+$오늘 사이드<메뉴:MENU>도 있나?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 오늘 사이드 메뉴도 있나?			
+$오늘 사이드 <메뉴:MENU>도 있나?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 오늘 빵종류도 있나?			
+$오늘 <빵종류:MENU>도 있나?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 오늘 종류도 있나?			
+$오늘 <종류:MENU>도 있나?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 오늘 음료종류도 있나?			
+$오늘 <음료종류:MENU>도 있나?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 오늘 커피종류도 있나?			
+$오늘 <커피종류:MENU>도 있나?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 오늘 식사종류도 있나?			
+$오늘 <식사종류:MENU>도 있나?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 오늘 에이드종류도 있나?			
+$오늘 <에이드종류:MENU>도 있나?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 오늘 사이드메뉴 뭐 있지?			
+$오늘 사이드<메뉴:MENU> 뭐 있지?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 오늘 사이드 메뉴 뭐 있지?			
+$오늘 사이드 <메뉴:MENU> 뭐 있지?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 오늘 빵종류 뭐 있지?			
+$오늘 <빵종류:MENU> 뭐 있지?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 오늘 종류 뭐 있지?			
+$오늘 <종류:MENU> 뭐 있지?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 오늘 음료종류 뭐 있지?			
+$오늘 <음료종류:MENU> 뭐 있지?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 오늘 커피종류 뭐 있지?			
+$오늘 <커피종류:MENU> 뭐 있지?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 오늘 식사종류 뭐 있지?			
+$오늘 <식사종류:MENU> 뭐 있지?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 오늘 에이드종류 뭐 있지?			
+$오늘 <에이드종류:MENU> 뭐 있지?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 오늘 사이드메뉴봐봐			
+$오늘 사이드<메뉴:MENU>봐봐			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 사이드 메뉴봐봐			
+$오늘 사이드 <메뉴:MENU>봐봐			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 빵종류봐봐			
+$오늘 <빵종류:MENU>봐봐			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 오늘 종류봐봐			
+$오늘 <종류:MENU>봐봐			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 오늘 음료종류봐봐			
+$오늘 <음료종류:MENU>봐봐			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 오늘 커피종류봐봐			
+$오늘 <커피종류:MENU>봐봐			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 오늘 식사종류봐봐			
+$오늘 <식사종류:MENU>봐봐			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 오늘 에이드종류봐봐			
+$오늘 <에이드종류:MENU>봐봐			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 사이드메뉴 봐봐			
+$오늘 사이드<메뉴:MENU> 봐봐			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 사이드 메뉴 봐봐			
+$오늘 사이드 <메뉴:MENU> 봐봐			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 빵종류 봐봐			
+$오늘 <빵종류:MENU> 봐봐			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 오늘 종류 봐봐			
+$오늘 <종류:MENU> 봐봐			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 오늘 음료종류 봐봐			
+$오늘 <음료종류:MENU> 봐봐			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 오늘 커피종류 봐봐			
+$오늘 <커피종류:MENU> 봐봐			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 오늘 식사종류 봐봐			
+$오늘 <식사종류:MENU> 봐봐			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 오늘 에이드종류 봐봐			
+$오늘 <에이드종류:MENU> 봐봐			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 사이드메뉴 부탁해			
+$오늘 사이드<메뉴:MENU> 부탁해			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 오늘 사이드 메뉴 부탁해			
+$오늘 사이드 <메뉴:MENU> 부탁해			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 오늘 빵종류 부탁해			
+$오늘 <빵종류:MENU> 부탁해			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 오늘 종류 부탁해			
+$오늘 <종류:MENU> 부탁해			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 오늘 음료종류 부탁해			
+$오늘 <음료종류:MENU> 부탁해			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 오늘 커피종류 부탁해			
+$오늘 <커피종류:MENU> 부탁해			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 오늘 식사종류 부탁해			
+$오늘 <식사종류:MENU> 부탁해			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 오늘 에이드종류 부탁해			
+$오늘 <에이드종류:MENU> 부탁해			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 사이드메뉴?			
+$사이드<메뉴:MENU>?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	?	SF	O
+			
+; 사이드 메뉴?			
+$사이드 <메뉴:MENU>?			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+3	?	SF	O
+			
+; 빵종류			
+$<빵종류:MENU>			
+1	빵종류	NNG	B_MENU
+			
+; 사이드 메뉴			
+$사이드 <메뉴:MENU>			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+			
+; 사이드메뉴			
+$사이드<메뉴:MENU>			
+1	사이드	NNP	O
+2	메뉴	NNP	B_MENU
+			
+; 식사종류			
+$<식사종류:MENU>			
+1	식사종류	NNG	B_MENU
+			
+; 에이드종류			
+$<에이드종류:MENU>			
+1	에이드	NNG	O
+2	종류	NNG	B_MENU
+			
+; 음료종류			
+$<음료종류:MENU>			
+1	음료종류	NNG	B_MENU
+			
+; 종류			
+$<종류:MENU>			
+1	종류	NNG	B_MENU
+			
+; 커피종류			
+$<커피종류:MENU>			
+1	커피종류	NNG	B_MENU
+			
+; 오늘 사이드메뉴 어떤게 있나?			
+$오늘 사이드<메뉴:MENU> 어떤게 있나?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 오늘 사이드 메뉴 어떤게 있나?			
+$오늘 사이드 <메뉴:MENU> 어떤게 있나?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 오늘 빵종류 어떤게 있나?			
+$오늘 <빵종류:MENU> 어떤게 있나?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 오늘 종류 어떤게 있나?			
+$오늘 <종류:MENU> 어떤게 있나?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 오늘 음료종류 어떤게 있나?			
+$오늘 <음료종류:MENU> 어떤게 있나?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 오늘 커피종류 어떤게 있나?			
+$오늘 <커피종류:MENU> 어떤게 있나?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 오늘 식사종류 어떤게 있나?			
+$오늘 <식사종류:MENU> 어떤게 있나?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 오늘 에이드종류 어떤게 있나?			
+$오늘 <에이드종류:MENU> 어떤게 있나?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 오늘 사이드메뉴 어떤게 있지?			
+$오늘 사이드<메뉴:MENU> 어떤게 있지?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 오늘 사이드 메뉴 어떤게 있지?			
+$오늘 사이드 <메뉴:MENU> 어떤게 있지?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 오늘 빵종류 어떤게 있지?			
+$오늘 <빵종류:MENU> 어떤게 있지?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 오늘 종류 어떤게 있지?			
+$오늘 <종류:MENU> 어떤게 있지?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 오늘 음료종류 어떤게 있지?			
+$오늘 <음료종류:MENU> 어떤게 있지?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 오늘 커피종류 어떤게 있지?			
+$오늘 <커피종류:MENU> 어떤게 있지?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 오늘 식사종류 어떤게 있지?			
+$오늘 <식사종류:MENU> 어떤게 있지?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 오늘 에이드종류 어떤게 있지?			
+$오늘 <에이드종류:MENU> 어떤게 있지?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 오늘 사이드메뉴 어떻게 돼?			
+$오늘 사이드<메뉴:MENU> 어떻게 돼?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 오늘 사이드 메뉴 어떻게 돼?			
+$오늘 사이드 <메뉴:MENU> 어떻게 돼?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 오늘 빵종류 어떻게 돼?			
+$오늘 <빵종류:MENU> 어떻게 돼?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 종류 어떻게 돼?			
+$오늘 <종류:MENU> 어떻게 돼?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 음료종류 어떻게 돼?			
+$오늘 <음료종류:MENU> 어떻게 돼?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 커피종류 어떻게 돼?			
+$오늘 <커피종류:MENU> 어떻게 돼?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 식사종류 어떻게 돼?			
+$오늘 <식사종류:MENU> 어떻게 돼?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 오늘 에이드종류 어떻게 돼?			
+$오늘 <에이드종류:MENU> 어떻게 돼?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 오늘 사이드메뉴 없니?			
+$오늘 사이드<메뉴:MENU> 없니?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 오늘 사이드 메뉴 없니?			
+$오늘 사이드 <메뉴:MENU> 없니?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 오늘 빵종류 없니?			
+$오늘 <빵종류:MENU> 없니?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 오늘 종류 없니?			
+$오늘 <종류:MENU> 없니?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 오늘 음료종류 없니?			
+$오늘 <음료종류:MENU> 없니?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 오늘 커피종류 없니?			
+$오늘 <커피종류:MENU> 없니?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 오늘 식사종류 없니?			
+$오늘 <식사종류:MENU> 없니?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 오늘 에이드종류 없니?			
+$오늘 <에이드종류:MENU> 없니?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 오늘 사이드메뉴 없어?			
+$오늘 사이드<메뉴:MENU> 없어?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 사이드 메뉴 없어?			
+$오늘 사이드 <메뉴:MENU> 없어?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 빵종류 없어?			
+$오늘 <빵종류:MENU> 없어?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 오늘 종류 없어?			
+$오늘 <종류:MENU> 없어?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 오늘 음료종류 없어?			
+$오늘 <음료종류:MENU> 없어?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 오늘 커피종류 없어?			
+$오늘 <커피종류:MENU> 없어?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 오늘 식사종류 없어?			
+$오늘 <식사종류:MENU> 없어?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 오늘 에이드종류 없어?			
+$오늘 <에이드종류:MENU> 없어?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 사이드메뉴전부야?			
+$오늘 사이드<메뉴:MENU>전부야?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 오늘 사이드 메뉴전부야?			
+$오늘 사이드 <메뉴:MENU>전부야?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 오늘 빵종류전부야?			
+$오늘 <빵종류:MENU>전부야?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 오늘 종류전부야?			
+$오늘 <종류:MENU>전부야?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 오늘 음료종류전부야?			
+$오늘 <음료종류:MENU>전부야?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 오늘 커피종류전부야?			
+$오늘 <커피종류:MENU>전부야?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 오늘 식사종류전부야?			
+$오늘 <식사종류:MENU>전부야?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 오늘 에이드종류전부야?			
+$오늘 <에이드종류:MENU>전부야?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 오늘 사이드메뉴말해봐			
+$오늘 사이드<메뉴:MENU>말해봐			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 오늘 사이드 메뉴말해봐			
+$오늘 사이드 <메뉴:MENU>말해봐			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 오늘 빵종류말해봐			
+$오늘 <빵종류:MENU>말해봐			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 종류말해봐			
+$오늘 <종류:MENU>말해봐			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 음료종류말해봐			
+$오늘 <음료종류:MENU>말해봐			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 커피종류말해봐			
+$오늘 <커피종류:MENU>말해봐			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 식사종류말해봐			
+$오늘 <식사종류:MENU>말해봐			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 에이드종류말해봐			
+$오늘 <에이드종류:MENU>말해봐			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 오늘 사이드메뉴없니?			
+$오늘 사이드<메뉴:MENU>없니?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 오늘 사이드 메뉴없니?			
+$오늘 사이드 <메뉴:MENU>없니?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 오늘 빵종류없니?			
+$오늘 <빵종류:MENU>없니?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 오늘 종류없니?			
+$오늘 <종류:MENU>없니?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 오늘 음료종류없니?			
+$오늘 <음료종류:MENU>없니?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 오늘 커피종류없니?			
+$오늘 <커피종류:MENU>없니?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 오늘 식사종류없니?			
+$오늘 <식사종류:MENU>없니?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 오늘 에이드종류없니?			
+$오늘 <에이드종류:MENU>없니?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 오늘 사이드메뉴없어?			
+$오늘 사이드<메뉴:MENU>없어?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없어	NNP	O
+5	?	SF	O
+			
+; 오늘 사이드 메뉴없어?			
+$오늘 사이드 <메뉴:MENU>없어?			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없어	NNP	O
+5	?	SF	O
+			
+; 오늘 빵종류없어?			
+$오늘 <빵종류:MENU>없어?			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 오늘 종류없어?			
+$오늘 <종류:MENU>없어?			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 오늘 음료종류없어?			
+$오늘 <음료종류:MENU>없어?			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 오늘 커피종류없어?			
+$오늘 <커피종류:MENU>없어?			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 오늘 식사종류없어?			
+$오늘 <식사종류:MENU>없어?			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 오늘 에이드종류없어?			
+$오늘 <에이드종류:MENU>없어?			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 오늘 사이드메뉴 말해봐			
+$오늘 사이드<메뉴:MENU> 말해봐			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 오늘 사이드 메뉴 말해봐			
+$오늘 사이드 <메뉴:MENU> 말해봐			
+1	오늘	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 오늘 빵종류 말해봐			
+$오늘 <빵종류:MENU> 말해봐			
+1	오늘	NNG	O
+2	빵종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 종류 말해봐			
+$오늘 <종류:MENU> 말해봐			
+1	오늘	NNG	O
+2	종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 음료종류 말해봐			
+$오늘 <음료종류:MENU> 말해봐			
+1	오늘	NNG	O
+2	음료종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 커피종류 말해봐			
+$오늘 <커피종류:MENU> 말해봐			
+1	오늘	NNG	O
+2	커피종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 식사종류 말해봐			
+$오늘 <식사종류:MENU> 말해봐			
+1	오늘	NNG	O
+2	식사종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 에이드종류 말해봐			
+$오늘 <에이드종류:MENU> 말해봐			
+1	오늘	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 사이드메뉴			
+$새로운 사이드<메뉴:MENU>			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+			
+; 새로운 사이드 메뉴			
+$새로운 사이드 <메뉴:MENU>			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+			
+; 새로운 빵종류			
+$새로운 <빵종류:MENU>			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+			
+; 새로운 종류			
+$새로운 <종류:MENU>			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+			
+; 새로운 음료종류			
+$새로운 <음료종류:MENU>			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+			
+; 새로운 커피종류			
+$새로운 <커피종류:MENU>			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+			
+; 새로운 식사종류			
+$새로운 <식사종류:MENU>			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+			
+; 새로운 에이드종류			
+$새로운 <에이드종류:MENU>			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+			
+; 새로운 사이드메뉴?			
+$새로운 사이드<메뉴:MENU>?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	?	SF	O
+			
+; 새로운 사이드 메뉴?			
+$새로운 사이드 <메뉴:MENU>?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	?	SF	O
+			
+; 새로운 빵종류?			
+$새로운 <빵종류:MENU>?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	?	SF	O
+			
+; 새로운 종류?			
+$새로운 <종류:MENU>?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	?	SF	O
+			
+; 새로운 음료종류?			
+$새로운 <음료종류:MENU>?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	?	SF	O
+			
+; 새로운 커피종류?			
+$새로운 <커피종류:MENU>?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	?	SF	O
+			
+; 새로운 식사종류?			
+$새로운 <식사종류:MENU>?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	?	SF	O
+			
+; 새로운 에이드종류?			
+$새로운 <에이드종류:MENU>?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	?	SF	O
+			
+; 새로운 사이드메뉴는 뭐 있어?			
+$새로운 사이드<메뉴:MENU>는 뭐 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	는	JX	O
+6	뭐	NP	O
+7	있	VX	O
+8	어	EF	O
+9	?	SF	O
+			
+; 새로운 사이드 메뉴는 뭐 있어?			
+$새로운 사이드 <메뉴:MENU>는 뭐 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	는	JX	O
+6	뭐	NP	O
+7	있	VX	O
+8	어	EF	O
+9	?	SF	O
+			
+; 새로운 빵종류는 뭐 있어?			
+$새로운 <빵종류:MENU>는 뭐 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 종류는 뭐 있어?			
+$새로운 <종류:MENU>는 뭐 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 음료종류는 뭐 있어?			
+$새로운 <음료종류:MENU>는 뭐 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 커피종류는 뭐 있어?			
+$새로운 <커피종류:MENU>는 뭐 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 식사종류는 뭐 있어?			
+$새로운 <식사종류:MENU>는 뭐 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 에이드종류는 뭐 있어?			
+$새로운 <에이드종류:MENU>는 뭐 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	는	JX	O
+6	뭐	NP	O
+7	있	VX	O
+8	어	EF	O
+9	?	SF	O
+			
+; 새로운 사이드메뉴는?			
+$새로운 사이드<메뉴:MENU>는?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	는	JX	O
+6	?	SF	O
+			
+; 새로운 사이드 메뉴는?			
+$새로운 사이드 <메뉴:MENU>는?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	는	JX	O
+6	?	SF	O
+			
+; 새로운 빵종류는?			
+$새로운 <빵종류:MENU>는?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 새로운 종류는?			
+$새로운 <종류:MENU>는?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 새로운 음료종류는?			
+$새로운 <음료종류:MENU>는?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 새로운 커피종류는?			
+$새로운 <커피종류:MENU>는?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 새로운 식사종류는?			
+$새로운 <식사종류:MENU>는?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 새로운 에이드종류는?			
+$새로운 <에이드종류:MENU>는?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	는	JX	O
+6	?	SF	O
+			
+; 새로운 사이드메뉴 다 돼?			
+$새로운 사이드<메뉴:MENU> 다 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	다	MAG	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 사이드 메뉴 다 돼?			
+$새로운 사이드 <메뉴:MENU> 다 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	다	MAG	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 빵종류 다 돼?			
+$새로운 <빵종류:MENU> 다 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 종류 다 돼?			
+$새로운 <종류:MENU> 다 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 음료종류 다 돼?			
+$새로운 <음료종류:MENU> 다 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 커피종류 다 돼?			
+$새로운 <커피종류:MENU> 다 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 식사종류 다 돼?			
+$새로운 <식사종류:MENU> 다 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 에이드종류 다 돼?			
+$새로운 <에이드종류:MENU> 다 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	다	MAG	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 사이드메뉴 다 되지?			
+$새로운 사이드<메뉴:MENU> 다 되지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	다	MAG	O
+6	되	VV	O
+7	지	EF	O
+8	?	SF	O
+			
+; 새로운 사이드 메뉴 다 되지?			
+$새로운 사이드 <메뉴:MENU> 다 되지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	다	MAG	O
+6	되	VV	O
+7	지	EF	O
+8	?	SF	O
+			
+; 새로운 빵종류 다 되지?			
+$새로운 <빵종류:MENU> 다 되지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 새로운 종류 다 되지?			
+$새로운 <종류:MENU> 다 되지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 새로운 음료종류 다 되지?			
+$새로운 <음료종류:MENU> 다 되지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 새로운 커피종류 다 되지?			
+$새로운 <커피종류:MENU> 다 되지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 새로운 식사종류 다 되지?			
+$새로운 <식사종류:MENU> 다 되지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 새로운 에이드종류 다 되지?			
+$새로운 <에이드종류:MENU> 다 되지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	다	MAG	O
+6	되	VV	O
+7	지	EF	O
+8	?	SF	O
+			
+; 새로운 사이드메뉴도 있어?			
+$새로운 사이드<메뉴:MENU>도 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	도	JX	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 사이드 메뉴도 있어?			
+$새로운 사이드 <메뉴:MENU>도 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	도	JX	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 빵종류도 있어?			
+$새로운 <빵종류:MENU>도 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 종류도 있어?			
+$새로운 <종류:MENU>도 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 음료종류도 있어?			
+$새로운 <음료종류:MENU>도 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 커피종류도 있어?			
+$새로운 <커피종류:MENU>도 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 식사종류도 있어?			
+$새로운 <식사종류:MENU>도 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 에이드종류도 있어?			
+$새로운 <에이드종류:MENU>도 있어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	도	JX	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 사이드메뉴도 있나?			
+$새로운 사이드<메뉴:MENU>도 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	도	JX	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 새로운 사이드 메뉴도 있나?			
+$새로운 사이드 <메뉴:MENU>도 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	도	JX	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 새로운 빵종류도 있나?			
+$새로운 <빵종류:MENU>도 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 새로운 종류도 있나?			
+$새로운 <종류:MENU>도 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 새로운 음료종류도 있나?			
+$새로운 <음료종류:MENU>도 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 새로운 커피종류도 있나?			
+$새로운 <커피종류:MENU>도 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 새로운 식사종류도 있나?			
+$새로운 <식사종류:MENU>도 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 새로운 에이드종류도 있나?			
+$새로운 <에이드종류:MENU>도 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	도	JX	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 새로운 사이드메뉴 뭐 있지?			
+$새로운 사이드<메뉴:MENU> 뭐 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	뭐	NP	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 새로운 사이드 메뉴 뭐 있지?			
+$새로운 사이드 <메뉴:MENU> 뭐 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	뭐	NP	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 새로운 빵종류 뭐 있지?			
+$새로운 <빵종류:MENU> 뭐 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 새로운 종류 뭐 있지?			
+$새로운 <종류:MENU> 뭐 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 새로운 음료종류 뭐 있지?			
+$새로운 <음료종류:MENU> 뭐 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 새로운 커피종류 뭐 있지?			
+$새로운 <커피종류:MENU> 뭐 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 새로운 식사종류 뭐 있지?			
+$새로운 <식사종류:MENU> 뭐 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 새로운 에이드종류 뭐 있지?			
+$새로운 <에이드종류:MENU> 뭐 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	뭐	NP	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 새로운 사이드메뉴봐봐			
+$새로운 사이드<메뉴:MENU>봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	보	VV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 사이드 메뉴봐봐			
+$새로운 사이드 <메뉴:MENU>봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNG	B_MENU
+5	보	VV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 빵종류봐봐			
+$새로운 <빵종류:MENU>봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 새로운 종류봐봐			
+$새로운 <종류:MENU>봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 새로운 음료종류봐봐			
+$새로운 <음료종류:MENU>봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 새로운 커피종류봐봐			
+$새로운 <커피종류:MENU>봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 새로운 식사종류봐봐			
+$새로운 <식사종류:MENU>봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 새로운 에이드종류봐봐			
+$새로운 <에이드종류:MENU>봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	보	VV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 사이드메뉴 봐봐			
+$새로운 사이드<메뉴:MENU> 봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	보	VV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 사이드 메뉴 봐봐			
+$새로운 사이드 <메뉴:MENU> 봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	보	VV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 빵종류 봐봐			
+$새로운 <빵종류:MENU> 봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 새로운 종류 봐봐			
+$새로운 <종류:MENU> 봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 새로운 음료종류 봐봐			
+$새로운 <음료종류:MENU> 봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 새로운 커피종류 봐봐			
+$새로운 <커피종류:MENU> 봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 새로운 식사종류 봐봐			
+$새로운 <식사종류:MENU> 봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 새로운 에이드종류 봐봐			
+$새로운 <에이드종류:MENU> 봐봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	보	VV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 사이드메뉴 부탁해			
+$새로운 사이드<메뉴:MENU> 부탁해			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	부탁	NNG	O
+6	하	XSV	O
+7	아	EC	O
+			
+; 새로운 사이드 메뉴 부탁해			
+$새로운 사이드 <메뉴:MENU> 부탁해			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	부탁	NNG	O
+6	하	XSV	O
+7	아	EC	O
+			
+; 새로운 빵종류 부탁해			
+$새로운 <빵종류:MENU> 부탁해			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 새로운 종류 부탁해			
+$새로운 <종류:MENU> 부탁해			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 새로운 음료종류 부탁해			
+$새로운 <음료종류:MENU> 부탁해			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 새로운 커피종류 부탁해			
+$새로운 <커피종류:MENU> 부탁해			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 새로운 식사종류 부탁해			
+$새로운 <식사종류:MENU> 부탁해			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 새로운 에이드종류 부탁해			
+$새로운 <에이드종류:MENU> 부탁해			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	부탁	NNG	O
+6	하	XSV	O
+7	아	EC	O
+			
+; 새로운 사이드메뉴 어떤게 있나?			
+$새로운 사이드<메뉴:MENU> 어떤게 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	어떻	VA	O
+6	ㄴ	ETM	O
+7	게	EC	O
+8	있	VX	O
+9	나	EF	O
+10	?	SF	O
+			
+; 새로운 사이드 메뉴 어떤게 있나?			
+$새로운 사이드 <메뉴:MENU> 어떤게 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	어떻	VA	O
+6	ㄴ	ETM	O
+7	게	EC	O
+8	있	VX	O
+9	나	EF	O
+10	?	SF	O
+			
+; 새로운 빵종류 어떤게 있나?			
+$새로운 <빵종류:MENU> 어떤게 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 새로운 종류 어떤게 있나?			
+$새로운 <종류:MENU> 어떤게 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 새로운 음료종류 어떤게 있나?			
+$새로운 <음료종류:MENU> 어떤게 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 새로운 커피종류 어떤게 있나?			
+$새로운 <커피종류:MENU> 어떤게 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 새로운 식사종류 어떤게 있나?			
+$새로운 <식사종류:MENU> 어떤게 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 새로운 에이드종류 어떤게 있나?			
+$새로운 <에이드종류:MENU> 어떤게 있나?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	어떻	VA	O
+6	ㄴ	ETM	O
+7	게	EC	O
+8	있	VX	O
+9	나	EF	O
+10	?	SF	O
+			
+; 새로운 사이드메뉴 어떤게 있지?			
+$새로운 사이드<메뉴:MENU> 어떤게 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	어떻	VA	O
+6	ㄴ	ETM	O
+7	게	EC	O
+8	있	VX	O
+9	지	EF	O
+10	?	SF	O
+			
+; 새로운 사이드 메뉴 어떤게 있지?			
+$새로운 사이드 <메뉴:MENU> 어떤게 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	어떻	VA	O
+6	ㄴ	ETM	O
+7	게	EC	O
+8	있	VX	O
+9	지	EF	O
+10	?	SF	O
+			
+; 새로운 빵종류 어떤게 있지?			
+$새로운 <빵종류:MENU> 어떤게 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 새로운 종류 어떤게 있지?			
+$새로운 <종류:MENU> 어떤게 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 새로운 음료종류 어떤게 있지?			
+$새로운 <음료종류:MENU> 어떤게 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 새로운 커피종류 어떤게 있지?			
+$새로운 <커피종류:MENU> 어떤게 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 새로운 식사종류 어떤게 있지?			
+$새로운 <식사종류:MENU> 어떤게 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 새로운 에이드종류 어떤게 있지?			
+$새로운 <에이드종류:MENU> 어떤게 있지?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	어떻	VA	O
+6	ㄴ	ETM	O
+7	게	EC	O
+8	있	VX	O
+9	지	EF	O
+10	?	SF	O
+			
+; 새로운 사이드메뉴 어떻게 돼?			
+$새로운 사이드<메뉴:MENU> 어떻게 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	어떻	VA	O
+6	게	EC	O
+7	되	VV	O
+8	어	EF	O
+9	?	SF	O
+			
+; 새로운 사이드 메뉴 어떻게 돼?			
+$새로운 사이드 <메뉴:MENU> 어떻게 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	어떻	VA	O
+6	게	EC	O
+7	되	VV	O
+8	어	EF	O
+9	?	SF	O
+			
+; 새로운 빵종류 어떻게 돼?			
+$새로운 <빵종류:MENU> 어떻게 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 종류 어떻게 돼?			
+$새로운 <종류:MENU> 어떻게 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 음료종류 어떻게 돼?			
+$새로운 <음료종류:MENU> 어떻게 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 커피종류 어떻게 돼?			
+$새로운 <커피종류:MENU> 어떻게 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 식사종류 어떻게 돼?			
+$새로운 <식사종류:MENU> 어떻게 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 새로운 에이드종류 어떻게 돼?			
+$새로운 <에이드종류:MENU> 어떻게 돼?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	어떻	VA	O
+6	게	EC	O
+7	되	VV	O
+8	어	EF	O
+9	?	SF	O
+			
+; 새로운 사이드메뉴 없니?			
+$새로운 사이드<메뉴:MENU> 없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	없	VA	O
+6	니	EF	O
+7	?	SF	O
+			
+; 새로운 사이드 메뉴 없니?			
+$새로운 사이드 <메뉴:MENU> 없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	없	VA	O
+6	니	EF	O
+7	?	SF	O
+			
+; 새로운 빵종류 없니?			
+$새로운 <빵종류:MENU> 없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 새로운 종류 없니?			
+$새로운 <종류:MENU> 없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 새로운 음료종류 없니?			
+$새로운 <음료종류:MENU> 없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 새로운 커피종류 없니?			
+$새로운 <커피종류:MENU> 없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 새로운 식사종류 없니?			
+$새로운 <식사종류:MENU> 없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 새로운 에이드종류 없니?			
+$새로운 <에이드종류:MENU> 없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	없	VA	O
+6	니	EF	O
+7	?	SF	O
+			
+; 새로운 사이드메뉴 없어?			
+$새로운 사이드<메뉴:MENU> 없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	없	VA	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 사이드 메뉴 없어?			
+$새로운 사이드 <메뉴:MENU> 없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	없	VA	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 빵종류 없어?			
+$새로운 <빵종류:MENU> 없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 새로운 종류 없어?			
+$새로운 <종류:MENU> 없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 새로운 음료종류 없어?			
+$새로운 <음료종류:MENU> 없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 새로운 커피종류 없어?			
+$새로운 <커피종류:MENU> 없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 새로운 식사종류 없어?			
+$새로운 <식사종류:MENU> 없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 새로운 에이드종류 없어?			
+$새로운 <에이드종류:MENU> 없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	없	VA	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 사이드메뉴전부야?			
+$새로운 사이드<메뉴:MENU>전부야?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	전부	NNG	O
+6	야	JKV	O
+7	?	SF	O
+			
+; 새로운 사이드 메뉴전부야?			
+$새로운 사이드 <메뉴:MENU>전부야?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	전부	NNG	O
+6	야	JKV	O
+7	?	SF	O
+			
+; 새로운 빵종류전부야?			
+$새로운 <빵종류:MENU>전부야?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 새로운 종류전부야?			
+$새로운 <종류:MENU>전부야?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 새로운 음료종류전부야?			
+$새로운 <음료종류:MENU>전부야?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 새로운 커피종류전부야?			
+$새로운 <커피종류:MENU>전부야?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 새로운 식사종류전부야?			
+$새로운 <식사종류:MENU>전부야?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 새로운 에이드종류전부야?			
+$새로운 <에이드종류:MENU>전부야?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	전부	NNG	O
+6	야	JKV	O
+7	?	SF	O
+			
+; 새로운 사이드메뉴말해봐			
+$새로운 사이드<메뉴:MENU>말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	말	NNG	O
+6	하	XSV	O
+7	아	EC	O
+8	보	VX	O
+9	아	EC	O
+			
+; 새로운 사이드 메뉴말해봐			
+$새로운 사이드 <메뉴:MENU>말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	말	NNG	O
+6	하	XSV	O
+7	아	EC	O
+8	보	VX	O
+9	아	EC	O
+			
+; 새로운 빵종류말해봐			
+$새로운 <빵종류:MENU>말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 종류말해봐			
+$새로운 <종류:MENU>말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 음료종류말해봐			
+$새로운 <음료종류:MENU>말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 커피종류말해봐			
+$새로운 <커피종류:MENU>말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 식사종류말해봐			
+$새로운 <식사종류:MENU>말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 에이드종류말해봐			
+$새로운 <에이드종류:MENU>말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	말	NNG	O
+6	하	XSV	O
+7	아	EC	O
+8	보	VX	O
+9	아	EC	O
+			
+; 새로운 사이드메뉴없니?			
+$새로운 사이드<메뉴:MENU>없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	없	VA	O
+6	니	EF	O
+7	?	SF	O
+			
+; 새로운 사이드 메뉴없니?			
+$새로운 사이드 <메뉴:MENU>없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNG	B_MENU
+5	없	VA	O
+6	니	EF	O
+7	?	SF	O
+			
+; 새로운 빵종류없니?			
+$새로운 <빵종류:MENU>없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 새로운 종류없니?			
+$새로운 <종류:MENU>없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 새로운 음료종류없니?			
+$새로운 <음료종류:MENU>없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 새로운 커피종류없니?			
+$새로운 <커피종류:MENU>없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 새로운 식사종류없니?			
+$새로운 <식사종류:MENU>없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 새로운 에이드종류없니?			
+$새로운 <에이드종류:MENU>없니?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	없	VA	O
+6	니	EF	O
+7	?	SF	O
+			
+; 새로운 사이드메뉴없어?			
+$새로운 사이드<메뉴:MENU>없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	없어	NNP	O
+6	?	SF	O
+			
+; 새로운 사이드 메뉴없어?			
+$새로운 사이드 <메뉴:MENU>없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	없어	NNP	O
+6	?	SF	O
+			
+; 새로운 빵종류없어?			
+$새로운 <빵종류:MENU>없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 새로운 종류없어?			
+$새로운 <종류:MENU>없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 새로운 음료종류없어?			
+$새로운 <음료종류:MENU>없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 새로운 커피종류없어?			
+$새로운 <커피종류:MENU>없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 새로운 식사종류없어?			
+$새로운 <식사종류:MENU>없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 새로운 에이드종류없어?			
+$새로운 <에이드종류:MENU>없어?			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	없	VA	O
+6	어	EF	O
+7	?	SF	O
+			
+; 새로운 사이드메뉴 말해봐			
+$새로운 사이드<메뉴:MENU> 말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	말	NNG	O
+6	하	XSV	O
+7	아	EC	O
+8	보	VX	O
+9	아	EC	O
+			
+; 새로운 사이드 메뉴 말해봐			
+$새로운 사이드 <메뉴:MENU> 말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	사이드	NNP	O
+4	메뉴	NNP	B_MENU
+5	말	NNG	O
+6	하	XSV	O
+7	아	EC	O
+8	보	VX	O
+9	아	EC	O
+			
+; 새로운 빵종류 말해봐			
+$새로운 <빵종류:MENU> 말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	빵종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 종류 말해봐			
+$새로운 <종류:MENU> 말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 음료종류 말해봐			
+$새로운 <음료종류:MENU> 말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	음료종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 커피종류 말해봐			
+$새로운 <커피종류:MENU> 말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	커피종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 식사종류 말해봐			
+$새로운 <식사종류:MENU> 말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	식사종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 새로운 에이드종류 말해봐			
+$새로운 <에이드종류:MENU> 말해봐			
+1	새롭	VA	O
+2	ㄴ	ETM	O
+3	에이드	NNG	O
+4	종류	NNG	B_MENU
+5	말	NNG	O
+6	하	XSV	O
+7	아	EC	O
+8	보	VX	O
+9	아	EC	O
+			
+; 여기 사이드메뉴			
+$여기 사이드<메뉴:MENU>			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+			
+; 여기 사이드 메뉴			
+$여기 사이드 <메뉴:MENU>			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+			
+; 여기 빵종류			
+$여기 <빵종류:MENU>			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+			
+; 여기 종류			
+$여기 <종류:MENU>			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+			
+; 여기 음료종류			
+$여기 <음료종류:MENU>			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+			
+; 여기 커피종류			
+$여기 <커피종류:MENU>			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+			
+; 여기 식사종류			
+$여기 <식사종류:MENU>			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+			
+; 여기 에이드종류			
+$여기 <에이드종류:MENU>			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+			
+; 여기 사이드메뉴?			
+$여기 사이드<메뉴:MENU>?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	?	SF	O
+			
+; 여기 사이드 메뉴?			
+$여기 사이드 <메뉴:MENU>?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	?	SF	O
+			
+; 여기 빵종류?			
+$여기 <빵종류:MENU>?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	?	SF	O
+			
+; 여기 종류?			
+$여기 <종류:MENU>?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	?	SF	O
+			
+; 여기 음료종류?			
+$여기 <음료종류:MENU>?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	?	SF	O
+			
+; 여기 커피종류?			
+$여기 <커피종류:MENU>?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	?	SF	O
+			
+; 여기 식사종류?			
+$여기 <식사종류:MENU>?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	?	SF	O
+			
+; 여기 에이드종류?			
+$여기 <에이드종류:MENU>?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	?	SF	O
+			
+; 여기 사이드메뉴는 뭐 있어?			
+$여기 사이드<메뉴:MENU>는 뭐 있어?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 여기 사이드 메뉴는 뭐 있어?			
+$여기 사이드 <메뉴:MENU>는 뭐 있어?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 여기 빵종류는 뭐 있어?			
+$여기 <빵종류:MENU>는 뭐 있어?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 종류는 뭐 있어?			
+$여기 <종류:MENU>는 뭐 있어?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 음료종류는 뭐 있어?			
+$여기 <음료종류:MENU>는 뭐 있어?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 커피종류는 뭐 있어?			
+$여기 <커피종류:MENU>는 뭐 있어?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 식사종류는 뭐 있어?			
+$여기 <식사종류:MENU>는 뭐 있어?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 에이드종류는 뭐 있어?			
+$여기 <에이드종류:MENU>는 뭐 있어?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 여기 사이드메뉴는?			
+$여기 사이드<메뉴:MENU>는?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 여기 사이드 메뉴는?			
+$여기 사이드 <메뉴:MENU>는?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 여기 빵종류는?			
+$여기 <빵종류:MENU>는?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 여기 종류는?			
+$여기 <종류:MENU>는?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 여기 음료종류는?			
+$여기 <음료종류:MENU>는?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 여기 커피종류는?			
+$여기 <커피종류:MENU>는?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 여기 식사종류는?			
+$여기 <식사종류:MENU>는?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 여기 에이드종류는?			
+$여기 <에이드종류:MENU>는?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 여기 사이드메뉴 다 돼?			
+$여기 사이드<메뉴:MENU> 다 돼?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 사이드 메뉴 다 돼?			
+$여기 사이드 <메뉴:MENU> 다 돼?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 빵종류 다 돼?			
+$여기 <빵종류:MENU> 다 돼?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 종류 다 돼?			
+$여기 <종류:MENU> 다 돼?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 음료종류 다 돼?			
+$여기 <음료종류:MENU> 다 돼?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 커피종류 다 돼?			
+$여기 <커피종류:MENU> 다 돼?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 식사종류 다 돼?			
+$여기 <식사종류:MENU> 다 돼?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 에이드종류 다 돼?			
+$여기 <에이드종류:MENU> 다 돼?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 사이드메뉴 다 되지?			
+$여기 사이드<메뉴:MENU> 다 되지?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 여기 사이드 메뉴 다 되지?			
+$여기 사이드 <메뉴:MENU> 다 되지?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 여기 빵종류 다 되지?			
+$여기 <빵종류:MENU> 다 되지?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 여기 종류 다 되지?			
+$여기 <종류:MENU> 다 되지?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 여기 음료종류 다 되지?			
+$여기 <음료종류:MENU> 다 되지?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 여기 커피종류 다 되지?			
+$여기 <커피종류:MENU> 다 되지?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 여기 식사종류 다 되지?			
+$여기 <식사종류:MENU> 다 되지?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 여기 에이드종류 다 되지?			
+$여기 <에이드종류:MENU> 다 되지?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 여기 사이드메뉴도 있어?			
+$여기 사이드<메뉴:MENU>도 있어?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 사이드 메뉴도 있어?			
+$여기 사이드 <메뉴:MENU>도 있어?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 빵종류도 있어?			
+$여기 <빵종류:MENU>도 있어?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 종류도 있어?			
+$여기 <종류:MENU>도 있어?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 음료종류도 있어?			
+$여기 <음료종류:MENU>도 있어?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 커피종류도 있어?			
+$여기 <커피종류:MENU>도 있어?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 식사종류도 있어?			
+$여기 <식사종류:MENU>도 있어?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 에이드종류도 있어?			
+$여기 <에이드종류:MENU>도 있어?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 사이드메뉴도 있나?			
+$여기 사이드<메뉴:MENU>도 있나?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 여기 사이드 메뉴도 있나?			
+$여기 사이드 <메뉴:MENU>도 있나?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 여기 빵종류도 있나?			
+$여기 <빵종류:MENU>도 있나?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 여기 종류도 있나?			
+$여기 <종류:MENU>도 있나?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 여기 음료종류도 있나?			
+$여기 <음료종류:MENU>도 있나?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 여기 커피종류도 있나?			
+$여기 <커피종류:MENU>도 있나?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 여기 식사종류도 있나?			
+$여기 <식사종류:MENU>도 있나?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 여기 에이드종류도 있나?			
+$여기 <에이드종류:MENU>도 있나?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 여기 사이드메뉴 뭐 있지?			
+$여기 사이드<메뉴:MENU> 뭐 있지?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 여기 사이드 메뉴 뭐 있지?			
+$여기 사이드 <메뉴:MENU> 뭐 있지?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 여기 빵종류 뭐 있지?			
+$여기 <빵종류:MENU> 뭐 있지?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 여기 종류 뭐 있지?			
+$여기 <종류:MENU> 뭐 있지?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 여기 음료종류 뭐 있지?			
+$여기 <음료종류:MENU> 뭐 있지?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 여기 커피종류 뭐 있지?			
+$여기 <커피종류:MENU> 뭐 있지?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 여기 식사종류 뭐 있지?			
+$여기 <식사종류:MENU> 뭐 있지?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 여기 에이드종류 뭐 있지?			
+$여기 <에이드종류:MENU> 뭐 있지?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 여기 사이드메뉴 보여줘			
+$여기 사이드<메뉴:MENU> 보여줘			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	보이	VV	O
+5	어	EC	O
+6	주	VX	O
+7	어	EC	O
+			
+; 여기 사이드메뉴봐봐			
+$여기 사이드<메뉴:MENU>봐봐			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 사이드 메뉴봐봐			
+$여기 사이드 <메뉴:MENU>봐봐			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 빵종류봐봐			
+$여기 <빵종류:MENU>봐봐			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 여기 종류봐봐			
+$여기 <종류:MENU>봐봐			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 여기 음료종류봐봐			
+$여기 <음료종류:MENU>봐봐			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 여기 커피종류봐봐			
+$여기 <커피종류:MENU>봐봐			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 여기 식사종류봐봐			
+$여기 <식사종류:MENU>봐봐			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 여기 에이드종류봐봐			
+$여기 <에이드종류:MENU>봐봐			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 사이드메뉴 봐봐			
+$여기 사이드<메뉴:MENU> 봐봐			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 사이드 메뉴 봐봐			
+$여기 사이드 <메뉴:MENU> 봐봐			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 빵종류 봐봐			
+$여기 <빵종류:MENU> 봐봐			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 여기 종류 봐봐			
+$여기 <종류:MENU> 봐봐			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 여기 음료종류 봐봐			
+$여기 <음료종류:MENU> 봐봐			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 여기 커피종류 봐봐			
+$여기 <커피종류:MENU> 봐봐			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 여기 식사종류 봐봐			
+$여기 <식사종류:MENU> 봐봐			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 여기 에이드종류 봐봐			
+$여기 <에이드종류:MENU> 봐봐			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 사이드메뉴 부탁해			
+$여기 사이드<메뉴:MENU> 부탁해			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 여기 사이드 메뉴 부탁해			
+$여기 사이드 <메뉴:MENU> 부탁해			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 여기 빵종류 부탁해			
+$여기 <빵종류:MENU> 부탁해			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 여기 종류 부탁해			
+$여기 <종류:MENU> 부탁해			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 여기 음료종류 부탁해			
+$여기 <음료종류:MENU> 부탁해			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 여기 커피종류 부탁해			
+$여기 <커피종류:MENU> 부탁해			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 여기 식사종류 부탁해			
+$여기 <식사종류:MENU> 부탁해			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 여기 에이드종류 부탁해			
+$여기 <에이드종류:MENU> 부탁해			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 여기 사이드메뉴 어떤게 있나?			
+$여기 사이드<메뉴:MENU> 어떤게 있나?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 여기 사이드 메뉴 어떤게 있나?			
+$여기 사이드 <메뉴:MENU> 어떤게 있나?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 여기 빵종류 어떤게 있나?			
+$여기 <빵종류:MENU> 어떤게 있나?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 여기 종류 어떤게 있나?			
+$여기 <종류:MENU> 어떤게 있나?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 여기 음료종류 어떤게 있나?			
+$여기 <음료종류:MENU> 어떤게 있나?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 여기 커피종류 어떤게 있나?			
+$여기 <커피종류:MENU> 어떤게 있나?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 여기 식사종류 어떤게 있나?			
+$여기 <식사종류:MENU> 어떤게 있나?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 여기 에이드종류 어떤게 있나?			
+$여기 <에이드종류:MENU> 어떤게 있나?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 여기 사이드메뉴 어떤게 있지?			
+$여기 사이드<메뉴:MENU> 어떤게 있지?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 여기 사이드 메뉴 어떤게 있지?			
+$여기 사이드 <메뉴:MENU> 어떤게 있지?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 여기 빵종류 어떤게 있지?			
+$여기 <빵종류:MENU> 어떤게 있지?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 여기 종류 어떤게 있지?			
+$여기 <종류:MENU> 어떤게 있지?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 여기 음료종류 어떤게 있지?			
+$여기 <음료종류:MENU> 어떤게 있지?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 여기 커피종류 어떤게 있지?			
+$여기 <커피종류:MENU> 어떤게 있지?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 여기 식사종류 어떤게 있지?			
+$여기 <식사종류:MENU> 어떤게 있지?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 여기 에이드종류 어떤게 있지?			
+$여기 <에이드종류:MENU> 어떤게 있지?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 여기 사이드메뉴 어떻게 돼?			
+$여기 사이드<메뉴:MENU> 어떻게 돼?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 여기 사이드 메뉴 어떻게 돼?			
+$여기 사이드 <메뉴:MENU> 어떻게 돼?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 여기 빵종류 어떻게 돼?			
+$여기 <빵종류:MENU> 어떻게 돼?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 종류 어떻게 돼?			
+$여기 <종류:MENU> 어떻게 돼?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 음료종류 어떻게 돼?			
+$여기 <음료종류:MENU> 어떻게 돼?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 커피종류 어떻게 돼?			
+$여기 <커피종류:MENU> 어떻게 돼?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 식사종류 어떻게 돼?			
+$여기 <식사종류:MENU> 어떻게 돼?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 에이드종류 어떻게 돼?			
+$여기 <에이드종류:MENU> 어떻게 돼?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 여기 사이드메뉴 없니?			
+$여기 사이드<메뉴:MENU> 없니?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 여기 사이드 메뉴 없니?			
+$여기 사이드 <메뉴:MENU> 없니?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 여기 빵종류 없니?			
+$여기 <빵종류:MENU> 없니?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 여기 종류 없니?			
+$여기 <종류:MENU> 없니?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 여기 음료종류 없니?			
+$여기 <음료종류:MENU> 없니?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 여기 커피종류 없니?			
+$여기 <커피종류:MENU> 없니?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 여기 식사종류 없니?			
+$여기 <식사종류:MENU> 없니?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 여기 에이드종류 없니?			
+$여기 <에이드종류:MENU> 없니?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 여기 사이드메뉴 없어?			
+$여기 사이드<메뉴:MENU> 없어?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 사이드 메뉴 없어?			
+$여기 사이드 <메뉴:MENU> 없어?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 빵종류 없어?			
+$여기 <빵종류:MENU> 없어?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 종류 없어?			
+$여기 <종류:MENU> 없어?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 음료종류 없어?			
+$여기 <음료종류:MENU> 없어?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 커피종류 없어?			
+$여기 <커피종류:MENU> 없어?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 식사종류 없어?			
+$여기 <식사종류:MENU> 없어?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 에이드종류 없어?			
+$여기 <에이드종류:MENU> 없어?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 사이드메뉴전부야?			
+$여기 사이드<메뉴:MENU>전부야?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 여기 사이드 메뉴전부야?			
+$여기 사이드 <메뉴:MENU>전부야?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 여기 빵종류전부야?			
+$여기 <빵종류:MENU>전부야?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 여기 종류전부야?			
+$여기 <종류:MENU>전부야?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 여기 음료종류전부야?			
+$여기 <음료종류:MENU>전부야?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 여기 커피종류전부야?			
+$여기 <커피종류:MENU>전부야?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 여기 식사종류전부야?			
+$여기 <식사종류:MENU>전부야?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 여기 에이드종류전부야?			
+$여기 <에이드종류:MENU>전부야?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 여기 사이드메뉴말해봐			
+$여기 사이드<메뉴:MENU>말해봐			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 여기 사이드 메뉴말해봐			
+$여기 사이드 <메뉴:MENU>말해봐			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 여기 빵종류말해봐			
+$여기 <빵종류:MENU>말해봐			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 종류말해봐			
+$여기 <종류:MENU>말해봐			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 음료종류말해봐			
+$여기 <음료종류:MENU>말해봐			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 커피종류말해봐			
+$여기 <커피종류:MENU>말해봐			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 식사종류말해봐			
+$여기 <식사종류:MENU>말해봐			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 에이드종류말해봐			
+$여기 <에이드종류:MENU>말해봐			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 여기 사이드메뉴없니?			
+$여기 사이드<메뉴:MENU>없니?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 여기 사이드 메뉴없니?			
+$여기 사이드 <메뉴:MENU>없니?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 여기 빵종류없니?			
+$여기 <빵종류:MENU>없니?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 여기 종류없니?			
+$여기 <종류:MENU>없니?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 여기 음료종류없니?			
+$여기 <음료종류:MENU>없니?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 여기 커피종류없니?			
+$여기 <커피종류:MENU>없니?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 여기 식사종류없니?			
+$여기 <식사종류:MENU>없니?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 여기 에이드종류없니?			
+$여기 <에이드종류:MENU>없니?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 여기 사이드메뉴없어?			
+$여기 사이드<메뉴:MENU>없어?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없어	NNP	O
+5	?	SF	O
+			
+; 여기 사이드 메뉴없어?			
+$여기 사이드 <메뉴:MENU>없어?			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없어	NNP	O
+5	?	SF	O
+			
+; 여기 빵종류없어?			
+$여기 <빵종류:MENU>없어?			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 종류없어?			
+$여기 <종류:MENU>없어?			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 음료종류없어?			
+$여기 <음료종류:MENU>없어?			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 커피종류없어?			
+$여기 <커피종류:MENU>없어?			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 식사종류없어?			
+$여기 <식사종류:MENU>없어?			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 에이드종류없어?			
+$여기 <에이드종류:MENU>없어?			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 여기 사이드메뉴 말해봐			
+$여기 사이드<메뉴:MENU> 말해봐			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 여기 사이드 메뉴 말해봐			
+$여기 사이드 <메뉴:MENU> 말해봐			
+1	여기	NP	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 여기 빵종류 말해봐			
+$여기 <빵종류:MENU> 말해봐			
+1	여기	NP	O
+2	빵종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 종류 말해봐			
+$여기 <종류:MENU> 말해봐			
+1	여기	NP	O
+2	종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 음료종류 말해봐			
+$여기 <음료종류:MENU> 말해봐			
+1	여기	NP	O
+2	음료종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 커피종류 말해봐			
+$여기 <커피종류:MENU> 말해봐			
+1	여기	NP	O
+2	커피종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 식사종류 말해봐			
+$여기 <식사종류:MENU> 말해봐			
+1	여기	NP	O
+2	식사종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 에이드종류 말해봐			
+$여기 <에이드종류:MENU> 말해봐			
+1	여기	NP	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 전체 사이드메뉴			
+$전체 사이드<메뉴:MENU>			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+			
+; 전체 사이드 메뉴			
+$전체 사이드 <메뉴:MENU>			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+			
+; 전체 빵종류			
+$전체 <빵종류:MENU>			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+			
+; 전체 종류			
+$전체 <종류:MENU>			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+			
+; 전체 음료종류			
+$전체 <음료종류:MENU>			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+			
+; 전체 커피종류			
+$전체 <커피종류:MENU>			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+			
+; 전체 식사종류			
+$전체 <식사종류:MENU>			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+			
+; 전체 에이드종류			
+$전체 <에이드종류:MENU>			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+			
+; 전체 사이드메뉴?			
+$전체 사이드<메뉴:MENU>?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	?	SF	O
+			
+; 전체 사이드 메뉴?			
+$전체 사이드 <메뉴:MENU>?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	?	SF	O
+			
+; 전체 빵종류?			
+$전체 <빵종류:MENU>?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	?	SF	O
+			
+; 전체 종류?			
+$전체 <종류:MENU>?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	?	SF	O
+			
+; 전체 음료종류?			
+$전체 <음료종류:MENU>?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	?	SF	O
+			
+; 전체 커피종류?			
+$전체 <커피종류:MENU>?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	?	SF	O
+			
+; 전체 식사종류?			
+$전체 <식사종류:MENU>?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	?	SF	O
+			
+; 전체 에이드종류?			
+$전체 <에이드종류:MENU>?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	?	SF	O
+			
+; 전체 사이드메뉴는 뭐 있어?			
+$전체 사이드<메뉴:MENU>는 뭐 있어?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 전체 사이드 메뉴는 뭐 있어?			
+$전체 사이드 <메뉴:MENU>는 뭐 있어?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 전체 빵종류는 뭐 있어?			
+$전체 <빵종류:MENU>는 뭐 있어?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 종류는 뭐 있어?			
+$전체 <종류:MENU>는 뭐 있어?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 음료종류는 뭐 있어?			
+$전체 <음료종류:MENU>는 뭐 있어?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 커피종류는 뭐 있어?			
+$전체 <커피종류:MENU>는 뭐 있어?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 식사종류는 뭐 있어?			
+$전체 <식사종류:MENU>는 뭐 있어?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	는	JX	O
+4	뭐	NP	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 에이드종류는 뭐 있어?			
+$전체 <에이드종류:MENU>는 뭐 있어?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	는	JX	O
+5	뭐	NP	O
+6	있	VX	O
+7	어	EF	O
+8	?	SF	O
+			
+; 전체 사이드메뉴는?			
+$전체 사이드<메뉴:MENU>는?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 전체 사이드 메뉴는?			
+$전체 사이드 <메뉴:MENU>는?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 전체 빵종류는?			
+$전체 <빵종류:MENU>는?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 전체 종류는?			
+$전체 <종류:MENU>는?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 전체 음료종류는?			
+$전체 <음료종류:MENU>는?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 전체 커피종류는?			
+$전체 <커피종류:MENU>는?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 전체 식사종류는?			
+$전체 <식사종류:MENU>는?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	는	JX	O
+4	?	SF	O
+			
+; 전체 에이드종류는?			
+$전체 <에이드종류:MENU>는?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	는	JX	O
+5	?	SF	O
+			
+; 전체 사이드메뉴 다 돼?			
+$전체 사이드<메뉴:MENU> 다 돼?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 사이드 메뉴 다 돼?			
+$전체 사이드 <메뉴:MENU> 다 돼?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 빵종류 다 돼?			
+$전체 <빵종류:MENU> 다 돼?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 종류 다 돼?			
+$전체 <종류:MENU> 다 돼?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 음료종류 다 돼?			
+$전체 <음료종류:MENU> 다 돼?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 커피종류 다 돼?			
+$전체 <커피종류:MENU> 다 돼?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 식사종류 다 돼?			
+$전체 <식사종류:MENU> 다 돼?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 에이드종류 다 돼?			
+$전체 <에이드종류:MENU> 다 돼?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 사이드메뉴 다 되지?			
+$전체 사이드<메뉴:MENU> 다 되지?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 전체 사이드 메뉴 다 되지?			
+$전체 사이드 <메뉴:MENU> 다 되지?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 전체 빵종류 다 되지?			
+$전체 <빵종류:MENU> 다 되지?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 전체 종류 다 되지?			
+$전체 <종류:MENU> 다 되지?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 전체 음료종류 다 되지?			
+$전체 <음료종류:MENU> 다 되지?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 전체 커피종류 다 되지?			
+$전체 <커피종류:MENU> 다 되지?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 전체 식사종류 다 되지?			
+$전체 <식사종류:MENU> 다 되지?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	다	MAG	O
+4	되	VV	O
+5	지	EF	O
+6	?	SF	O
+			
+; 전체 에이드종류 다 되지?			
+$전체 <에이드종류:MENU> 다 되지?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	다	MAG	O
+5	되	VV	O
+6	지	EF	O
+7	?	SF	O
+			
+; 전체 사이드메뉴도 있어?			
+$전체 사이드<메뉴:MENU>도 있어?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 사이드 메뉴도 있어?			
+$전체 사이드 <메뉴:MENU>도 있어?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 빵종류도 있어?			
+$전체 <빵종류:MENU>도 있어?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 종류도 있어?			
+$전체 <종류:MENU>도 있어?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 음료종류도 있어?			
+$전체 <음료종류:MENU>도 있어?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 커피종류도 있어?			
+$전체 <커피종류:MENU>도 있어?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 식사종류도 있어?			
+$전체 <식사종류:MENU>도 있어?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 에이드종류도 있어?			
+$전체 <에이드종류:MENU>도 있어?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 사이드메뉴도 있나?			
+$전체 사이드<메뉴:MENU>도 있나?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 전체 사이드 메뉴도 있나?			
+$전체 사이드 <메뉴:MENU>도 있나?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 전체 빵종류도 있나?			
+$전체 <빵종류:MENU>도 있나?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 전체 종류도 있나?			
+$전체 <종류:MENU>도 있나?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 전체 음료종류도 있나?			
+$전체 <음료종류:MENU>도 있나?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 전체 커피종류도 있나?			
+$전체 <커피종류:MENU>도 있나?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 전체 식사종류도 있나?			
+$전체 <식사종류:MENU>도 있나?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	도	JX	O
+4	있	VX	O
+5	나	EF	O
+6	?	SF	O
+			
+; 전체 에이드종류도 있나?			
+$전체 <에이드종류:MENU>도 있나?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	도	JX	O
+5	있	VX	O
+6	나	EF	O
+7	?	SF	O
+			
+; 전체 사이드메뉴 뭐 있지?			
+$전체 사이드<메뉴:MENU> 뭐 있지?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 전체 사이드 메뉴 뭐 있지?			
+$전체 사이드 <메뉴:MENU> 뭐 있지?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 전체 빵종류 뭐 있지?			
+$전체 <빵종류:MENU> 뭐 있지?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 전체 종류 뭐 있지?			
+$전체 <종류:MENU> 뭐 있지?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 전체 음료종류 뭐 있지?			
+$전체 <음료종류:MENU> 뭐 있지?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 전체 커피종류 뭐 있지?			
+$전체 <커피종류:MENU> 뭐 있지?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 전체 식사종류 뭐 있지?			
+$전체 <식사종류:MENU> 뭐 있지?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	뭐	NP	O
+4	있	VX	O
+5	지	EF	O
+6	?	SF	O
+			
+; 전체 에이드종류 뭐 있지?			
+$전체 <에이드종류:MENU> 뭐 있지?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	뭐	NP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 전체 사이드메뉴봐봐			
+$전체 사이드<메뉴:MENU>봐봐			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 사이드 메뉴봐봐			
+$전체 사이드 <메뉴:MENU>봐봐			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 빵종류봐봐			
+$전체 <빵종류:MENU>봐봐			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 전체 종류봐봐			
+$전체 <종류:MENU>봐봐			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 전체 음료종류봐봐			
+$전체 <음료종류:MENU>봐봐			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 전체 커피종류봐봐			
+$전체 <커피종류:MENU>봐봐			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 전체 식사종류봐봐			
+$전체 <식사종류:MENU>봐봐			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 전체 에이드종류봐봐			
+$전체 <에이드종류:MENU>봐봐			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 사이드메뉴 봐봐			
+$전체 사이드<메뉴:MENU> 봐봐			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 사이드 메뉴 봐봐			
+$전체 사이드 <메뉴:MENU> 봐봐			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 빵종류 봐봐			
+$전체 <빵종류:MENU> 봐봐			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 전체 종류 봐봐			
+$전체 <종류:MENU> 봐봐			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 전체 음료종류 봐봐			
+$전체 <음료종류:MENU> 봐봐			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 전체 커피종류 봐봐			
+$전체 <커피종류:MENU> 봐봐			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 전체 식사종류 봐봐			
+$전체 <식사종류:MENU> 봐봐			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	보	VV	O
+4	아	EC	O
+5	보	VX	O
+6	아	EC	O
+			
+; 전체 에이드종류 봐봐			
+$전체 <에이드종류:MENU> 봐봐			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	보	VV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 사이드메뉴 부탁해			
+$전체 사이드<메뉴:MENU> 부탁해			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 전체 사이드 메뉴 부탁해			
+$전체 사이드 <메뉴:MENU> 부탁해			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 전체 빵종류 부탁해			
+$전체 <빵종류:MENU> 부탁해			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 전체 종류 부탁해			
+$전체 <종류:MENU> 부탁해			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 전체 음료종류 부탁해			
+$전체 <음료종류:MENU> 부탁해			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 전체 커피종류 부탁해			
+$전체 <커피종류:MENU> 부탁해			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 전체 식사종류 부탁해			
+$전체 <식사종류:MENU> 부탁해			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	부탁	NNG	O
+4	하	XSV	O
+5	아	EC	O
+			
+; 전체 에이드종류 부탁해			
+$전체 <에이드종류:MENU> 부탁해			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	부탁	NNG	O
+5	하	XSV	O
+6	아	EC	O
+			
+; 전체 사이드메뉴 어떤게 있나?			
+$전체 사이드<메뉴:MENU> 어떤게 있나?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 전체 사이드 메뉴 어떤게 있나?			
+$전체 사이드 <메뉴:MENU> 어떤게 있나?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 전체 빵종류 어떤게 있나?			
+$전체 <빵종류:MENU> 어떤게 있나?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 전체 종류 어떤게 있나?			
+$전체 <종류:MENU> 어떤게 있나?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 전체 음료종류 어떤게 있나?			
+$전체 <음료종류:MENU> 어떤게 있나?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 전체 커피종류 어떤게 있나?			
+$전체 <커피종류:MENU> 어떤게 있나?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 전체 식사종류 어떤게 있나?			
+$전체 <식사종류:MENU> 어떤게 있나?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 전체 에이드종류 어떤게 있나?			
+$전체 <에이드종류:MENU> 어떤게 있나?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	나	EF	O
+9	?	SF	O
+			
+; 전체 사이드메뉴 어떤게 있지?			
+$전체 사이드<메뉴:MENU> 어떤게 있지?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 전체 사이드 메뉴 어떤게 있지?			
+$전체 사이드 <메뉴:MENU> 어떤게 있지?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 전체 빵종류 어떤게 있지?			
+$전체 <빵종류:MENU> 어떤게 있지?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 전체 종류 어떤게 있지?			
+$전체 <종류:MENU> 어떤게 있지?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 전체 음료종류 어떤게 있지?			
+$전체 <음료종류:MENU> 어떤게 있지?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 전체 커피종류 어떤게 있지?			
+$전체 <커피종류:MENU> 어떤게 있지?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 전체 식사종류 어떤게 있지?			
+$전체 <식사종류:MENU> 어떤게 있지?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	어떻	VA	O
+4	ㄴ	ETM	O
+5	게	EC	O
+6	있	VX	O
+7	지	EF	O
+8	?	SF	O
+			
+; 전체 에이드종류 어떤게 있지?			
+$전체 <에이드종류:MENU> 어떤게 있지?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	ㄴ	ETM	O
+6	게	EC	O
+7	있	VX	O
+8	지	EF	O
+9	?	SF	O
+			
+; 전체 사이드메뉴 어떻게 돼?			
+$전체 사이드<메뉴:MENU> 어떻게 돼?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 전체 사이드 메뉴 어떻게 돼?			
+$전체 사이드 <메뉴:MENU> 어떻게 돼?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 전체 빵종류 어떻게 돼?			
+$전체 <빵종류:MENU> 어떻게 돼?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 종류 어떻게 돼?			
+$전체 <종류:MENU> 어떻게 돼?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 음료종류 어떻게 돼?			
+$전체 <음료종류:MENU> 어떻게 돼?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 커피종류 어떻게 돼?			
+$전체 <커피종류:MENU> 어떻게 돼?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 식사종류 어떻게 돼?			
+$전체 <식사종류:MENU> 어떻게 돼?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	어떻	VA	O
+4	게	EC	O
+5	되	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 전체 에이드종류 어떻게 돼?			
+$전체 <에이드종류:MENU> 어떻게 돼?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	어떻	VA	O
+5	게	EC	O
+6	되	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 전체 사이드메뉴 없니?			
+$전체 사이드<메뉴:MENU> 없니?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 전체 사이드 메뉴 없니?			
+$전체 사이드 <메뉴:MENU> 없니?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 전체 빵종류 없니?			
+$전체 <빵종류:MENU> 없니?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 전체 종류 없니?			
+$전체 <종류:MENU> 없니?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 전체 음료종류 없니?			
+$전체 <음료종류:MENU> 없니?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 전체 커피종류 없니?			
+$전체 <커피종류:MENU> 없니?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 전체 식사종류 없니?			
+$전체 <식사종류:MENU> 없니?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 전체 에이드종류 없니?			
+$전체 <에이드종류:MENU> 없니?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 전체 사이드메뉴 없어?			
+$전체 사이드<메뉴:MENU> 없어?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 사이드 메뉴 없어?			
+$전체 사이드 <메뉴:MENU> 없어?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 빵종류 없어?			
+$전체 <빵종류:MENU> 없어?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 전체 종류 없어?			
+$전체 <종류:MENU> 없어?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 전체 음료종류 없어?			
+$전체 <음료종류:MENU> 없어?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 전체 커피종류 없어?			
+$전체 <커피종류:MENU> 없어?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 전체 식사종류 없어?			
+$전체 <식사종류:MENU> 없어?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 전체 에이드종류 없어?			
+$전체 <에이드종류:MENU> 없어?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 전체 사이드메뉴전부야?			
+$전체 사이드<메뉴:MENU>전부야?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 전체 사이드 메뉴전부야?			
+$전체 사이드 <메뉴:MENU>전부야?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 전체 빵종류전부야?			
+$전체 <빵종류:MENU>전부야?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 전체 종류전부야?			
+$전체 <종류:MENU>전부야?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 전체 음료종류전부야?			
+$전체 <음료종류:MENU>전부야?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 전체 커피종류전부야?			
+$전체 <커피종류:MENU>전부야?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 전체 식사종류전부야?			
+$전체 <식사종류:MENU>전부야?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	전부	NNG	O
+4	야	JKV	O
+5	?	SF	O
+			
+; 전체 에이드종류전부야?			
+$전체 <에이드종류:MENU>전부야?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	전부	NNG	O
+5	야	JKV	O
+6	?	SF	O
+			
+; 전체 에이드종류말해줘			
+$전체 <에이드종류:MENU>말해줘			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	주	VX	O
+8	어	EC	O
+			
+; 전체 사이드메뉴말해봐			
+$전체 사이드<메뉴:MENU>말해봐			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 전체 사이드 메뉴말해봐			
+$전체 사이드 <메뉴:MENU>말해봐			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 전체 빵종류말해봐			
+$전체 <빵종류:MENU>말해봐			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 종류말해봐			
+$전체 <종류:MENU>말해봐			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 음료종류말해봐			
+$전체 <음료종류:MENU>말해봐			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 커피종류말해봐			
+$전체 <커피종류:MENU>말해봐			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 식사종류말해봐			
+$전체 <식사종류:MENU>말해봐			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	말	NNG	O
+4	하	XSV	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 전체 에이드종류말해봐			
+$전체 <에이드종류:MENU>말해봐			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 전체 사이드메뉴없니?			
+$전체 사이드<메뉴:MENU>없니?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 전체 사이드 메뉴없니?			
+$전체 사이드 <메뉴:MENU>없니?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 전체 빵종류없니?			
+$전체 <빵종류:MENU>없니?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 전체 종류없니?			
+$전체 <종류:MENU>없니?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 전체 음료종류없니?			
+$전체 <음료종류:MENU>없니?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 전체 커피종류없니?			
+$전체 <커피종류:MENU>없니?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 전체 식사종류없니?			
+$전체 <식사종류:MENU>없니?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	니	EF	O
+5	?	SF	O
+			
+; 전체 에이드종류없니?			
+$전체 <에이드종류:MENU>없니?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	니	EF	O
+6	?	SF	O
+			
+; 전체 사이드메뉴없어?			
+$전체 사이드<메뉴:MENU>없어?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없어	NNP	O
+5	?	SF	O
+			
+; 전체 사이드 메뉴없어?			
+$전체 사이드 <메뉴:MENU>없어?			
+1	전체	NNG	O
+2	사이드	NNP	O
+3	메뉴	NNP	B_MENU
+4	없어	NNP	O
+5	?	SF	O
+			
+; 전체 빵종류없어?			
+$전체 <빵종류:MENU>없어?			
+1	전체	NNG	O
+2	빵종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 전체 종류없어?			
+$전체 <종류:MENU>없어?			
+1	전체	NNG	O
+2	종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 전체 음료종류없어?			
+$전체 <음료종류:MENU>없어?			
+1	전체	NNG	O
+2	음료종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 전체 커피종류없어?			
+$전체 <커피종류:MENU>없어?			
+1	전체	NNG	O
+2	커피종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 전체 식사종류없어?			
+$전체 <식사종류:MENU>없어?			
+1	전체	NNG	O
+2	식사종류	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 전체 에이드종류없어?			
+$전체 <에이드종류:MENU>없어?			
+1	전체	NNG	O
+2	에이드	NNG	O
+3	종류	NNG	B_MENU
+4	없	VA	O
+5	어	EF	O
+6	?	SF	O
+			
+; 메뉴			
+$<메뉴:MENU>			
+1	메뉴	NNP	B_MENU
+			
+; 메뉴판			
+$<메뉴판:MENU>			
+1	메뉴판	NNG	B_MENU
+			
+; 여기 메뉴판주세요			
+$여기 <메뉴판:MENU>주세요			
+1	여기	NP	O
+2	메뉴판	NNG	B_MENU
+3	주	VV	O
+4	시	EP	O
+5	어요	EC	O
+			
+; 메뉴판없어?			
+$<메뉴판:MENU>없어?			
+1	메뉴판	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 메뉴판 없어?			
+$<메뉴판:MENU> 없어?			
+1	메뉴판	NNG	B_MENU
+2	없	VA	O
+3	어	EF	O
+4	?	SF	O
+			
+; 메뉴판 없냐?			
+$<메뉴판:MENU> 없냐?			
+1	메뉴판	NNG	B_MENU
+2	없	VA	O
+3	냐	EF	O
+4	?	SF	O
+			
+; 메뉴판 없니?			
+$<메뉴판:MENU> 없니?			
+1	메뉴판	NNG	B_MENU
+2	없	VA	O
+3	니	EF	O
+4	?	SF	O
+			
+; 메뉴판 보고			
+$<메뉴판:MENU> 보고			
+1	메뉴판	NNG	B_MENU
+2	보	VV	O
+3	고	EC	O
+			
+; 메뉴판 보고 주문할게			
+$<메뉴판:MENU> 보고 주문할게			
+1	메뉴판	NNG	B_MENU
+2	보	VV	O
+3	고	EC	O
+4	주문	NNG	O
+5	하	XSV	O
+6	ㄹ게	EC	O
+			
+; 메뉴판 봐야 주문하지			
+$<메뉴판:MENU> 봐야 주문하지			
+1	메뉴판	NNG	B_MENU
+2	보	VV	O
+3	아야	EC	O
+4	주문	NNG	O
+5	하	XSV	O
+6	지	EC	O
+			
+; 메뉴판을 줘봐봐			
+$<메뉴판:MENU>을 줘봐봐			
+1	메뉴판	NNG	B_MENU
+2	을	JKO	O
+3	주	VX	O
+4	어	EC	O
+5	보	VX	O
+6	아	EC	O
+7	보	VX	O
+8	아	EC	O
+			
+; 메뉴판이 어딨어?			
+$<메뉴판:MENU>이 어딨어?			
+1	메뉴판	NNG	B_MENU
+2	이	JKS	O
+3	어딨어?	NA	O
+			
+; 메뉴판 어딨냐?			
+$<메뉴판:MENU> 어딨냐?			
+1	메뉴판	NNG	B_MENU
+2	어딨냐?	NA	O
+			
+; 메뉴판 이게 끝이야?			
+$<메뉴판:MENU> 이게 끝이야?			
+1	메뉴판	NNG	B_MENU
+2	이	VV	O
+3	게	EC	O
+4	끝	NNG	O
+5	이	VCP	O
+6	야	EF	O
+7	?	SF	O
+			
+; 메뉴판 올려줘			
+$<메뉴판:MENU> 올려줘			
+1	메뉴판	NNG	B_MENU
+2	올리	VV	O
+3	어	EC	O
+4	주	VX	O
+5	어	EC	O
+			
+; 여기 메뉴판 없어?			
+$여기 <메뉴판:MENU> 없어?			
+1	여기	NP	O
+2	메뉴판	NNG	B_MENU
+3	없	VA	O
+4	어	EF	O
+5	?	SF	O
+			
+; 여기 메뉴판이 없나?			
+$여기 <메뉴판:MENU>이 없나?			
+1	여기	NP	O
+2	메뉴판	NNG	B_MENU
+3	이	JKS	O
+4	없	VA	O
+5	나	EF	O
+6	?	SF	O
+			
+; 여기는 메뉴판이 없나?			
+$여기는 <메뉴판:MENU>이 없나?			
+1	여기	NP	O
+2	는	JX	O
+3	메뉴판	NNG	B_MENU
+4	이	JKS	O
+5	없	VA	O
+6	나	EF	O
+7	?	SF	O
+			
+; 메뉴판을 줘야 주문하지			
+$<메뉴판:MENU>을 줘야 주문하지			
+1	메뉴판	NNG	B_MENU
+2	을	JKO	O
+3	주	VX	O
+4	어야	EC	O
+5	주문	NNG	O
+6	하	XSV	O
+7	지	EC	O
+			
+; 메뉴판을 줘야 주문하던 말던하지			
+$<메뉴판:MENU>을 줘야 주문하던 말던하지			
+1	메뉴판	NNG	B_MENU
+2	을	JKO	O
+3	주	VX	O
+4	어야	EC	O
+5	주문	NNG	O
+6	하	XSV	O
+7	던	ETM	O
+8	말	VX	O
+9	던	ETM	O
+10	하지	NNP	O
+			
+; 메뉴판 확인			
+$<메뉴판:MENU> 확인			
+1	메뉴판	NNG	B_MENU
+2	확인	NNG	O
+			
+; 메뉴판 확인할게요			
+$<메뉴판:MENU> 확인할게요			
+1	메뉴판	NNG	B_MENU
+2	확인	NNG	O
+3	하	XSV	O
+4	ㄹ게요	EC	O
+			
+; 메뉴판 좀 확인할게요			
+$<메뉴판:MENU> 좀 확인할게요			
+1	메뉴판	NNG	B_MENU
+2	좀	MAG	O
+3	확인	NNG	O
+4	하	XSV	O
+5	ㄹ게요	EC	O
+			
+; 메뉴판을 보고싶어			
+$<메뉴판:MENU>을 보고싶어			
+1	메뉴판	NNG	B_MENU
+2	을	JKO	O
+3	보	VV	O
+4	고	EC	O
+5	싶	VX	O
+6	어	EC	O
+			
+; 메뉴판 좀 보자			
+$<메뉴판:MENU> 좀 보자			
+1	메뉴판	NNG	B_MENU
+2	좀	MAG	O
+3	보	VV	O
+4	자	EC	O
+			
+; 메뉴판을 주고 말할래?			
+$<메뉴판:MENU>을 주고 말할래?			
+1	메뉴판	NNG	B_MENU
+2	을	JKO	O
+3	주	VX	O
+4	고	EC	O
+5	말	NNG	O
+6	하	XSV	O
+7	ㄹ래	EF	O
+8	?	SF	O
+			
+; 메뉴판 좀 주세요			
+$<메뉴판:MENU> 좀 주세요			
+1	메뉴판	NNG	B_MENU
+2	좀	MAG	O
+3	주	VX	O
+4	시	EP	O
+5	어요	EC	O
+			
+; 메뉴판 요구			
+$<메뉴판:MENU> 요구			
+1	메뉴판	NNG	B_MENU
+2	요구	NNG	O
+			
+; 메뉴판이 안보여			
+$<메뉴판:MENU>이 안보여			
+1	메뉴판	NNG	B_MENU
+2	이	JKS	O
+3	안보	NNG	O
+4	이	VCP	O
+5	어	EC	O
+			
+; 메뉴판에 빵종류가 뭐야?			
+$<메뉴판:MENU>에 빵종류가 뭐야?			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	B_MENU
+3	빵종류	NNG	O
+4	가	JKS	O
+5	뭐	NP	O
+6	야	JKV	O
+7	?	SF	O
+			
+; 메뉴판에 종류가 뭐있어?			
+$<메뉴판:MENU>에 종류가 뭐있어?			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	B_MENU
+3	종류	NNG	O
+4	가	JKS	O
+5	뭐	NP	O
+6	있	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 메뉴판 에이드 종류			
+$<메뉴판:MENU> 에이드 종류			
+1	메뉴판	NNG	B_MENU
+2	에이드	NNG	B_MENU
+3	종류	NNG	O
+			
+; 메뉴판에 있는 종류 뭐있어?			
+$<메뉴판:MENU>에 있는 종류 뭐있어?			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	O
+3	있	VV	O
+4	는	ETM	B_MENU
+5	종류	NNG	O
+6	뭐	NP	O
+7	있	VV	O
+8	어	EF	O
+9	?	SF	O
+			
+; 메뉴판에 빵종류가 뭐있어?			
+$<메뉴판:MENU>에 빵종류가 뭐있어?			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	B_MENU
+3	빵종류	NNG	O
+4	가	JKS	O
+5	뭐	NP	O
+6	있	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 메뉴판에 에이드 종류가 뭐있어?			
+$<메뉴판:MENU>에 에이드 종류가 뭐있어?			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	O
+3	에이드	NNG	B_MENU
+4	종류	NNG	O
+5	가	JKS	O
+6	뭐	NP	O
+7	있	VV	O
+8	어	EF	O
+9	?	SF	O
+			
+; 메뉴판에 식사종류 뭐있어?			
+$<메뉴판:MENU>에 식사종류 뭐있어?			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	B_MENU
+3	식사종류	NNG	O
+4	뭐	NP	O
+5	있	VV	O
+6	어	EF	O
+7	?	SF	O
+			
+; 메뉴판에 사이드메뉴 뭐있어?			
+$<메뉴판:MENU>에 사이드메뉴 뭐있어?			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	O
+3	사이드	NNP	B_MENU
+4	메뉴	NNP	O
+5	뭐	NP	O
+6	있	VV	O
+7	어	EF	O
+8	?	SF	O
+			
+; 메뉴판 브리핑			
+$<메뉴판:MENU> 브리핑			
+1	메뉴판	NNG	B_MENU
+2	브리핑	NNG	O
+			
+; 메뉴판 띄워줄래?			
+$<메뉴판:MENU> 띄워줄래?			
+1	메뉴판	NNG	B_MENU
+2	띄우	VV	O
+3	어	EC	O
+4	주	VX	O
+5	ㄹ래	EF	O
+6	?	SF	O
+			
+; 메뉴판 띄워봐봐			
+$<메뉴판:MENU> 띄워봐봐			
+1	메뉴판	NNG	B_MENU
+2	띄우	VV	O
+3	어	EC	O
+4	보	VX	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 오늘 메뉴판 어딨어?			
+$오늘 <메뉴판:MENU> 어딨어?			
+1	오늘	NNG	O
+2	메뉴판	NNG	B_MENU
+3	어딨어?	NA	O
+			
+; 메뉴판!			
+$<메뉴판:MENU>!			
+1	메뉴판	NNG	B_MENU
+2	!	SF	O
+			
+; 메뉴판 있어?			
+$<메뉴판:MENU> 있어?			
+1	메뉴판	NNG	B_MENU
+2	있	VX	O
+3	어	EF	O
+4	?	SF	O
+			
+; 혹시 메뉴판 있어?			
+$혹시 <메뉴판:MENU> 있어?			
+1	혹시	MAG	O
+2	메뉴판	NNG	B_MENU
+3	있	VX	O
+4	어	EF	O
+5	?	SF	O
+			
+; 혹시 메뉴판 있나?			
+$혹시 <메뉴판:MENU> 있나?			
+1	혹시	MAG	O
+2	메뉴판	NNG	B_MENU
+3	있	VX	O
+4	나	EF	O
+5	?	SF	O
+			
+; 메뉴판 정리된거 있나?			
+$<메뉴판:MENU> 정리된거 있나?			
+1	메뉴판	NNG	B_MENU
+2	정리	NNG	O
+3	되	XSV	O
+4	ㄴ	ETM	O
+5	거	NNB	O
+6	있	VX	O
+7	나	EF	O
+8	?	SF	O
+			
+; 메뉴판 그림있나?			
+$<메뉴판:MENU> 그림있나?			
+1	메뉴판	NNG	B_MENU
+2	그림	NNG	O
+3	있	VV	O
+4	나	EF	O
+5	?	SF	O
+			
+; 메뉴판 그림으로 된거 있어?			
+$<메뉴판:MENU> 그림으로 된거 있어?			
+1	메뉴판	NNG	B_MENU
+2	그림	NNG	O
+3	으로	JKB	O
+4	되	VV	O
+5	ㄴ	ETM	O
+6	거	NNB	O
+7	있	VX	O
+8	어	EF	O
+9	?	SF	O
+			
+; 메뉴판에 빵종류 있어?			
+$<메뉴판:MENU>에 빵종류 있어?			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	B_MENU
+3	빵종류	NNG	O
+4	있	VX	O
+5	어	EF	O
+6	?	SF	O
+			
+; 메뉴판에 사이드메뉴 없나?			
+$<메뉴판:MENU>에 사이드메뉴 없나?			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	O
+3	사이드	NNP	B_MENU
+4	메뉴	NNP	O
+5	없	VA	O
+6	나	EF	O
+7	?	SF	O
+			
+; 메뉴판에 사이드메뉴 있지?			
+$<메뉴판:MENU>에 사이드메뉴 있지?			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	O
+3	사이드	NNP	B_MENU
+4	메뉴	NNP	O
+5	있	VX	O
+6	지	EF	O
+7	?	SF	O
+			
+; 메뉴판 띄워주는 것 부탁해			
+$<메뉴판:MENU> 띄워주는 것 부탁해			
+1	메뉴판	NNG	B_MENU
+2	띄우	VV	O
+3	어	EC	O
+4	주	VX	O
+5	는	ETM	O
+6	것	NNB	O
+7	부탁	NNG	O
+8	하	XSV	O
+9	아	EC	O
+			
+; 메뉴판 좀 부탁할게			
+$<메뉴판:MENU> 좀 부탁할게			
+1	메뉴판	NNG	B_MENU
+2	좀	MAG	O
+3	부탁	NNG	O
+4	하	XSV	O
+5	ㄹ게	EC	O
+			
+; 메뉴판 좀 꺼내줘			
+$<메뉴판:MENU> 좀 꺼내줘			
+1	메뉴판	NNG	B_MENU
+2	좀	MAG	O
+3	꺼내	VV	O
+4	어	EC	O
+5	주	VX	O
+6	어	EC	O
+			
+; 메뉴판 주세요			
+$<메뉴판:MENU> 주세요			
+1	메뉴판	NNG	B_MENU
+2	주	VX	O
+3	시	EP	O
+4	어요	EC	O
+			
+; 메뉴판 꺼내주세요			
+$<메뉴판:MENU> 꺼내주세요			
+1	메뉴판	NNG	B_MENU
+2	꺼내	VV	O
+3	어	EC	O
+4	주	VX	O
+5	시	EP	O
+6	어요	EC	O
+			
+; 메뉴판 보여주세요			
+$<메뉴판:MENU> 보여주세요			
+1	메뉴판	NNG	B_MENU
+2	보이	VV	O
+3	어	EC	O
+4	주	VX	O
+5	시	EP	O
+6	어요	EC	O
+			
+; 메뉴판 부탁합니다			
+$<메뉴판:MENU> 부탁합니다			
+1	메뉴판	NNG	B_MENU
+2	부탁	NNG	O
+3	하	XSV	O
+4	ㅂ니다	EC	O
+			
+; 메뉴판 달라고!			
+$<메뉴판:MENU> 달라고!			
+1	메뉴판	NNG	B_MENU
+2	달	VX	O
+3	라고	EF	O
+4	!	SF	O
+			
+; 메뉴판을 달라!			
+$<메뉴판:MENU>을 달라!			
+1	메뉴판	NNG	B_MENU
+2	을	JKO	O
+3	다르	VA	O
+4	아	EF	O
+5	!	SF	O
+			
+; 메뉴판이 안보여요			
+$<메뉴판:MENU>이 안보여요			
+1	메뉴판	NNG	B_MENU
+2	이	JKS	O
+3	안보	NNG	O
+4	이	VCP	O
+5	어요	EC	O
+			
+; 메뉴판 줄 수 있어?			
+$<메뉴판:MENU> 줄 수 있어?			
+1	메뉴판	NNG	B_MENU
+2	주	VX	O
+3	ㄹ	ETM	O
+4	수	NNB	O
+5	있	VX	O
+6	어	EF	O
+7	?	SF	O
+			
+; 여기 메뉴판 있나?			
+$여기 <메뉴판:MENU> 있나?			
+1	여기	NP	O
+2	메뉴판	NNG	B_MENU
+3	있	VX	O
+4	나	EF	O
+5	?	SF	O
+			
+; 카페 메뉴판 있나?			
+$카페 <메뉴판:MENU> 있나?			
+1	카페	NNG	O
+2	메뉴판	NNG	B_MENU
+3	있	VX	O
+4	나	EF	O
+5	?	SF	O
+			
+; 여기 카페는 메뉴판 어딨어?			
+$여기 카페는 <메뉴판:MENU> 어딨어?			
+1	여기	NP	O
+2	카페	NNG	O
+3	는	JX	O
+4	메뉴판	NNG	B_MENU
+5	어딨어?	NA	O
+			
+; 카페 메뉴판이 안보인다?			
+$카페 <메뉴판:MENU>이 안보인다?			
+1	카페	NNG	O
+2	메뉴판	NNG	B_MENU
+3	이	JKS	O
+4	안보	NNG	O
+5	이	VCP	O
+6	ㄴ다	EF	O
+7	?	SF	O
+			
+; 여기 카페에 메뉴판에 사이드메뉴 뭐야?			
+$여기 카페에 <메뉴판:MENU>에 사이드메뉴 뭐야?			
+1	여기	NP	O
+2	카페	NNG	O
+3	에	JKB	O
+4	메뉴판	NNG	B_MENU
+5	에	JKB	O
+6	사이드	NNP	B_MENU
+7	메뉴	NNP	O
+8	뭐	NP	O
+9	야	JKV	O
+10	?	SF	O
+			
+; 여기 카페에 메뉴판에 빵종류 뭐있어?			
+$여기 카페에 <메뉴판:MENU>에 빵종류 뭐있어?			
+1	여기	NP	O
+2	카페	NNG	O
+3	에	JKB	O
+4	메뉴판	NNG	B_MENU
+5	에	JKB	B_MENU
+6	빵종류	NNG	O
+7	뭐	NP	O
+8	있	VV	O
+9	어	EF	O
+10	?	SF	O
+			
+; 여기 카페 메뉴판에 식사종류 뭐있어?			
+$여기 카페 <메뉴판:MENU>에 식사종류 뭐있어?			
+1	여기	NP	O
+2	카페	NNG	O
+3	메뉴판	NNG	B_MENU
+4	에	JKB	B_MENU
+5	식사종류	NNG	O
+6	뭐	NP	O
+7	있	VV	O
+8	어	EF	O
+9	?	SF	O
+			
+; 여기 카페 메뉴판에 에이드종류 뭐있어?			
+$여기 카페 <메뉴판:MENU>에 에이드종류 뭐있어?			
+1	여기	NP	O
+2	카페	NNG	O
+3	메뉴판	NNG	B_MENU
+4	에	JKB	O
+5	에이드	NNG	B_MENU
+6	종류	NNG	O
+7	뭐	NP	O
+8	있	VV	O
+9	어	EF	O
+10	?	SF	O
+			
+; 메뉴판에 빵종류 말해줘			
+$<메뉴판:MENU>에 빵종류 말해줘			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	B_MENU
+3	빵종류	NNG	O
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	주	VX	O
+8	어	EC	O
+			
+; 메뉴판에 음료종류 말해줘			
+$<메뉴판:MENU>에 음료종류 말해줘			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	B_MENU
+3	음료종류	NNG	O
+4	말	NNG	O
+5	하	XSV	O
+6	아	EC	O
+7	주	VX	O
+8	어	EC	O
+			
+; 메뉴판에 에이드 종류 말해줘			
+$<메뉴판:MENU>에 에이드 종류 말해줘			
+1	메뉴판	NNG	B_MENU
+2	에	JKB	O
+3	에이드	NNG	B_MENU
+4	종류	NNG	O
+5	말	NNG	O
+6	하	XSV	O
+7	아	EC	O
+8	주	VX	O
+9	어	EC	O
+			
+; 메뉴판 보내줘			
+$<메뉴판:MENU> 보내줘			
+1	메뉴판	NNG	B_MENU
+2	보내	VV	O
+3	어	EC	O
+4	주	VX	O
+5	어	EC	O
+			
+; 메뉴판 보내줄래?			
+$<메뉴판:MENU> 보내줄래?			
+1	메뉴판	NNG	B_MENU
+2	보내	VV	O
+3	어	EC	O
+4	주	VX	O
+5	ㄹ래	EF	O
+6	?	SF	O
+			
+; 메뉴판 보내봐봐			
+$<메뉴판:MENU> 보내봐봐			
+1	메뉴판	NNG	B_MENU
+2	보내	VV	O
+3	어	EC	O
+4	보	VX	O
+5	아	EC	O
+6	보	VX	O
+7	아	EC	O
+			
+; 여기 메뉴판 보내줘			
+$여기 <메뉴판:MENU> 보내줘			
+1	여기	NP	O
+2	메뉴판	NNG	B_MENU
+3	보내	VV	O
+4	어	EC	O
+5	주	VX	O
+6	어	EC	O
+			
+; 메뉴판이 어딨을까?			
+$<메뉴판:MENU>이 어딨을까?			
+1	메뉴판	NNG	B_MENU
+2	이	JKS	O
+3	어딨을까?	NA	O
+			
+; 메뉴판 어딨지?			
+$<메뉴판:MENU> 어딨지?			
+1	메뉴판	NNG	B_MENU
+2	어딨지?	NA	O
+			
+; 메뉴판주세요			
+$<메뉴판:MENU>주세요			
+1	메뉴판	NNG	B_MENU
+2	주	VV	O
+3	시	EP	O
+4	어요	EC	O
+			

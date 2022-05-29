@@ -392,16 +392,16 @@ WIFI,FACILITY,6
 흑당 콜드브루,FOOD,1
 주문,FOOD,1
 선택,FOOD,1
-메뉴,MENU,0
 메뉴판,MENU,0
+메뉴,MENU,0
 빵종류,MENU,0
 사이드 메뉴,MENU,0
 사이드메뉴,MENU,0
 식사종류,MENU,0
 에이드종류,MENU,0
 음료종류,MENU,0
-종류,MENU,0
 커피종류,MENU,0
+종류,MENU,0
 과테말라,ORIGIN,5
 멕시코,ORIGIN,5
 베트남,ORIGIN,5

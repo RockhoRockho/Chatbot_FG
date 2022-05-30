@@ -58114,29 +58114,27 @@ $시설안내
 
 ; 월요일 몇시 까지해요?
 $월요일 몇시 까지해요?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 월요일 몇 시 까지해요?
 $월요일 몇 시 까지해요?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	월요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 월요일 몃시 까지해요?
 $월요일 몃시 까지해요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -58146,7 +58144,7 @@ $월요일 몃시 까지해요?
 
 ; 월요일 몃 시 까지해요?
 $월요일 몃 시 까지해요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -58157,7 +58155,7 @@ $월요일 몃 시 까지해요?
 
 ; 화요일 언제까지해?
 $화요일 언제까지해?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -58166,19 +58164,19 @@ $화요일 언제까지해?
 
 ; 월요일 몃시에열어요?
 $월요일 몃시에열어요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에열어요?	NA	O
 
 ; 화요일 언제마감?
 $화요일 언제마감?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	?	SF	O
 
 ; 월요일 몃시에 열어요?
 $월요일 몃시에 열어요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에	NA	O
 3	열	VV	O
 4	어요	EF	O
@@ -58186,7 +58184,7 @@ $월요일 몃시에 열어요?
 
 ; 화요일 언제 마감해?
 $화요일 언제 마감해?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -58195,18 +58193,17 @@ $화요일 언제 마감해?
 
 ; 월요일 몇시에 오픈해요?
 $월요일 몇시에 오픈해요?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 화요일 언제 마감해요?
 $화요일 언제 마감해요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -58215,18 +58212,17 @@ $화요일 언제 마감해요?
 
 ; 월요일 몇시에오픈해요?
 $월요일 몇시에오픈해요?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 화요일 언제마감해요?
 $화요일 언제마감해요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -58235,122 +58231,114 @@ $화요일 언제마감해요?
 
 ; 월요일 몇시에오픈?
 $월요일 몇시에오픈?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 화요일 타임?
 $화요일 타임?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	타임	NNP	O
 3	?	SF	O
 
 ; 월요일 몇시에 오픈?
 $월요일 몇시에 오픈?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 화요일 오픈타임?
 $화요일 오픈타임?
-1	화요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	화요일	NNG	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 월요일 몃시에오픈?
 $월요일 몃시에오픈?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에오픈?	NA	O
 
 ; 화요일 오픈 타임?
 $화요일 오픈 타임?
-1	화요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	화요일	NNG	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 월요일 몃시에 오픈?
 $월요일 몃시에 오픈?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 화요일 몇시?
 $화요일 몇시?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 월요일 몇시에오픈해?
 $월요일 몇시에오픈해?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 화요일 몇 시?
 $화요일 몇 시?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	화요일	NNG	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 월요일 몇시에 오픈해?
 $월요일 몇시에 오픈해?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 화요일 오픈?
 $화요일 오픈?
-1	화요일	NNP	O
-2	오픈	NNP	O
+1	화요일	NNG	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 월요일 타임?
 $월요일 타임?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	타임	NNP	O
 3	?	SF	O
 
 ; 화요일 몃시?
 $화요일 몃시?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시?	NA	O
 
 ; 월요일 몃시에오픈해?
 $월요일 몃시에오픈해?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에오픈해?	NA	O
 
 ; 화요일 몃 시?
 $화요일 몃 시?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	?	SF	O
 
 ; 월요일 몃시에 오픈해?
 $월요일 몃시에 오픈해?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -58359,32 +58347,30 @@ $월요일 몃시에 오픈해?
 
 ; 화요일 몇시에 열어요?
 $화요일 몇시에 열어요?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 월요일 몃시에오픈해요?
 $월요일 몃시에오픈해요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에오픈해요?	NA	O
 
 ; 화요일 몇시에열어요?
 $화요일 몇시에열어요?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 월요일 몃시에 오픈해요?
 $월요일 몃시에 오픈해요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -58393,23 +58379,22 @@ $월요일 몃시에 오픈해요?
 
 ; 화요일 몃시에열어요?
 $화요일 몃시에열어요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에열어요?	NA	O
 
 ; 월요일 몇시에 문열어요?
 $월요일 몇시에 문열어요?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 화요일 몃시에 열어요?
 $화요일 몃시에 열어요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에	NA	O
 3	열	VV	O
 4	어요	EF	O
@@ -58417,99 +58402,92 @@ $화요일 몃시에 열어요?
 
 ; 화요일 몇시에 오픈해요?
 $화요일 몇시에 오픈해요?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 화요일 몇시에오픈해요?
 $화요일 몇시에오픈해요?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 화요일 몇시에오픈?
 $화요일 몇시에오픈?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 화요일 몇시에 오픈?
 $화요일 몇시에 오픈?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 화요일 시간?
 $화요일 시간?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	시간	NNG	O
 3	?	SF	O
 
 ; 월요일 오픈타임?
 $월요일 오픈타임?
-1	월요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	월요일	NNG	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 화요일 몃시에오픈?
 $화요일 몃시에오픈?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에오픈?	NA	O
 
 ; 화요일 몃시에 오픈?
 $화요일 몃시에 오픈?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 화요일 몇시에오픈해?
 $화요일 몇시에오픈해?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 화요일 몇시에 오픈해?
 $화요일 몇시에 오픈해?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 화요일 몃시에오픈해?
 $화요일 몃시에오픈해?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에오픈해?	NA	O
 
 ; 화요일 몃시에 오픈해?
 $화요일 몃시에 오픈해?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -58518,12 +58496,12 @@ $화요일 몃시에 오픈해?
 
 ; 화요일 몃시에오픈해요?
 $화요일 몃시에오픈해요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에오픈해요?	NA	O
 
 ; 화요일 몃시에 오픈해요?
 $화요일 몃시에 오픈해요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -58532,48 +58510,44 @@ $화요일 몃시에 오픈해요?
 
 ; 화요일 몇시에 문열어요?
 $화요일 몇시에 문열어요?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 화요일 몇시에문열어요?
 $화요일 몇시에문열어요?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 화요일 오픈 시간?
 $화요일 오픈 시간?
-1	화요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+1	화요일	NNG	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 월요일 오픈 타임?
 $월요일 오픈 타임?
-1	월요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	월요일	NNG	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 화요일 몃시에문열어요?
 $화요일 몃시에문열어요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에문열어요?	NA	O
 
 ; 화요일 몃시에 문열어요?
 $화요일 몃시에 문열어요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에	NA	O
 3	문	NNG	O
 4	열	VV	O
@@ -58582,29 +58556,27 @@ $화요일 몃시에 문열어요?
 
 ; 화요일 몇시 까지해요?
 $화요일 몇시 까지해요?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 화요일 몇 시 까지해요?
 $화요일 몇 시 까지해요?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	화요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 화요일 몃시 까지해요?
 $화요일 몃시 까지해요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -58614,7 +58586,7 @@ $화요일 몃시 까지해요?
 
 ; 화요일 몃 시 까지해요?
 $화요일 몃 시 까지해요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -58625,27 +58597,25 @@ $화요일 몃 시 까지해요?
 
 ; 화요일 몇시에 닫아요?
 $화요일 몇시에 닫아요?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 화요일 몇 시에 닫아요?
 $화요일 몇 시에 닫아요?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	화요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 화요일 몃시에 닫아요?
 $화요일 몃시에 닫아요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아요	EF	O
@@ -58653,7 +58623,7 @@ $화요일 몃시에 닫아요?
 
 ; 화요일 몃 시에 닫아요?
 $화요일 몃 시에 닫아요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -58663,40 +58633,37 @@ $화요일 몃 시에 닫아요?
 
 ; 화요일 마감?
 $화요일 마감?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	마감	NNG	O
 3	?	SF	O
 
 ; 월요일 몇시?
 $월요일 몇시?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 화요일 몇시에 닫아?
 $화요일 몇시에 닫아?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 화요일 몇 시에 닫아?
 $화요일 몇 시에 닫아?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	화요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 화요일 몃시에 닫아?
 $화요일 몃시에 닫아?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아	EF	O
@@ -58704,7 +58671,7 @@ $화요일 몃시에 닫아?
 
 ; 화요일 몃 시에 닫아?
 $화요일 몃 시에 닫아?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -58714,29 +58681,27 @@ $화요일 몃 시에 닫아?
 
 ; 화요일 몇시 까지해?
 $화요일 몇시 까지해?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	화요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 화요일 몇 시 까지해?
 $화요일 몇 시 까지해?
-1	화요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	화요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 화요일 몃시 까지해?
 $화요일 몃시 까지해?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -58746,7 +58711,7 @@ $화요일 몃시 까지해?
 
 ; 화요일 몃 시 까지해?
 $화요일 몃 시 까지해?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -58757,51 +58722,49 @@ $화요일 몃 시 까지해?
 
 ; 수요일 영업시간?
 $수요일 영업시간?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	영업시간	NNG	O
 3	?	SF	O
 
 ; 수요일 오픈시간?
 $수요일 오픈시간?
-1	수요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+1	수요일	NNG	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 화요일 마감시간?
 $화요일 마감시간?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	마감시간	NNG	O
 3	?	SF	O
 
 ; 월요일 몇 시?
 $월요일 몇 시?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	월요일	NNG	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 수요일 오픈?
 $수요일 오픈?
-1	수요일	NNP	O
-2	오픈	NNP	O
+1	수요일	NNG	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 화요일 마감 시간?
 $화요일 마감 시간?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	마감	NNG	O
 3	시간	NNG	O
 4	?	SF	O
 
 ; 월요일 몃시?
 $월요일 몃시?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시?	NA	O
 
 ; 화요일 언제까지해요?
 $화요일 언제까지해요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -58810,14 +58773,14 @@ $화요일 언제까지해요?
 
 ; 월요일 몃 시?
 $월요일 몃 시?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	?	SF	O
 
 ; 화요일 언제까지 해요?
 $화요일 언제까지 해요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VX	O
@@ -58826,17 +58789,16 @@ $화요일 언제까지 해요?
 
 ; 월요일 몇시에 열어요?
 $월요일 몇시에 열어요?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 화요일 언제까지 오픈해요?
 $화요일 언제까지 오픈해요?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	오픈	NNG	O
@@ -58846,24 +58808,22 @@ $화요일 언제까지 오픈해요?
 
 ; 월요일 몇시에열어요?
 $월요일 몇시에열어요?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 월요일 오픈 시간?
 $월요일 오픈 시간?
-1	월요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+1	월요일	NNG	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 월요일 몃시 까지해?
 $월요일 몃시 까지해?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -58873,7 +58833,7 @@ $월요일 몃시 까지해?
 
 ; 월요일 몃 시 까지해?
 $월요일 몃 시 까지해?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -58884,7 +58844,7 @@ $월요일 몃 시 까지해?
 
 ; 월요일 언제까지 오픈해요?
 $월요일 언제까지 오픈해요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	오픈	NNG	O
@@ -58894,7 +58854,7 @@ $월요일 언제까지 오픈해요?
 
 ; 월요일 언제마감해요?
 $월요일 언제마감해요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -58903,7 +58863,7 @@ $월요일 언제마감해요?
 
 ; 월요일 언제 마감해요?
 $월요일 언제 마감해요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -58912,24 +58872,23 @@ $월요일 언제 마감해요?
 
 ; 월요일 몇 시 까지해?
 $월요일 몇 시 까지해?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	월요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 월요일 시간?
 $월요일 시간?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	시간	NNG	O
 3	?	SF	O
 
 ; 월요일 몃 시에 닫아?
 $월요일 몃 시에 닫아?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -58939,24 +58898,23 @@ $월요일 몃 시에 닫아?
 
 ; 월요일 몇시 까지해?
 $월요일 몇시 까지해?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 월요일 오픈?
 $월요일 오픈?
-1	월요일	NNP	O
-2	오픈	NNP	O
+1	월요일	NNG	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 월요일 언제까지 해요?
 $월요일 언제까지 해요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VX	O
@@ -58965,37 +58923,35 @@ $월요일 언제까지 해요?
 
 ; 월요일 몇시에 닫아?
 $월요일 몇시에 닫아?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 화요일 오픈시간?
 $화요일 오픈시간?
-1	화요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+1	화요일	NNG	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 월요일 마감 시간?
 $월요일 마감 시간?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	마감	NNG	O
 3	시간	NNG	O
 4	?	SF	O
 
 ; 화요일 영업시간?
 $화요일 영업시간?
-1	화요일	NNP	O
+1	화요일	NNG	O
 2	영업시간	NNG	O
 3	?	SF	O
 
 ; 월요일 언제 마감해?
 $월요일 언제 마감해?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -59004,24 +58960,23 @@ $월요일 언제 마감해?
 
 ; 월요일 몇시에 닫아요?
 $월요일 몇시에 닫아요?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 월요일 언제마감?
 $월요일 언제마감?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	?	SF	O
 
 ; 월요일 언제까지해요?
 $월요일 언제까지해요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -59030,7 +58985,7 @@ $월요일 언제까지해요?
 
 ; 월요일 언제까지해?
 $월요일 언제까지해?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -59039,19 +58994,19 @@ $월요일 언제까지해?
 
 ; 월요일 영업시간?
 $월요일 영업시간?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	영업시간	NNG	O
 3	?	SF	O
 
 ; 월요일 마감시간?
 $월요일 마감시간?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	마감시간	NNG	O
 3	?	SF	O
 
 ; 월요일 몃시에 닫아?
 $월요일 몃시에 닫아?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아	EF	O
@@ -59059,17 +59014,16 @@ $월요일 몃시에 닫아?
 
 ; 월요일 몇 시에 닫아?
 $월요일 몇 시에 닫아?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	월요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 월요일 몃시에 닫아요?
 $월요일 몃시에 닫아요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아요	EF	O
@@ -59077,23 +59031,22 @@ $월요일 몃시에 닫아요?
 
 ; 월요일 몇 시에 닫아요?
 $월요일 몇 시에 닫아요?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	월요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 월요일 마감?
 $월요일 마감?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	마감	NNG	O
 3	?	SF	O
 
 ; 월요일 몃 시에 닫아요?
 $월요일 몃 시에 닫아요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -59103,30 +59056,28 @@ $월요일 몃 시에 닫아요?
 
 ; 월요일 오픈시간?
 $월요일 오픈시간?
-1	월요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+1	월요일	NNG	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 월요일 몇시에문열어요?
 $월요일 몇시에문열어요?
-1	월요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	월요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 월요일 몃시에문열어요?
 $월요일 몃시에문열어요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에문열어요?	NA	O
 
 ; 월요일 몃시에 문열어요?
 $월요일 몃시에 문열어요?
-1	월요일	NNP	O
+1	월요일	NNG	O
 2	몃시에	NA	O
 3	문	NNG	O
 4	열	VV	O
@@ -59135,39 +59086,38 @@ $월요일 몃시에 문열어요?
 
 ; 수요일 시간?
 $수요일 시간?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	시간	NNG	O
 3	?	SF	O
 
 ; 수요일 오픈 시간?
 $수요일 오픈 시간?
-1	수요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+1	수요일	NNG	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 수요일 마감?
 $수요일 마감?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	마감	NNG	O
 3	?	SF	O
 
 ; 수요일 마감시간?
 $수요일 마감시간?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	마감시간	NNG	O
 3	?	SF	O
 
 ; 수요일 마감 시간?
 $수요일 마감 시간?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	마감	NNG	O
 3	시간	NNG	O
 4	?	SF	O
 
 ; 수요일 언제까지해요?
 $수요일 언제까지해요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -59176,7 +59126,7 @@ $수요일 언제까지해요?
 
 ; 수요일 언제까지 해요?
 $수요일 언제까지 해요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VX	O
@@ -59185,7 +59135,7 @@ $수요일 언제까지 해요?
 
 ; 수요일 언제까지 오픈해요?
 $수요일 언제까지 오픈해요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	오픈	NNG	O
@@ -59195,7 +59145,7 @@ $수요일 언제까지 오픈해요?
 
 ; 수요일 언제까지해?
 $수요일 언제까지해?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -59204,14 +59154,14 @@ $수요일 언제까지해?
 
 ; 수요일 언제마감?
 $수요일 언제마감?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	?	SF	O
 
 ; 수요일 언제 마감해?
 $수요일 언제 마감해?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -59220,7 +59170,7 @@ $수요일 언제 마감해?
 
 ; 수요일 언제 마감해요?
 $수요일 언제 마감해요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -59229,7 +59179,7 @@ $수요일 언제 마감해요?
 
 ; 수요일 언제마감해요?
 $수요일 언제마감해요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -59238,78 +59188,72 @@ $수요일 언제마감해요?
 
 ; 수요일 타임?
 $수요일 타임?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	타임	NNP	O
 3	?	SF	O
 
 ; 수요일 오픈타임?
 $수요일 오픈타임?
-1	수요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	수요일	NNG	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 수요일 오픈 타임?
 $수요일 오픈 타임?
-1	수요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	수요일	NNG	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 수요일 몇시?
 $수요일 몇시?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 수요일 몇 시?
 $수요일 몇 시?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	수요일	NNG	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 수요일 몃시?
 $수요일 몃시?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시?	NA	O
 
 ; 수요일 몃 시?
 $수요일 몃 시?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	?	SF	O
 
 ; 수요일 몇시에 열어요?
 $수요일 몇시에 열어요?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 수요일 몇시에열어요?
 $수요일 몇시에열어요?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 수요일 몃시에열어요?
 $수요일 몃시에열어요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에열어요?	NA	O
 
 ; 수요일 몃시에 열어요?
 $수요일 몃시에 열어요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에	NA	O
 3	열	VV	O
 4	어요	EF	O
@@ -59317,86 +59261,80 @@ $수요일 몃시에 열어요?
 
 ; 수요일 몇시에 오픈해요?
 $수요일 몇시에 오픈해요?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 수요일 몇시에오픈해요?
 $수요일 몇시에오픈해요?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 수요일 몇시에오픈?
 $수요일 몇시에오픈?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 수요일 몇시에 오픈?
 $수요일 몇시에 오픈?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 수요일 몃시에오픈?
 $수요일 몃시에오픈?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에오픈?	NA	O
 
 ; 수요일 몃시에 오픈?
 $수요일 몃시에 오픈?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 수요일 몇시에오픈해?
 $수요일 몇시에오픈해?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 수요일 몇시에 오픈해?
 $수요일 몇시에 오픈해?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 수요일 몃시에오픈해?
 $수요일 몃시에오픈해?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에오픈해?	NA	O
 
 ; 수요일 몃시에 오픈해?
 $수요일 몃시에 오픈해?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -59405,12 +59343,12 @@ $수요일 몃시에 오픈해?
 
 ; 수요일 몃시에오픈해요?
 $수요일 몃시에오픈해요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에오픈해요?	NA	O
 
 ; 수요일 몃시에 오픈해요?
 $수요일 몃시에 오픈해요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -59419,34 +59357,32 @@ $수요일 몃시에 오픈해요?
 
 ; 수요일 몇시에 문열어요?
 $수요일 몇시에 문열어요?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 수요일 몇시에문열어요?
 $수요일 몇시에문열어요?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 수요일 몃시에문열어요?
 $수요일 몃시에문열어요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에문열어요?	NA	O
 
 ; 수요일 몃시에 문열어요?
 $수요일 몃시에 문열어요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에	NA	O
 3	문	NNG	O
 4	열	VV	O
@@ -59455,29 +59391,27 @@ $수요일 몃시에 문열어요?
 
 ; 수요일 몇시 까지해요?
 $수요일 몇시 까지해요?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 수요일 몇 시 까지해요?
 $수요일 몇 시 까지해요?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	수요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 수요일 몃시 까지해요?
 $수요일 몃시 까지해요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -59487,7 +59421,7 @@ $수요일 몃시 까지해요?
 
 ; 수요일 몃 시 까지해요?
 $수요일 몃 시 까지해요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -59498,27 +59432,25 @@ $수요일 몃 시 까지해요?
 
 ; 수요일 몇시에 닫아요?
 $수요일 몇시에 닫아요?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 수요일 몇 시에 닫아요?
 $수요일 몇 시에 닫아요?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	수요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 수요일 몃시에 닫아요?
 $수요일 몃시에 닫아요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아요	EF	O
@@ -59526,7 +59458,7 @@ $수요일 몃시에 닫아요?
 
 ; 수요일 몃 시에 닫아요?
 $수요일 몃 시에 닫아요?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -59536,27 +59468,25 @@ $수요일 몃 시에 닫아요?
 
 ; 수요일 몇시에 닫아?
 $수요일 몇시에 닫아?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 수요일 몇 시에 닫아?
 $수요일 몇 시에 닫아?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	수요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 수요일 몃시에 닫아?
 $수요일 몃시에 닫아?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아	EF	O
@@ -59564,7 +59494,7 @@ $수요일 몃시에 닫아?
 
 ; 수요일 몃 시에 닫아?
 $수요일 몃 시에 닫아?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -59574,29 +59504,27 @@ $수요일 몃 시에 닫아?
 
 ; 수요일 몇시 까지해?
 $수요일 몇시 까지해?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	수요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 수요일 몇 시 까지해?
 $수요일 몇 시 까지해?
-1	수요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	수요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 수요일 몃시 까지해?
 $수요일 몃시 까지해?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -59606,7 +59534,7 @@ $수요일 몃시 까지해?
 
 ; 수요일 몃 시 까지해?
 $수요일 몃 시 까지해?
-1	수요일	NNP	O
+1	수요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -59617,58 +59545,56 @@ $수요일 몃 시 까지해?
 
 ; 목요일 영업시간?
 $목요일 영업시간?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	영업시간	NNG	O
 3	?	SF	O
 
 ; 목요일 오픈시간?
 $목요일 오픈시간?
-1	목요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+1	목요일	NNG	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 목요일 오픈?
 $목요일 오픈?
-1	목요일	NNP	O
-2	오픈	NNP	O
+1	목요일	NNG	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 목요일 시간?
 $목요일 시간?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	시간	NNG	O
 3	?	SF	O
 
 ; 목요일 오픈 시간?
 $목요일 오픈 시간?
-1	목요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+1	목요일	NNG	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 목요일 마감?
 $목요일 마감?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	마감	NNG	O
 3	?	SF	O
 
 ; 목요일 마감시간?
 $목요일 마감시간?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	마감시간	NNG	O
 3	?	SF	O
 
 ; 목요일 마감 시간?
 $목요일 마감 시간?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	마감	NNG	O
 3	시간	NNG	O
 4	?	SF	O
 
 ; 목요일 언제까지해요?
 $목요일 언제까지해요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -59677,7 +59603,7 @@ $목요일 언제까지해요?
 
 ; 목요일 언제까지 해요?
 $목요일 언제까지 해요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VX	O
@@ -59686,7 +59612,7 @@ $목요일 언제까지 해요?
 
 ; 목요일 언제까지 오픈해요?
 $목요일 언제까지 오픈해요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	오픈	NNG	O
@@ -59696,7 +59622,7 @@ $목요일 언제까지 오픈해요?
 
 ; 목요일 언제까지해?
 $목요일 언제까지해?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -59705,14 +59631,14 @@ $목요일 언제까지해?
 
 ; 목요일 언제마감?
 $목요일 언제마감?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	?	SF	O
 
 ; 목요일 언제 마감해?
 $목요일 언제 마감해?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -59721,7 +59647,7 @@ $목요일 언제 마감해?
 
 ; 목요일 언제 마감해요?
 $목요일 언제 마감해요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -59730,7 +59656,7 @@ $목요일 언제 마감해요?
 
 ; 목요일 언제마감해요?
 $목요일 언제마감해요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -59739,78 +59665,72 @@ $목요일 언제마감해요?
 
 ; 목요일 타임?
 $목요일 타임?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	타임	NNP	O
 3	?	SF	O
 
 ; 목요일 오픈타임?
 $목요일 오픈타임?
-1	목요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	목요일	NNG	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 목요일 오픈 타임?
 $목요일 오픈 타임?
-1	목요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	목요일	NNG	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 목요일 몇시?
 $목요일 몇시?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 목요일 몇 시?
 $목요일 몇 시?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	목요일	NNG	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 목요일 몃시?
 $목요일 몃시?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시?	NA	O
 
 ; 목요일 몃 시?
 $목요일 몃 시?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	?	SF	O
 
 ; 목요일 몇시에 열어요?
 $목요일 몇시에 열어요?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 목요일 몇시에열어요?
 $목요일 몇시에열어요?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 목요일 몃시에열어요?
 $목요일 몃시에열어요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에열어요?	NA	O
 
 ; 목요일 몃시에 열어요?
 $목요일 몃시에 열어요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에	NA	O
 3	열	VV	O
 4	어요	EF	O
@@ -59818,86 +59738,80 @@ $목요일 몃시에 열어요?
 
 ; 목요일 몇시에 오픈해요?
 $목요일 몇시에 오픈해요?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 목요일 몇시에오픈해요?
 $목요일 몇시에오픈해요?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 목요일 몇시에오픈?
 $목요일 몇시에오픈?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 목요일 몇시에 오픈?
 $목요일 몇시에 오픈?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 목요일 몃시에오픈?
 $목요일 몃시에오픈?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에오픈?	NA	O
 
 ; 목요일 몃시에 오픈?
 $목요일 몃시에 오픈?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 목요일 몇시에오픈해?
 $목요일 몇시에오픈해?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 목요일 몇시에 오픈해?
 $목요일 몇시에 오픈해?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 목요일 몃시에오픈해?
 $목요일 몃시에오픈해?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에오픈해?	NA	O
 
 ; 목요일 몃시에 오픈해?
 $목요일 몃시에 오픈해?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -59906,12 +59820,12 @@ $목요일 몃시에 오픈해?
 
 ; 목요일 몃시에오픈해요?
 $목요일 몃시에오픈해요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에오픈해요?	NA	O
 
 ; 목요일 몃시에 오픈해요?
 $목요일 몃시에 오픈해요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -59920,34 +59834,32 @@ $목요일 몃시에 오픈해요?
 
 ; 목요일 몇시에 문열어요?
 $목요일 몇시에 문열어요?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 목요일 몇시에문열어요?
 $목요일 몇시에문열어요?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 목요일 몃시에문열어요?
 $목요일 몃시에문열어요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에문열어요?	NA	O
 
 ; 목요일 몃시에 문열어요?
 $목요일 몃시에 문열어요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에	NA	O
 3	문	NNG	O
 4	열	VV	O
@@ -59956,29 +59868,27 @@ $목요일 몃시에 문열어요?
 
 ; 목요일 몇시 까지해요?
 $목요일 몇시 까지해요?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 목요일 몇 시 까지해요?
 $목요일 몇 시 까지해요?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	목요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 목요일 몃시 까지해요?
 $목요일 몃시 까지해요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -59988,7 +59898,7 @@ $목요일 몃시 까지해요?
 
 ; 목요일 몃 시 까지해요?
 $목요일 몃 시 까지해요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -59999,27 +59909,25 @@ $목요일 몃 시 까지해요?
 
 ; 목요일 몇시에 닫아요?
 $목요일 몇시에 닫아요?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 목요일 몇 시에 닫아요?
 $목요일 몇 시에 닫아요?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	목요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 목요일 몃시에 닫아요?
 $목요일 몃시에 닫아요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아요	EF	O
@@ -60027,7 +59935,7 @@ $목요일 몃시에 닫아요?
 
 ; 목요일 몃 시에 닫아요?
 $목요일 몃 시에 닫아요?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -60037,27 +59945,25 @@ $목요일 몃 시에 닫아요?
 
 ; 목요일 몇시에 닫아?
 $목요일 몇시에 닫아?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 목요일 몇 시에 닫아?
 $목요일 몇 시에 닫아?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	목요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 목요일 몃시에 닫아?
 $목요일 몃시에 닫아?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아	EF	O
@@ -60065,7 +59971,7 @@ $목요일 몃시에 닫아?
 
 ; 목요일 몃 시에 닫아?
 $목요일 몃 시에 닫아?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -60075,29 +59981,27 @@ $목요일 몃 시에 닫아?
 
 ; 목요일 몇시 까지해?
 $목요일 몇시 까지해?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	목요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 목요일 몇 시 까지해?
 $목요일 몇 시 까지해?
-1	목요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	목요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 목요일 몃시 까지해?
 $목요일 몃시 까지해?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -60107,7 +60011,7 @@ $목요일 몃시 까지해?
 
 ; 목요일 몃 시 까지해?
 $목요일 몃 시 까지해?
-1	목요일	NNP	O
+1	목요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -60118,58 +60022,56 @@ $목요일 몃 시 까지해?
 
 ; 금요일 영업시간?
 $금요일 영업시간?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	영업시간	NNG	O
 3	?	SF	O
 
 ; 금요일 오픈시간?
 $금요일 오픈시간?
-1	금요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+1	금요일	NNG	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 금요일 오픈?
 $금요일 오픈?
-1	금요일	NNP	O
-2	오픈	NNP	O
+1	금요일	NNG	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 금요일 시간?
 $금요일 시간?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	시간	NNG	O
 3	?	SF	O
 
 ; 금요일 오픈 시간?
 $금요일 오픈 시간?
-1	금요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+1	금요일	NNG	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 금요일 마감?
 $금요일 마감?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	마감	NNG	O
 3	?	SF	O
 
 ; 금요일 마감시간?
 $금요일 마감시간?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	마감시간	NNG	O
 3	?	SF	O
 
 ; 금요일 마감 시간?
 $금요일 마감 시간?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	마감	NNG	O
 3	시간	NNG	O
 4	?	SF	O
 
 ; 금요일 언제까지해요?
 $금요일 언제까지해요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -60178,7 +60080,7 @@ $금요일 언제까지해요?
 
 ; 금요일 언제까지 해요?
 $금요일 언제까지 해요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VX	O
@@ -60187,7 +60089,7 @@ $금요일 언제까지 해요?
 
 ; 금요일 언제까지 오픈해요?
 $금요일 언제까지 오픈해요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	오픈	NNG	O
@@ -60197,7 +60099,7 @@ $금요일 언제까지 오픈해요?
 
 ; 금요일 언제까지해?
 $금요일 언제까지해?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -60206,14 +60108,14 @@ $금요일 언제까지해?
 
 ; 금요일 언제마감?
 $금요일 언제마감?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	?	SF	O
 
 ; 금요일 언제 마감해?
 $금요일 언제 마감해?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -60222,7 +60124,7 @@ $금요일 언제 마감해?
 
 ; 금요일 언제 마감해요?
 $금요일 언제 마감해요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -60231,7 +60133,7 @@ $금요일 언제 마감해요?
 
 ; 금요일 언제마감해요?
 $금요일 언제마감해요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -60240,78 +60142,72 @@ $금요일 언제마감해요?
 
 ; 금요일 타임?
 $금요일 타임?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	타임	NNP	O
 3	?	SF	O
 
 ; 금요일 오픈타임?
 $금요일 오픈타임?
-1	금요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	금요일	NNG	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 금요일 오픈 타임?
 $금요일 오픈 타임?
-1	금요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	금요일	NNG	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 금요일 몇시?
 $금요일 몇시?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 금요일 몇 시?
 $금요일 몇 시?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	금요일	NNG	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 금요일 몃시?
 $금요일 몃시?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시?	NA	O
 
 ; 금요일 몃 시?
 $금요일 몃 시?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	?	SF	O
 
 ; 금요일 몇시에 열어요?
 $금요일 몇시에 열어요?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 금요일 몇시에열어요?
 $금요일 몇시에열어요?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 금요일 몃시에열어요?
 $금요일 몃시에열어요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에열어요?	NA	O
 
 ; 금요일 몃시에 열어요?
 $금요일 몃시에 열어요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에	NA	O
 3	열	VV	O
 4	어요	EF	O
@@ -60319,86 +60215,80 @@ $금요일 몃시에 열어요?
 
 ; 금요일 몇시에 오픈해요?
 $금요일 몇시에 오픈해요?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 금요일 몇시에오픈해요?
 $금요일 몇시에오픈해요?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 금요일 몇시에오픈?
 $금요일 몇시에오픈?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 금요일 몇시에 오픈?
 $금요일 몇시에 오픈?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 금요일 몃시에오픈?
 $금요일 몃시에오픈?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에오픈?	NA	O
 
 ; 금요일 몃시에 오픈?
 $금요일 몃시에 오픈?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 금요일 몇시에오픈해?
 $금요일 몇시에오픈해?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 금요일 몇시에 오픈해?
 $금요일 몇시에 오픈해?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 금요일 몃시에오픈해?
 $금요일 몃시에오픈해?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에오픈해?	NA	O
 
 ; 금요일 몃시에 오픈해?
 $금요일 몃시에 오픈해?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -60407,12 +60297,12 @@ $금요일 몃시에 오픈해?
 
 ; 금요일 몃시에오픈해요?
 $금요일 몃시에오픈해요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에오픈해요?	NA	O
 
 ; 금요일 몃시에 오픈해요?
 $금요일 몃시에 오픈해요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -60421,34 +60311,32 @@ $금요일 몃시에 오픈해요?
 
 ; 금요일 몇시에 문열어요?
 $금요일 몇시에 문열어요?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 금요일 몇시에문열어요?
 $금요일 몇시에문열어요?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 금요일 몃시에문열어요?
 $금요일 몃시에문열어요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에문열어요?	NA	O
 
 ; 금요일 몃시에 문열어요?
 $금요일 몃시에 문열어요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에	NA	O
 3	문	NNG	O
 4	열	VV	O
@@ -60457,29 +60345,27 @@ $금요일 몃시에 문열어요?
 
 ; 금요일 몇시 까지해요?
 $금요일 몇시 까지해요?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 금요일 몇 시 까지해요?
 $금요일 몇 시 까지해요?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	금요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 금요일 몃시 까지해요?
 $금요일 몃시 까지해요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -60489,7 +60375,7 @@ $금요일 몃시 까지해요?
 
 ; 금요일 몃 시 까지해요?
 $금요일 몃 시 까지해요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -60500,27 +60386,25 @@ $금요일 몃 시 까지해요?
 
 ; 금요일 몇시에 닫아요?
 $금요일 몇시에 닫아요?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 금요일 몇 시에 닫아요?
 $금요일 몇 시에 닫아요?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	금요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 금요일 몃시에 닫아요?
 $금요일 몃시에 닫아요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아요	EF	O
@@ -60528,7 +60412,7 @@ $금요일 몃시에 닫아요?
 
 ; 금요일 몃 시에 닫아요?
 $금요일 몃 시에 닫아요?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -60538,27 +60422,25 @@ $금요일 몃 시에 닫아요?
 
 ; 금요일 몇시에 닫아?
 $금요일 몇시에 닫아?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 금요일 몇 시에 닫아?
 $금요일 몇 시에 닫아?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	금요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 금요일 몃시에 닫아?
 $금요일 몃시에 닫아?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아	EF	O
@@ -60566,7 +60448,7 @@ $금요일 몃시에 닫아?
 
 ; 금요일 몃 시에 닫아?
 $금요일 몃 시에 닫아?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -60576,29 +60458,27 @@ $금요일 몃 시에 닫아?
 
 ; 금요일 몇시 까지해?
 $금요일 몇시 까지해?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	금요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 금요일 몇 시 까지해?
 $금요일 몇 시 까지해?
-1	금요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	금요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 금요일 몃시 까지해?
 $금요일 몃시 까지해?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -60608,7 +60488,7 @@ $금요일 몃시 까지해?
 
 ; 금요일 몃 시 까지해?
 $금요일 몃 시 까지해?
-1	금요일	NNP	O
+1	금요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -60619,58 +60499,56 @@ $금요일 몃 시 까지해?
 
 ; 토요일 영업시간?
 $토요일 영업시간?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	영업시간	NNG	O
 3	?	SF	O
 
 ; 토요일 오픈시간?
 $토요일 오픈시간?
-1	토요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+1	토요일	NNG	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 토요일 오픈?
 $토요일 오픈?
-1	토요일	NNP	O
-2	오픈	NNP	O
+1	토요일	NNG	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 토요일 시간?
 $토요일 시간?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	시간	NNG	O
 3	?	SF	O
 
 ; 토요일 오픈 시간?
 $토요일 오픈 시간?
-1	토요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+1	토요일	NNG	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 토요일 마감?
 $토요일 마감?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	마감	NNG	O
 3	?	SF	O
 
 ; 토요일 마감시간?
 $토요일 마감시간?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	마감시간	NNG	O
 3	?	SF	O
 
 ; 토요일 마감 시간?
 $토요일 마감 시간?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	마감	NNG	O
 3	시간	NNG	O
 4	?	SF	O
 
 ; 토요일 언제까지해요?
 $토요일 언제까지해요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -60679,7 +60557,7 @@ $토요일 언제까지해요?
 
 ; 토요일 언제까지 해요?
 $토요일 언제까지 해요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VX	O
@@ -60688,7 +60566,7 @@ $토요일 언제까지 해요?
 
 ; 토요일 언제까지 오픈해요?
 $토요일 언제까지 오픈해요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	오픈	NNG	O
@@ -60698,7 +60576,7 @@ $토요일 언제까지 오픈해요?
 
 ; 토요일 언제까지해?
 $토요일 언제까지해?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -60707,14 +60585,14 @@ $토요일 언제까지해?
 
 ; 토요일 언제마감?
 $토요일 언제마감?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	?	SF	O
 
 ; 토요일 언제 마감해?
 $토요일 언제 마감해?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -60723,7 +60601,7 @@ $토요일 언제 마감해?
 
 ; 토요일 언제 마감해요?
 $토요일 언제 마감해요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -60732,7 +60610,7 @@ $토요일 언제 마감해요?
 
 ; 토요일 언제마감해요?
 $토요일 언제마감해요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -60741,78 +60619,72 @@ $토요일 언제마감해요?
 
 ; 토요일 타임?
 $토요일 타임?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	타임	NNP	O
 3	?	SF	O
 
 ; 토요일 오픈타임?
 $토요일 오픈타임?
-1	토요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	토요일	NNG	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 토요일 오픈 타임?
 $토요일 오픈 타임?
-1	토요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	토요일	NNG	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 토요일 몇시?
 $토요일 몇시?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 토요일 몇 시?
 $토요일 몇 시?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	토요일	NNG	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 토요일 몃시?
 $토요일 몃시?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시?	NA	O
 
 ; 토요일 몃 시?
 $토요일 몃 시?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	?	SF	O
 
 ; 토요일 몇시에 열어요?
 $토요일 몇시에 열어요?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 토요일 몇시에열어요?
 $토요일 몇시에열어요?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 토요일 몃시에열어요?
 $토요일 몃시에열어요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에열어요?	NA	O
 
 ; 토요일 몃시에 열어요?
 $토요일 몃시에 열어요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에	NA	O
 3	열	VV	O
 4	어요	EF	O
@@ -60820,86 +60692,80 @@ $토요일 몃시에 열어요?
 
 ; 토요일 몇시에 오픈해요?
 $토요일 몇시에 오픈해요?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 토요일 몇시에오픈해요?
 $토요일 몇시에오픈해요?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 토요일 몇시에오픈?
 $토요일 몇시에오픈?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 토요일 몇시에 오픈?
 $토요일 몇시에 오픈?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 토요일 몃시에오픈?
 $토요일 몃시에오픈?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에오픈?	NA	O
 
 ; 토요일 몃시에 오픈?
 $토요일 몃시에 오픈?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 토요일 몇시에오픈해?
 $토요일 몇시에오픈해?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 토요일 몇시에 오픈해?
 $토요일 몇시에 오픈해?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 토요일 몃시에오픈해?
 $토요일 몃시에오픈해?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에오픈해?	NA	O
 
 ; 토요일 몃시에 오픈해?
 $토요일 몃시에 오픈해?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -60908,12 +60774,12 @@ $토요일 몃시에 오픈해?
 
 ; 토요일 몃시에오픈해요?
 $토요일 몃시에오픈해요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에오픈해요?	NA	O
 
 ; 토요일 몃시에 오픈해요?
 $토요일 몃시에 오픈해요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -60922,34 +60788,32 @@ $토요일 몃시에 오픈해요?
 
 ; 토요일 몇시에 문열어요?
 $토요일 몇시에 문열어요?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 토요일 몇시에문열어요?
 $토요일 몇시에문열어요?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 토요일 몃시에문열어요?
 $토요일 몃시에문열어요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에문열어요?	NA	O
 
 ; 토요일 몃시에 문열어요?
 $토요일 몃시에 문열어요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에	NA	O
 3	문	NNG	O
 4	열	VV	O
@@ -60958,29 +60822,27 @@ $토요일 몃시에 문열어요?
 
 ; 토요일 몇시 까지해요?
 $토요일 몇시 까지해요?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 토요일 몇 시 까지해요?
 $토요일 몇 시 까지해요?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	토요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 토요일 몃시 까지해요?
 $토요일 몃시 까지해요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -60990,7 +60852,7 @@ $토요일 몃시 까지해요?
 
 ; 토요일 몃 시 까지해요?
 $토요일 몃 시 까지해요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -61001,27 +60863,25 @@ $토요일 몃 시 까지해요?
 
 ; 토요일 몇시에 닫아요?
 $토요일 몇시에 닫아요?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 토요일 몇 시에 닫아요?
 $토요일 몇 시에 닫아요?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	토요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 토요일 몃시에 닫아요?
 $토요일 몃시에 닫아요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아요	EF	O
@@ -61029,7 +60889,7 @@ $토요일 몃시에 닫아요?
 
 ; 토요일 몃 시에 닫아요?
 $토요일 몃 시에 닫아요?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -61039,27 +60899,25 @@ $토요일 몃 시에 닫아요?
 
 ; 토요일 몇시에 닫아?
 $토요일 몇시에 닫아?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 토요일 몇 시에 닫아?
 $토요일 몇 시에 닫아?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	토요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 토요일 몃시에 닫아?
 $토요일 몃시에 닫아?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아	EF	O
@@ -61067,7 +60925,7 @@ $토요일 몃시에 닫아?
 
 ; 토요일 몃 시에 닫아?
 $토요일 몃 시에 닫아?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -61077,29 +60935,27 @@ $토요일 몃 시에 닫아?
 
 ; 토요일 몇시 까지해?
 $토요일 몇시 까지해?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	토요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 토요일 몇 시 까지해?
 $토요일 몇 시 까지해?
-1	토요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	토요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 토요일 몃시 까지해?
 $토요일 몃시 까지해?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -61109,7 +60965,7 @@ $토요일 몃시 까지해?
 
 ; 토요일 몃 시 까지해?
 $토요일 몃 시 까지해?
-1	토요일	NNP	O
+1	토요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -61120,58 +60976,56 @@ $토요일 몃 시 까지해?
 
 ; 일요일 영업시간?
 $일요일 영업시간?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	영업시간	NNG	O
 3	?	SF	O
 
 ; 일요일 오픈시간?
 $일요일 오픈시간?
-1	일요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+1	일요일	NNG	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 일요일 오픈?
 $일요일 오픈?
-1	일요일	NNP	O
-2	오픈	NNP	O
+1	일요일	NNG	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 일요일 시간?
 $일요일 시간?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	시간	NNG	O
 3	?	SF	O
 
 ; 일요일 오픈 시간?
 $일요일 오픈 시간?
-1	일요일	NNP	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+1	일요일	NNG	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 일요일 마감?
 $일요일 마감?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	마감	NNG	O
 3	?	SF	O
 
 ; 일요일 마감시간?
 $일요일 마감시간?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	마감시간	NNG	O
 3	?	SF	O
 
 ; 일요일 마감 시간?
 $일요일 마감 시간?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	마감	NNG	O
 3	시간	NNG	O
 4	?	SF	O
 
 ; 일요일 언제까지해요?
 $일요일 언제까지해요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -61180,7 +61034,7 @@ $일요일 언제까지해요?
 
 ; 일요일 언제까지 해요?
 $일요일 언제까지 해요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VX	O
@@ -61189,7 +61043,7 @@ $일요일 언제까지 해요?
 
 ; 일요일 언제까지 오픈해요?
 $일요일 언제까지 오픈해요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	오픈	NNG	O
@@ -61199,7 +61053,7 @@ $일요일 언제까지 오픈해요?
 
 ; 일요일 언제까지해?
 $일요일 언제까지해?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -61208,14 +61062,14 @@ $일요일 언제까지해?
 
 ; 일요일 언제마감?
 $일요일 언제마감?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	?	SF	O
 
 ; 일요일 언제 마감해?
 $일요일 언제 마감해?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -61224,7 +61078,7 @@ $일요일 언제 마감해?
 
 ; 일요일 언제 마감해요?
 $일요일 언제 마감해요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -61233,7 +61087,7 @@ $일요일 언제 마감해요?
 
 ; 일요일 언제마감해요?
 $일요일 언제마감해요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -61242,78 +61096,72 @@ $일요일 언제마감해요?
 
 ; 일요일 타임?
 $일요일 타임?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	타임	NNP	O
 3	?	SF	O
 
 ; 일요일 오픈타임?
 $일요일 오픈타임?
-1	일요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	일요일	NNG	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 일요일 오픈 타임?
 $일요일 오픈 타임?
-1	일요일	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	일요일	NNG	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 일요일 몇시?
 $일요일 몇시?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 일요일 몇 시?
 $일요일 몇 시?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	일요일	NNG	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 일요일 몃시?
 $일요일 몃시?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시?	NA	O
 
 ; 일요일 몃 시?
 $일요일 몃 시?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	?	SF	O
 
 ; 일요일 몇시에 열어요?
 $일요일 몇시에 열어요?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 일요일 몇시에열어요?
 $일요일 몇시에열어요?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 일요일 몃시에열어요?
 $일요일 몃시에열어요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에열어요?	NA	O
 
 ; 일요일 몃시에 열어요?
 $일요일 몃시에 열어요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에	NA	O
 3	열	VV	O
 4	어요	EF	O
@@ -61321,86 +61169,80 @@ $일요일 몃시에 열어요?
 
 ; 일요일 몇시에 오픈해요?
 $일요일 몇시에 오픈해요?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 일요일 몇시에오픈해요?
 $일요일 몇시에오픈해요?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 일요일 몇시에오픈?
 $일요일 몇시에오픈?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 일요일 몇시에 오픈?
 $일요일 몇시에 오픈?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 일요일 몃시에오픈?
 $일요일 몃시에오픈?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에오픈?	NA	O
 
 ; 일요일 몃시에 오픈?
 $일요일 몃시에 오픈?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 일요일 몇시에오픈해?
 $일요일 몇시에오픈해?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 일요일 몇시에 오픈해?
 $일요일 몇시에 오픈해?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 일요일 몃시에오픈해?
 $일요일 몃시에오픈해?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에오픈해?	NA	O
 
 ; 일요일 몃시에 오픈해?
 $일요일 몃시에 오픈해?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -61409,12 +61251,12 @@ $일요일 몃시에 오픈해?
 
 ; 일요일 몃시에오픈해요?
 $일요일 몃시에오픈해요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에오픈해요?	NA	O
 
 ; 일요일 몃시에 오픈해요?
 $일요일 몃시에 오픈해요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -61423,34 +61265,32 @@ $일요일 몃시에 오픈해요?
 
 ; 일요일 몇시에 문열어요?
 $일요일 몇시에 문열어요?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 일요일 몇시에문열어요?
 $일요일 몇시에문열어요?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 일요일 몃시에문열어요?
 $일요일 몃시에문열어요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에문열어요?	NA	O
 
 ; 일요일 몃시에 문열어요?
 $일요일 몃시에 문열어요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에	NA	O
 3	문	NNG	O
 4	열	VV	O
@@ -61459,29 +61299,27 @@ $일요일 몃시에 문열어요?
 
 ; 일요일 몇시 까지해요?
 $일요일 몇시 까지해요?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 일요일 몇 시 까지해요?
 $일요일 몇 시 까지해요?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	일요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 일요일 몃시 까지해요?
 $일요일 몃시 까지해요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -61491,7 +61329,7 @@ $일요일 몃시 까지해요?
 
 ; 일요일 몃 시 까지해요?
 $일요일 몃 시 까지해요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -61502,27 +61340,25 @@ $일요일 몃 시 까지해요?
 
 ; 일요일 몇시에 닫아요?
 $일요일 몇시에 닫아요?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 일요일 몇 시에 닫아요?
 $일요일 몇 시에 닫아요?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	일요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 일요일 몃시에 닫아요?
 $일요일 몃시에 닫아요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아요	EF	O
@@ -61530,7 +61366,7 @@ $일요일 몃시에 닫아요?
 
 ; 일요일 몃 시에 닫아요?
 $일요일 몃 시에 닫아요?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -61540,27 +61376,25 @@ $일요일 몃 시에 닫아요?
 
 ; 일요일 몇시에 닫아?
 $일요일 몇시에 닫아?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 일요일 몇 시에 닫아?
 $일요일 몇 시에 닫아?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	일요일	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 일요일 몃시에 닫아?
 $일요일 몃시에 닫아?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아	EF	O
@@ -61568,7 +61402,7 @@ $일요일 몃시에 닫아?
 
 ; 일요일 몃 시에 닫아?
 $일요일 몃 시에 닫아?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -61578,29 +61412,27 @@ $일요일 몃 시에 닫아?
 
 ; 일요일 몇시 까지해?
 $일요일 몇시 까지해?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	일요일	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 일요일 몇 시 까지해?
 $일요일 몇 시 까지해?
-1	일요일	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	일요일	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 일요일 몃시 까지해?
 $일요일 몃시 까지해?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -61610,7 +61442,7 @@ $일요일 몃시 까지해?
 
 ; 일요일 몃 시 까지해?
 $일요일 몃 시 까지해?
-1	일요일	NNP	O
+1	일요일	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -61628,14 +61460,13 @@ $주중 영업시간?
 ; 주중 오픈시간?
 $주중 오픈시간?
 1	주중	NNG	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 주중 오픈?
 $주중 오픈?
 1	주중	NNG	O
-2	오픈	NNP	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 주중 시간?
@@ -61647,9 +61478,8 @@ $주중 시간?
 ; 주중 오픈 시간?
 $주중 오픈 시간?
 1	주중	NNG	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 주중 마감?
 $주중 마감?
@@ -61750,30 +61580,26 @@ $주중 타임?
 ; 주중 오픈타임?
 $주중 오픈타임?
 1	주중	NNG	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 주중 오픈 타임?
 $주중 오픈 타임?
 1	주중	NNG	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 주중 몇시?
 $주중 몇시?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 주중 몇 시?
 $주중 몇 시?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 주중 몃시?
 $주중 몃시?
@@ -61790,22 +61616,20 @@ $주중 몃 시?
 ; 주중 몇시에 열어요?
 $주중 몇시에 열어요?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 주중 몇시에열어요?
 $주중 몇시에열어요?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 주중 몃시에열어요?
 $주중 몃시에열어요?
@@ -61823,42 +61647,38 @@ $주중 몃시에 열어요?
 ; 주중 몇시에 오픈해요?
 $주중 몇시에 오픈해요?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 주중 몇시에오픈해요?
 $주중 몇시에오픈해요?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 주중 몇시에오픈?
 $주중 몇시에오픈?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 주중 몇시에 오픈?
 $주중 몇시에 오픈?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 주중 몃시에오픈?
 $주중 몃시에오픈?
@@ -61869,30 +61689,28 @@ $주중 몃시에오픈?
 $주중 몃시에 오픈?
 1	주중	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 주중 몇시에오픈해?
 $주중 몇시에오픈해?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 주중 몇시에 오픈해?
 $주중 몇시에 오픈해?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 주중 몃시에오픈해?
 $주중 몃시에오픈해?
@@ -61925,24 +61743,22 @@ $주중 몃시에 오픈해요?
 ; 주중 몇시에 문열어요?
 $주중 몇시에 문열어요?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 주중 몇시에문열어요?
 $주중 몇시에문열어요?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 주중 몃시에문열어요?
 $주중 몃시에문열어요?
@@ -61961,24 +61777,22 @@ $주중 몃시에 문열어요?
 ; 주중 몇시 까지해요?
 $주중 몇시 까지해요?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 주중 몇 시 까지해요?
 $주중 몇 시 까지해요?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 주중 몃시 까지해요?
 $주중 몃시 까지해요?
@@ -62004,22 +61818,20 @@ $주중 몃 시 까지해요?
 ; 주중 몇시에 닫아요?
 $주중 몇시에 닫아요?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 주중 몇 시에 닫아요?
 $주중 몇 시에 닫아요?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 주중 몃시에 닫아요?
 $주중 몃시에 닫아요?
@@ -62042,22 +61854,20 @@ $주중 몃 시에 닫아요?
 ; 주중 몇시에 닫아?
 $주중 몇시에 닫아?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 주중 몇 시에 닫아?
 $주중 몇 시에 닫아?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 주중 몃시에 닫아?
 $주중 몃시에 닫아?
@@ -62080,24 +61890,22 @@ $주중 몃 시에 닫아?
 ; 주중 몇시 까지해?
 $주중 몇시 까지해?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 주중 몇 시 까지해?
 $주중 몇 시 까지해?
 1	주중	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 주중 몃시 까지해?
 $주중 몃시 까지해?
@@ -62122,58 +61930,56 @@ $주중 몃 시 까지해?
 
 ; 주말 영업시간?
 $주말 영업시간?
-1	주말	NNP	O
+1	주말	NNG	O
 2	영업시간	NNG	O
 3	?	SF	O
 
 ; 주말 오픈시간?
 $주말 오픈시간?
-1	주말	NNP	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+1	주말	NNG	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 주말 오픈?
 $주말 오픈?
-1	주말	NNP	O
-2	오픈	NNP	O
+1	주말	NNG	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 주말 시간?
 $주말 시간?
-1	주말	NNP	O
+1	주말	NNG	O
 2	시간	NNG	O
 3	?	SF	O
 
 ; 주말 오픈 시간?
 $주말 오픈 시간?
-1	주말	NNP	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+1	주말	NNG	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 주말 마감?
 $주말 마감?
-1	주말	NNP	O
+1	주말	NNG	O
 2	마감	NNG	O
 3	?	SF	O
 
 ; 주말 마감시간?
 $주말 마감시간?
-1	주말	NNP	O
+1	주말	NNG	O
 2	마감시간	NNG	O
 3	?	SF	O
 
 ; 주말 마감 시간?
 $주말 마감 시간?
-1	주말	NNP	O
+1	주말	NNG	O
 2	마감	NNG	O
 3	시간	NNG	O
 4	?	SF	O
 
 ; 주말 언제까지해요?
 $주말 언제까지해요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -62182,7 +61988,7 @@ $주말 언제까지해요?
 
 ; 주말 언제까지 해요?
 $주말 언제까지 해요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VX	O
@@ -62191,7 +61997,7 @@ $주말 언제까지 해요?
 
 ; 주말 언제까지 오픈해요?
 $주말 언제까지 오픈해요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	오픈	NNG	O
@@ -62201,7 +62007,7 @@ $주말 언제까지 오픈해요?
 
 ; 주말 언제까지해?
 $주말 언제까지해?
-1	주말	NNP	O
+1	주말	NNG	O
 2	언제	NP	O
 3	까지	JX	O
 4	하	VV	O
@@ -62210,14 +62016,14 @@ $주말 언제까지해?
 
 ; 주말 언제마감?
 $주말 언제마감?
-1	주말	NNP	O
+1	주말	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	?	SF	O
 
 ; 주말 언제 마감해?
 $주말 언제 마감해?
-1	주말	NNP	O
+1	주말	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -62226,7 +62032,7 @@ $주말 언제 마감해?
 
 ; 주말 언제 마감해요?
 $주말 언제 마감해요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	언제	MAG	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -62235,7 +62041,7 @@ $주말 언제 마감해요?
 
 ; 주말 언제마감해요?
 $주말 언제마감해요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	언제	NP	O
 3	마감	NNG	O
 4	하	XSV	O
@@ -62244,78 +62050,72 @@ $주말 언제마감해요?
 
 ; 주말 타임?
 $주말 타임?
-1	주말	NNP	O
+1	주말	NNG	O
 2	타임	NNP	O
 3	?	SF	O
 
 ; 주말 오픈타임?
 $주말 오픈타임?
-1	주말	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	주말	NNG	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 주말 오픈 타임?
 $주말 오픈 타임?
-1	주말	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+1	주말	NNG	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 주말 몇시?
 $주말 몇시?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 주말 몇 시?
 $주말 몇 시?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	주말	NNG	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 주말 몃시?
 $주말 몃시?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시?	NA	O
 
 ; 주말 몃 시?
 $주말 몃 시?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	?	SF	O
 
 ; 주말 몇시에 열어요?
 $주말 몇시에 열어요?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 주말 몇시에열어요?
 $주말 몇시에열어요?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 주말 몃시에열어요?
 $주말 몃시에열어요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에열어요?	NA	O
 
 ; 주말 몃시에 열어요?
 $주말 몃시에 열어요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에	NA	O
 3	열	VV	O
 4	어요	EF	O
@@ -62323,86 +62123,80 @@ $주말 몃시에 열어요?
 
 ; 주말 몇시에 오픈해요?
 $주말 몇시에 오픈해요?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 주말 몇시에오픈해요?
 $주말 몇시에오픈해요?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 주말 몇시에오픈?
 $주말 몇시에오픈?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 주말 몇시에 오픈?
 $주말 몇시에 오픈?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 주말 몃시에오픈?
 $주말 몃시에오픈?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에오픈?	NA	O
 
 ; 주말 몃시에 오픈?
 $주말 몃시에 오픈?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 주말 몇시에오픈해?
 $주말 몇시에오픈해?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 주말 몇시에 오픈해?
 $주말 몇시에 오픈해?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 주말 몃시에오픈해?
 $주말 몃시에오픈해?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에오픈해?	NA	O
 
 ; 주말 몃시에 오픈해?
 $주말 몃시에 오픈해?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -62411,12 +62205,12 @@ $주말 몃시에 오픈해?
 
 ; 주말 몃시에오픈해요?
 $주말 몃시에오픈해요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에오픈해요?	NA	O
 
 ; 주말 몃시에 오픈해요?
 $주말 몃시에 오픈해요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에	NA	O
 3	오픈	NNG	O
 4	하	XSV	O
@@ -62425,34 +62219,32 @@ $주말 몃시에 오픈해요?
 
 ; 주말 몇시에 문열어요?
 $주말 몇시에 문열어요?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 주말 몇시에문열어요?
 $주말 몇시에문열어요?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 주말 몃시에문열어요?
 $주말 몃시에문열어요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에문열어요?	NA	O
 
 ; 주말 몃시에 문열어요?
 $주말 몃시에 문열어요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에	NA	O
 3	문	NNG	O
 4	열	VV	O
@@ -62461,29 +62253,27 @@ $주말 몃시에 문열어요?
 
 ; 주말 몇시 까지해요?
 $주말 몇시 까지해요?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 주말 몇 시 까지해요?
 $주말 몇 시 까지해요?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+1	주말	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 주말 몃시 까지해요?
 $주말 몃시 까지해요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -62493,7 +62283,7 @@ $주말 몃시 까지해요?
 
 ; 주말 몃 시 까지해요?
 $주말 몃 시 까지해요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -62504,27 +62294,25 @@ $주말 몃 시 까지해요?
 
 ; 주말 몇시에 닫아요?
 $주말 몇시에 닫아요?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 주말 몇 시에 닫아요?
 $주말 몇 시에 닫아요?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	주말	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 주말 몃시에 닫아요?
 $주말 몃시에 닫아요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아요	EF	O
@@ -62532,7 +62320,7 @@ $주말 몃시에 닫아요?
 
 ; 주말 몃 시에 닫아요?
 $주말 몃 시에 닫아요?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -62542,27 +62330,25 @@ $주말 몃 시에 닫아요?
 
 ; 주말 몇시에 닫아?
 $주말 몇시에 닫아?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 주말 몇 시에 닫아?
 $주말 몇 시에 닫아?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+1	주말	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 주말 몃시에 닫아?
 $주말 몃시에 닫아?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시에	NA	O
 3	닫	VV	O
 4	아	EF	O
@@ -62570,7 +62356,7 @@ $주말 몃시에 닫아?
 
 ; 주말 몃 시에 닫아?
 $주말 몃 시에 닫아?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	에	JKB	O
@@ -62580,29 +62366,27 @@ $주말 몃 시에 닫아?
 
 ; 주말 몇시 까지해?
 $주말 몇시 까지해?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	주말	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 주말 몇 시 까지해?
 $주말 몇 시 까지해?
-1	주말	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+1	주말	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 주말 몃시 까지해?
 $주말 몃시 까지해?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃시	NA	O
 3	까	VV	O
 4	지	EC	O
@@ -62612,7 +62396,7 @@ $주말 몃시 까지해?
 
 ; 주말 몃 시 까지해?
 $주말 몃 시 까지해?
-1	주말	NNP	O
+1	주말	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	까	VV	O
@@ -62630,14 +62414,13 @@ $아침 영업시간?
 ; 아침 오픈시간?
 $아침 오픈시간?
 1	아침	NNG	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 아침 오픈?
 $아침 오픈?
 1	아침	NNG	O
-2	오픈	NNP	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 아침 시간?
@@ -62649,9 +62432,8 @@ $아침 시간?
 ; 아침 오픈 시간?
 $아침 오픈 시간?
 1	아침	NNG	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 아침 타임?
 $아침 타임?
@@ -62662,30 +62444,26 @@ $아침 타임?
 ; 아침 오픈타임?
 $아침 오픈타임?
 1	아침	NNG	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 아침 오픈 타임?
 $아침 오픈 타임?
 1	아침	NNG	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 아침 몇시?
 $아침 몇시?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 아침 몇 시?
 $아침 몇 시?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 아침 몃시?
 $아침 몃시?
@@ -62702,22 +62480,20 @@ $아침 몃 시?
 ; 아침 몇시에 열어요?
 $아침 몇시에 열어요?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 아침 몇시에열어요?
 $아침 몇시에열어요?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 아침 몃시에열어요?
 $아침 몃시에열어요?
@@ -62735,42 +62511,38 @@ $아침 몃시에 열어요?
 ; 아침 몇시에 오픈해요?
 $아침 몇시에 오픈해요?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 아침 몇시에오픈해요?
 $아침 몇시에오픈해요?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 아침 몇시에오픈?
 $아침 몇시에오픈?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 아침 몇시에 오픈?
 $아침 몇시에 오픈?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 아침 몃시에오픈?
 $아침 몃시에오픈?
@@ -62781,30 +62553,28 @@ $아침 몃시에오픈?
 $아침 몃시에 오픈?
 1	아침	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 아침 몇시에오픈해?
 $아침 몇시에오픈해?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 아침 몇시에 오픈해?
 $아침 몇시에 오픈해?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 아침 몃시에오픈해?
 $아침 몃시에오픈해?
@@ -62837,24 +62607,22 @@ $아침 몃시에 오픈해요?
 ; 아침 몇시에 문열어요?
 $아침 몇시에 문열어요?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 아침 몇시에문열어요?
 $아침 몇시에문열어요?
 1	아침	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 아침 몃시에문열어요?
 $아침 몃시에문열어요?
@@ -62872,57 +62640,54 @@ $아침 몃시에 문열어요?
 
 ; 점심 영업시간?
 $점심 영업시간?
-1	점심	NNP	O
+1	점심	NNG	O
 2	영업시간	NNG	O
 3	?	SF	O
 
 ; 점심 오픈시간?
 $점심 오픈시간?
-1	점심	NNP	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+1	점심	NNG	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 점심 오픈?
 $점심 오픈?
-1	점심	NNP	O
-2	오픈	NNP	O
+1	점심	NNG	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 점심 시간?
 $점심 시간?
-1	점심	NNP	O
+1	점심	NNG	O
 2	시간	NNG	O
 3	?	SF	O
 
 ; 점심 타임?
 $점심 타임?
-1	점심	NNP	O
+1	점심	NNG	O
 2	타임	NNP	O
 3	?	SF	O
 
 ; 점심 몇시?
 $점심 몇시?
-1	점심	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	점심	NNG	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 점심 몇 시?
 $점심 몇 시?
-1	점심	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+1	점심	NNG	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 점심 몃시?
 $점심 몃시?
-1	점심	NNP	O
+1	점심	NNG	O
 2	몃시?	NA	O
 
 ; 점심 몃 시?
 $점심 몃 시?
-1	점심	NNP	O
+1	점심	NNG	O
 2	몃	NA	O
 3	시	NNB	O
 4	?	SF	O
@@ -63038,16 +62803,14 @@ $저녁 타임?
 ; 저녁 몇시?
 $저녁 몇시?
 1	저녁	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 저녁 몇 시?
 $저녁 몇 시?
 1	저녁	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 저녁 몃시?
 $저녁 몃시?
@@ -63064,24 +62827,22 @@ $저녁 몃 시?
 ; 저녁 몇시 까지해요?
 $저녁 몇시 까지해요?
 1	저녁	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 저녁 몇 시 까지해요?
 $저녁 몇 시 까지해요?
 1	저녁	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 저녁 몃시 까지해요?
 $저녁 몃시 까지해요?
@@ -63107,22 +62868,20 @@ $저녁 몃 시 까지해요?
 ; 저녁 몇시에 닫아요?
 $저녁 몇시에 닫아요?
 1	저녁	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 저녁 몇 시에 닫아요?
 $저녁 몇 시에 닫아요?
 1	저녁	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 저녁 몃시에 닫아요?
 $저녁 몃시에 닫아요?
@@ -63145,22 +62904,20 @@ $저녁 몃 시에 닫아요?
 ; 저녁 몇시에 닫아?
 $저녁 몇시에 닫아?
 1	저녁	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 저녁 몇 시에 닫아?
 $저녁 몇 시에 닫아?
 1	저녁	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 저녁 몃시에 닫아?
 $저녁 몃시에 닫아?
@@ -63183,24 +62940,22 @@ $저녁 몃 시에 닫아?
 ; 저녁 몇시 까지해?
 $저녁 몇시 까지해?
 1	저녁	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 저녁 몇 시 까지해?
 $저녁 몇 시 까지해?
 1	저녁	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 저녁 몃시 까지해?
 $저녁 몃시 까지해?
@@ -63324,16 +63079,14 @@ $밤 타임?
 ; 밤 몇시?
 $밤 몇시?
 1	밤	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 밤 몇 시?
 $밤 몇 시?
 1	밤	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 밤 몃시?
 $밤 몃시?
@@ -63350,24 +63103,22 @@ $밤 몃 시?
 ; 밤 몇시 까지해요?
 $밤 몇시 까지해요?
 1	밤	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 밤 몇 시 까지해요?
 $밤 몇 시 까지해요?
 1	밤	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 밤 몃시 까지해요?
 $밤 몃시 까지해요?
@@ -63393,22 +63144,20 @@ $밤 몃 시 까지해요?
 ; 밤 몇시에 닫아요?
 $밤 몇시에 닫아요?
 1	밤	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 밤 몇 시에 닫아요?
 $밤 몇 시에 닫아요?
 1	밤	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 밤 몃시에 닫아요?
 $밤 몃시에 닫아요?
@@ -63431,22 +63180,20 @@ $밤 몃 시에 닫아요?
 ; 밤 몇시에 닫아?
 $밤 몇시에 닫아?
 1	밤	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 밤 몇 시에 닫아?
 $밤 몇 시에 닫아?
 1	밤	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 밤 몃시에 닫아?
 $밤 몃시에 닫아?
@@ -63469,24 +63216,22 @@ $밤 몃 시에 닫아?
 ; 밤 몇시 까지해?
 $밤 몇시 까지해?
 1	밤	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 밤 몇 시 까지해?
 $밤 몇 시 까지해?
 1	밤	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 밤 몃시 까지해?
 $밤 몃시 까지해?
@@ -63610,16 +63355,14 @@ $새벽 타임?
 ; 새벽 몇시?
 $새벽 몇시?
 1	새벽	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 새벽 몇 시?
 $새벽 몇 시?
 1	새벽	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 새벽 몃시?
 $새벽 몃시?
@@ -63636,24 +63379,22 @@ $새벽 몃 시?
 ; 새벽 몇시 까지해요?
 $새벽 몇시 까지해요?
 1	새벽	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 새벽 몇 시 까지해요?
 $새벽 몇 시 까지해요?
 1	새벽	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 새벽 몃시 까지해요?
 $새벽 몃시 까지해요?
@@ -63679,22 +63420,20 @@ $새벽 몃 시 까지해요?
 ; 새벽 몇시에 닫아요?
 $새벽 몇시에 닫아요?
 1	새벽	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 새벽 몇 시에 닫아요?
 $새벽 몇 시에 닫아요?
 1	새벽	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 새벽 몃시에 닫아요?
 $새벽 몃시에 닫아요?
@@ -63717,22 +63456,20 @@ $새벽 몃 시에 닫아요?
 ; 새벽 몇시에 닫아?
 $새벽 몇시에 닫아?
 1	새벽	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 새벽 몇 시에 닫아?
 $새벽 몇 시에 닫아?
 1	새벽	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 새벽 몃시에 닫아?
 $새벽 몃시에 닫아?
@@ -63755,24 +63492,22 @@ $새벽 몃 시에 닫아?
 ; 새벽 몇시 까지해?
 $새벽 몇시 까지해?
 1	새벽	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 새벽 몇 시 까지해?
 $새벽 몇 시 까지해?
 1	새벽	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 새벽 몃시 까지해?
 $새벽 몃시 까지해?
@@ -63804,14 +63539,13 @@ $오전 영업시간?
 ; 오전 오픈시간?
 $오전 오픈시간?
 1	오전	NNP	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 오전 오픈?
 $오전 오픈?
 1	오전	NNP	O
-2	오픈	NNP	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 오전 시간?
@@ -63823,9 +63557,8 @@ $오전 시간?
 ; 오전 오픈 시간?
 $오전 오픈 시간?
 1	오전	NNP	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 오전 타임?
 $오전 타임?
@@ -63836,30 +63569,26 @@ $오전 타임?
 ; 오전 오픈타임?
 $오전 오픈타임?
 1	오전	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 오전 오픈 타임?
 $오전 오픈 타임?
 1	오전	NNP	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 오전 몇시?
 $오전 몇시?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 오전 몇 시?
 $오전 몇 시?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 오전 몃시?
 $오전 몃시?
@@ -63876,22 +63605,20 @@ $오전 몃 시?
 ; 오전 몇시에 열어요?
 $오전 몇시에 열어요?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 오전 몇시에열어요?
 $오전 몇시에열어요?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 오전 몃시에열어요?
 $오전 몃시에열어요?
@@ -63909,42 +63636,38 @@ $오전 몃시에 열어요?
 ; 오전 몇시에 오픈해요?
 $오전 몇시에 오픈해요?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 오전 몇시에오픈해요?
 $오전 몇시에오픈해요?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 오전 몇시에오픈?
 $오전 몇시에오픈?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 오전 몇시에 오픈?
 $오전 몇시에 오픈?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 오전 몃시에오픈?
 $오전 몃시에오픈?
@@ -63955,30 +63678,28 @@ $오전 몃시에오픈?
 $오전 몃시에 오픈?
 1	오전	NNP	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 오전 몇시에오픈해?
 $오전 몇시에오픈해?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 오전 몇시에 오픈해?
 $오전 몇시에 오픈해?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 오전 몃시에오픈해?
 $오전 몃시에오픈해?
@@ -64011,24 +63732,22 @@ $오전 몃시에 오픈해요?
 ; 오전 몇시에 문열어요?
 $오전 몇시에 문열어요?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 오전 몇시에문열어요?
 $오전 몇시에문열어요?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 오전 몃시에문열어요?
 $오전 몃시에문열어요?
@@ -64047,24 +63766,22 @@ $오전 몃시에 문열어요?
 ; 오전 몇시 까지해요?
 $오전 몇시 까지해요?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 오전 몇 시 까지해요?
 $오전 몇 시 까지해요?
 1	오전	NNP	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 오전 몃시 까지해요?
 $오전 몃시 까지해요?
@@ -64102,9 +63819,8 @@ $오후 시간?
 ; 오후 오픈 시간?
 $오후 오픈 시간?
 1	오후	NNG	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 오후 마감?
 $오후 마감?
@@ -64205,16 +63921,14 @@ $오후 타임?
 ; 오후 몇시?
 $오후 몇시?
 1	오후	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 오후 몇 시?
 $오후 몇 시?
 1	오후	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 오후 몃시?
 $오후 몃시?
@@ -64231,24 +63945,22 @@ $오후 몃 시?
 ; 오후 몇시 까지해요?
 $오후 몇시 까지해요?
 1	오후	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 오후 몇 시 까지해요?
 $오후 몇 시 까지해요?
 1	오후	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 오후 몃시 까지해요?
 $오후 몃시 까지해요?
@@ -64274,22 +63986,20 @@ $오후 몃 시 까지해요?
 ; 오후 몇시에 닫아요?
 $오후 몇시에 닫아요?
 1	오후	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 오후 몇 시에 닫아요?
 $오후 몇 시에 닫아요?
 1	오후	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 오후 몃시에 닫아요?
 $오후 몃시에 닫아요?
@@ -64312,22 +64022,20 @@ $오후 몃 시에 닫아요?
 ; 오후 몇시에 닫아?
 $오후 몇시에 닫아?
 1	오후	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 오후 몇 시에 닫아?
 $오후 몇 시에 닫아?
 1	오후	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 오후 몃시에 닫아?
 $오후 몃시에 닫아?
@@ -64350,24 +64058,22 @@ $오후 몃 시에 닫아?
 ; 오후 몇시 까지해?
 $오후 몇시 까지해?
 1	오후	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 오후 몇 시 까지해?
 $오후 몇 시 까지해?
 1	오후	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 오후 몃시 까지해?
 $오후 몃시 까지해?
@@ -64399,14 +64105,13 @@ $오늘 영업시간?
 ; 오늘 오픈시간?
 $오늘 오픈시간?
 1	오늘	NNG	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 오늘 오픈?
 $오늘 오픈?
 1	오늘	NNG	O
-2	오픈	NNP	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 오늘 시간?
@@ -64418,9 +64123,8 @@ $오늘 시간?
 ; 오늘 오픈 시간?
 $오늘 오픈 시간?
 1	오늘	NNG	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 오늘 마감?
 $오늘 마감?
@@ -64521,30 +64225,26 @@ $오늘 타임?
 ; 오늘 오픈타임?
 $오늘 오픈타임?
 1	오늘	NNG	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 오늘 오픈 타임?
 $오늘 오픈 타임?
 1	오늘	NNG	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 오늘 몇시?
 $오늘 몇시?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 오늘 몇 시?
 $오늘 몇 시?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 오늘 몃시?
 $오늘 몃시?
@@ -64561,22 +64261,20 @@ $오늘 몃 시?
 ; 오늘 몇시에 열어요?
 $오늘 몇시에 열어요?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 오늘 몇시에열어요?
 $오늘 몇시에열어요?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 오늘 몃시에열어요?
 $오늘 몃시에열어요?
@@ -64594,42 +64292,38 @@ $오늘 몃시에 열어요?
 ; 오늘 몇시에 오픈해요?
 $오늘 몇시에 오픈해요?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 오늘 몇시에오픈해요?
 $오늘 몇시에오픈해요?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 오늘 몇시에오픈?
 $오늘 몇시에오픈?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 오늘 몇시에 오픈?
 $오늘 몇시에 오픈?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 오늘 몃시에오픈?
 $오늘 몃시에오픈?
@@ -64640,30 +64334,28 @@ $오늘 몃시에오픈?
 $오늘 몃시에 오픈?
 1	오늘	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 오늘 몇시에오픈해?
 $오늘 몇시에오픈해?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 오늘 몇시에 오픈해?
 $오늘 몇시에 오픈해?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 오늘 몃시에오픈해?
 $오늘 몃시에오픈해?
@@ -64696,24 +64388,22 @@ $오늘 몃시에 오픈해요?
 ; 오늘 몇시에 문열어요?
 $오늘 몇시에 문열어요?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 오늘 몇시에문열어요?
 $오늘 몇시에문열어요?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 오늘 몃시에문열어요?
 $오늘 몃시에문열어요?
@@ -64732,24 +64422,22 @@ $오늘 몃시에 문열어요?
 ; 오늘 몇시 까지해요?
 $오늘 몇시 까지해요?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 오늘 몇 시 까지해요?
 $오늘 몇 시 까지해요?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 오늘 몃시 까지해요?
 $오늘 몃시 까지해요?
@@ -64775,22 +64463,20 @@ $오늘 몃 시 까지해요?
 ; 오늘 몇시에 닫아요?
 $오늘 몇시에 닫아요?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 오늘 몇 시에 닫아요?
 $오늘 몇 시에 닫아요?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 오늘 몃시에 닫아요?
 $오늘 몃시에 닫아요?
@@ -64813,22 +64499,20 @@ $오늘 몃 시에 닫아요?
 ; 오늘 몇시에 닫아?
 $오늘 몇시에 닫아?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 오늘 몇 시에 닫아?
 $오늘 몇 시에 닫아?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 오늘 몃시에 닫아?
 $오늘 몃시에 닫아?
@@ -64851,24 +64535,22 @@ $오늘 몃 시에 닫아?
 ; 오늘 몇시 까지해?
 $오늘 몇시 까지해?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 오늘 몇 시 까지해?
 $오늘 몇 시 까지해?
 1	오늘	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 오늘 몃시 까지해?
 $오늘 몃시 까지해?
@@ -64900,14 +64582,13 @@ $내일 영업시간?
 ; 내일 오픈시간?
 $내일 오픈시간?
 1	내일	NNG	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 내일 오픈?
 $내일 오픈?
 1	내일	NNG	O
-2	오픈	NNP	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 내일 시간?
@@ -64919,9 +64600,8 @@ $내일 시간?
 ; 내일 오픈 시간?
 $내일 오픈 시간?
 1	내일	NNG	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 내일 마감?
 $내일 마감?
@@ -65022,30 +64702,26 @@ $내일 타임?
 ; 내일 오픈타임?
 $내일 오픈타임?
 1	내일	NNG	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 내일 오픈 타임?
 $내일 오픈 타임?
 1	내일	NNG	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 내일 몇시?
 $내일 몇시?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 내일 몇 시?
 $내일 몇 시?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 내일 몃시?
 $내일 몃시?
@@ -65062,22 +64738,20 @@ $내일 몃 시?
 ; 내일 몇시에 열어요?
 $내일 몇시에 열어요?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 내일 몇시에열어요?
 $내일 몇시에열어요?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 내일 몃시에열어요?
 $내일 몃시에열어요?
@@ -65095,42 +64769,38 @@ $내일 몃시에 열어요?
 ; 내일 몇시에 오픈해요?
 $내일 몇시에 오픈해요?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 내일 몇시에오픈해요?
 $내일 몇시에오픈해요?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 내일 몇시에오픈?
 $내일 몇시에오픈?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 내일 몇시에 오픈?
 $내일 몇시에 오픈?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 내일 몃시에오픈?
 $내일 몃시에오픈?
@@ -65141,30 +64811,28 @@ $내일 몃시에오픈?
 $내일 몃시에 오픈?
 1	내일	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 내일 몇시에오픈해?
 $내일 몇시에오픈해?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 내일 몇시에 오픈해?
 $내일 몇시에 오픈해?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 내일 몃시에오픈해?
 $내일 몃시에오픈해?
@@ -65197,24 +64865,22 @@ $내일 몃시에 오픈해요?
 ; 내일 몇시에 문열어요?
 $내일 몇시에 문열어요?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 내일 몇시에문열어요?
 $내일 몇시에문열어요?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 내일 몃시에문열어요?
 $내일 몃시에문열어요?
@@ -65233,24 +64899,22 @@ $내일 몃시에 문열어요?
 ; 내일 몇시 까지해요?
 $내일 몇시 까지해요?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 내일 몇 시 까지해요?
 $내일 몇 시 까지해요?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 내일 몃시 까지해요?
 $내일 몃시 까지해요?
@@ -65276,22 +64940,20 @@ $내일 몃 시 까지해요?
 ; 내일 몇시에 닫아요?
 $내일 몇시에 닫아요?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 내일 몇 시에 닫아요?
 $내일 몇 시에 닫아요?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 내일 몃시에 닫아요?
 $내일 몃시에 닫아요?
@@ -65314,22 +64976,20 @@ $내일 몃 시에 닫아요?
 ; 내일 몇시에 닫아?
 $내일 몇시에 닫아?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 내일 몇 시에 닫아?
 $내일 몇 시에 닫아?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 내일 몃시에 닫아?
 $내일 몃시에 닫아?
@@ -65352,24 +65012,22 @@ $내일 몃 시에 닫아?
 ; 내일 몇시 까지해?
 $내일 몇시 까지해?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 내일 몇 시 까지해?
 $내일 몇 시 까지해?
 1	내일	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 내일 몃시 까지해?
 $내일 몃시 까지해?
@@ -65401,14 +65059,13 @@ $모레 영업시간?
 ; 모레 오픈시간?
 $모레 오픈시간?
 1	모레	NNG	O
-2	오픈	NNP	O
-3	시간	NNP	O
-4	?	SF	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 모레 오픈?
 $모레 오픈?
 1	모레	NNG	O
-2	오픈	NNP	O
+2	오픈	NNG	O
 3	?	SF	O
 
 ; 모레 시간?
@@ -65420,9 +65077,8 @@ $모레 시간?
 ; 모레 오픈 시간?
 $모레 오픈 시간?
 1	모레	NNG	O
-2	오픈	NNP	O
-3	시간	NNG	O
-4	?	SF	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 모레 마감?
 $모레 마감?
@@ -65523,30 +65179,26 @@ $모레 타임?
 ; 모레 오픈타임?
 $모레 오픈타임?
 1	모레	NNG	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 모레 오픈 타임?
 $모레 오픈 타임?
 1	모레	NNG	O
-2	오픈	NNP	O
-3	타임	NNP	O
-4	?	SF	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 모레 몇시?
 $모레 몇시?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 모레 몇 시?
 $모레 몇 시?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	?	SF	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 모레 몃시?
 $모레 몃시?
@@ -65563,22 +65215,20 @@ $모레 몃 시?
 ; 모레 몇시에 열어요?
 $모레 몇시에 열어요?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 모레 몇시에열어요?
 $모레 몇시에열어요?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	열	VV	O
-6	어요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
 ; 모레 몃시에열어요?
 $모레 몃시에열어요?
@@ -65596,42 +65246,38 @@ $모레 몃시에 열어요?
 ; 모레 몇시에 오픈해요?
 $모레 몇시에 오픈해요?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 모레 몇시에오픈해요?
 $모레 몇시에오픈해요?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 모레 몇시에오픈?
 $모레 몇시에오픈?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 모레 몇시에 오픈?
 $모레 몇시에 오픈?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNP	O
-6	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
 
 ; 모레 몃시에오픈?
 $모레 몃시에오픈?
@@ -65642,30 +65288,28 @@ $모레 몃시에오픈?
 $모레 몃시에 오픈?
 1	모레	NNG	O
 2	몃시에	NA	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 모레 몇시에오픈해?
 $모레 몇시에오픈해?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 모레 몇시에 오픈해?
 $모레 몇시에 오픈해?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 모레 몃시에오픈해?
 $모레 몃시에오픈해?
@@ -65698,24 +65342,22 @@ $모레 몃시에 오픈해요?
 ; 모레 몇시에 문열어요?
 $모레 몇시에 문열어요?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 모레 몇시에문열어요?
 $모레 몇시에문열어요?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	문	NNG	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 모레 몃시에문열어요?
 $모레 몃시에문열어요?
@@ -65734,24 +65376,22 @@ $모레 몃시에 문열어요?
 ; 모레 몇시 까지해요?
 $모레 몇시 까지해요?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 모레 몇 시 까지해요?
 $모레 몇 시 까지해요?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아요	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 모레 몃시 까지해요?
 $모레 몃시 까지해요?
@@ -65777,22 +65417,20 @@ $모레 몃 시 까지해요?
 ; 모레 몇시에 닫아요?
 $모레 몇시에 닫아요?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 모레 몇 시에 닫아요?
 $모레 몇 시에 닫아요?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아요	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 모레 몃시에 닫아요?
 $모레 몃시에 닫아요?
@@ -65815,22 +65453,20 @@ $모레 몃 시에 닫아요?
 ; 모레 몇시에 닫아?
 $모레 몇시에 닫아?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 모레 몇 시에 닫아?
 $모레 몇 시에 닫아?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	에	JKB	O
-5	닫	VV	O
-6	아	EF	O
-7	?	SF	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 모레 몃시에 닫아?
 $모레 몃시에 닫아?
@@ -65853,24 +65489,22 @@ $모레 몃 시에 닫아?
 ; 모레 몇시 까지해?
 $모레 몇시 까지해?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 모레 몇 시 까지해?
 $모레 몇 시 까지해?
 1	모레	NNG	O
-2	몇	MM	O
-3	시	NNB	O
-4	까	VV	O
-5	지	EC	O
-6	하	VX	O
-7	아	EF	O
-8	?	SF	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 모레 몃시 까지해?
 $모레 몃시 까지해?
@@ -65895,563 +65529,480 @@ $모레 몃 시 까지해?
 
 ; 내일모레 영업시간?
 $내일모레 영업시간?
-1	내일	NNG	O
-2	모레	NNG	O
-3	영업시간	NNG	O
-4	?	SF	O
+1	내일모레	NNG	O
+2	영업시간	NNG	O
+3	?	SF	O
 
 ; 내일모레 오픈시간?
 $내일모레 오픈시간?
-1	내일	NNG	O
-2	모레	NNG	O
-3	오픈	NNP	O
-4	시간	NNP	O
-5	?	SF	O
+1	내일모레	NNG	O
+2	오픈시간	NNG	O
+3	?	SF	O
 
 ; 내일모레 오픈?
 $내일모레 오픈?
-1	내일	NNG	O
-2	모레	NNG	O
-3	오픈	NNP	O
-4	?	SF	O
+1	내일모레	NNG	O
+2	오픈	NNG	O
+3	?	SF	O
 
 ; 내일모레 시간?
 $내일모레 시간?
-1	내일	NNG	O
-2	모레	NNG	O
-3	시간	NNG	O
-4	?	SF	O
+1	내일모레	NNG	O
+2	시간	NNG	O
+3	?	SF	O
 
 ; 내일모레 오픈 시간?
 $내일모레 오픈 시간?
-1	내일	NNG	O
-2	모레	NNG	O
-3	오픈	NNP	O
-4	시간	NNG	O
-5	?	SF	O
+1	내일모레	NNG	O
+2	오픈 시간	NNG	O
+3	?	SF	O
 
 ; 내일모레 마감?
 $내일모레 마감?
-1	내일	NNG	O
-2	모레	NNG	O
-3	마감	NNG	O
-4	?	SF	O
+1	내일모레	NNG	O
+2	마감	NNG	O
+3	?	SF	O
 
 ; 내일모레 마감시간?
 $내일모레 마감시간?
-1	내일	NNG	O
-2	모레	NNG	O
-3	마감시간	NNG	O
-4	?	SF	O
+1	내일모레	NNG	O
+2	마감시간	NNG	O
+3	?	SF	O
 
 ; 내일모레 마감 시간?
 $내일모레 마감 시간?
-1	내일	NNG	O
-2	모레	NNG	O
-3	마감	NNG	O
-4	시간	NNG	O
-5	?	SF	O
+1	내일모레	NNG	O
+2	마감	NNG	O
+3	시간	NNG	O
+4	?	SF	O
 
 ; 내일모레 언제까지해요?
 $내일모레 언제까지해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	언제	NP	O
-4	까지	JX	O
-5	하	VV	O
-6	아요	EF	O
-7	?	SF	O
+1	내일모레	NNG	O
+2	언제	NP	O
+3	까지	JX	O
+4	하	VV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 내일모레 언제까지 해요?
 $내일모레 언제까지 해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	언제	NP	O
-4	까지	JX	O
-5	하	VX	O
-6	아요	EF	O
-7	?	SF	O
+1	내일모레	NNG	O
+2	언제	NP	O
+3	까지	JX	O
+4	하	VX	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 내일모레 언제까지 오픈해요?
 $내일모레 언제까지 오픈해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	언제	NP	O
-4	까지	JX	O
-5	오픈	NNG	O
-6	하	XSV	O
-7	아요	EF	O
-8	?	SF	O
+1	내일모레	NNG	O
+2	언제	NP	O
+3	까지	JX	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 내일모레 언제까지해?
 $내일모레 언제까지해?
-1	내일	NNG	O
-2	모레	NNG	O
-3	언제	NP	O
-4	까지	JX	O
-5	하	VV	O
-6	아	EF	O
-7	?	SF	O
+1	내일모레	NNG	O
+2	언제	NP	O
+3	까지	JX	O
+4	하	VV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 내일모레 언제마감?
 $내일모레 언제마감?
-1	내일	NNG	O
-2	모레	NNG	O
-3	언제	NP	O
-4	마감	NNG	O
-5	?	SF	O
+1	내일모레	NNG	O
+2	언제	NP	O
+3	마감	NNG	O
+4	?	SF	O
 
 ; 내일모레 언제 마감해?
 $내일모레 언제 마감해?
-1	내일	NNG	O
-2	모레	NNG	O
-3	언제	MAG	O
-4	마감	NNG	O
-5	하	XSV	O
-6	아	EF	O
-7	?	SF	O
+1	내일모레	NNG	O
+2	언제	MAG	O
+3	마감	NNG	O
+4	하	XSV	O
+5	아	EF	O
+6	?	SF	O
 
 ; 내일모레 언제 마감해요?
 $내일모레 언제 마감해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	언제	MAG	O
-4	마감	NNG	O
-5	하	XSV	O
-6	아요	EF	O
-7	?	SF	O
+1	내일모레	NNG	O
+2	언제	MAG	O
+3	마감	NNG	O
+4	하	XSV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 내일모레 언제마감해요?
 $내일모레 언제마감해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	언제	NP	O
-4	마감	NNG	O
-5	하	XSV	O
-6	아요	EF	O
-7	?	SF	O
+1	내일모레	NNG	O
+2	언제	NP	O
+3	마감	NNG	O
+4	하	XSV	O
+5	아요	EF	O
+6	?	SF	O
 
 ; 내일모레 타임?
 $내일모레 타임?
-1	내일	NNG	O
-2	모레	NNG	O
-3	타임	NNP	O
-4	?	SF	O
+1	내일모레	NNG	O
+2	타임	NNP	O
+3	?	SF	O
 
 ; 내일모레 오픈타임?
 $내일모레 오픈타임?
-1	내일	NNG	O
-2	모레	NNG	O
-3	오픈	NNP	O
-4	타임	NNP	O
-5	?	SF	O
+1	내일모레	NNG	O
+2	오픈타임	NNG	O
+3	?	SF	O
 
 ; 내일모레 오픈 타임?
 $내일모레 오픈 타임?
-1	내일	NNG	O
-2	모레	NNG	O
-3	오픈	NNP	O
-4	타임	NNP	O
-5	?	SF	O
+1	내일모레	NNG	O
+2	오픈 타임	NNG	O
+3	?	SF	O
 
 ; 내일모레 몇시?
 $내일모레 몇시?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	?	SF	O
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	?	SF	O
 
 ; 내일모레 몇 시?
 $내일모레 몇 시?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	?	SF	O
+1	내일모레	NNG	O
+2	몇 시	NNG	O
+3	?	SF	O
 
 ; 내일모레 몃시?
 $내일모레 몃시?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시?	NA	O
+1	내일모레	NNG	O
+2	몃시?	NA	O
 
 ; 내일모레 몃 시?
 $내일모레 몃 시?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃	NA	O
-4	시	NNB	O
-5	?	SF	O
+1	내일모레	NNG	O
+2	몃	NA	O
+3	시	NNB	O
+4	?	SF	O
 
 ; 내일모레 몇시에 열어요?
 $내일모레 몇시에 열어요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
-
-; 내일모레 몇시에열어요?
-$내일모레 몇시에열어요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
-
-; 내일모레 몃시에열어요?
-$내일모레 몃시에열어요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에열어요?	NA	O
-
-; 내일모레 몃시에 열어요?
-$내일모레 몃시에 열어요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에	NA	O
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
 4	열	VV	O
 5	어요	EF	O
 6	?	SF	O
 
-; 내일모레 몇시에 오픈해요?
-$내일모레 몇시에 오픈해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNG	O
-7	하	XSV	O
-8	아요	EF	O
-9	?	SF	O
+; 내일모레 몇시에열어요?
+$내일모레 몇시에열어요?
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
 
-; 내일모레 몇시에오픈해요?
-$내일모레 몇시에오픈해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNG	O
-7	하	XSV	O
-8	아요	EF	O
-9	?	SF	O
+; 내일모레 몃시에열어요?
+$내일모레 몃시에열어요?
+1	내일모레	NNG	O
+2	몃시에열어요?	NA	O
 
-; 내일모레 몇시에오픈?
-$내일모레 몇시에오픈?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNG	O
-7	?	SF	O
-
-; 내일모레 몇시에 오픈?
-$내일모레 몇시에 오픈?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNP	O
-7	?	SF	O
-
-; 내일모레 몃시에오픈?
-$내일모레 몃시에오픈?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에오픈?	NA	O
-
-; 내일모레 몃시에 오픈?
-$내일모레 몃시에 오픈?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에	NA	O
-4	오픈	NNP	O
+; 내일모레 몃시에 열어요?
+$내일모레 몃시에 열어요?
+1	내일모레	NNG	O
+2	몃시에	NA	O
+3	열	VV	O
+4	어요	EF	O
 5	?	SF	O
 
-; 내일모레 몇시에오픈해?
-$내일모레 몇시에오픈해?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNG	O
-7	하	XSV	O
-8	아	EF	O
-9	?	SF	O
-
-; 내일모레 몇시에 오픈해?
-$내일모레 몇시에 오픈해?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNG	O
-7	하	XSV	O
-8	아	EF	O
-9	?	SF	O
-
-; 내일모레 몃시에오픈해?
-$내일모레 몃시에오픈해?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에오픈해?	NA	O
-
-; 내일모레 몃시에 오픈해?
-$내일모레 몃시에 오픈해?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에	NA	O
-4	오픈	NNG	O
-5	하	XSV	O
-6	아	EF	O
-7	?	SF	O
-
-; 내일모레 몃시에오픈해요?
-$내일모레 몃시에오픈해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에오픈해요?	NA	O
-
-; 내일모레 몃시에 오픈해요?
-$내일모레 몃시에 오픈해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에	NA	O
+; 내일모레 몇시에 오픈해요?
+$내일모레 몇시에 오픈해요?
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
 4	오픈	NNG	O
 5	하	XSV	O
 6	아요	EF	O
 7	?	SF	O
 
+; 내일모레 몇시에오픈해요?
+$내일모레 몇시에오픈해요?
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아요	EF	O
+7	?	SF	O
+
+; 내일모레 몇시에오픈?
+$내일모레 몇시에오픈?
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
+
+; 내일모레 몇시에 오픈?
+$내일모레 몇시에 오픈?
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	?	SF	O
+
+; 내일모레 몃시에오픈?
+$내일모레 몃시에오픈?
+1	내일모레	NNG	O
+2	몃시에오픈?	NA	O
+
+; 내일모레 몃시에 오픈?
+$내일모레 몃시에 오픈?
+1	내일모레	NNG	O
+2	몃시에	NA	O
+3	오픈	NNG	O
+4	?	SF	O
+
+; 내일모레 몇시에오픈해?
+$내일모레 몇시에오픈해?
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
+
+; 내일모레 몇시에 오픈해?
+$내일모레 몇시에 오픈해?
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	오픈	NNG	O
+5	하	XSV	O
+6	아	EF	O
+7	?	SF	O
+
+; 내일모레 몃시에오픈해?
+$내일모레 몃시에오픈해?
+1	내일모레	NNG	O
+2	몃시에오픈해?	NA	O
+
+; 내일모레 몃시에 오픈해?
+$내일모레 몃시에 오픈해?
+1	내일모레	NNG	O
+2	몃시에	NA	O
+3	오픈	NNG	O
+4	하	XSV	O
+5	아	EF	O
+6	?	SF	O
+
+; 내일모레 몃시에오픈해요?
+$내일모레 몃시에오픈해요?
+1	내일모레	NNG	O
+2	몃시에오픈해요?	NA	O
+
+; 내일모레 몃시에 오픈해요?
+$내일모레 몃시에 오픈해요?
+1	내일모레	NNG	O
+2	몃시에	NA	O
+3	오픈	NNG	O
+4	하	XSV	O
+5	아요	EF	O
+6	?	SF	O
+
 ; 내일모레 몇시에 문열어요?
 $내일모레 몇시에 문열어요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	문	NNG	O
-7	열	VV	O
-8	어요	EF	O
-9	?	SF	O
-
-; 내일모레 몇시에문열어요?
-$내일모레 몇시에문열어요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	문	NNG	O
-7	열	VV	O
-8	어요	EF	O
-9	?	SF	O
-
-; 내일모레 몃시에문열어요?
-$내일모레 몃시에문열어요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에문열어요?	NA	O
-
-; 내일모레 몃시에 문열어요?
-$내일모레 몃시에 문열어요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에	NA	O
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
 4	문	NNG	O
 5	열	VV	O
 6	어요	EF	O
 7	?	SF	O
 
+; 내일모레 몇시에문열어요?
+$내일모레 몇시에문열어요?
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
+4	문	NNG	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
+
+; 내일모레 몃시에문열어요?
+$내일모레 몃시에문열어요?
+1	내일모레	NNG	O
+2	몃시에문열어요?	NA	O
+
+; 내일모레 몃시에 문열어요?
+$내일모레 몃시에 문열어요?
+1	내일모레	NNG	O
+2	몃시에	NA	O
+3	문	NNG	O
+4	열	VV	O
+5	어요	EF	O
+6	?	SF	O
+
 ; 내일모레 몇시 까지해요?
 $내일모레 몇시 까지해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	까	VV	O
-6	지	EC	O
-7	하	VX	O
-8	아요	EF	O
-9	?	SF	O
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 내일모레 몇 시 까지해요?
 $내일모레 몇 시 까지해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	까	VV	O
-6	지	EC	O
-7	하	VX	O
-8	아요	EF	O
-9	?	SF	O
+1	내일모레	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 내일모레 몃시 까지해요?
 $내일모레 몃시 까지해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시	NA	O
+1	내일모레	NNG	O
+2	몃시	NA	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아요	EF	O
+7	?	SF	O
+
+; 내일모레 몃 시 까지해요?
+$내일모레 몃 시 까지해요?
+1	내일모레	NNG	O
+2	몃	NA	O
+3	시	NNB	O
 4	까	VV	O
 5	지	EC	O
 6	하	VX	O
 7	아요	EF	O
 8	?	SF	O
 
-; 내일모레 몃 시 까지해요?
-$내일모레 몃 시 까지해요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃	NA	O
-4	시	NNB	O
-5	까	VV	O
-6	지	EC	O
-7	하	VX	O
-8	아요	EF	O
-9	?	SF	O
-
 ; 내일모레 몇시에 닫아요?
 $내일모레 몇시에 닫아요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	닫	VV	O
-7	아요	EF	O
-8	?	SF	O
-
-; 내일모레 몇 시에 닫아요?
-$내일모레 몇 시에 닫아요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	닫	VV	O
-7	아요	EF	O
-8	?	SF	O
-
-; 내일모레 몃시에 닫아요?
-$내일모레 몃시에 닫아요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에	NA	O
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
 4	닫	VV	O
 5	아요	EF	O
 6	?	SF	O
 
+; 내일모레 몇 시에 닫아요?
+$내일모레 몇 시에 닫아요?
+1	내일모레	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아요	EF	O
+6	?	SF	O
+
+; 내일모레 몃시에 닫아요?
+$내일모레 몃시에 닫아요?
+1	내일모레	NNG	O
+2	몃시에	NA	O
+3	닫	VV	O
+4	아요	EF	O
+5	?	SF	O
+
 ; 내일모레 몃 시에 닫아요?
 $내일모레 몃 시에 닫아요?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃	NA	O
-4	시	NNB	O
-5	에	JKB	O
-6	닫	VV	O
-7	아요	EF	O
-8	?	SF	O
+1	내일모레	NNG	O
+2	몃	NA	O
+3	시	NNB	O
+4	에	JKB	O
+5	닫	VV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 내일모레 몇시에 닫아?
 $내일모레 몇시에 닫아?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	닫	VV	O
-7	아	EF	O
-8	?	SF	O
-
-; 내일모레 몇 시에 닫아?
-$내일모레 몇 시에 닫아?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	닫	VV	O
-7	아	EF	O
-8	?	SF	O
-
-; 내일모레 몃시에 닫아?
-$내일모레 몃시에 닫아?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시에	NA	O
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	에	JKB	O
 4	닫	VV	O
 5	아	EF	O
 6	?	SF	O
 
+; 내일모레 몇 시에 닫아?
+$내일모레 몇 시에 닫아?
+1	내일모레	NNG	O
+2	몇 시	NNG	O
+3	에	JKB	O
+4	닫	VV	O
+5	아	EF	O
+6	?	SF	O
+
+; 내일모레 몃시에 닫아?
+$내일모레 몃시에 닫아?
+1	내일모레	NNG	O
+2	몃시에	NA	O
+3	닫	VV	O
+4	아	EF	O
+5	?	SF	O
+
 ; 내일모레 몃 시에 닫아?
 $내일모레 몃 시에 닫아?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃	NA	O
-4	시	NNB	O
-5	에	JKB	O
-6	닫	VV	O
-7	아	EF	O
-8	?	SF	O
+1	내일모레	NNG	O
+2	몃	NA	O
+3	시	NNB	O
+4	에	JKB	O
+5	닫	VV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 내일모레 몇시 까지해?
 $내일모레 몇시 까지해?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	까	VV	O
-6	지	EC	O
-7	하	VX	O
-8	아	EF	O
-9	?	SF	O
+1	내일모레	NNG	O
+2	몇시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 내일모레 몇 시 까지해?
 $내일모레 몇 시 까지해?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	까	VV	O
-6	지	EC	O
-7	하	VX	O
-8	아	EF	O
-9	?	SF	O
+1	내일모레	NNG	O
+2	몇 시	NNG	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
 
 ; 내일모레 몃시 까지해?
 $내일모레 몃시 까지해?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃시	NA	O
+1	내일모레	NNG	O
+2	몃시	NA	O
+3	까	VV	O
+4	지	EC	O
+5	하	VX	O
+6	아	EF	O
+7	?	SF	O
+
+; 내일모레 몃 시 까지해?
+$내일모레 몃 시 까지해?
+1	내일모레	NNG	O
+2	몃	NA	O
+3	시	NNB	O
 4	까	VV	O
 5	지	EC	O
 6	하	VX	O
 7	아	EF	O
 8	?	SF	O
-
-; 내일모레 몃 시 까지해?
-$내일모레 몃 시 까지해?
-1	내일	NNG	O
-2	모레	NNG	O
-3	몃	NA	O
-4	시	NNB	O
-5	까	VV	O
-6	지	EC	O
-7	하	VX	O
-8	아	EF	O
-9	?	SF	O
 
 ; 내일 모레 영업시간?
 $내일 모레 영업시간?
@@ -66464,15 +66015,14 @@ $내일 모레 영업시간?
 $내일 모레 오픈시간?
 1	내일	NNG	O
 2	모레	NNG	O
-3	오픈	NNP	O
-4	시간	NNP	O
-5	?	SF	O
+3	오픈시간	NNG	O
+4	?	SF	O
 
 ; 내일 모레 오픈?
 $내일 모레 오픈?
 1	내일	NNG	O
 2	모레	NNG	O
-3	오픈	NNP	O
+3	오픈	NNG	O
 4	?	SF	O
 
 ; 내일 모레 시간?
@@ -66486,9 +66036,8 @@ $내일 모레 시간?
 $내일 모레 오픈 시간?
 1	내일	NNG	O
 2	모레	NNG	O
-3	오픈	NNP	O
-4	시간	NNG	O
-5	?	SF	O
+3	오픈 시간	NNG	O
+4	?	SF	O
 
 ; 내일 모레 마감?
 $내일 모레 마감?
@@ -66602,33 +66151,29 @@ $내일 모레 타임?
 $내일 모레 오픈타임?
 1	내일	NNG	O
 2	모레	NNG	O
-3	오픈	NNP	O
-4	타임	NNP	O
-5	?	SF	O
+3	오픈타임	NNG	O
+4	?	SF	O
 
 ; 내일 모레 오픈 타임?
 $내일 모레 오픈 타임?
 1	내일	NNG	O
 2	모레	NNG	O
-3	오픈	NNP	O
-4	타임	NNP	O
-5	?	SF	O
+3	오픈 타임	NNG	O
+4	?	SF	O
 
 ; 내일 모레 몇시?
 $내일 모레 몇시?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	?	SF	O
+3	몇시	NNG	O
+4	?	SF	O
 
 ; 내일 모레 몇 시?
 $내일 모레 몇 시?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	?	SF	O
+3	몇 시	NNG	O
+4	?	SF	O
 
 ; 내일 모레 몃시?
 $내일 모레 몃시?
@@ -66648,23 +66193,21 @@ $내일 모레 몃 시?
 $내일 모레 몇시에 열어요?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 내일 모레 몇시에열어요?
 $내일 모레 몇시에열어요?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	열	VV	O
-7	어요	EF	O
-8	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	열	VV	O
+6	어요	EF	O
+7	?	SF	O
 
 ; 내일 모레 몃시에열어요?
 $내일 모레 몃시에열어요?
@@ -66685,45 +66228,41 @@ $내일 모레 몃시에 열어요?
 $내일 모레 몇시에 오픈해요?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNG	O
-7	하	XSV	O
-8	아요	EF	O
-9	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	오픈	NNG	O
+6	하	XSV	O
+7	아요	EF	O
+8	?	SF	O
 
 ; 내일 모레 몇시에오픈해요?
 $내일 모레 몇시에오픈해요?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNG	O
-7	하	XSV	O
-8	아요	EF	O
-9	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	오픈	NNG	O
+6	하	XSV	O
+7	아요	EF	O
+8	?	SF	O
 
 ; 내일 모레 몇시에오픈?
 $내일 모레 몇시에오픈?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNG	O
-7	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	오픈	NNG	O
+6	?	SF	O
 
 ; 내일 모레 몇시에 오픈?
 $내일 모레 몇시에 오픈?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNP	O
-7	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	오픈	NNG	O
+6	?	SF	O
 
 ; 내일 모레 몃시에오픈?
 $내일 모레 몃시에오픈?
@@ -66736,32 +66275,30 @@ $내일 모레 몃시에 오픈?
 1	내일	NNG	O
 2	모레	NNG	O
 3	몃시에	NA	O
-4	오픈	NNP	O
+4	오픈	NNG	O
 5	?	SF	O
 
 ; 내일 모레 몇시에오픈해?
 $내일 모레 몇시에오픈해?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNG	O
-7	하	XSV	O
-8	아	EF	O
-9	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	오픈	NNG	O
+6	하	XSV	O
+7	아	EF	O
+8	?	SF	O
 
 ; 내일 모레 몇시에 오픈해?
 $내일 모레 몇시에 오픈해?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	오픈	NNG	O
-7	하	XSV	O
-8	아	EF	O
-9	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	오픈	NNG	O
+6	하	XSV	O
+7	아	EF	O
+8	?	SF	O
 
 ; 내일 모레 몃시에오픈해?
 $내일 모레 몃시에오픈해?
@@ -66799,25 +66336,23 @@ $내일 모레 몃시에 오픈해요?
 $내일 모레 몇시에 문열어요?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	문	NNG	O
-7	열	VV	O
-8	어요	EF	O
-9	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	문	NNG	O
+6	열	VV	O
+7	어요	EF	O
+8	?	SF	O
 
 ; 내일 모레 몇시에문열어요?
 $내일 모레 몇시에문열어요?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	문	NNG	O
-7	열	VV	O
-8	어요	EF	O
-9	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	문	NNG	O
+6	열	VV	O
+7	어요	EF	O
+8	?	SF	O
 
 ; 내일 모레 몃시에문열어요?
 $내일 모레 몃시에문열어요?
@@ -66839,25 +66374,23 @@ $내일 모레 몃시에 문열어요?
 $내일 모레 몇시 까지해요?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	까	VV	O
-6	지	EC	O
-7	하	VX	O
-8	아요	EF	O
-9	?	SF	O
+3	몇시	NNG	O
+4	까	VV	O
+5	지	EC	O
+6	하	VX	O
+7	아요	EF	O
+8	?	SF	O
 
 ; 내일 모레 몇 시 까지해요?
 $내일 모레 몇 시 까지해요?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	까	VV	O
-6	지	EC	O
-7	하	VX	O
-8	아요	EF	O
-9	?	SF	O
+3	몇 시	NNG	O
+4	까	VV	O
+5	지	EC	O
+6	하	VX	O
+7	아요	EF	O
+8	?	SF	O
 
 ; 내일 모레 몃시 까지해요?
 $내일 모레 몃시 까지해요?
@@ -66886,23 +66419,21 @@ $내일 모레 몃 시 까지해요?
 $내일 모레 몇시에 닫아요?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	닫	VV	O
-7	아요	EF	O
-8	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	닫	VV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 내일 모레 몇 시에 닫아요?
 $내일 모레 몇 시에 닫아요?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	닫	VV	O
-7	아요	EF	O
-8	?	SF	O
+3	몇 시	NNG	O
+4	에	JKB	O
+5	닫	VV	O
+6	아요	EF	O
+7	?	SF	O
 
 ; 내일 모레 몃시에 닫아요?
 $내일 모레 몃시에 닫아요?
@@ -66928,23 +66459,21 @@ $내일 모레 몃 시에 닫아요?
 $내일 모레 몇시에 닫아?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	닫	VV	O
-7	아	EF	O
-8	?	SF	O
+3	몇시	NNG	O
+4	에	JKB	O
+5	닫	VV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 내일 모레 몇 시에 닫아?
 $내일 모레 몇 시에 닫아?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	에	JKB	O
-6	닫	VV	O
-7	아	EF	O
-8	?	SF	O
+3	몇 시	NNG	O
+4	에	JKB	O
+5	닫	VV	O
+6	아	EF	O
+7	?	SF	O
 
 ; 내일 모레 몃시에 닫아?
 $내일 모레 몃시에 닫아?
@@ -66970,25 +66499,23 @@ $내일 모레 몃 시에 닫아?
 $내일 모레 몇시 까지해?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	까	VV	O
-6	지	EC	O
-7	하	VX	O
-8	아	EF	O
-9	?	SF	O
+3	몇시	NNG	O
+4	까	VV	O
+5	지	EC	O
+6	하	VX	O
+7	아	EF	O
+8	?	SF	O
 
 ; 내일 모레 몇 시 까지해?
 $내일 모레 몇 시 까지해?
 1	내일	NNG	O
 2	모레	NNG	O
-3	몇	MM	O
-4	시	NNB	O
-5	까	VV	O
-6	지	EC	O
-7	하	VX	O
-8	아	EF	O
-9	?	SF	O
+3	몇 시	NNG	O
+4	까	VV	O
+5	지	EC	O
+6	하	VX	O
+7	아	EF	O
+8	?	SF	O
 
 ; 내일 모레 몃시 까지해?
 $내일 모레 몃시 까지해?
@@ -67019,12 +66546,11 @@ $영업시간
 
 ; 오픈시간
 $오픈시간
-1	오픈	NNP	O
-2	시간	NNP	O
+1	오픈시간	NNG	O
 
 ; 오픈
 $오픈
-1	오픈	NNP	O
+1	오픈	NNG	O
 
 ; 시간
 $시간
@@ -67032,8 +66558,7 @@ $시간
 
 ; 오픈 시간
 $오픈 시간
-1	오픈	NNP	O
-2	시간	NNG	O
+1	오픈 시간	NNG	O
 
 ; 마감
 $마감
@@ -67109,23 +66634,19 @@ $타임
 
 ; 오픈타임
 $오픈타임
-1	오픈	NNP	O
-2	타임	NNP	O
+1	오픈타임	NNG	O
 
 ; 오픈 타임
 $오픈 타임
-1	오픈	NNP	O
-2	타임	NNP	O
+1	오픈 타임	NNG	O
 
 ; 몇시
 $몇시
-1	몇	MM	O
-2	시	NNB	O
+1	몇시	NNG	O
 
 ; 몇 시
 $몇 시
-1	몇	MM	O
-2	시	NNB	O
+1	몇 시	NNG	O
 
 ; 몃시
 $몃시
@@ -67138,19 +66659,17 @@ $몃 시
 
 ; 몇시에 열어요
 $몇시에 열어요
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	열	VV	O
-5	어요	EC	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	열	VV	O
+4	어요	EC	O
 
 ; 몇시에열어요
 $몇시에열어요
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	열	VV	O
-5	어요	EC	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	열	VV	O
+4	어요	EC	O
 
 ; 몃시에열어요
 $몃시에열어요
@@ -67164,35 +66683,31 @@ $몃시에 열어요
 
 ; 몇시에 오픈해요
 $몇시에 오픈해요
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	오픈	NNG	O
-5	하	XSV	O
-6	아요	EC	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	오픈	NNG	O
+4	하	XSV	O
+5	아요	EC	O
 
 ; 몇시에오픈해요
 $몇시에오픈해요
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	오픈	NNG	O
-5	하	XSV	O
-6	아요	EC	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	오픈	NNG	O
+4	하	XSV	O
+5	아요	EC	O
 
 ; 몇시에오픈
 $몇시에오픈
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	오픈	NNG	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	오픈	NNG	O
 
 ; 몇시에 오픈
 $몇시에 오픈
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	오픈	NNP	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	오픈	NNG	O
 
 ; 몃시에오픈
 $몃시에오픈
@@ -67201,25 +66716,23 @@ $몃시에오픈
 ; 몃시에 오픈
 $몃시에 오픈
 1	몃시에	NA	O
-2	오픈	NNP	O
+2	오픈	NNG	O
 
 ; 몇시에오픈해
 $몇시에오픈해
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	오픈	NNG	O
-5	하	XSV	O
-6	아	EC	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	오픈	NNG	O
+4	하	XSV	O
+5	아	EC	O
 
 ; 몇시에 오픈해
 $몇시에 오픈해
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	오픈	NNG	O
-5	하	XSV	O
-6	아	EC	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	오픈	NNG	O
+4	하	XSV	O
+5	아	EC	O
 
 ; 몃시에오픈해
 $몃시에오픈해
@@ -67245,21 +66758,19 @@ $몃시에 오픈해요
 
 ; 몇시에 문열어요
 $몇시에 문열어요
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	문	NNG	O
-5	열	VV	O
-6	어요	EC	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	문	NNG	O
+4	열	VV	O
+5	어요	EC	O
 
 ; 몇시에문열어요
 $몇시에문열어요
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	문	NNG	O
-5	열	VV	O
-6	어요	EC	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	문	NNG	O
+4	열	VV	O
+5	어요	EC	O
 
 ; 몃시에문열어요
 $몃시에문열어요
@@ -67274,21 +66785,19 @@ $몃시에 문열어요
 
 ; 몇시 까지해요
 $몇시 까지해요
-1	몇	MM	O
-2	시	NNB	O
-3	까	VV	O
-4	지	EC	O
-5	하	VX	O
-6	아요	EC	O
+1	몇시	NNG	O
+2	까	VV	O
+3	지	EC	O
+4	하	VX	O
+5	아요	EC	O
 
 ; 몇 시 까지해요
 $몇 시 까지해요
-1	몇	MM	O
-2	시	NNB	O
-3	까	VV	O
-4	지	EC	O
-5	하	VX	O
-6	아요	EC	O
+1	몇 시	NNG	O
+2	까	VV	O
+3	지	EC	O
+4	하	VX	O
+5	아요	EC	O
 
 ; 몃시 까지해요
 $몃시 까지해요
@@ -67309,19 +66818,17 @@ $몃 시 까지해요
 
 ; 몇시에 닫아요
 $몇시에 닫아요
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	닫	VV	O
-5	아요	EC	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	닫	VV	O
+4	아요	EC	O
 
 ; 몇 시에 닫아요
 $몇 시에 닫아요
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	닫	VV	O
-5	아요	EC	O
+1	몇 시	NNG	O
+2	에	JKB	O
+3	닫	VV	O
+4	아요	EC	O
 
 ; 몃시에 닫아요
 $몃시에 닫아요
@@ -67339,19 +66846,17 @@ $몃 시에 닫아요
 
 ; 몇시에 닫아
 $몇시에 닫아
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	닫	VV	O
-5	아	EC	O
+1	몇시	NNG	O
+2	에	JKB	O
+3	닫	VV	O
+4	아	EC	O
 
 ; 몇 시에 닫아
 $몇 시에 닫아
-1	몇	MM	O
-2	시	NNB	O
-3	에	JKB	O
-4	닫	VV	O
-5	아	EC	O
+1	몇 시	NNG	O
+2	에	JKB	O
+3	닫	VV	O
+4	아	EC	O
 
 ; 몃시에 닫아
 $몃시에 닫아
@@ -67369,21 +66874,19 @@ $몃 시에 닫아
 
 ; 몇시 까지해
 $몇시 까지해
-1	몇	MM	O
-2	시	NNB	O
-3	까	VV	O
-4	지	EC	O
-5	하	VX	O
-6	아	EC	O
+1	몇시	NNG	O
+2	까	VV	O
+3	지	EC	O
+4	하	VX	O
+5	아	EC	O
 
 ; 몇 시 까지해
 $몇 시 까지해
-1	몇	MM	O
-2	시	NNB	O
-3	까	VV	O
-4	지	EC	O
-5	하	VX	O
-6	아	EC	O
+1	몇 시	NNG	O
+2	까	VV	O
+3	지	EC	O
+4	하	VX	O
+5	아	EC	O
 
 ; 몃시 까지해
 $몃시 까지해
@@ -67454,59 +66957,53 @@ $영업시간 알 수 있을까요
 
 ; 오픈시간 어떻게되요
 $오픈시간 어떻게되요
-1	오픈	NNP	O
-2	시간	NNP	O
-3	어떻	VA	O
-4	게	EC	O
-5	되	VV	O
-6	요	EC	O
+1	오픈시간	NNG	O
+2	어떻	VA	O
+3	게	EC	O
+4	되	VV	O
+5	요	EC	O
 
 ; 오픈시간 언제에요
 $오픈시간 언제에요
-1	오픈	NNP	O
-2	시간	NNP	O
-3	언제	NP	O
-4	에	JKB	O
-5	요	JX	O
+1	오픈시간	NNG	O
+2	언제	NP	O
+3	에	JKB	O
+4	요	JX	O
 
 ; 오픈시간 알려줘
 $오픈시간 알려줘
-1	오픈	NNP	O
-2	시간	NNP	O
-3	알리	VV	O
-4	어	EC	O
-5	주	VX	O
-6	어	EC	O
+1	오픈시간	NNG	O
+2	알리	VV	O
+3	어	EC	O
+4	주	VX	O
+5	어	EC	O
 
 ; 오픈시간 알려주세요
 $오픈시간 알려주세요
-1	오픈	NNP	O
-2	시간	NNP	O
-3	알리	VV	O
-4	어	EC	O
-5	주	VX	O
-6	시	EP	O
-7	어요	EC	O
+1	오픈시간	NNG	O
+2	알리	VV	O
+3	어	EC	O
+4	주	VX	O
+5	시	EP	O
+6	어요	EC	O
 
 ; 오픈시간 알 수 있을까
 $오픈시간 알 수 있을까
-1	오픈	NNP	O
-2	시간	NNP	O
-3	알	VV	O
-4	ㄹ	ETM	O
-5	수	NNB	O
-6	있	VV	O
-7	을까	EC	O
+1	오픈시간	NNG	O
+2	알	VV	O
+3	ㄹ	ETM	O
+4	수	NNB	O
+5	있	VV	O
+6	을까	EC	O
 
 ; 오픈시간 알 수 있을까요
 $오픈시간 알 수 있을까요
-1	오픈	NNP	O
-2	시간	NNP	O
-3	알	VV	O
-4	ㄹ	ETM	O
-5	수	NNB	O
-6	있	VV	O
-7	을까요	EC	O
+1	오픈시간	NNG	O
+2	알	VV	O
+3	ㄹ	ETM	O
+4	수	NNB	O
+5	있	VV	O
+6	을까요	EC	O
 
 ; 마감시간 어떻게되요
 $마감시간 어떻게되요
@@ -67616,59 +67113,53 @@ $영업 시간 알 수 있을까요
 
 ; 오픈 시간 어떻게되요
 $오픈 시간 어떻게되요
-1	오픈	NNP	O
-2	시간	NNG	O
-3	어떻	VA	O
-4	게	EC	O
-5	되	VV	O
-6	요	EC	O
+1	오픈 시간	NNG	O
+2	어떻	VA	O
+3	게	EC	O
+4	되	VV	O
+5	요	EC	O
 
 ; 오픈 시간 언제에요
 $오픈 시간 언제에요
-1	오픈	NNP	O
-2	시간	NNG	O
-3	언제	NP	O
-4	에	JKB	O
-5	요	JX	O
+1	오픈 시간	NNG	O
+2	언제	NP	O
+3	에	JKB	O
+4	요	JX	O
 
 ; 오픈 시간 알려줘
 $오픈 시간 알려줘
-1	오픈	NNP	O
-2	시간	NNG	O
-3	알리	VV	O
-4	어	EC	O
-5	주	VX	O
-6	어	EC	O
+1	오픈 시간	NNG	O
+2	알리	VV	O
+3	어	EC	O
+4	주	VX	O
+5	어	EC	O
 
 ; 오픈 시간 알려주세요
 $오픈 시간 알려주세요
-1	오픈	NNP	O
-2	시간	NNG	O
-3	알리	VV	O
-4	어	EC	O
-5	주	VX	O
-6	시	EP	O
-7	어요	EC	O
+1	오픈 시간	NNG	O
+2	알리	VV	O
+3	어	EC	O
+4	주	VX	O
+5	시	EP	O
+6	어요	EC	O
 
 ; 오픈 시간 알 수 있을까
 $오픈 시간 알 수 있을까
-1	오픈	NNP	O
-2	시간	NNG	O
-3	알	VV	O
-4	ㄹ	ETM	O
-5	수	NNB	O
-6	있	VV	O
-7	을까	EC	O
+1	오픈 시간	NNG	O
+2	알	VV	O
+3	ㄹ	ETM	O
+4	수	NNB	O
+5	있	VV	O
+6	을까	EC	O
 
 ; 오픈 시간 알 수 있을까요
 $오픈 시간 알 수 있을까요
-1	오픈	NNP	O
-2	시간	NNG	O
-3	알	VV	O
-4	ㄹ	ETM	O
-5	수	NNB	O
-6	있	VV	O
-7	을까요	EC	O
+1	오픈 시간	NNG	O
+2	알	VV	O
+3	ㄹ	ETM	O
+4	수	NNB	O
+5	있	VV	O
+6	을까요	EC	O
 
 ; 마감 시간 어떻게되요
 $마감 시간 어떻게되요
@@ -67728,59 +67219,53 @@ $마감 시간 알 수 있을까요
 
 ; 오픈 타임 어떻게되요
 $오픈 타임 어떻게되요
-1	오픈	NNP	O
-2	타임	NNP	O
-3	어떻	VA	O
-4	게	EC	O
-5	되	VV	O
-6	요	EC	O
+1	오픈 타임	NNG	O
+2	어떻	VA	O
+3	게	EC	O
+4	되	VV	O
+5	요	EC	O
 
 ; 오픈 타임 언제에요
 $오픈 타임 언제에요
-1	오픈	NNP	O
-2	타임	NNP	O
-3	언제	NP	O
-4	에	JKB	O
-5	요	JX	O
+1	오픈 타임	NNG	O
+2	언제	NP	O
+3	에	JKB	O
+4	요	JX	O
 
 ; 오픈 타임 알려줘
 $오픈 타임 알려줘
-1	오픈	NNP	O
-2	타임	NNP	O
-3	알리	VV	O
-4	어	EC	O
-5	주	VX	O
-6	어	EC	O
+1	오픈 타임	NNG	O
+2	알리	VV	O
+3	어	EC	O
+4	주	VX	O
+5	어	EC	O
 
 ; 오픈 타임 알려주세요
 $오픈 타임 알려주세요
-1	오픈	NNP	O
-2	타임	NNP	O
-3	알리	VV	O
-4	어	EC	O
-5	주	VX	O
-6	시	EP	O
-7	어요	EC	O
+1	오픈 타임	NNG	O
+2	알리	VV	O
+3	어	EC	O
+4	주	VX	O
+5	시	EP	O
+6	어요	EC	O
 
 ; 오픈 타임 알 수 있을까
 $오픈 타임 알 수 있을까
-1	오픈	NNP	O
-2	타임	NNP	O
-3	알	VV	O
-4	ㄹ	ETM	O
-5	수	NNB	O
-6	있	VV	O
-7	을까	EC	O
+1	오픈 타임	NNG	O
+2	알	VV	O
+3	ㄹ	ETM	O
+4	수	NNB	O
+5	있	VV	O
+6	을까	EC	O
 
 ; 오픈 타임 알 수 있을까요
 $오픈 타임 알 수 있을까요
-1	오픈	NNP	O
-2	타임	NNP	O
-3	알	VV	O
-4	ㄹ	ETM	O
-5	수	NNB	O
-6	있	VV	O
-7	을까요	EC	O
+1	오픈 타임	NNG	O
+2	알	VV	O
+3	ㄹ	ETM	O
+4	수	NNB	O
+5	있	VV	O
+6	을까요	EC	O
 
 ; 마감 타임 어떻게되요
 $마감 타임 어떻게되요
@@ -67840,59 +67325,53 @@ $마감 타임 알 수 있을까요
 
 ; 오픈타임 어떻게되요
 $오픈타임 어떻게되요
-1	오픈	NNP	O
-2	타임	NNP	O
-3	어떻	VA	O
-4	게	EC	O
-5	되	VV	O
-6	요	EC	O
+1	오픈타임	NNG	O
+2	어떻	VA	O
+3	게	EC	O
+4	되	VV	O
+5	요	EC	O
 
 ; 오픈타임 언제에요
 $오픈타임 언제에요
-1	오픈	NNP	O
-2	타임	NNP	O
-3	언제	NP	O
-4	에	JKB	O
-5	요	JX	O
+1	오픈타임	NNG	O
+2	언제	NP	O
+3	에	JKB	O
+4	요	JX	O
 
 ; 오픈타임 알려줘
 $오픈타임 알려줘
-1	오픈	NNP	O
-2	타임	NNP	O
-3	알리	VV	O
-4	어	EC	O
-5	주	VX	O
-6	어	EC	O
+1	오픈타임	NNG	O
+2	알리	VV	O
+3	어	EC	O
+4	주	VX	O
+5	어	EC	O
 
 ; 오픈타임 알려주세요
 $오픈타임 알려주세요
-1	오픈	NNP	O
-2	타임	NNP	O
-3	알리	VV	O
-4	어	EC	O
-5	주	VX	O
-6	시	EP	O
-7	어요	EC	O
+1	오픈타임	NNG	O
+2	알리	VV	O
+3	어	EC	O
+4	주	VX	O
+5	시	EP	O
+6	어요	EC	O
 
 ; 오픈타임 알 수 있을까
 $오픈타임 알 수 있을까
-1	오픈	NNP	O
-2	타임	NNP	O
-3	알	VV	O
-4	ㄹ	ETM	O
-5	수	NNB	O
-6	있	VV	O
-7	을까	EC	O
+1	오픈타임	NNG	O
+2	알	VV	O
+3	ㄹ	ETM	O
+4	수	NNB	O
+5	있	VV	O
+6	을까	EC	O
 
 ; 오픈타임 알 수 있을까요
 $오픈타임 알 수 있을까요
-1	오픈	NNP	O
-2	타임	NNP	O
-3	알	VV	O
-4	ㄹ	ETM	O
-5	수	NNB	O
-6	있	VV	O
-7	을까요	EC	O
+1	오픈타임	NNG	O
+2	알	VV	O
+3	ㄹ	ETM	O
+4	수	NNB	O
+5	있	VV	O
+6	을까요	EC	O
 
 ; 마감타임 어떻게되요
 $마감타임 어떻게되요

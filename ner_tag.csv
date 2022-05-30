@@ -1,137 +1,16 @@
-취소,CANCEL,10
-X,CANCEL,10
-10분,DT,7
-10시,DT,7
-11분,DT,7
-11시,DT,7
-12분,DT,7
-12시,DT,7
-13분,DT,7
-13시,DT,7
-14분,DT,7
-14시,DT,7
-15분,DT,7
-15시,DT,7
-16분,DT,7
-16시,DT,7
-17분,DT,7
-17시,DT,7
-18분,DT,7
-18시,DT,7
-19분,DT,7
-19시,DT,7
-1분,DT,7
-1시,DT,7
-20분,DT,7
-20시,DT,7
-21분,DT,7
-21시,DT,7
-22분,DT,7
-22시,DT,7
-23분,DT,7
-23시,DT,7
-24분,DT,7
-24시,DT,7
-25분,DT,7
-26분,DT,7
-27분,DT,7
-28분,DT,7
-29분,DT,7
-2분,DT,7
-2시,DT,7
-30분,DT,7
-31분,DT,7
-32분,DT,7
-33분,DT,7
-34분,DT,7
-35분,DT,7
-36분,DT,7
-37분,DT,7
-38분,DT,7
-39분,DT,7
-3분,DT,7
-3시,DT,7
-40분,DT,7
-41분,DT,7
-42분,DT,7
-43분,DT,7
-44분,DT,7
-45분,DT,7
-46분,DT,7
-47분,DT,7
-48분,DT,7
-49분,DT,7
-4분,DT,7
-4시,DT,7
-50분,DT,7
-51분,DT,7
-52분,DT,7
-53분,DT,7
-54분,DT,7
-55분,DT,7
-56분,DT,7
-57분,DT,7
-58분,DT,7
-59분,DT,7
-5분,DT,7
-5시,DT,7
-60분,DT,7
-6분,DT,7
-6시,DT,7
-7분,DT,7
-7시,DT,7
-8분,DT,7
-8시,DT,7
-9분,DT,7
-9시,DT,7
-금요일,DT,7
-내일,DT,7
-내일모레,DT,7
-마감,DT,7
-몇 시,DT,7
-몇시,DT,7
-모레,DT,7
-목요일,DT,7
-밤,DT,7
-새벽,DT,7
-수요일,DT,7
-시간,DT,7
-아침,DT,7
-야간,DT,7
-영업시간,DT,7
-영업시간,DT,7
-오픈,DT,7
-오픈 시간,DT,7
-오픈 타임,DT,7
-오픈시간,DT,7
-오픈타임,DT,7
-월요일,DT,7
-일요일,DT,7
-저녁,DT,7
-점심,DT,7
-주말,DT,7
-주중,DT,7
-토요일,DT,7
-평일,DT,7
-화요일,DT,7
-매장,FACILITY,6
-무선 인터넷,FACILITY,6
-무선인터넷,FACILITY,6
-와이 파이,FACILITY,6
-와이파이,FACILITY,6
-충천,FACILITY,6
-패스워드,FACILITY,6
-핸드폰,FACILITY,6
-핸드폰 충전,FACILITY,6
-핸드폰충전,FACILITY,6
-화장실,FACILITY,6
-WIFI,FACILITY,6
+사이드메뉴,MENU,0
+사이드 메뉴,MENU,0
+메뉴판,MENU,0
+메뉴,MENU,0
+빵종류,MENU,0
+식사종류,MENU,0
+에이드종류,MENU,0
+음료종류,MENU,0
+커피종류,MENU,0
 갈릭 치즈 브레드,FOOD,1
-고구마 라떼,FOOD,1
 고구마 라떼,FOOD,1
 고구마 말랭이,FOOD,1
 골드키위주스,FOOD,1
-그린루이보스,FOOD,1
 그린루이보스,FOOD,1
 그릴드 치킨 샐러드 & 시저 드레싱,FOOD,1
 까르보나라 구운주먹밥,FOOD,1
@@ -139,34 +18,22 @@ WIFI,FACILITY,6
 꿀오란다,FOOD,1
 꿀호떡,FOOD,1
 녹차 라떼,FOOD,1
-녹차 라떼,FOOD,1
-녹차 라떼,FOOD,1
-녹차 라떼,FOOD,1
 녹차 플랫치노,FOOD,1
 달고나 라떼,FOOD,1
-달고나 라떼,FOOD,1
-달고나 믹스치노,FOOD,1
 달고나 믹스치노,FOOD,1
 달고나 아이스크림 와플,FOOD,1
 더블 치즈 케이크,FOOD,1
 더블 토피넛 라떼,FOOD,1
-더블 토피넛 라떼,FOOD,1
-더블 토피넛 위드샷,FOOD,1
 더블 토피넛 위드샷,FOOD,1
 데블스 초코 케이크,FOOD,1
 두부텐더 콥샐러드,FOOD,1
 디카페인 버블 흑당 콜드브루,FOOD,1
-디카페인 버블 흑당 콜드브루,FOOD,1
-디카페인 연유 콜드브루,FOOD,1
 디카페인 연유 콜드브루,FOOD,1
 디카페인 콜드브루 니트로,FOOD,1
 디카페인 콜드브루 라떼,FOOD,1
-디카페인 콜드브루 라떼,FOOD,1
-디카페인 콜드브루 아메리카노,FOOD,1
 디카페인 콜드브루 아메리카노,FOOD,1
 디카페인 콜드브루 크림넛,FOOD,1
 디카페인 콜드브루 화이트비엔나,FOOD,1
-디카페인 흑당 콜드브루,FOOD,1
 디카페인 흑당 콜드브루,FOOD,1
 딸기 쉐이크,FOOD,1
 딸기 요거트 플랫치노,FOOD,1
@@ -176,7 +43,6 @@ WIFI,FACILITY,6
 떠먹는 티라미수,FOOD,1
 레몬 마스카포네,FOOD,1
 레몬 스윗플럼,FOOD,1
-레몬 에이드,FOOD,1
 레몬 에이드,FOOD,1
 레몬차,FOOD,1
 마스카포네 티라미수,FOOD,1
@@ -189,33 +55,23 @@ WIFI,FACILITY,6
 메이플 와플,FOOD,1
 모카 플랫치노,FOOD,1
 모카칩 믹스치노,FOOD,1
-모카칩 믹스치노,FOOD,1
 미니 코코 크런치,FOOD,1
 미니프레첼 볶음양념맛,FOOD,1
 미니프레첼 와사비맛,FOOD,1
 믹스라떼,FOOD,1
 민트 모카,FOOD,1
-민트 모카,FOOD,1
-민트 초콜릿,FOOD,1
-민트 초콜릿,FOOD,1
 민트 초콜릿 칩 플랫치노,FOOD,1
+민트 초콜릿,FOOD,1
 밀크레이프 케이크,FOOD,1
 밀크티,FOOD,1
-밀크티,FOOD,1
-바닐라 라떼,FOOD,1
-바닐라 라떼,FOOD,1
-바닐라 라떼,FOOD,1
 바닐라 라떼,FOOD,1
 바닐라 마카롱,FOOD,1
 바닐라 웨이퍼스,FOOD,1
 버블 크림 밀크티,FOOD,1
 버블 흑당 라떼,FOOD,1
-버블 흑당 라떼,FOOD,1
-버블 흑당 콜드브루,FOOD,1
 버블 흑당 콜드브루,FOOD,1
 버블믹스라떼,FOOD,1
 베이컨 포테이토 스퀘어 피자,FOOD,1
-복분자 뱅쇼,FOOD,1
 복분자 뱅쇼,FOOD,1
 복분자 뱅쇼 콤부차,FOOD,1
 불닭고구마 스퀘어 피자,FOOD,1
@@ -227,112 +83,75 @@ WIFI,FACILITY,6
 비타민바(그릭요거트),FOOD,1
 산딸기 마카롱,FOOD,1
 생강차,FOOD,1
-생강차,FOOD,1
 생과일 수박주스,FOOD,1
-생과일 수박주스,FOOD,1
-생과일 토마토주스,FOOD,1
 생과일 토마토주스,FOOD,1
 생딸기 연유 브레드,FOOD,1
 생딸기 와플,FOOD,1
 생딸기 크로플,FOOD,1
 생크림 와플,FOOD,1
 샤인히비스커스,FOOD,1
-샤인히비스커스,FOOD,1
 석류 애플라임,FOOD,1
 석류 오리지널,FOOD,1
-석류애플라임,FOOD,1
 석류애플라임,FOOD,1
 소고기 브리또,FOOD,1
 수플레 치즈 케이크,FOOD,1
 스노우 쿠키슈,FOOD,1
 스트로베리 치즈 마카롱,FOOD,1
 스프링캐모마일,FOOD,1
-스프링캐모마일,FOOD,1
 쌍쌍 츄로스,FOOD,1
-쌍화차,FOOD,1
 쌍화차,FOOD,1
 아이스콘 요구르트,FOOD,1
 아이스콘 초코,FOOD,1
 아이스크림 호떡,FOOD,1
 아이스티 레몬,FOOD,1
-아이스티 레몬,FOOD,1
 아이스티 복숭아,FOOD,1
-아이스티 복숭아,FOOD,1
-아인슈페너,FOOD,1
 아인슈페너,FOOD,1
 아포가토 오리지널,FOOD,1
 양송이 수프,FOOD,1
 어니언 베이글,FOOD,1
 얼그레이 쇼콜라 마카롱,FOOD,1
 에그 베이컨 과카몰리 샌드위치,FOOD,1
-에스프레소,FOOD,1
 에스프레소 마끼아또,FOOD,1
 에스프레소 콘파냐,FOOD,1
+에스프레소,FOOD,1
 연유 카페라떼,FOOD,1
-연유 카페라떼,FOOD,1
-연유 카페라떼,FOOD,1
-연유 카페라떼,FOOD,1
-연유 콜드브루,FOOD,1
 연유 콜드브루,FOOD,1
 오리지널 핫 번,FOOD,1
 오리진 쉐이크,FOOD,1
 유자 피나콜라다,FOOD,1
 유자차,FOOD,1
 유자피나콜라다,FOOD,1
-유자피나콜라다,FOOD,1
-이곡 라떼,FOOD,1
 이곡 라떼,FOOD,1
 이너츠,FOOD,1
 잉글리쉬 머핀,FOOD,1
 자몽 네이블 오렌지,FOOD,1
 자몽 에이드,FOOD,1
-자몽 에이드,FOOD,1
 자몽 플랫치노,FOOD,1
-자몽네이블오렌지,FOOD,1
 자몽네이블오렌지,FOOD,1
 자몽차,FOOD,1
 제주청귤 블러썸,FOOD,1
 제주청귤 오리지널,FOOD,1
-청포도 에이드,FOOD,1
 청포도 에이드,FOOD,1
 초코 티라미수,FOOD,1
 초코렛청크 쿠키,FOOD,1
 초코칩 머핀,FOOD,1
 초코쿠키 쉐이크,FOOD,1
 초코프레첼 미니,FOOD,1
-초콜릿,FOOD,1
-초콜릿,FOOD,1
-초콜릿,FOOD,1
-초콜릿,FOOD,1
 초콜릿 디핑,FOOD,1
 초콜릿 마카롱,FOOD,1
 초콜릿 브라우니,FOOD,1
 초콜릿 칩 플랫치노,FOOD,1
-카라멜 마끼아또,FOOD,1
-카라멜 마끼아또,FOOD,1
-카라멜 마끼아또,FOOD,1
+초콜릿,FOOD,1
 카라멜 마끼아또,FOOD,1
 카라멜 플랫치노,FOOD,1
 카페 라떼,FOOD,1
-카페 라떼,FOOD,1
-카페 라떼,FOOD,1
-카페 라떼,FOOD,1
-카페 모카,FOOD,1
-카페 모카,FOOD,1
-카페 모카,FOOD,1
 카페 모카,FOOD,1
 카페 아메리카노,FOOD,1
-카페 아메리카노,FOOD,1
-카페 아메리카노,FOOD,1
-카페 아메리카노,FOOD,1
-카푸치노,FOOD,1
 카푸치노,FOOD,1
 커피 플랫치노,FOOD,1
 콘 수프,FOOD,1
 콜드브루 니트로,FOOD,1
 콜드브루 라떼,FOOD,1
-콜드브루 라떼,FOOD,1
-콜드브루 아메리카노,FOOD,1
 콜드브루 아메리카노,FOOD,1
 콜드브루 크림넛,FOOD,1
 콜드브루 화이트 비엔나,FOOD,1
@@ -347,19 +166,13 @@ WIFI,FACILITY,6
 클래식 미니 스콘,FOOD,1
 토피넛 꽈루아상,FOOD,1
 토피넛 라떼,FOOD,1
-토피넛 라떼,FOOD,1
-토피넛 라떼,FOOD,1
-토피넛 라떼,FOOD,1
 토피넛 크로플,FOOD,1
 토피넛 플랫치노,FOOD,1
 팥앤크림 샌드위치,FOOD,1
 팥인절미 1인빙수,FOOD,1
 팥인절미 눈꽃빙,FOOD,1
-팥인절미 눈꽃빙,FOOD,1
 페퍼로니 피자 샌드위치,FOOD,1
 퓨어페퍼민트,FOOD,1
-퓨어페퍼민트,FOOD,1
-프레시그린티,FOOD,1
 프레시그린티,FOOD,1
 프레즐,FOOD,1
 플레인 꽈루아상,FOOD,1
@@ -370,7 +183,6 @@ WIFI,FACILITY,6
 플레인 크로플,FOOD,1
 피넛버터앤딸기잼 샌드위치,FOOD,1
 피치얼그레이,FOOD,1
-피치얼그레이,FOOD,1
 핫 치즈 번,FOOD,1
 핫치킨 브리또,FOOD,1
 햄앤치즈샌드위치,FOOD,1
@@ -378,30 +190,42 @@ WIFI,FACILITY,6
 허니 카라멜 브레드,FOOD,1
 홍시주스,FOOD,1
 화이트 초콜릿,FOOD,1
-화이트 초콜릿,FOOD,1
-화이트 초콜릿,FOOD,1
-화이트 초콜릿,FOOD,1
-화이트 초콜릿 모카,FOOD,1
-화이트 초콜릿 모카,FOOD,1
-화이트 초콜릿 모카,FOOD,1
 화이트 초콜릿 모카,FOOD,1
 화이트초코 마카다미아 쿠키,FOOD,1
 흑당 라떼,FOOD,1
-흑당 라떼,FOOD,1
 흑당 콜드브루,FOOD,1
-흑당 콜드브루,FOOD,1
-주문,FOOD,1
-선택,FOOD,1
-메뉴판,MENU,0
-메뉴,MENU,0
-빵종류,MENU,0
-사이드 메뉴,MENU,0
-사이드메뉴,MENU,0
-식사종류,MENU,0
-에이드종류,MENU,0
-음료종류,MENU,0
-커피종류,MENU,0
-종류,MENU,0
+시그니처,RECOMMEND,2
+인기,RECOMMEND,2
+제일,RECOMMEND,2
+추천,RECOMMEND,2
+계좌이체,PAY,3
+국민카드,PAY,3
+농협카드,PAY,3
+비씨카드,PAY,3
+사원증,PAY,3
+신한카드,PAY,3
+카카오페이,PAY,3
+할인카드,PAY,3
+결제,PAY,3
+할인,PAY,3
+현금,PAY,3
+카드,PAY,3
+결제방식,POINT,4
+삼성카드,POINT,4
+포인트 적립,POINT,4
+폰 번호,POINT,4
+하나카드,POINT,4
+핸드폰번호,POINT,4
+핸드폰 번호,POINT,4
+현대카드,POINT,4
+BC카드,POINT,4
+NH농협카드,POINT,4
+휴대폰번호,POINT,4
+휴대폰 번호,POINT,4
+포인트,POINT,4
+적립,POINT,4
+혜택,POINT,4
+번호,POINT,4
 과테말라,ORIGIN,5
 멕시코,ORIGIN,5
 베트남,ORIGIN,5
@@ -410,9 +234,9 @@ WIFI,FACILITY,6
 에티오피아,ORIGIN,5
 예멘,ORIGIN,5
 온두라스,ORIGIN,5
-원두,ORIGIN,5
 원두 정보,ORIGIN,5
 원두원산지,ORIGIN,5
+원두,ORIGIN,5
 원산지,ORIGIN,5
 인도,ORIGIN,5
 인도네시아,ORIGIN,5
@@ -423,48 +247,15 @@ WIFI,FACILITY,6
 탄자니아,ORIGIN,5
 파푸아뉴기니,ORIGIN,5
 하와이,ORIGIN,5
-결제,PAY,3
-계좌이체,PAY,3
-국민카드,PAY,3
-농협카드,PAY,3
-비씨카드,PAY,3
-사원증,PAY,3
-신한카드,PAY,3
-카드,PAY,3
-카카오페이,PAY,3
-할인,PAY,3
-할인카드,PAY,3
-현금,PAY,3
-결제방식,POINT,4
-기프티콘,POINT,4
-번호,POINT,4
-삼성카드,POINT,4
-적립,POINT,4
-포인트,POINT,4
-포인트 적립,POINT,4
-폰 번호,POINT,4
-하나카드,POINT,4
-핸드폰 번호,POINT,4
-핸드폰번호,POINT,4
-현대카드,POINT,4
-혜택,POINT,4
-휴대폰 번호,POINT,4
-휴대폰번호,POINT,4
-BC카드,POINT,4
-NH농협카드,POINT,4
-시그니처,RECOMMEND,2
-인기,RECOMMEND,2
-제일,RECOMMEND,2
-추천,RECOMMEND,2
-밖,TAKEOUT,9
-테이크 아웃,TAKEOUT,9
-테이크아웃,TAKEOUT,9
-포장,TAKEOUT,9
-개인머그컵,TUMBLER,8
-개인바틀,TUMBLER,8
-개인보틀,TUMBLER,8
-개인잔,TUMBLER,8
-개인컵,TUMBLER,8
-개인컵,TUMBLER,8
-개인텀블러,TUMBLER,8
-텀블러,TUMBLER,8
+매장,FACILITY,6
+무선 인터넷,FACILITY,6
+무선인터넷,FACILITY,6
+와이 파이,FACILITY,6
+와이파이,FACILITY,6
+충천,FACILITY,6
+패스워드,FACILITY,6
+핸드폰,FACILITY,6
+핸드폰 충전,FACILITY,6
+핸드폰충전,FACILITY,6
+화장실,FACILITY,6
+WIFI,FACILITY,6

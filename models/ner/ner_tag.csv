@@ -3,9 +3,6 @@
 무선인터넷,FACILITY,5
 와이 파이,FACILITY,5
 와이파이,FACILITY,5
-충천,FACILITY,5
-패스워드,FACILITY,5
-핸드폰,FACILITY,5
 핸드폰 충전,FACILITY,5
 핸드폰충전,FACILITY,5
 화장실,FACILITY,5
@@ -20,7 +17,6 @@ WIFI,FACILITY,5
 할인카드,PAY,3
 결제방식,PAY,3
 삼성카드,PAY,3
-포인트 적립,PAY,3
 폰 번호,PAY,3
 하나카드,PAY,3
 핸드폰번호,PAY,3
@@ -257,31 +253,3 @@ NH농협카드,PAY,3
 인기,RECOMMEND,2
 제일,RECOMMEND,2
 추천,RECOMMEND,2
-결제,PAY,3
-할인,PAY,3
-현금,PAY,3
-카드,PAY,3
-포인트,PAY,3
-적립,PAY,3
-혜택,PAY,3
-번호,PAY,3
-과테말라,ORIGIN,4
-멕시코,ORIGIN,4
-베트남,ORIGIN,4
-브라질,ORIGIN,4
-에티오피아,ORIGIN,4
-예멘,ORIGIN,4
-온두라스,ORIGIN,4
-원두 정보,ORIGIN,4
-원두원산지,ORIGIN,4
-원두,ORIGIN,4
-원산지,ORIGIN,4
-인도,ORIGIN,4
-인도네시아,ORIGIN,4
-자메이카,ORIGIN,4
-케냐,ORIGIN,4
-코스타리카,ORIGIN,4
-콜롬비아,ORIGIN,4
-탄자니아,ORIGIN,4
-파푸아뉴기니,ORIGIN,4
-하와이,ORIGIN,4

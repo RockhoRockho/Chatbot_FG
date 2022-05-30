@@ -738,7 +738,7 @@
 테이크아웃잔	NNG
 테이크아웃잔할인	NNG
 테이크아웃컵	NNG
-테이크카웃	NNG
+테이크 아웃	NNG
 토마토주스	NNG
 토피넛	NNG
 토피넛 꽈루아상	NNG
@@ -881,11 +881,11 @@ skt할인	NNG
 T멤버쉽	NNG
 VIP	NNG
 VIP고객	NNG
-음료종류	NNG
-커피종류	NNG
-식사종류	NNG
-에이드종류 NNG
-빵종류	NNG
+음료	NNG
+커피	NNG
+식사	NNG
+에이드	NNG
+빵	NNG
 10분	NNG
 10시	NNG
 11분	NNG
@@ -999,3 +999,12 @@ VIP고객	NNG
 토요일	NNG
 평일	NNG
 화요일	NNG
+원두	NNG
+결제방식	NNG
+결제	NNG
+계좌이체	NNG
+사원증	NNG
+적립	NNG
+무선 인터넷	NNG
+비밀번호	NNG
+보틀	NNG

@@ -12,13 +12,13 @@ from utils.FindAnswer import FindAnswer
 
 # 전처리 객체 생성
 p = Preprocess(word2index_dic='train_tools/dict/chatbot_dict.bin',
-               userdic='utils/user_dic.tsv')
+               userdic='utils/train.tsv')
 
 # 의도 파악 모델
-intent = IntentModel(model_name='models/intent/intent_model.h5', preprocess=p)
+intent = IntentModel(model_name='models/intent/best_intent_model.h5', preprocess=p)
 
 # 개체명 인식 모델
-ner = NerModel(model_name='models/ner/ner_model.h5', preprocess=p)
+ner = NerModel(model_name='models/ner/best_ner_model.h5', preprocess=p)
 
 # 클라이언트 요청을 수행하는 함수 (쓰레드에 담겨 실행될 것임)
 def to_client(conn, addr, params):
@@ -98,7 +98,7 @@ if __name__ == '__main__':
     # 봇 서버 동작
     bot = BotServer(port, listen)
     bot.create_sock()
-    print("bot start")
+    print("cafebot start")
     
     # 무한루프를 돌면서 챗봇 클라이언트의 요청(연결)을 기다린다(리스닝!)
     while True:

@@ -39,38 +39,70 @@ def to_client(conn, addr, params):
             print('클라이언트 연결 끊어짐')
             exit(0)  # 종료
 
+            
         # 수신된 데이터(json) 을 파이썬 객체로 변환
         recv_json_data = json.loads(read.decode())
         print("데이터 수신 : ", recv_json_data)
         query = recv_json_data['Query']
 
-        # 의도 파악
-        intent_predict = intent.predict_class(query)
-        intent_name = intent.labels[intent_predict]
+        
+        # 2차 질문에 해당되지 않을 때는 의도분류, 개체명인식 모델링 진행
+        if recv_json_data['State'] == 0:
+            # 의도 파악
+            intent_predict = intent.predict_class(query)
+            intent_name = intent.labels[intent_predict]
 
-        # 개체명 파악
-        ner_predicts = ner.predict(query)
-        ner_tags = ner.predict_tags(query)
+            # 개체명 파악
+            ner_predicts = ner.predict(query)
+            ner_tags = ner.predict_tags(query)
 
-        # 답변 검색, 분석된 의도와 개체명을 이용해 학습 DB 에서 답변을 검색
-        try:
-            f = FindAnswer(db)
-            answer_text, answer_image = f.search(intent_name, ner_tags)
-            answer = f.tag_to_word(ner_predicts, answer_text)
+            # 답변 검색, 분석된 의도와 개체명을 이용해 학습 DB 에서 답변을 검색
+            try:
+                f = FindAnswer(db)
+                answer_text, answer_image = f.search(intent_name, ner_tags)
+                answer = f.tag_to_word(ner_predicts, answer_text)
 
-        except:
-            answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
-            answer_image = None
-
+            except:
+                answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                answer_image = None
+            
+        else:
+            # 메뉴검색(1) 일때
+            if recv_json_data['State'] == 1:
+                pass
+                
+            # 결제, 할인 포인트(3) 일때
+            elif recv_json_data['State'] == 3:
+                pass
+                
+            # 주문취소(9) 일때
+            elif recv_json_data['State'] == 9:
+                pass
+        
         # 검색된 답변데이터와 함께 앞서 정의한 응답하는 JSON 으로 생성
         send_json_data_str = {
             "Query" : query,
             "Answer" : answer,
             "AnswerImageUrl" : answer_image,
             "Intent" : intent_name,
-            "NER" : str(ner_predicts)
+            "NER" : str(ner_predicts),
+            "State" : 0,
         }
+        
+        # State 값 확인하여 
+        if intent_predict == 1:
+            send_json_data_str["State"] = intent_predict
+        elif intent_predict == 3:
+            send_json_data_str["State"] = intent_predict
+        elif intent_predict == 9:
+            send_json_data_str["State"] = intent_predict
 
+            
+        # 만약 메뉴검색이 끝났을 때 다시 State 초기화
+        # if 메뉴검색 끝남:
+        #    send_json_data_str["State"] = 0
+
+        
         # json 텍스트로 변환. 하여 전송
         message = json.dumps(send_json_data_str)
         conn.send(message.encode())  # utf-8 인코딩하여 클라이언트에 전송

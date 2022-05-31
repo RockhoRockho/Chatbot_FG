@@ -23,7 +23,7 @@ class FindAnswer:
     # ③ 검색 쿼리 생성
     # '의도명' 만 검색할지, 여러종류의 개체명 태그와 함께 검색할지 결정하는 '조건'을 만드는 간단한 함수
     def _make_query(self, intent_name, ner_tags):
-        sql = "select * from chatbot_train_data"
+        sql = "select * from answer_data"
         if intent_name != None and ner_tags == None:
             sql = sql + " where intent='{}' ".format(intent_name)
 
@@ -52,7 +52,7 @@ class FindAnswer:
         for word, tag in ner_predicts:
 
             # 변환해야하는 태그가 있는 경우 추가
-            if tag == 'B_FOOD' or tag == 'B_DT' or tag == 'B_TI':
+            if tag == 'B_FOOD' or tag == 'B_PAY' or tag == 'B_FACILITY' or tag == 'B_RECOMMEND':
                 answer = answer.replace(tag, word)
 
         answer = answer.replace('{', '')

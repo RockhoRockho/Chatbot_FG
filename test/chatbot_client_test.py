@@ -19,7 +19,7 @@ while True:
     # 챗봇 엔진 질의 요청
     json_data = {
         "Query": query,
-        "BotType": "MyService"
+        "BotType": "ProjectFG_Cafe"
     }
     message = json.dumps(json_data)  # json 텍스트로 변경하여
     mySocket.send(message.encode())  # 전송!

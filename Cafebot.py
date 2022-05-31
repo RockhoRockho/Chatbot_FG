@@ -52,19 +52,39 @@ def to_client(conn, addr, params):
             intent_predict = intent.predict_class(query)
             intent_name = intent.labels[intent_predict]
 
-            # 개체명 파악
-            ner_predicts = ner.predict(query)
-            ner_tags = ner.predict_tags(query)
+            
+            # 주문메뉴 일때
+            if intent_predict == 1:
+                
+                # 개체명 파악
+                ner_predicts = ner.predict(query)
+                ner_tags = ner.predict_tags(query)
+            
+                # product detail에 가져옴
+                # 없으면 name에서 가져옴
+                try:
+                    f = FindAnswer(db)
+                    answer_text, answer_image = f.search(intent_name, ner_tags)
+                    answer = f.tag_to_word(ner_predicts, answer_text)
+            
+                except:
+                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                    answer_image = None
+                
+            else:
+                # 개체명 파악
+                ner_predicts = ner.predict(query)
+                ner_tags = ner.predict_tags(query)
 
-            # 답변 검색, 분석된 의도와 개체명을 이용해 학습 DB 에서 답변을 검색
-            try:
-                f = FindAnswer(db)
-                answer_text, answer_image = f.search(intent_name, ner_tags)
-                answer = f.tag_to_word(ner_predicts, answer_text)
+                # 답변 검색, 분석된 의도와 개체명을 이용해 학습 DB 에서 답변을 검색
+                try:
+                    f = FindAnswer(db)
+                    answer_text, answer_image = f.search(intent_name, ner_tags)
+                    answer = f.tag_to_word(ner_predicts, answer_text)
 
-            except:
-                answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
-                answer_image = None
+                except:
+                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                    answer_image = None
             
         else:
             # 메뉴검색(1) 일때

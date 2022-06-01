@@ -45,8 +45,10 @@ def to_client(conn, addr, params):
         print("데이터 수신 : ", recv_json_data)
         query = recv_json_data['Query']
         
-        # '라떼, 커피, 음료, 식사' 들어왔을때 따로 검색단어를 가져옴
-        if query == '라떼' or query == '커피' or query == '음료' or query == '식사':
+        one_word = ['라떼', '커피', '음료', '식사', '추천', '인기', '시그니처']
+        
+        # one_word 가 들어왔을때 따로 검색단어를 가져옴
+        if query in one_word:
             try:
                 f = FindProduct(db)
                 menu = f.search(query)
@@ -54,17 +56,19 @@ def to_client(conn, addr, params):
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                 answer_image = None
-        
-        # 추천, 인기, 시그니처, 제일
-        if query == '추천' or query == '인기' or query == '시그니처' or query == '제일':
             
             
         # 할인, 포인트, 결제
         if query == '할인' or query == '포인트' or query == '결제':
-            
+            answer = '''
+
+            '''
             
         # 화장실, 와이파이, 매장
         if query == '화장실' or query == '와이파이' or query == '매장':
+            answer = '''
+                
+            '''
             
             
             

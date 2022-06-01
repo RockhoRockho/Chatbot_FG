@@ -59,45 +59,80 @@ def to_client(conn, addr, params):
             
             
         # 할인, 포인트, 결제
-        if query == '할인' or query == '포인트' or query == '결제':
+        elif query == '결제':
+        
             answer = '''
+                결제에 관한 설명입니다~~
 
+                1. 결제는 현재 안타깝게도 '카카오페이'로만 결제가 가능합니다. ㅠㅠ
+                   혹시나 다른카드로 결제를 원하신다면 현장에 오셔서 결제가능합니다 이점 양해부탁드려요
+
+                2. 결제를 하신 후 상품 수령은 현장에 직접 오셔서 가져가셔야 합니다!(배달이 따로되지 않습니다)
+
+                3. 환불은 고객님이 매장에서 직접 수령해가시기에 이미 결제를 하셨다면 매장을 방문해주시면 
+                   상품상태 확인 후 바로 환불처리 해드리겠습니다
+
+                4. 계좌이체는 3333-12-000000 (대표자 : FG) 카카오뱅크로 이체해 주신 후 연락주시면 결제처리 해드리겠습니다!
+
+                혹시나 결제에 관한 의문이 해소가 되지 않으신분들은!
+                02-538-0000으로 연락주세요!
             '''
+            answer_image = None
+            
+            
+        elif query == '쿠폰':
+            
+            answer = '''
+                쿠폰 관련 설명입니다.
+
+                1. 저희 매장에서 주문하시는 메뉴 수에 따라 쿠폰을 1장씩 발급해드립니다.
+
+                2. 쿠폰을 총 10장 모은 후 결제시에 메뉴에 따라 각기 다른 할인을 받으실 수 있습니다.
+
+                3. 사용하신 쿠폰은 소멸되오니 유의해주시기 바랍니다.
+
+                4. 추가 문의사항이 있으시면 언제든 '02-538-0000'로 연락주시기 바랍니다
+            '''
+            answer_image = '001.png'
+            
+            
+        elif query == '할인':
+            answer = '''
+                할인은 추천메뉴에만 적용됩니다(그 외 메뉴에는 적용되지 않습니다)
+            '''
+            answer_image = None
+            
             
         # 화장실, 와이파이, 매장
-        if query == '화장실' or query == '와이파이' or query == '매장':
+        elif query == '화장실' or query == '와이파이' or query == '매장':
             answer = '''
+                시설 안내입니다
                 
+                저희 카페 화장실은 정문 우측에 있는 계단으로 올라가서 복도 끝에 있습니다.
+                비밀번호: 123456
+                
+                카페 와이파이
+                wifi: cafe_fg_wifi
+                비밀번호: 0123456789
+                
+                매장정보
+                이름: 카페 FG
+                주소: 736-7 역삼동, 강남구, 서울
+                전화번호: 02-538-0000
+                오픈 날짜: 2022년 6월 1일
+                대표: FG
             '''
+        
+        # one_word와 관련 없을때
+        else:    
             
-            
-            
-        # 2차 질문에 해당되지 않을 때는 의도분류, 개체명인식 모델링 진행
-        if recv_json_data['State'] == 0:
-            # 의도 파악
-            intent_predict = intent.predict_class(query)
-            intent_name = intent.labels[intent_predict]
+            # 일반 절차
+            # 2차 질문에 해당되지 않을 때는 의도분류, 개체명인식 모델링 진행
+            if recv_json_data['State'] == 0:
+                # 의도 파악
+                intent_predict = intent.predict_class(query)
+                intent_name = intent.labels[intent_predict]
 
-            
-            # 주문메뉴 일때
-            if intent_predict == 1:
-                
-                # 개체명 파악
-                ner_predicts = ner.predict(query)
-                ner_tags = ner.predict_tags(query)
-            
-                # product detail에 가져옴
-                # 없으면 name에서 가져옴
-                try:
-                    f = FindAnswer(db)
-                    answer_text, answer_image = f.search(intent_name, ner_tags)
-                    answer = f.tag_to_word(ner_predicts, answer_text)
-            
-                except:
-                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
-                    answer_image = None
-                
-            else:
                 # 개체명 파악
                 ner_predicts = ner.predict(query)
                 ner_tags = ner.predict_tags(query)
@@ -111,7 +146,35 @@ def to_client(conn, addr, params):
                 except:
                     answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                     answer_image = None
-            
+
+            # 주문메뉴 일때
+            elif recv_json_data['State'] == 1:
+
+                
+                try:
+                    f = FindAnswer(db)
+                    answer_text, answer_image = f.search(intent_name, ner_tags)
+                    answer = f.tag_to_word(ner_predicts, answer_text)
+
+                except:
+                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                    answer_image = None
+
+            # 주문취소 일때
+            elif recv_json_data['State'] == 9:
+
+                
+                try:
+                    f = FindAnswer(db)
+                    answer_text, answer_image = f.search(intent_name, ner_tags)
+                    answer = f.tag_to_word(ner_predicts, answer_text)
+
+                except:
+                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                    answer_image = None
+
+                    
+
         else:
             # 메뉴검색(1) 일때
             if recv_json_data['State'] == 1:

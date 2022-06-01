@@ -8,7 +8,7 @@ from utils.Preprocess import Preprocess
 from models.intent.IntentModel import IntentModel
 from models.ner.NerModel import NerModel
 from utils.FindAnswer import FindAnswer
-
+from utils.FindProduct import FindProduct
 
 # 전처리 객체 생성
 p = Preprocess(word2index_dic='train_tools/dict/chatbot_dict.bin',
@@ -44,8 +44,30 @@ def to_client(conn, addr, params):
         recv_json_data = json.loads(read.decode())
         print("데이터 수신 : ", recv_json_data)
         query = recv_json_data['Query']
-
         
+        # '라떼, 커피, 음료, 식사' 들어왔을때 따로 검색단어를 가져옴
+        if query == '라떼' or query == '커피' or query == '음료' or query == '식사':
+            try:
+                f = FindProduct(db)
+                menu = f.search(query)
+
+            except:
+                answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                answer_image = None
+        
+        # 추천, 인기, 시그니처, 제일
+        if query == '추천' or query == '인기' or query == '시그니처' or query == '제일':
+            
+            
+        # 할인, 포인트, 결제
+        if query == '할인' or query == '포인트' or query == '결제':
+            
+            
+        # 화장실, 와이파이, 매장
+        if query == '화장실' or query == '와이파이' or query == '매장':
+            
+            
+            
         # 2차 질문에 해당되지 않을 때는 의도분류, 개체명인식 모델링 진행
         if recv_json_data['State'] == 0:
             # 의도 파악
@@ -108,6 +130,8 @@ def to_client(conn, addr, params):
             "NER" : str(ner_predicts),
             "State" : 0,
         }
+        if menu:
+            send_json_data_str['menu'] = menu
         
         # State 값 확인하여 
         if intent_predict == 1:
@@ -118,14 +142,19 @@ def to_client(conn, addr, params):
             send_json_data_str["State"] = intent_predict
 
             
-        # 만약 메뉴검색이 끝났을 때 다시 State 초기화
-        # if 메뉴검색 끝남:
-        #    send_json_data_str["State"] = 0
+        
 
         
         # json 텍스트로 변환. 하여 전송
         message = json.dumps(send_json_data_str)
         conn.send(message.encode())  # utf-8 인코딩하여 클라이언트에 전송
+        
+        # 메뉴검색 끝났을 때 menu 상태 초기화
+        menu = 0
+
+        # 만약 메뉴검색이 끝났을 때 다시 State 초기화
+        # if 메뉴검색 끝남:
+        #    send_json_data_str["State"] = 0
         
     except Exception as ex:
         print(ex)

@@ -1,5 +1,6 @@
 import threading
 import json
+import datetime
 
 from config.DatabaseConfig import *
 from utils.Database import Database
@@ -10,6 +11,9 @@ from models.ner.NerModel import NerModel
 from utils.FindAnswer import FindAnswer
 from utils.FindProduct import FindProduct
 from utils.ProductOption import ProductOption
+from utils.OrderItem import OrderItem
+from utils.CartItem import CartItem
+from utils.OrderDetail import OrderDetail
 
 # 전처리 객체 생성
 p = Preprocess(word2index_dic='train_tools/dict/chatbot_dict.bin',
@@ -44,9 +48,15 @@ def to_client(conn, addr, params):
         # 수신된 데이터(json) 을 파이썬 객체로 변환
         recv_json_data = json.loads(read.decode())
         print("데이터 수신 : ", recv_json_data)
+        # 값들 받아오기
         query = recv_json_data['Query']
         state = recv_json_data['State']
         product = recv_json_data['Product']
+        price = recv_json_data['Price']
+        count = recv_json_data['Count']
+        
+        
+        ##################################     단답처리     #############################################
         
         one_word = ['라떼', '커피', '음료', '식사', '추천', '인기', '시그니처']
         
@@ -126,9 +136,10 @@ def to_client(conn, addr, params):
         # one_word와 관련 없을때
         else:    
             
-            ############################        일반 절차          ###################################
+        ####################################        일반 절차          ###################################
+        
             # 2차 질문에 해당되지 않을 때는 의도분류, 개체명인식 모델링 진행
-            if recv_json_data['State'] == 0:
+            if state == 0:
                 # 의도 파악
                 intent_predict = intent.predict_class(query)
                 intent_name = intent.labels[intent_predict]
@@ -157,32 +168,46 @@ def to_client(conn, addr, params):
                     answer_image = None
     
     
-            ############################       2차 FSM 절차          ###################################
-            # 주문메뉴 일때
-            elif recv_json_data['State'] == 1:
+      ################################       2차 FSM 절차         ###################################
+            # 주문 후 옵션 값까지 받음
+            elif state == 1:
                 
-                # 옵션에 대한 질문이 계속 들어옴, 선택완료라고 입력하기 전까지 그전까지 state=1, 개체명 food가 보존되어야함
+                if 
+                
+                # state, product 개체를 받은 상태이다.
+                # 선택지 : 선택완료, 장바구니
                 # 옵션 질문 : 사이즈업, 샷추가, 시럽
                 # 핵심 => ★가격 변동 recv_json_data['Price']
                 # 선택완료 = > 주문 order_list 추가
                 
-                # state 값 변경
-                state = intent_predict
-                
                 # 선택완료 시 state값 초기화 및 order_list db 추가
                 if query == '선택완료':
+                    
+                    # state 초기화
                     state = 0
-                    # order_list db 추가
-                    # order_detail db 추가
+                    
+                    # order_detail db (id, user_id)추가
+                    user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
+                    order_detail = OrderDetail(db)
+                    order_detail.insert_data(pk, user_id)
+
+                    # order_item db (order_id, product_id, option_id, count)추가
+                    order_id = user_id
+                    order_item = OrderItem(db)
+                    
+                    
                     # cart_item db 제거
-                    continue
+
+                   
+                # 장바구니 시 장바구니 db 추가 후에 state = 0 으로 초기화
+                # 답변 
                 elif query == '장바구니':
                     # cart_item db 추가
                     
                 else:
                     try:
                         option = ProductOption(db, option_id, product_id)
-                        answer_text, answer_image = f.search(intent_name, ner_tags)
+                        answer_text, answer_image = option.search(intent_name, ner_tags)
                         answer = f.tag_to_word(ner_predicts, answer_text)
 
                     except:
@@ -190,7 +215,7 @@ def to_client(conn, addr, params):
                         answer_image = None
 
 
-            elif recv_json_data['State'] == 3:
+            elif state == 3:
             # 할인, 포인트, 결제
                 elif query == '결제':
                     with open('pay.txt', 'r', encoding='utf-8') as f:
@@ -209,20 +234,23 @@ def to_client(conn, addr, params):
                     answer_image = None
                     
             # 주문취소 일때 주문번호도 같이 받은상태임
-            elif recv_json_data['State'] == 9:
-                
-                # 주문취소 받기위해 State = 9, 주문 개체명이 보존되어야함
-                # 또한 DB에 order_item에 삭제가 되어야함
-                try:
-                    f = FindAnswer(db)
-                    answer_text, answer_image = f.search(intent_name, ner_tags)
-                    answer = f.tag_to_word(ner_predicts, answer_text)
-
-                except:
-                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+            elif state == 9:
+                if product is None:
+                    answer = "취소하려는 상품을 입력해주세요."
                     answer_image = None
-                    
-                # state = 0 으로 바꿔야함
+                else:
+                    # 주문취소 받기위해 State = 9, 주문 개체명이 보존되어야함
+                    # 또한 DB에 order_item에 삭제가 되어야함
+                    try:
+                        f = FindAnswer(db)
+                        answer_text, answer_image = f.search(intent_name, ner_tags)
+                        answer = f.tag_to_word(ner_predicts, answer_text)
+
+                    except:
+                        answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                        answer_image = None
+
+                    # state = 0 으로 바꿔야함
 
         
         # 검색된 답변데이터와 함께 앞서 정의한 응답하는 JSON 으로 생성

@@ -10,6 +10,7 @@ json_data = {
     "BotType" : "ProjectFG_Cafe",
 }
 temp_state = 0
+temp_product = 0
 
 # 클라이언트 프로그램 시작
 while True:
@@ -25,6 +26,8 @@ while True:
     # 챗봇 엔진 질의 요청
     json_data["Query"] = query
     json_data["State"] = temp_state
+    if temp_product:
+        json_data["Product"] = temp_product
 
     message = json.dumps(json_data)  # json 텍스트로 변경하여
     mySocket.send(message.encode())  # 전송!
@@ -46,6 +49,10 @@ while True:
     
     # State 값 저장
     temp_state = ret_data['State']
+    
+    # Product값이 있다면 받기
+    if ret_data['Product']:
+        temp_product = ret_data['Product']
     
     
     # 챗봇 엔진 서버 연결 소켓 닫기

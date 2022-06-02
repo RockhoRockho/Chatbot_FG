@@ -174,7 +174,6 @@ def to_client(conn, addr, params):
                 state = intent_predict
                 
                 # 선택완료 시 state값 초기화 및 order_list db 추가
-                # 
                 if query == '선택완료':
                     state = 0
                     # order_list db 추가
@@ -216,6 +215,7 @@ def to_client(conn, addr, params):
             "Intent" : intent_name,
             "NER" : str(ner_predicts),
             "State" : 0,
+            "Product" : 0,
         }
         if menu:
             send_json_data_str['menu'] = menu

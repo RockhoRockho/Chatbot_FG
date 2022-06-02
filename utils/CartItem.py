@@ -40,3 +40,17 @@ class CartItem():
         with db.cursor() as cursor:
             cursor.execute(sql)
             db.commit()
+
+    def delete_data(db, product_id, user_id):
+        product_id_db = product_id
+        user_id_db = user_id
+
+        sql = '''
+            DELETE FROM `cart_item` WHERE `product_id` = %s AND `user_id` = %s
+        ''' % (product_id_db.value, user_id_db.value)
+
+        sql = sql.replace("'None'", "null")
+
+        with db.cursor() as cursor:
+            cursor.execute(sql)
+            db.commit()

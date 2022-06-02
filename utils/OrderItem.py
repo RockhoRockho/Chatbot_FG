@@ -40,3 +40,17 @@ class OrderItem():
         with db.cursor() as cursor:
             cursor.execute(sql)
             db.commit()
+            
+    def delete_data(db, product_id, order_id):
+        product_id_db = product_id
+        order_id_db = order_id
+
+        sql = '''
+            DELETE FROM `order_item` WHERE `product_id` = %s AND `order_id` = %s
+        ''' % (product_id_db.value, order_id_db.value)
+
+        sql = sql.replace("'None'", "null")
+
+        with db.cursor() as cursor:
+            cursor.execute(sql)
+            db.commit()

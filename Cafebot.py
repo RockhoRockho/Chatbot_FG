@@ -53,7 +53,7 @@ def to_client(conn, addr, params):
         state = recv_json_data['State']
         product = recv_json_data['Product']
         price = recv_json_data['Price']
-        count = recv_json_data['Count']
+        option = recv_json_data['Option']
         
         
         ##################################     단답처리     #############################################
@@ -170,10 +170,13 @@ def to_client(conn, addr, params):
     
       #####################################       2차 FSM 절차         ###################################
             
-            # 주문 후 수량 값 부터 먼저받음
+            # 주문 후 옵션 값 부터 먼저받음
             elif state == 1:
                 
-                if 
+                # 옵션값을 받을 때는 입력을 받아 저장
+                if query >= 0 and query < 8:
+                    option = query
+                    state = 1
                 
                 # state, product 개체를 받은 상태이다.
                 # 선택지 : 선택완료, 장바구니
@@ -182,48 +185,67 @@ def to_client(conn, addr, params):
                 # 선택완료 = > 주문 order_list 추가
                 
                 # 선택완료 시 state값 초기화 및 order_list db 추가
-                if query == '선택완료':
-                    
-                    # state 초기화
-                    state = 0
+                elif query == '선택완료':
                     
                     # order_detail db (id, user_id)추가
                     user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
                     order_detail = OrderDetail(db)
                     order_detail.insert_data(pk, user_id)
-
-                    # order_item db (order_id, product_id, option_id, count)추가
-                    order_id = user_id
+                    
+                    # cart_item에 데이터 있는지 여부 확인 필요
+                    
+                    # cart_items 장바구니에 안담고 바로결제했을때
                     order_item = OrderItem(db)
-#                     0 = 옵션없음
-#                     1 = 샷추가
-#                     2 = 시럽추가
-#                     3 = 사이즈업
-#                     4 = 샷 + 시럽추가
-#                     5 = 샷 + 사이즈업
-#                     6 = 시럽 + 사이즈업
-#                     7 = 샷 + 시럽 + 사이즈업
-                    count_db
+                    cart_item = CartItem(db)
                     
+                    # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임
+                    if cart_item = '()':
+                        order_item.insert_data(user_id, product, option, 1)
                     
-                    # cart_item db 제거
-
-                   
+                    # 있다면 update
+                    else:
+                        for i in range(len(cart_item)):
+                            order_item.insert_data(user_id, cart_item[i]['product_id'], cart_item[i]['option_id'], cart_item[i]['count']) 
+                        
+                    # order_item product + option(price) price 도출
+                    # TODO
+                        
+                    # cart_item db 제거, state 초기화, product 초기화
+                    state = 0
+                    product = 0
+                    cart_item.all_clear_train_data()
+                    
+                
                 # 장바구니 시 장바구니 db 추가 후에 state = 0 으로 초기화
-                # 답변 
                 elif query == '장바구니':
+                    
+                    # db 가져오기
+                    cart_item = CartItem(db)
+                    
+                    # 현재시간으로 임시 유저아이디를 만듦
+                    user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
+                    
+                    # 바꿀 수량을 가져온다, query는 2번째 질문에 받아온 option 값임
+                    count_search = cart_item.search_count(product, option)
+                    
                     # cart_item db 추가
+                    # 있다면 update
+                    if count_search:
+                        order_item.update_data(user_id, product, option, 1 + count_search)
+                    # 없다면 insert
+                    else:
+                        order_item.insert_data(user_id, product, option, 1)
+                    
+                    # 다른 상품 고를 수 있게 초기화
+                    state = 0
+                    product = 0
                     
                 else:
-                    try:
-                        option = ProductOption(db, option_id, product_id)
-                        answer_text, answer_image = option.search(intent_name, ner_tags)
-                        answer = f.tag_to_word(ner_predicts, answer_text)
-
-                    except:
-                        answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
-                        answer_image = None
-
+                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                    answer_image = None
+                    # state, product 값 초기화
+                    state = 0
+                    product = 0
 
             elif state == 3:
             # 할인, 포인트, 결제
@@ -245,22 +267,34 @@ def to_client(conn, addr, params):
                     
             # 주문취소 일때 주문번호도 같이 받은상태임
             elif state == 9:
-                if product is None:
-                    answer = "취소하려는 상품을 입력해주세요."
+                
+                # 상품이름이 없을때는 다시 입력하게 함
+                if product == 0:
+                    answer = "취소하려는 상품을 정확하게 입력해주세요."
                     answer_image = None
+                    # State 초기화 
+                    state = 0
                 else:
-                    # 주문취소 받기위해 State = 9, 주문 개체명이 보존되어야함
-                    # 또한 DB에 order_item에 삭제가 되어야함
-                    try:
-                        f = FindAnswer(db)
-                        answer_text, answer_image = f.search(intent_name, ner_tags)
-                        answer = f.tag_to_word(ner_predicts, answer_text)
+                    if query is None:
+                        answer = "주문번호(숫자)를 입력해주세요."
+                    else:
+                        # 주문취소 받기위해 State = 9, 주문 개체명이 보존되어야함
+                        # 또한 DB에 order_item에 삭제가 되어야함
+                        try:
+                        order_id = int(query)
+                        f = OrderItem(db)
+                        p = FindProduct(db)
+                        product_id = p.search_id(product)
+                        f.delete_data(product_id, order_id)
+                        answer = "주문번호: {} {}가 취소되었습니다".format(product, order_id)
+                        state = 0
+                        product = 0
 
-                    except:
-                        answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
-                        answer_image = None
-
-                    # state = 0 으로 바꿔야함
+                        except:
+                            answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                            answer_image = None
+                            state = 0
+                            product = 0
 
         
         # 검색된 답변데이터와 함께 앞서 정의한 응답하는 JSON 으로 생성
@@ -283,7 +317,7 @@ def to_client(conn, addr, params):
             send_json_data_str["State"] = state
             send_json_data_str["Product"] = product
             send_json_data_str["Price"] = price
-            send_json_data_str["Count"] = count
+            send_json_data_str["Option"] = option
         elif state == 3:
             send_json_data_str["State"] = state
         elif state == 9:

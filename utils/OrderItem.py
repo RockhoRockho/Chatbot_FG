@@ -6,24 +6,24 @@ class OrderItem():
         self.db = db
         
     
-    def all_clear_train_data(db):
+    def all_clear_train_data(self):
         # 기존 학습 데이터 삭제
         sql = '''
                 delete from order_item
             '''
-        with db.cursor() as cursor:
+        with self.db.cursor() as cursor:
             cursor.execute(sql)
 
         # auto increment 초기화
         sql = '''
         ALTER TABLE order_item AUTO_INCREMENT=1;
         '''
-        with db.cursor() as cursor:
+        with self.db.cursor() as cursor:
             cursor.execute(sql)
-
-
+    
+    
     # db에 데이터 저장
-    def insert_data(db, order_id, product_id, option_id, count):
+    def insert_data(self, order_id, product_id, option_id, count):
         order_id_db = order_id
         product_id_db = product_id
         option_id_db = option_id
@@ -37,9 +37,11 @@ class OrderItem():
         # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
         sql = sql.replace("'None'", "null")
 
-        with db.cursor() as cursor:
+        with self.db.cursor() as cursor:
             cursor.execute(sql)
-            db.commit()
+            self.db.commit()
+            
+    
             
     def delete_data(self, product_id, order_id):
         product_id_db = product_id
@@ -51,6 +53,6 @@ class OrderItem():
 
         sql = sql.replace("'None'", "null")
 
-        with db.cursor() as cursor:
+        with self.db.cursor() as cursor:
             cursor.execute(sql)
-            db.commit()
+            self.db.commit()

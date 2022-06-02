@@ -6,24 +6,24 @@ class ProductOption():
         self.db = db
         
     
-    def all_clear_train_data(db):
+    def all_clear_train_data(self):
         # 기존 학습 데이터 삭제
         sql = '''
                 delete from product_option
             '''
-        with db.cursor() as cursor:
+        with self.db.cursor() as cursor:
             cursor.execute(sql)
 
         # auto increment 초기화
         sql = '''
         ALTER TABLE product_option
         '''
-        with db.cursor() as cursor:
+        with self.db.cursor() as cursor:
             cursor.execute(sql)
 
 
     # db에 데이터 저장
-    def insert_data(db, pk, option_id, product_id):
+    def insert_data(self, pk, option_id, product_id):
         pk_db = pk
         option_id_db = option_id
         product_id_db = product_id
@@ -36,6 +36,6 @@ class ProductOption():
         # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
         sql = sql.replace("'None'", "null")
 
-        with db.cursor() as cursor:
+        with self.db.cursor() as cursor:
             cursor.execute(sql)
-            db.commit()
+            self.db.commit()

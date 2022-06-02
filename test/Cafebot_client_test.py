@@ -12,7 +12,7 @@ json_data = {
 temp_state = 0
 temp_product = 0
 temp_price = 0
-temp_count = 1
+temp_option = None
 
 # 클라이언트 프로그램 시작
 while True:
@@ -30,7 +30,7 @@ while True:
     json_data["State"] = temp_state
     json_data["Product"] = temp_product
     json_data['Price'] = temp_price
-    json_data['Count'] = temp_count
+    json_data['Option'] = temp_option
 
     message = json.dumps(json_data)  # json 텍스트로 변경하여
     mySocket.send(message.encode())  # 전송!
@@ -54,8 +54,7 @@ while True:
     temp_state = ret_data['State']
     temp_product = ret_data['Product']
     temp_price = ret_data['Price']
-    temp_count = ret_data['Count']
-    
+    temp_option = ret_data['Option']
     
     # 챗봇 엔진 서버 연결 소켓 닫기
     mySocket.close()

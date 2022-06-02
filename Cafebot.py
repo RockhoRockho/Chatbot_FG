@@ -67,7 +67,7 @@ def to_client(conn, addr, params):
                 menu = p.search(query)
 
             except:
-                answer = "죄송해요 어떤 메뉴를 원하시는지 잘 모르겠어요. 다른 종류를 말해주세요."
+                answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                 answer_image = None
             
         # 할인, 포인트, 결제
@@ -168,7 +168,7 @@ def to_client(conn, addr, params):
                             menu = p.search(query)
 
                 except:
-                    answer = "죄송해요 그 메뉴는 저희 매장에 없는것 같아요. 다른 메뉴를 말씀해 주시겠어요?"
+                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                     answer_image = None
     
     

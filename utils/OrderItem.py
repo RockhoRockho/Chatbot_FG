@@ -1,6 +1,6 @@
 # 학습 데이터 초기화
 
-class OrderItems():
+class OrderItem():
     
     def __init__(self, db):
         self.db = db
@@ -31,9 +31,9 @@ class OrderItems():
         count_db = count
 
         sql = '''
-            INSERT order_item(id, order_id, product_id, option_id, count) 
-            values('%s', '%s', '%s', '%s', '%s')
-        ''' % (pk_db.value, order_id_db, product_id_db.value, option_id_db.value, count_db.value)
+            INSERT order_item(order_id, product_id, option_id, count) 
+            values('%s', '%s', '%s', '%s')
+        ''' % (order_id_db, product_id_db.value, option_id_db.value, count_db.value)
 
         # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
         sql = sql.replace("'None'", "null")

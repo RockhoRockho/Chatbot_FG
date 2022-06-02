@@ -45,6 +45,8 @@ def to_client(conn, addr, params):
         recv_json_data = json.loads(read.decode())
         print("데이터 수신 : ", recv_json_data)
         query = recv_json_data['Query']
+        state = recv_json_data['State']
+        product = recv_json_data['Product']
         
         one_word = ['라떼', '커피', '음료', '식사', '추천', '인기', '시그니처']
         
@@ -81,7 +83,6 @@ def to_client(conn, addr, params):
                 02-538-0000으로 연락주세요!
             '''
             answer_image = None
-            state = 0
             
             
         elif query == '쿠폰':
@@ -105,8 +106,16 @@ def to_client(conn, addr, params):
                 할인은 추천메뉴에만 적용됩니다(그 외 메뉴에는 적용되지 않습니다)
             '''
             answer_image = None
-            state = 0
             
+        # 원산지
+        elif query == '원산지':
+            try:
+                f = FindAnswer(db)
+                answer_text, answer_image = f.search('원산지', None)
+                answer = f.tag_to_word(predicts, answer_text)
+            except:
+                answer = "죄송해요 무슨 말인지 모르겠어요"
+                    
             
         # 화장실, 와이파이, 매장
         elif query == '화장실' or query == '와이파이' or query == '매장':
@@ -127,7 +136,34 @@ def to_client(conn, addr, params):
                 오픈 날짜: 2022년 6월 1일
                 대표: FG
             '''
-            state = 0
+            answer_image = None
+            
+        # 영업시간
+        elif query == '영업시간':
+            try:
+                f = FindAnswer(db)
+                answer_text, answer_image = f.search('영업시간', None)
+                answer = f.tag_to_word(predicts, answer_text)
+            except:
+                answer = "죄송해요 무슨 말인지 모르겠어요"
+                
+        # 개인컵
+        elif query == '개인컵':
+            try:
+                f = FindAnswer(db)
+                answer_text, answer_image = f.search('개인컵', None)
+                answer = f.tag_to_word(predicts, answer_text)
+            except:
+                answer = "죄송해요 무슨 말인지 모르겠어요"
+                
+        # 테이크아웃, 테이크 아웃
+        elif query == '테이크아웃' or query == '테이크 아웃':
+            try:
+                f = FindAnswer(db)
+                answer_text, answer_image = f.search('테이크아웃', None)
+                answer = f.tag_to_word(predicts, answer_text)
+            except:
+                answer = "죄송해요 무슨 말인지 모르겠어요"
         
         # one_word와 관련 없을때
         else:    

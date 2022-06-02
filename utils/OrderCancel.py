@@ -4,22 +4,6 @@ class OrderCancel():
     
     def __init__(self, db):
         self.db = db
-        
-    
-    def all_clear_train_data(db):
-        # 기존 학습 데이터 삭제
-        sql = '''
-                delete from order_detail
-            '''
-        with db.cursor() as cursor:
-            cursor.execute(sql)
-
-        # auto increment 초기화
-        sql = '''
-        ALTER TABLE order_detail
-        '''
-        with db.cursor() as cursor:
-            cursor.execute(sql)
 
 
     # db에 데이터 저장

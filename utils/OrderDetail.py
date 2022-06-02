@@ -28,7 +28,7 @@ class OrderDetail():
         user_id_db = user_id
 
         sql = '''
-            INSERT product_option(id, user_id) 
+            INSERT order_detail(id, user_id) 
             values('%s', '%s')
         ''' % (pk_db.value, user_id_db)
 

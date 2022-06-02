@@ -16,7 +16,7 @@ class OrderItem():
 
         # auto increment 초기화
         sql = '''
-        ALTER TABLE order_item
+        ALTER TABLE order_item AUTO_INCREMENT=1;
         '''
         with db.cursor() as cursor:
             cursor.execute(sql)

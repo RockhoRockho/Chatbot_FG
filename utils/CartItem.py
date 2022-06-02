@@ -16,7 +16,7 @@ class CartItem():
 
         # auto increment 초기화
         sql = '''
-        ALTER TABLE cart_item
+        ALTER TABLE cart_item AUTO_INCREMENT=1;
         '''
         with db.cursor() as cursor:
             cursor.execute(sql)

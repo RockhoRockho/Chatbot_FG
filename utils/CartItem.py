@@ -9,21 +9,22 @@ class OrderItem():
     def all_clear_train_data(db):
         # 기존 학습 데이터 삭제
         sql = '''
-                delete from order_item
+                delete from cart_item
             '''
         with db.cursor() as cursor:
             cursor.execute(sql)
 
         # auto increment 초기화
         sql = '''
-        ALTER TABLE order_item
+        ALTER TABLE cart_item
         '''
         with db.cursor() as cursor:
             cursor.execute(sql)
 
 
     # db에 데이터 저장
-    def insert_data(db, order_id, product_id, option_id, count):
+    def insert_data(db, pk, order_id, product_id, option_id, count):
+        pk_db = pk
         order_id_db = order_id
         product_id_db = product_id
         option_id_db = option_id

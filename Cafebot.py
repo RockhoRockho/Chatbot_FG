@@ -126,7 +126,7 @@ def to_client(conn, addr, params):
         # one_word와 관련 없을때
         else:    
             
-            # 일반 절차
+            ############################        일반 절차          ###################################
             # 2차 질문에 해당되지 않을 때는 의도분류, 개체명인식 모델링 진행
             if recv_json_data['State'] == 0:
                 # 의도 파악
@@ -157,12 +157,13 @@ def to_client(conn, addr, params):
                     answer_image = None
     
     
+            ############################       2차 FSM 절차          ###################################
             # 주문메뉴 일때
             elif recv_json_data['State'] == 1:
                 
                 # 옵션에 대한 질문이 계속 들어옴, 선택완료라고 입력하기 전까지 그전까지 state=1, 개체명 food가 보존되어야함
                 # 옵션 질문 : 사이즈업, 샷추가, 시럽
-                # 핵심 => ★가격 변동
+                # 핵심 => ★가격 변동 recv_json_data['Price']
                 # 선택완료 = > 주문 order_list 추가
                 
                 # state 값 변경
@@ -207,7 +208,7 @@ def to_client(conn, addr, params):
                     answer = '할인은 추천메뉴에만 적용됩니다(그 외 메뉴에는 적용되지 않습니다)'
                     answer_image = None
                     
-            # 주문취소 일때
+            # 주문취소 일때 주문번호도 같이 받은상태임
             elif recv_json_data['State'] == 9:
                 
                 # 주문취소 받기위해 State = 9, 주문 개체명이 보존되어야함
@@ -220,6 +221,8 @@ def to_client(conn, addr, params):
                 except:
                     answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                     answer_image = None
+                    
+                # state = 0 으로 바꿔야함
 
         
         # 검색된 답변데이터와 함께 앞서 정의한 응답하는 JSON 으로 생성
@@ -239,6 +242,7 @@ def to_client(conn, addr, params):
         if state == 1:
             send_json_data_str["State"] = state
             send_json_data_str["Product"] = product
+            send_json_data_str["Price"] = price
         elif state == 3:
             send_json_data_str["State"] = state
         elif state == 9:

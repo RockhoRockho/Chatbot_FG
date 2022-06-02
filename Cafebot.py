@@ -9,6 +9,7 @@ from models.intent.IntentModel import IntentModel
 from models.ner.NerModel import NerModel
 from utils.FindAnswer import FindAnswer
 from utils.FindProduct import FindProduct
+from utils.ProductOption import ProductOption
 
 # 전처리 객체 생성
 p = Preprocess(word2index_dic='train_tools/dict/chatbot_dict.bin',
@@ -56,6 +57,8 @@ def to_client(conn, addr, params):
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                 answer_image = None
+                # state 값 초기화
+                state = 0
             
             
         # 할인, 포인트, 결제
@@ -78,6 +81,7 @@ def to_client(conn, addr, params):
                 02-538-0000으로 연락주세요!
             '''
             answer_image = None
+            state = 0
             
             
         elif query == '쿠폰':
@@ -101,6 +105,7 @@ def to_client(conn, addr, params):
                 할인은 추천메뉴에만 적용됩니다(그 외 메뉴에는 적용되지 않습니다)
             '''
             answer_image = None
+            state = 0
             
             
         # 화장실, 와이파이, 매장
@@ -122,6 +127,7 @@ def to_client(conn, addr, params):
                 오픈 날짜: 2022년 6월 1일
                 대표: FG
             '''
+            state = 0
         
         # one_word와 관련 없을때
         else:    
@@ -133,18 +139,24 @@ def to_client(conn, addr, params):
                 intent_predict = intent.predict_class(query)
                 intent_name = intent.labels[intent_predict]
                 
+                # state 값 변경
+                state = intent_predict
+                
                 # 개체명 파악
                 ner_predicts = ner.predict(query)
                 ner_tags = ner.predict_tags(query)
-                
-                # 주문으로 된다면 개체명 인식까지 받고 핵심단어 추출후 product_cafe DB에서 해당 데이터 가져와야함 그후 json으로 넘겨줘야함, state = 1 변경
-                if intent_predict
-
+                    
                 # 답변 검색, 분석된 의도와 개체명을 이용해 학습 DB 에서 답변을 검색
                 try:
                     f = FindAnswer(db)
                     answer_text, answer_image = f.search(intent_name, ner_tags)
                     answer = f.tag_to_word(ner_predicts, answer_text)
+                    
+                    # B_FOOD일때 상품 추출 
+                    for name, tag in predicts:
+                        if tag == 'B_FOOD':
+                            product = name
+                    
 
                 except:
                     answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
@@ -154,19 +166,32 @@ def to_client(conn, addr, params):
             elif recv_json_data['State'] == 1:
                 
                 # 옵션에 대한 질문이 계속 들어옴, 선택완료라고 입력하기 전까지 그전까지 state=1, 개체명 food가 보존되어야함
-                # 옵션 질문 : 사이즈업, 얼음, 샷추가, 아이스/핫, 시럽, 휘핑크림
+                # 옵션 질문 : 사이즈업, 샷추가, 시럽
                 # 핵심 => ★가격 변동
                 # 선택완료 = > 주문 order_list 추가
                 
+                # state 값 변경
+                state = intent_predict
                 
-                try:
-                    f = FindAnswer(db)
-                    answer_text, answer_image = f.search(intent_name, ner_tags)
-                    answer = f.tag_to_word(ner_predicts, answer_text)
+                # 선택완료 시 state값 초기화 및 order_list db 추가
+                # 
+                if query == '선택완료':
+                    state = 0
+                    # order_list db 추가
+                    # order_detail db 추가
+                    continue
+                elif query == '장바구니':
+                    #
+                    
+                else:
+                    try:
+                        option = ProductOption(db, option_id, product_id)
+                        answer_text, answer_image = f.search(intent_name, ner_tags)
+                        answer = f.tag_to_word(ner_predicts, answer_text)
 
-                except:
-                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
-                    answer_image = None
+                    except:
+                        answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                        answer_image = None
 
             # 주문취소 일때
             elif recv_json_data['State'] == 9:
@@ -196,12 +221,14 @@ def to_client(conn, addr, params):
             send_json_data_str['menu'] = menu
         
         # State 값 확인하여 
-        if intent_predict == 1:
-            send_json_data_str["State"] = intent_predict
-        elif intent_predict == 3:
-            send_json_data_str["State"] = intent_predict
-        elif intent_predict == 9:
-            send_json_data_str["State"] = intent_predict
+        if state == 1:
+            send_json_data_str["State"] = state
+            send_json_data_str["Product"] = product
+        elif state == 3:
+            send_json_data_str["State"] = state
+        elif state == 9:
+            send_json_data_str["State"] = state
+            send_json_data_str["Product"] = product
 
             
         

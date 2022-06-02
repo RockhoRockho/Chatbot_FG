@@ -25,6 +25,7 @@ intent = IntentModel(model_name='models/intent/best_intent_model.h5', preprocess
 # 개체명 인식 모델
 ner = NerModel(model_name='models/ner/best_ner_model.h5', preprocess=p)
 
+
 # 클라이언트 요청을 수행하는 함수 (쓰레드에 담겨 실행될 것임)
 def to_client(conn, addr, params):
     db = params['db']
@@ -58,41 +59,102 @@ def to_client(conn, addr, params):
         
         ##################################     단답처리     #############################################
         
-        one_word = ['라떼', '커피', '음료', '식사', '추천', '인기', '시그니처']
+        word_1 = ['라떼', '커피', '음료', '식사']
+        word_2 = ['추천', '인기', '시그니처']
         
-        # one_word 가 들어왔을때 따로 검색단어를 가져옴
-        if query in one_word:
+        # word_1 이 들어왔을때 따로 검색단어를 가져옴
+        if query in word_1:
             try:
                 p = FindProduct(db)
-                menu = p.search(query)
+                answer = p.search(query)
+                
+                answer_name = []
+                answer_detail = []
+                answer_image = []
+                for i in range(len(answer)):
+                    answer_name.append(answer[i]['name'])
+                    answer_detail.append(answer[i]['detail'])
+                    answer_image.append(answer[i]['image'])
+                
+                answer = answer_name
+                
+                intent_predict = 10
+                intent_name = '메뉴'
+                ner_predicts = ''
 
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
-                answer_image = None
+
+        
+        # word_2 이 들어왔을때 따로 검색단어를 가져옴
+        elif query in word_2:
+            try:
+                p = FindProduct(db)
+                answer = p.search(query)
+                
+                answer_name = []
+                answer_detail = []
+                answer_image = []
+                for i in range(len(answer)):
+                    answer_name.append(answer[i]['name'])
+                    answer_detail.append(answer[i]['detail'])
+                    answer_image.append(answer[i]['image'])
+                
+                answer = answer_name
+                
+                intent_predict = 2
+                intent_name = '추천메뉴 검색'
+                ner_predicts = ''
+
+            except:
+                answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+
             
         # 할인, 포인트, 결제
         elif query == '결제':
             with open('pay.txt', 'r', encoding='utf-8') as f:
                 answer = f.read()
             answer_image = None
-            
+            intent_predict = 3
+            intent_name = '결제, 할인, 쿠폰'
+            ner_predicts = ''
+        
+        # 메뉴판
+        elif query == '메뉴판':
+            try:
+                f = FindAnswer(db)
+                answer, answer_image = f.search('메뉴판 요구', None)
+                intent_predict = 0
+                intent_name = '메뉴판 요구'
+                ner_predicts = ''
+                
+            except:
+                answer = "죄송해요 무슨 말인지 모르겠어요"
             
         elif query == '쿠폰':
             with open('coupon.txt', 'r', encoding='utf-8') as f:
                 answer = f.read()
             answer_image = '001.png'
-            
+            intent_predict = 3
+            intent_name = '결제, 할인, 쿠폰'
+            ner_predicts = ''
             
         elif query == '할인':
             answer = '할인은 추천메뉴에만 적용됩니다(그 외 메뉴에는 적용되지 않습니다)'
             answer_image = None
+            intent_predict = 3
+            intent_name = '결제, 할인, 쿠폰'
+            ner_predicts = ''
             
         # 원산지
         elif query == '원산지':
             try:
                 f = FindAnswer(db)
-                answer_text, answer_image = f.search('원산지', None)
-                answer = f.tag_to_word(predicts, answer_text)
+                answer, answer_image = f.search('원산지', None)
+                intent_predict = 4
+                intent_name = '원산지'
+                ner_predicts = ''
+                
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요"
                     
@@ -102,13 +164,19 @@ def to_client(conn, addr, params):
             with open('facility.txt', 'r', encoding='utf-8') as f:
                 answer = f.read()
             answer_image = None
+            intent_predict = 5
+            intent_name = '시설 / 위치'
+            ner_predicts = ''
             
         # 영업시간
         elif query == '영업시간':
             try:
                 f = FindAnswer(db)
-                answer_text, answer_image = f.search('영업시간', None)
-                answer = f.tag_to_word(predicts, answer_text)
+                answer, answer_image = f.search('영업시간', None)
+                intent_predict = 6
+                intent_name = '영업시간'
+                ner_predicts = ''
+                
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요"
                 
@@ -116,8 +184,11 @@ def to_client(conn, addr, params):
         elif query == '개인컵':
             try:
                 f = FindAnswer(db)
-                answer_text, answer_image = f.search('개인컵', None)
-                answer = f.tag_to_word(predicts, answer_text)
+                answer, answer_image = f.search('텀블러', None)
+                intent_predict = 7
+                intent_name = '텀블러'
+                ner_predicts = ''
+                
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요"
                 
@@ -125,14 +196,16 @@ def to_client(conn, addr, params):
         elif query == '테이크아웃' or query == '테이크 아웃':
             try:
                 f = FindAnswer(db)
-                answer_text, answer_image = f.search('테이크아웃', None)
-                answer = f.tag_to_word(predicts, answer_text)
+                answer, answer_image = f.search('테이크아웃', None)
+                intent_predict = 8
+                intent_name = '테이크아웃'
+                ner_predicts = ''
+                
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요"
         
         # one_word와 관련 없을때
         else:    
-            
         ####################################        일반 절차          ###################################
         
             # 2차 질문에 해당되지 않을 때는 의도분류, 개체명인식 모델링 진행
@@ -140,9 +213,6 @@ def to_client(conn, addr, params):
                 # 의도 파악
                 intent_predict = intent.predict_class(query)
                 intent_name = intent.labels[intent_predict]
-                
-                # state 값 변경
-                state = intent_predict
                 
                 # 개체명 파악
                 ner_predicts = ner.predict(query)
@@ -154,18 +224,19 @@ def to_client(conn, addr, params):
                     answer_text, answer_image = f.search(intent_name, ner_tags)
                     answer = f.tag_to_word(ner_predicts, answer_text)
                     
-                    # 개체명 인식되는 것 처리
-                    for name, tag in predicts:
-                        
-                        # B_FOOD일때 상품 추출 
-                        if tag == 'B_FOOD':
-                            product = name
-                    
-                        # B_RECOMMEND일때 해당 상품목록 추출 
-                        if tag == 'B_RECOMMEND':
-                            recommend = name
-                            p = FindProduct(db)
-                            menu = p.search(query)
+                    if intent_predict in [2, 3, 9]:
+                        # 개체명 인식되는 것 처리
+                        for name, tag in ner_predicts:
+
+                            # B_FOOD일때 상품 추출 
+                            if tag == 'B_FOOD':
+                                product = name
+
+                            # B_RECOMMEND일때 해당 상품목록 추출 
+                            if tag == 'B_RECOMMEND':
+                                recommend = name
+                                p = FindProduct(db)
+                                answer = p.search(query)
 
                 except:
                     answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
@@ -177,19 +248,29 @@ def to_client(conn, addr, params):
             # 주문 후 옵션 값 부터 먼저받음
             elif state == 1:
                 
+                intent_predict = 1
+                intent_name = '주문'
+                ner_predicts = ''
+                answer_image = None
+                
                 # 옵션값을 받을 때는 입력을 받아 저장
                 if query >= 0 and query < 8:
                     option = query
-                    state = 1
+                    
                 
-                # state, product 개체를 받은 상태이다.
+                # intent_predict, product 개체를 받은 상태이다.
                 # 선택지 : 선택완료, 장바구니
                 # 옵션 질문 : 사이즈업, 샷추가, 시럽
                 # 핵심 => ★가격 변동 recv_json_data['Price']
                 # 선택완료 = > 주문 order_list 추가
                 
-                # 선택완료 시 state값 초기화 및 order_list db 추가
+                # 선택완료 시 intent_predict 초기화 및 order_list db 추가
                 elif query == '선택완료':
+                    
+                    #intent_predict 초기화 
+                    intent_predict = 0
+                    intent_name = '메뉴판 요구'
+                    ner_predicts = ''
                     
                     # order_detail db (id, user_id)추가
                     user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
@@ -203,7 +284,8 @@ def to_client(conn, addr, params):
                     cart_item = CartItem(db)
                     
                     # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임
-                    if cart_item = '()':
+                    # 없으면 insert
+                    if cart_item == '()':
                         order_item.insert_data(user_id, product, option, 1)
                     
                     # 있다면 update
@@ -212,16 +294,28 @@ def to_client(conn, addr, params):
                             order_item.insert_data(user_id, cart_item[i]['product_id'], cart_item[i]['option_id'], cart_item[i]['count']) 
                         
                     # order_item product + option(price) price 도출
-                    # TODO
+                    f = FindProduct(db)
+                    o = ProductOption(db)
+
+                    total_price = 0
+                    for i in order_item:
+                        product_price = f.search_price(i['product_id'])
+                        option_price = o.search_price(i['option_id'])
+                        total_price += ((product price + option price) * i['count'])
+
+                    answer = "주문 총 금액은 {}원 입니다".format(total_price)
                         
-                    # cart_item db 제거, state 초기화, product 초기화
-                    state = 0
+                    # cart_item db 제거,  product 초기화
                     product = 0
                     cart_item.all_clear_train_data()
                     
                 
-                # 장바구니 시 장바구니 db 추가 후에 state = 0 으로 초기화
+                # 장바구니 시 장바구니 db 추가 후에 intent_predict = 0 으로 초기화
                 elif query == '장바구니':
+                    
+                    intent_predict = 0
+                    intent_name = '메뉴판 요구'
+                    ner_predicts = ''
                     
                     # db 가져오기
                     cart_item = CartItem(db)
@@ -241,20 +335,25 @@ def to_client(conn, addr, params):
                         order_item.insert_data(user_id, product, option, 1)
                     
                     # 다른 상품 고를 수 있게 초기화
-                    state = 0
                     product = 0
                     
                 else:
                     answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                     answer_image = None
-                    # state, product 값 초기화
-                    state = 0
+                    # intent_predict, product 값 초기화
+                    intent_predict = 0
+                    intent_name = '메뉴판 요구'
+                    ner_predicts = ''
                     product = 0
             
             
             # 할인, 포인트, 결제
-            elif recv_json_data['State'] == 3:
-            
+            elif state == 3:
+                
+                intent_predict = 0
+                intent_name = '메뉴판 요구'
+                ner_predicts = ''
+                
                 if query == '결제':
                     with open('pay.txt', 'r', encoding='utf-8') as f:
                         answer = f.read()
@@ -274,39 +373,41 @@ def to_client(conn, addr, params):
                 else:
                     answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                     answer_image = None
-                    # state, product 값 초기화
-                    state = 0
-                    product = 0
             
             # 주문취소 일때 주문번호도 같이 받은상태임
             elif state == 9:
+                
+                intent_predict = 0
+                intent_name = '메뉴판 요구'
+                ner_predicts = ''
                 
                 # 상품이름이 없을때는 다시 입력하게 함
                 if product == 0:
                     answer = "취소하려는 상품을 정확하게 입력해주세요."
                     answer_image = None
-                    # State 초기화 
-                    state = 0
+                    
                 else:
                     if query is None:
                         answer = "주문번호(숫자)를 입력해주세요."
+                        intent_predict = 9
+                        intent_name = '주문취소'
+                        ner_predicts = ''
                     else:
-                        # 주문취소 받기위해 State = 9, 주문 개체명이 보존되어야함
+                        # 주문취소 받기위해 intent_predict = 9, 주문 개체명이 보존되어야함
                         # 또한 DB에 order_item에 삭제가 되어야함
+                        
                         try:
-                        order_id = int(query)
-                        f = OrderItem(db)
-                        p = FindProduct(db)
-                        product_id = p.search_id(product)
-                        f.delete_data(product_id, order_id)
-                        answer = "주문번호: {} {}가 취소되었습니다".format(product, order_id)
-                        state = 0
-                        product = 0
+                            order_id = int(query)
+                            f = OrderItem(db)
+                            p = FindProduct(db)
+                            product_id = p.search_id(product)
+                            f.delete_data(product_id, order_id)
+                            answer = "주문번호: {} {}가 취소되었습니다".format(product, order_id)
+                            product = 0
 
                         except:
                             answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                             answer_image = None
-                            state = 0
                             product = 0
 
         
@@ -321,29 +422,29 @@ def to_client(conn, addr, params):
             "Product" : 0,
             "Price" : 0,
             "Count" : 1,
+            "Option" : 0,
         }
-        if menu:
-            send_json_data_str['menu'] = menu
         
         # State 값 확인하여 
-        if state == 1:
-            send_json_data_str["State"] = state
+        if intent_predict == 1:
             send_json_data_str["Product"] = product
             send_json_data_str["Price"] = price
             send_json_data_str["Option"] = option
-        elif state == 3:
-            send_json_data_str["State"] = state
-        elif state == 9:
-            send_json_data_str["State"] = state
+            send_json_data_str["State"] = intent_predict
+        elif intent_predict == 9:
             send_json_data_str["Product"] = product
-
+            send_json_data_str["State"] = intent_predict
+        elif intent_predict == 10:
+            send_json_data_str["detail"] = answer_detail
+        
+        # 디버깅
+        print(send_json_data_str)
         
         # json 텍스트로 변환. 하여 전송
         message = json.dumps(send_json_data_str)
         conn.send(message.encode())  # utf-8 인코딩하여 클라이언트에 전송
         
-        # 메뉴검색 끝났을 때 menu 상태 초기화
-        menu = 0
+        
         
     except Exception as ex:
         print(ex)

@@ -17,6 +17,11 @@ class FindProduct:
         product_id = self.db.select_one(sql)
         return product_id
     
+    def search_price(self, product_id):
+        sql = "select price from product_cafe where product_id = '{}'".format(product_id)
+        product_price = self.db.select_one(sql)
+        return product_price
+    
     # 검색 쿼리 생성
     def _make_query(self, query):
         sql = "select * from product_cafe"

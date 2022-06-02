@@ -23,8 +23,7 @@ class OrderItem():
 
 
     # db에 데이터 저장
-    def insert_data(db, pk, order_id, product_id, option_id, count):
-        pk_db = pk
+    def insert_data(db, order_id, product_id, option_id, count):
         order_id_db = order_id
         product_id_db = product_id
         option_id_db = option_id

@@ -69,9 +69,6 @@ def to_client(conn, addr, params):
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                 answer_image = None
-                # state 값 초기화
-                state = 0
-            
             
         # 할인, 포인트, 결제
         elif query == '결제':
@@ -157,11 +154,18 @@ def to_client(conn, addr, params):
                     answer_text, answer_image = f.search(intent_name, ner_tags)
                     answer = f.tag_to_word(ner_predicts, answer_text)
                     
-                    # B_FOOD일때 상품 추출 
+                    # 개체명 인식되는 것 처리
                     for name, tag in predicts:
+                        
+                        # B_FOOD일때 상품 추출 
                         if tag == 'B_FOOD':
                             product = name
                     
+                        # B_RECOMMEND일때 해당 상품목록 추출 
+                        if tag == 'B_RECOMMEND':
+                            recommend = name
+                            p = FindProduct(db)
+                            menu = p.search(query)
 
                 except:
                     answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
@@ -246,10 +250,12 @@ def to_client(conn, addr, params):
                     # state, product 값 초기화
                     state = 0
                     product = 0
-
-            elif state == 3:
+            
+            
             # 할인, 포인트, 결제
-                elif query == '결제':
+            elif recv_json_data['State'] == 3:
+            
+                if query == '결제':
                     with open('pay.txt', 'r', encoding='utf-8') as f:
                         answer = f.read()
                     answer_image = None
@@ -265,6 +271,13 @@ def to_client(conn, addr, params):
                     answer = '할인은 추천메뉴에만 적용됩니다(그 외 메뉴에는 적용되지 않습니다)'
                     answer_image = None
                     
+                else:
+                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                    answer_image = None
+                    # state, product 값 초기화
+                    state = 0
+                    product = 0
+            
             # 주문취소 일때 주문번호도 같이 받은상태임
             elif state == 9:
                 
@@ -324,9 +337,6 @@ def to_client(conn, addr, params):
             send_json_data_str["State"] = state
             send_json_data_str["Product"] = product
 
-            
-        
-
         
         # json 텍스트로 변환. 하여 전송
         message = json.dumps(send_json_data_str)
@@ -334,10 +344,6 @@ def to_client(conn, addr, params):
         
         # 메뉴검색 끝났을 때 menu 상태 초기화
         menu = 0
-
-        # 만약 메뉴검색이 끝났을 때 다시 State 초기화
-        # if 메뉴검색 끝남:
-        #    send_json_data_str["State"] = 0
         
     except Exception as ex:
         print(ex)

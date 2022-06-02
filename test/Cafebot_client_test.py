@@ -11,6 +11,8 @@ json_data = {
 }
 temp_state = 0
 temp_product = 0
+temp_price = 0
+temp_count = 1
 
 # 클라이언트 프로그램 시작
 while True:
@@ -23,11 +25,12 @@ while True:
     mySocket = socket.socket()
     mySocket.connect((host, port))  # 챗봇 엔진 서버 연결 시도.  실패하면 ConnectionRefusedError 
     
-    # 챗봇 엔진 질의 요청
+    # 챗봇 엔진 값 갱신
     json_data["Query"] = query
     json_data["State"] = temp_state
-    if temp_product:
-        json_data["Product"] = temp_product
+    json_data["Product"] = temp_product
+    json_data['Price'] = temp_price
+    json_data['Count'] = temp_count
 
     message = json.dumps(json_data)  # json 텍스트로 변경하여
     mySocket.send(message.encode())  # 전송!
@@ -47,12 +50,11 @@ while True:
     print(type(ret_data))
     print("\n")    
     
-    # State 값 저장
+    # 값 저장
     temp_state = ret_data['State']
-    
-    # Product값이 있다면 받기
-    if ret_data['Product']:
-        temp_product = ret_data['Product']
+    temp_product = ret_data['Product']
+    temp_price = ret_data['Price']
+    temp_count = ret_data['Count']
     
     
     # 챗봇 엔진 서버 연결 소켓 닫기

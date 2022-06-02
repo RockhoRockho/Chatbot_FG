@@ -168,8 +168,9 @@ def to_client(conn, addr, params):
                     answer_image = None
     
     
-      ################################       2차 FSM 절차         ###################################
-            # 주문 후 옵션 값까지 받음
+      #####################################       2차 FSM 절차         ###################################
+            
+            # 주문 후 수량 값 부터 먼저받음
             elif state == 1:
                 
                 if 
@@ -194,6 +195,15 @@ def to_client(conn, addr, params):
                     # order_item db (order_id, product_id, option_id, count)추가
                     order_id = user_id
                     order_item = OrderItem(db)
+#                     0 = 옵션없음
+#                     1 = 샷추가
+#                     2 = 시럽추가
+#                     3 = 사이즈업
+#                     4 = 샷 + 시럽추가
+#                     5 = 샷 + 사이즈업
+#                     6 = 시럽 + 사이즈업
+#                     7 = 샷 + 시럽 + 사이즈업
+                    count_db
                     
                     
                     # cart_item db 제거
@@ -262,6 +272,8 @@ def to_client(conn, addr, params):
             "NER" : str(ner_predicts),
             "State" : 0,
             "Product" : 0,
+            "Price" : 0,
+            "Count" : 1,
         }
         if menu:
             send_json_data_str['menu'] = menu
@@ -271,6 +283,7 @@ def to_client(conn, addr, params):
             send_json_data_str["State"] = state
             send_json_data_str["Product"] = product
             send_json_data_str["Price"] = price
+            send_json_data_str["Count"] = count
         elif state == 3:
             send_json_data_str["State"] = state
         elif state == 9:

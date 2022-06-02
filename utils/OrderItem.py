@@ -41,7 +41,7 @@ class OrderItem():
             cursor.execute(sql)
             db.commit()
             
-    def delete_data(db, product_id, order_id):
+    def delete_data(self, product_id, order_id):
         product_id_db = product_id
         order_id_db = order_id
 

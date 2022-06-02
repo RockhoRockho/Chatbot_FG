@@ -41,7 +41,7 @@ class CartItem():
             cursor.execute(sql)
             db.commit()
 
-    def delete_data(db, product_id, user_id):
+    def delete_data(self, product_id, user_id):
         product_id_db = product_id
         user_id_db = user_id
 

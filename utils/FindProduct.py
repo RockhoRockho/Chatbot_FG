@@ -12,6 +12,11 @@ class FindProduct:
             
         return answer
     
+    def search_id(self, name):
+        sql = "select id from product_cafe where name = '{}'".format(name)
+        product_id = self.db.select_one(sql)
+        return product_id
+    
     # 검색 쿼리 생성
     def _make_query(self, query):
         sql = "select * from product_cafe"

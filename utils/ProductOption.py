@@ -24,7 +24,7 @@ class ProductOption():
     def search_price(self, option_id):
         sql = "select price from price_option where option_id = {}".format(option_id)
         option_price = self.db.select_one(sql)
-        return option_price
+        return option_price['price']
     
     # db에 데이터 저장
     def insert_data(self, pk, option_id, product_id):

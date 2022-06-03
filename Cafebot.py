@@ -304,12 +304,13 @@ def to_client(conn, addr, params):
 
                         # cart_item에 데이터 있는지 여부 확인 필요
 
-                        
+                        f = FindProduct(db)
+                        o = ProductOption(db)
                         order_item = OrderItem(db)
                         cart_item = CartItem(db)
                         
                         # product 이름을 id로 바꾸기
-                        product_id = FindProduct.search_id(product)
+                        product_id = f.search_id_from_name(product)
                         
                         # cart_items 장바구니에 안담고 바로결제했을때
                         # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임
@@ -322,12 +323,11 @@ def to_client(conn, addr, params):
                                 order_item.insert_data(int(user_id), cart_item[i]['product_id'], cart_item[i]['option_id'], cart_item[i]['count']) 
 
                         # order_item product + option(price) price 도출
-                        f = FindProduct(db)
-                        o = ProductOption(db)
+                        
                                                               
                         total_price = 0
                         for i in order_item:
-                            product_price = f.search_price(i['product_id'])
+                            product_price = f.search_price_from_id(i['product_id'])
                             option_price = o.search_price(i['option_id'])
                             total_price += ((product_price + option_price) * i['count'])
 
@@ -350,7 +350,7 @@ def to_client(conn, addr, params):
                         cart_item = CartItem(db)
                         
                         # product 이름을 id로 바꾸기
-                        product_id = FindProduct.search_id(product)
+                        product_id = FindProduct(db).search_id_from_name(product)
 
                         # 바꿀 수량을 가져온다, query는 2번째 질문에 받아온 option 값임
                         count_search = cart_item.search_count(product, option)

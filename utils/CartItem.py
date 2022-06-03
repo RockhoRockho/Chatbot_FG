@@ -34,7 +34,7 @@ class CartItem():
         sql = "select count from cart_item where product_id='{}' and option_id='{}' ".format(product_id, option_id)
         count = self.db.select_one(sql)
         
-        return count 
+        return count['count']
 
     # db에 데이터 저장
     def insert_data(self, product_id, option_id, count):

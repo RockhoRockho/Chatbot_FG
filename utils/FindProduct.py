@@ -12,25 +12,25 @@ class FindProduct:
             
         return answer
     
-    def search_id(self, name):
+    def search_id_from_name(self, name):
         sql = "select id from product_cafe where name = '{}'".format(name)
         product_id = self.db.select_one(sql)
-        return product_id
+        return product_id['id']
     
     def search_detail_from_name(self, name):
         sql = "select detail from product_cafe where name = '{}'".format(name)
         product_detail = self.db.select_one(sql)
-        return product_detail
+        return product_detail['detail']
     
     def search_image_from_name(self, name):
         sql = "select image from product_cafe where name = '{}'".format(name)
         product_image = self.db.select_one(sql)
-        return product_image
+        return product_image['image']
     
-    def search_price(self, product_id):
+    def search_price_from_id(self, product_id):
         sql = "select price from product_cafe where product_id = '{}'".format(product_id)
         product_price = self.db.select_one(sql)
-        return product_price
+        return product_price['price']
     
     # 검색 쿼리 생성
     def _make_query(self, query):

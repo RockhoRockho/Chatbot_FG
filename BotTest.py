@@ -30,7 +30,8 @@ intent_predict = 0
 intent_name = ''
 ner_predicts = ''
 answer = ''
-answer_image = ''
+answer_detail = []
+answer_image = []
 
 def set_intent_values(predict, name, ner):
     global intent_predict
@@ -42,6 +43,7 @@ def set_intent_values(predict, name, ner):
     
 def answer_short(db, query):
     global answer
+    global answer_detail
     global answer_image
     global intent_predict
     
@@ -86,6 +88,9 @@ def answer_short(db, query):
                     answer = f.read()
                 if query == '쿠폰':
                     answer_image = '001.png'
+                elif query == '할인':
+                    answer = '할인은 추천메뉴에만 적용됩니다(그 외 메뉴에는 적용되지 않습니다)'
+                    answer_image = None
                 else:
                     answer_image = None
                 set_intent_values(3, '결제, 할인, 쿠폰', '')

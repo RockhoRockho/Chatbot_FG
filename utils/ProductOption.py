@@ -21,7 +21,7 @@ class ProductOption():
         self.db.execute(sql)
     
     def search_price(self, option_id):
-        sql = "select price from price_option where option_id = {}".format(option_id)
+        sql = "select price from product_option where id = {}".format(option_id)
         option_price = self.db.select_one(sql)
         return option_price['price']
 

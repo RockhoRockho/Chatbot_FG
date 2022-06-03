@@ -32,9 +32,9 @@ class CartItem():
     def search_count(self, product_id, option_id):
         
         sql = "select count from cart_item where product_id='{}' and option_id='{}' ".format(product_id, option_id)
-        count = self.db.select_one(sql)
-        
-        return count['count']
+        countdic = self.db.select_one(sql)
+        count = countdic['count']
+        return count
 
     # db에 데이터 저장
     def insert_data(self, product_id, option_id, count):
@@ -53,11 +53,9 @@ class CartItem():
             
     # db 수정          
     def update_data(self, product_id, option_id, count):
-        product_id_db = product_id
-        option_id_db = option_id
-        count_db = count
 
-        sql = "UPDATE `cart_item` set `count` = '{}' where `product_id`='{}' and `option_id`='{}'".format(count_db.value, product_id_db.value, option_id_db.value)
+
+        sql = "UPDATE `cart_item` set `count` = '{}' where `product_id`='{}' and `option_id`='{}'".format(count, product_id, option_id)
 
         # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
         sql = sql.replace("'None'", "null")

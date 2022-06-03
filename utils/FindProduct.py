@@ -48,11 +48,11 @@ class FindProduct:
             
         # 추천 목록 대상은 따로 db에 따라 적용
         elif query == '시그니처':
-            sql = sql + " where recommend = 1".format(query)
+            sql = sql + " where recommend = 1"
         elif query == '인기':
-            sql = sql + " where recommend = 2".format(query)
+            sql = sql + " where recommend = 2"
         elif query == '추천':
-            sql = sql + " where recommend = 3".format(query)
+            sql = sql + " where recommend = 3"
             
             
         return sql       

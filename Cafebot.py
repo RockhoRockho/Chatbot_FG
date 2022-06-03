@@ -291,7 +291,7 @@ def to_client(conn, addr, params):
                     # 옵션 질문 : 사이즈업, 샷추가, 시럽
                     # 핵심 => ★가격 변동 recv_json_data['Price']
                     # 선택완료 = > 주문 order_list 추가
-
+                    
                     # 선택완료 시 intent_predict 초기화 및 order_list db 추가
                     if query == '선택완료':
 
@@ -312,7 +312,7 @@ def to_client(conn, addr, params):
                         
                         # product 이름을 id로 바꾸기
                         product_id = f.search_id_from_name(product)
-                        print(option)
+                        
                         
                         # cart_items 장바구니에 안담고 바로결제했을때
                         # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임
@@ -330,7 +330,7 @@ def to_client(conn, addr, params):
                             product_price = f.search_price_from_id(i['product_id'])
                             option_price = o.search_price(i['option_id'])
                             total_price += ((product_price + option_price) * i['count'])
-
+                        
                         answer = "주문 총 금액은 {}원 입니다".format(total_price)
 
                         # cart_item db 제거,  product 초기화
@@ -344,30 +344,32 @@ def to_client(conn, addr, params):
                         intent_predict = 0
                         intent_name = ''
                         ner_predicts = ''
-
                         # db 가져오기
                         order_item = OrderItem(db)
                         cart_item = CartItem(db)
+
                         
                         # product 이름을 id로 바꾸기
                         product_id = FindProduct(db).search_id_from_name(product)
 
                         # 바꿀 수량을 가져온다, query는 2번째 질문에 받아온 option 값임
-                        count_search = cart_item.search_count(product, option)
+                        count_search = cart_item.search_count(product_id, option)
 
                         # cart_item db 추가
                         # 있다면 update
                         if count_search:
                             cart_item.update_data(product_id, option, 1 + count_search)
                         # 없다면 insert
+                        
                         else:
                             cart_item.insert_data(product_id, option, 1)
+                            
 
                         # 다른 상품 고를 수 있게 초기화
-                        product = 0
+                        
                         
                         answer = "장바구니에 {}가 담겼습니다".format(product)
-
+                        product = 0
                     else:
                         answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                         answer_image = None

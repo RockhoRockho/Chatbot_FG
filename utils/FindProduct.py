@@ -17,6 +17,16 @@ class FindProduct:
         product_id = self.db.select_one(sql)
         return product_id
     
+    def search_detail_from_name(self, name):
+        sql = "select detail from product_cafe where  = '{}'".format(name)
+        product_detail = self.db.select_one(sql)
+        return product_detail
+    
+    def search_image_from_name(self, name):
+        sql = "select image from product_cafe where  = '{}'".format(name)
+        product_image = self.db.select_one(sql)
+        return product_image
+    
     def search_price(self, product_id):
         sql = "select price from product_cafe where product_id = '{}'".format(product_id)
         product_price = self.db.select_one(sql)

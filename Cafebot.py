@@ -109,16 +109,7 @@ def to_client(conn, addr, params):
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
 
-            
-        # 할인, 포인트, 결제
-        elif query == '결제':
-            with open('pay.txt', 'r', encoding='utf-8') as f:
-                answer = f.read()
-            answer_image = None
-            intent_predict = 3
-            intent_name = '결제, 할인, 쿠폰'
-            ner_predicts = ''
-        
+         
         # 메뉴판
         elif query == '메뉴판':
             try:
@@ -130,18 +121,27 @@ def to_client(conn, addr, params):
                 
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요"
+        
+        # 할인, 포인트, 결제
+        elif query == '결제':
+            with open('pay.txt', 'r', encoding='utf-8') as f:
+                answer = f.read()
+            answer_image = None
+            intent_predict = 3
+            intent_name = '결제, 할인, 쿠폰'
+            ner_predicts = ''
             
         elif query == '쿠폰':
             with open('coupon.txt', 'r', encoding='utf-8') as f:
                 answer = f.read()
-            answer_image = '001.png'
+            answer_image = 'coupon.png'
             intent_predict = 3
             intent_name = '결제, 할인, 쿠폰'
             ner_predicts = ''
             
         elif query == '할인':
             answer = '할인은 추천메뉴에만 적용됩니다(그 외 메뉴에는 적용되지 않습니다)'
-            answer_image = None
+            answer_image = 'coupon.png'
             intent_predict = 3
             intent_name = '결제, 할인, 쿠폰'
             ner_predicts = ''
@@ -268,18 +268,18 @@ def to_client(conn, addr, params):
                 
                 # 옵션값으로 숫자값을 받을 때는 입력을 받아 저장
                 try:
-                    if int(query) >= 0 and int(query) < 8:
+                    if int(query) > 0 and int(query) <= 8:
                         option = int(query)
                         answer = '''다른 상품을 담고싶다면 <장바구니>를 바로결제를 원하시면 <선택완료>를 입력해주세요 
                         혹여나 옵션수정을 원하시면 해당 옵션번호를 다시 입력해주세요
-                        0 = 옵션없음
-                        1 = 샷추가
-                        2 = 시럽추가
-                        3 = 사이즈업
-                        4 = 샷 + 시럽추가
-                        5 = 샷 + 사이즈업
-                        6 = 시럽 + 사이즈업
-                        7 = 샷 + 시럽 + 사이즈업
+                        1 = 옵션없음
+                        2 = 샷추가
+                        3 = 시럽추가
+                        4 = 사이즈업
+                        5 = 샷 + 시럽추가
+                        6 = 샷 + 사이즈업
+                        7 = 시럽 + 사이즈업
+                        8 = 샷 + 시럽 + 사이즈업
                         '''
                         
                         intent_predict = 1
@@ -393,7 +393,7 @@ def to_client(conn, addr, params):
                 elif query == '쿠폰':
                     with open('coupon.txt', 'r', encoding='utf-8') as f:
                         answer = f.read()
-                    answer_image = '001.png'
+                    answer_image = 'coupon.png'
 
 
                 elif query == '할인':

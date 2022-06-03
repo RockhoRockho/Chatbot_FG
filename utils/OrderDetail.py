@@ -20,7 +20,7 @@ class OrderDetail():
         self.db.execute(sql)
         
     def search_last_id(self):
-        sql = 'select id from order_detail order by SEQUENCE desc limit 1'
+        sql = 'select id from order_detail order by id desc limit 1'
         orderDetail_id = self.db.select_one(sql)
         
         return orderDetail_id['id']
@@ -29,8 +29,5 @@ class OrderDetail():
     def insert_data(self, user_id):
 
         sql = "INSERT order_detail(user_id) values({})".format(user_id)
-
-        # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
-        sql = sql.replace("'None'", "null")
 
         self.db.execute(sql)

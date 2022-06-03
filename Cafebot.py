@@ -51,7 +51,7 @@ def to_client(conn, addr, params):
         print("데이터 수신 : ", recv_json_data)
         # 값들 받아오기
         query = recv_json_data['Query']
-        state = recv_json_data['State']
+        state = int(recv_json_data['State'])
         product = recv_json_data['Product']
         price = recv_json_data['Price']
         option = recv_json_data['Option']
@@ -221,22 +221,34 @@ def to_client(conn, addr, params):
                 # 답변 검색, 분석된 의도와 개체명을 이용해 학습 DB 에서 답변을 검색
                 try:
                     f = FindAnswer(db)
-                    answer_text, answer_image = f.search(intent_name, ner_tags)
+                    answer_text, _ = f.search(intent_name, ner_tags)
                     answer = f.tag_to_word(ner_predicts, answer_text)
                     
-                    if intent_predict in [2, 3, 9]:
+                    if intent_predict in [1, 2, 9]:
+                        
                         # 개체명 인식되는 것 처리
                         for name, tag in ner_predicts:
 
                             # B_FOOD일때 상품 추출 
                             if tag == 'B_FOOD':
                                 product = name
+                                # detail 꺼내기
+                                p = FindProduct(db)
+                                answer_detail = p.search_detail_from_name(name)
+                                answer_image = p.search_image_from_name(name)
 
                             # B_RECOMMEND일때 해당 상품목록 추출 
                             if tag == 'B_RECOMMEND':
                                 recommend = name
                                 p = FindProduct(db)
+                                
+                                # answer 다수값 list로 뽑기
                                 answer = p.search(query)
+                                for i in range(len(answer)):
+                                    answer_name.append(answer[i]['name'])
+                                    answer_detail.append(answer[i]['detail'])
+                                    answer_image.append(answer[i]['image'])
+                                answer = answer_name
 
                 except:
                     answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
@@ -253,98 +265,98 @@ def to_client(conn, addr, params):
                 ner_predicts = ''
                 answer_image = None
                 
-                # 옵션값을 받을 때는 입력을 받아 저장
-                if query >= 0 and query < 8:
-                    option = query
-                    
-                
-                # intent_predict, product 개체를 받은 상태이다.
-                # 선택지 : 선택완료, 장바구니
-                # 옵션 질문 : 사이즈업, 샷추가, 시럽
-                # 핵심 => ★가격 변동 recv_json_data['Price']
-                # 선택완료 = > 주문 order_list 추가
-                
-                # 선택완료 시 intent_predict 초기화 및 order_list db 추가
-                elif query == '선택완료':
-                    
-                    #intent_predict 초기화 
-                    intent_predict = 0
-                    intent_name = '메뉴판 요구'
-                    ner_predicts = ''
-                    
-                    # order_detail db (id, user_id)추가
-                    user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
-                    order_detail = OrderDetail(db)
-                    order_detail.insert_data(pk, user_id)
-                    
-                    # cart_item에 데이터 있는지 여부 확인 필요
-                    
-                    # cart_items 장바구니에 안담고 바로결제했을때
-                    order_item = OrderItem(db)
-                    cart_item = CartItem(db)
-                    
-                    # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임
-                    # 없으면 insert
-                    if cart_item == '()':
-                        order_item.insert_data(user_id, product, option, 1)
-                    
-                    # 있다면 update
-                    else:
-                        for i in range(len(cart_item)):
-                            order_item.insert_data(user_id, cart_item[i]['product_id'], cart_item[i]['option_id'], cart_item[i]['count']) 
-                        
-                    # order_item product + option(price) price 도출
-                    f = FindProduct(db)
-                    o = ProductOption(db)
+                # 옵션값으로 숫자값을 받을 때는 입력을 받아 저장
+                try:
+                    int(query) >= 0 and int(query) < 8:
+                        option = int(query)
+                except:
+                    # intent_predict, product 개체를 받은 상태이다.
+                    # 선택지 : 선택완료, 장바구니
+                    # 옵션 질문 : 사이즈업, 샷추가, 시럽
+                    # 핵심 => ★가격 변동 recv_json_data['Price']
+                    # 선택완료 = > 주문 order_list 추가
 
-                    total_price = 0
-                    for i in order_item:
-                        product_price = f.search_price(i['product_id'])
-                        option_price = o.search_price(i['option_id'])
-                        total_price += ((product_price + option_price) * i['count'])
+                    # 선택완료 시 intent_predict 초기화 및 order_list db 추가
+                    if query == '선택완료':
 
-                    answer = "주문 총 금액은 {}원 입니다".format(total_price)
-                        
-                    # cart_item db 제거,  product 초기화
-                    product = 0
-                    cart_item.all_clear_train_data()
-                    
-                
-                # 장바구니 시 장바구니 db 추가 후에 intent_predict = 0 으로 초기화
-                elif query == '장바구니':
-                    
-                    intent_predict = 0
-                    intent_name = '메뉴판 요구'
-                    ner_predicts = ''
-                    
-                    # db 가져오기
-                    cart_item = CartItem(db)
-                    
-                    # 현재시간으로 임시 유저아이디를 만듦
-                    user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
-                    
-                    # 바꿀 수량을 가져온다, query는 2번째 질문에 받아온 option 값임
-                    count_search = cart_item.search_count(product, option)
-                    
-                    # cart_item db 추가
-                    # 있다면 update
-                    if count_search:
-                        order_item.update_data(user_id, product, option, 1 + count_search)
-                    # 없다면 insert
+                        #intent_predict 초기화 
+                        intent_predict = 0
+                        intent_name = '메뉴판 요구'
+                        ner_predicts = ''
+
+                        # order_detail db (id, user_id)추가
+                        user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
+                        order_detail = OrderDetail(db)
+                        order_detail.insert_data(pk, user_id)
+
+                        # cart_item에 데이터 있는지 여부 확인 필요
+
+                        # cart_items 장바구니에 안담고 바로결제했을때
+                        order_item = OrderItem(db)
+                        cart_item = CartItem(db)
+
+                        # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임
+                        # 없으면 insert
+                        if cart_item == '()':
+                            order_item.insert_data(user_id, product, option, 1)
+
+                        # 있다면 update
+                        else:
+                            for i in range(len(cart_item)):
+                                order_item.insert_data(user_id, cart_item[i]['product_id'], cart_item[i]['option_id'], cart_item[i]['count']) 
+
+                        # order_item product + option(price) price 도출
+                        f = FindProduct(db)
+                        o = ProductOption(db)
+
+                        total_price = 0
+                        for i in order_item:
+                            product_price = f.search_price(i['product_id'])
+                            option_price = o.search_price(i['option_id'])
+                            total_price += ((product_price + option_price) * i['count'])
+
+                        answer = "주문 총 금액은 {}원 입니다".format(total_price)
+
+                        # cart_item db 제거,  product 초기화
+                        product = 0
+                        cart_item.all_clear_train_data()
+
+
+                    # 장바구니 시 장바구니 db 추가 후에 intent_predict = 0 으로 초기화
+                    elif query == '장바구니':
+
+                        intent_predict = 0
+                        intent_name = '메뉴판 요구'
+                        ner_predicts = ''
+
+                        # db 가져오기
+                        cart_item = CartItem(db)
+
+                        # 현재시간으로 임시 유저아이디를 만듦
+                        user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
+
+                        # 바꿀 수량을 가져온다, query는 2번째 질문에 받아온 option 값임
+                        count_search = cart_item.search_count(product, option)
+
+                        # cart_item db 추가
+                        # 있다면 update
+                        if count_search:
+                            order_item.update_data(user_id, product, option, 1 + count_search)
+                        # 없다면 insert
+                        else:
+                            order_item.insert_data(user_id, product, option, 1)
+
+                        # 다른 상품 고를 수 있게 초기화
+                        product = 0
+
                     else:
-                        order_item.insert_data(user_id, product, option, 1)
-                    
-                    # 다른 상품 고를 수 있게 초기화
-                    product = 0
-                    
-                else:
-                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
-                    answer_image = None
-                    # intent_predict, product 값 초기화
-                    intent_predict = 0
-                    intent_name = '메뉴판 요구'
-                    ner_predicts = ''
-                    product = 0
+                        answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                        answer_image = None
+                        # intent_predict, product 값 초기화
+                        intent_predict = 0
+                        intent_name = '메뉴판 요구'
+                        ner_predicts = ''
+                        product = 0
             
             
             # 할인, 포인트, 결제
@@ -423,7 +435,7 @@ def to_client(conn, addr, params):
             "Price" : 0,
             "Count" : 1,
             "Option" : 0,
-            "Detail" : None,
+            "Detail" : 0,
         }
         
         # State 값 확인하여 
@@ -431,10 +443,10 @@ def to_client(conn, addr, params):
             send_json_data_str["Product"] = product
             send_json_data_str["Price"] = price
             send_json_data_str["Option"] = option
-            send_json_data_str["State"] = intent_predict
+            send_json_data_str["State"] = int(intent_predict)
         elif intent_predict == 9:
             send_json_data_str["Product"] = product
-            send_json_data_str["State"] = intent_predict
+            send_json_data_str["State"] = int(intent_predict)
         elif intent_predict == 10:
             send_json_data_str["Detail"] = answer_detail
         

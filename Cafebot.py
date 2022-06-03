@@ -221,7 +221,7 @@ def to_client(conn, addr, params):
                 # 답변 검색, 분석된 의도와 개체명을 이용해 학습 DB 에서 답변을 검색
                 try:
                     f = FindAnswer(db)
-                    answer_text, _ = f.search(intent_name, ner_tags)
+                    answer_text, answer_image = f.search(intent_name, ner_tags)
                     answer = f.tag_to_word(ner_predicts, answer_text)
                     
                     if intent_predict in [1, 2, 9]:
@@ -260,15 +260,31 @@ def to_client(conn, addr, params):
             # 주문 후 옵션 값 부터 먼저받음
             elif state == 1:
                 
-                intent_predict = 1
-                intent_name = '주문'
+                # 아래값들이 적용안되면 처음으로 가게끔 함
+                intent_predict = 0
+                intent_name = ''
                 ner_predicts = ''
                 answer_image = None
                 
                 # 옵션값으로 숫자값을 받을 때는 입력을 받아 저장
                 try:
-                    int(query) >= 0 and int(query) < 8:
+                    if int(query) >= 0 and int(query) < 8:
                         option = int(query)
+                        answer = '''다른 상품을 담고싶다면 <장바구니>를 바로결제를 원하시면 <바로결제>를 입력해주세요 
+                        혹여나 옵션수정을 원하시면 해당 옵션번호를 다시 입력해주세요
+                        0 = 옵션없음
+                        1 = 샷추가
+                        2 = 시럽추가
+                        3 = 사이즈업
+                        4 = 샷 + 시럽추가
+                        5 = 샷 + 사이즈업
+                        6 = 시럽 + 사이즈업
+                        7 = 샷 + 시럽 + 사이즈업
+                        '''
+                        
+                        intent_predict = 1
+                        intent_name = '주문'
+                        
                 except:
                     # intent_predict, product 개체를 받은 상태이다.
                     # 선택지 : 선택완료, 장바구니
@@ -278,11 +294,6 @@ def to_client(conn, addr, params):
 
                     # 선택완료 시 intent_predict 초기화 및 order_list db 추가
                     if query == '선택완료':
-
-                        #intent_predict 초기화 
-                        intent_predict = 0
-                        intent_name = '메뉴판 요구'
-                        ner_predicts = ''
 
                         # order_detail db (id, user_id)추가
                         user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
@@ -326,7 +337,7 @@ def to_client(conn, addr, params):
                     elif query == '장바구니':
 
                         intent_predict = 0
-                        intent_name = '메뉴판 요구'
+                        intent_name = ''
                         ner_predicts = ''
 
                         # db 가져오기
@@ -348,13 +359,15 @@ def to_client(conn, addr, params):
 
                         # 다른 상품 고를 수 있게 초기화
                         product = 0
+                        
+                        answer = "장바구니에 {}가 담겼습니다".format(product)
 
                     else:
                         answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                         answer_image = None
                         # intent_predict, product 값 초기화
                         intent_predict = 0
-                        intent_name = '메뉴판 요구'
+                        intent_name = ''
                         ner_predicts = ''
                         product = 0
             
@@ -363,7 +376,7 @@ def to_client(conn, addr, params):
             elif state == 3:
                 
                 intent_predict = 0
-                intent_name = '메뉴판 요구'
+                intent_name = ''
                 ner_predicts = ''
                 
                 if query == '결제':
@@ -390,8 +403,9 @@ def to_client(conn, addr, params):
             elif state == 9:
                 
                 intent_predict = 0
-                intent_name = '메뉴판 요구'
+                intent_name = ''
                 ner_predicts = ''
+                answer_image = None
                 
                 # 상품이름이 없을때는 다시 입력하게 함
                 if product == 0:

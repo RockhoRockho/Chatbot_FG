@@ -301,7 +301,8 @@ def to_client(conn, addr, params):
                         # order_detail db (id, user_id)추가
                         order_detail = OrderDetail(db)
                         order_detail.insert_data(user_id)
-
+                        order_id = order_detail.search_last_id()
+                        
                         # cart_item에 데이터 있는지 여부 확인 필요
 
                         f = FindProduct(db)
@@ -315,18 +316,16 @@ def to_client(conn, addr, params):
                         # cart_items 장바구니에 안담고 바로결제했을때
                         # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임
                         if cart_item.search_all() == '()':
-                            order_item.insert_data(int(user_id), product_id, option, 1)
+                            order_item.insert_data(order_id, product_id, option, 1)
 
                         # 장바구니 담은것이 있다면 cart_item에 찾아 order_item insert
                         else:
                             for i in range(len(cart_item.search_all())):
-                                order_item.insert_data(int(user_id), cart_item[i]['product_id'], cart_item[i]['option_id'], cart_item[i]['count']) 
+                                order_item.insert_data(order_id, cart_item[i]['product_id'], cart_item[i]['option_id'], cart_item[i]['count']) 
 
-                        # order_item product + option(price) price 도출
-                        
-                                                              
+                        # order_item product + option(price) price 도출      
                         total_price = 0
-                        for i in order_item:
+                        for i in order_item.search_all():
                             product_price = f.search_price_from_id(i['product_id'])
                             option_price = o.search_price(i['option_id'])
                             total_price += ((product_price + option_price) * i['count'])
@@ -432,7 +431,7 @@ def to_client(conn, addr, params):
                             order_id = int(query)
                             f = OrderItem(db)
                             p = FindProduct(db)
-                            product_id = p.search_id(product)
+                            product_id = p.search_id_from_name(product)
                             f.delete_data(product_id, order_id)
                             answer = "주문번호: {} {}가 취소되었습니다".format(product, order_id)
                             product = 0

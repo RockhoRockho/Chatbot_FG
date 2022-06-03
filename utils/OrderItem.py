@@ -20,7 +20,12 @@ class OrderItem():
         '''
         self.db.execute(sql)
 
-    
+    # 전부찾기
+    def search_all(self):
+        sql = "select * from order_item"
+        result = self.db.select_all(sql)
+
+        return result
     
     # db에 데이터 저장
     def insert_data(self, order_id, product_id, option_id, count):

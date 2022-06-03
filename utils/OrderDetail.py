@@ -18,7 +18,13 @@ class OrderDetail():
         ALTER TABLE order_detail
         '''
         self.db.execute(sql)
-
+        
+    def search_last_id(self):
+        sql = 'select id from order_detail order by SEQUENCE desc limit 1'
+        orderDetail_id = self.db.select_one(sql)
+        
+        return orderDetail_id['id']
+        
     # db에 데이터 저장
     def insert_data(self, user_id):
 

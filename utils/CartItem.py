@@ -37,12 +37,12 @@ class CartItem():
         return count 
 
     # db에 데이터 저장
-    def insert_data(self, order_id, product_id, option_id, count):
+    def insert_data(self, product_id, option_id, count):
 
         sql = '''
-            INSERT cart_item(order_id, product_id, option_id, count) 
-            values('%s', '%s', '%s', '%s')
-        ''' % (order_id, product_id, option_id, count)
+            INSERT cart_item(product_id, option_id, count) 
+            values('%s', '%s', '%s')
+        ''' % (product_id, option_id, count)
 
         # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
         sql = sql.replace("'None'", "null")
@@ -64,16 +64,3 @@ class CartItem():
 
         self.db.execute(sql)
 
-            
-            
-    def delete_data(self, product_id, user_id):
-        product_id_db = product_id
-        user_id_db = user_id
-
-        sql = '''
-            DELETE FROM `cart_item` WHERE `product_id` = %s AND `user_id` = %s
-        ''' % (product_id_db.value, user_id_db.value)
-
-        sql = sql.replace("'None'", "null")
-
-        self.db.execute(sql)

@@ -24,13 +24,11 @@ class OrderDetail():
 
     # db에 데이터 저장
     def insert_data(self, pk, user_id):
-        pk_db = pk
-        user_id_db = user_id
 
         sql = '''
             INSERT order_detail(id, user_id) 
             values('%s', '%s')
-        ''' % (pk_db.value, user_id_db)
+        ''' % (pk, user_id)
 
         # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
         sql = sql.replace("'None'", "null")

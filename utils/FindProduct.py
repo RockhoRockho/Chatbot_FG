@@ -18,12 +18,12 @@ class FindProduct:
         return product_id
     
     def search_detail_from_name(self, name):
-        sql = "select detail from product_cafe where  = '{}'".format(name)
+        sql = "select detail from product_cafe where name = '{}'".format(name)
         product_detail = self.db.select_one(sql)
         return product_detail
     
     def search_image_from_name(self, name):
-        sql = "select image from product_cafe where  = '{}'".format(name)
+        sql = "select image from product_cafe where name = '{}'".format(name)
         product_image = self.db.select_one(sql)
         return product_image
     

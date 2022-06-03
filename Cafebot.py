@@ -301,7 +301,7 @@ def to_client(conn, addr, params):
                     for i in order_item:
                         product_price = f.search_price(i['product_id'])
                         option_price = o.search_price(i['option_id'])
-                        total_price += ((product price + option price) * i['count'])
+                        total_price += ((product_price + option_price) * i['count'])
 
                     answer = "주문 총 금액은 {}원 입니다".format(total_price)
                         
@@ -423,6 +423,7 @@ def to_client(conn, addr, params):
             "Price" : 0,
             "Count" : 1,
             "Option" : 0,
+            "Detail" : None,
         }
         
         # State 값 확인하여 
@@ -435,7 +436,7 @@ def to_client(conn, addr, params):
             send_json_data_str["Product"] = product
             send_json_data_str["State"] = intent_predict
         elif intent_predict == 10:
-            send_json_data_str["detail"] = answer_detail
+            send_json_data_str["Detail"] = answer_detail
         
         # 디버깅
         print(send_json_data_str)

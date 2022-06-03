@@ -56,8 +56,8 @@ while True:
     temp_product = ret_data['Product']
     temp_price = ret_data['Price']
     temp_option = ret_data['Option']
-    if ret_data['detail'] != None:
-        temp_detail = ret_data['detail']
+    if ret_data['Detail'] != None:
+        temp_detail = ret_data['Detail']
     
     # 챗봇 엔진 서버 연결 소켓 닫기
     mySocket.close()

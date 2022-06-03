@@ -11,15 +11,15 @@ class OrderItem():
         sql = '''
                 delete from order_item
             '''
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
+        self.db.execute(sql)
+
 
         # auto increment 초기화
         sql = '''
         ALTER TABLE order_item AUTO_INCREMENT=1;
         '''
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
+        self.db.execute(sql)
+
     
     
     # db에 데이터 저장
@@ -33,9 +33,8 @@ class OrderItem():
         # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
         sql = sql.replace("'None'", "null")
 
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
-            self.db.commit()
+        self.db.execute(sql)
+
             
     
             
@@ -49,6 +48,4 @@ class OrderItem():
 
         sql = sql.replace("'None'", "null")
 
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
-            self.db.commit()
+        self.db.execute(sql)

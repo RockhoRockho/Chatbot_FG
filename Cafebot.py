@@ -270,7 +270,7 @@ def to_client(conn, addr, params):
                 try:
                     if int(query) >= 0 and int(query) < 8:
                         option = int(query)
-                        answer = '''다른 상품을 담고싶다면 <장바구니>를 바로결제를 원하시면 <바로결제>를 입력해주세요 
+                        answer = '''다른 상품을 담고싶다면 <장바구니>를 바로결제를 원하시면 <선택완료>를 입력해주세요 
                         혹여나 옵션수정을 원하시면 해당 옵션번호를 다시 입력해주세요
                         0 = 옵션없음
                         1 = 샷추가
@@ -296,11 +296,11 @@ def to_client(conn, addr, params):
                     if query == '선택완료':
 
                         # 현재시간으로 회원ID를 대체함
-                        user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
+                        user_id = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
                         
                         # order_detail db (id, user_id)추가
                         order_detail = OrderDetail(db)
-                        order_detail.insert_data(pk, user_id)
+                        order_detail.insert_data(user_id)
 
                         # cart_item에 데이터 있는지 여부 확인 필요
 
@@ -315,7 +315,7 @@ def to_client(conn, addr, params):
 
                         # 있다면 update
                         else:
-                            for i in range(len(cart_item)):
+                            for i in range(len(cart_item.search_all)):
                                 order_item.insert_data(user_id, cart_item[i]['product_id'], cart_item[i]['option_id'], cart_item[i]['count']) 
 
                         # order_item product + option(price) price 도출

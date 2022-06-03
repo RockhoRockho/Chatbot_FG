@@ -11,15 +11,15 @@ class ProductOption():
         sql = '''
                 delete from product_option
             '''
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
+        self.db.execute(sql)
+
 
         # auto increment 초기화
         sql = '''
         ALTER TABLE product_option
         '''
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
+        self.db.execute(sql)
+
     
     def search_price(self, option_id):
         sql = "select price from price_option where option_id = {}".format(option_id)
@@ -40,6 +40,5 @@ class ProductOption():
         # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
         sql = sql.replace("'None'", "null")
 
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
-            self.db.commit()
+        self.db.execute(sql)
+

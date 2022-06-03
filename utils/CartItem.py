@@ -11,15 +11,15 @@ class CartItem():
         sql = '''
                 delete from cart_item
             '''
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
+        self.db.execute(sql)
+
 
         # auto increment 초기화
         sql = '''
         ALTER TABLE cart_item AUTO_INCREMENT=1;
         '''
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
+        self.db.execute(sql)
+
             
     # 전부찾기
     def search_all(self):
@@ -47,9 +47,8 @@ class CartItem():
         # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
         sql = sql.replace("'None'", "null")
 
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
-            self.db.commit()
+        self.db.execute(sql)
+
 
             
     # db 수정          
@@ -63,9 +62,8 @@ class CartItem():
         # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
         sql = sql.replace("'None'", "null")
 
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
-            self.db.commit()
+        self.db.execute(sql)
+
             
             
     def delete_data(self, product_id, user_id):
@@ -78,6 +76,4 @@ class CartItem():
 
         sql = sql.replace("'None'", "null")
 
-        with self.db.cursor() as cursor:
-            cursor.execute(sql)
-            self.db.commit()
+        self.db.execute(sql)

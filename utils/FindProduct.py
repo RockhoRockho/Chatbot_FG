@@ -28,7 +28,7 @@ class FindProduct:
         return product_image['image']
     
     def search_price_from_id(self, product_id):
-        sql = "select price from product_cafe where product_id = '{}'".format(product_id)
+        sql = "select price from product_cafe where id = '{}'".format(product_id)
         product_price = self.db.select_one(sql)
         return product_price['price']
     
@@ -37,8 +37,14 @@ class FindProduct:
         sql = "select * from product_cafe"
 
         # 해당 query 목록 전부 고르기
-        if query == '라떼' or query == '커피' or query == '음료' or query == '식사':
-            sql = sql + " where '{}'=1".format(query)
+        if query == '라떼':
+            sql = sql + " where latte=1"
+        elif query == '커피':
+            sql = sql + " where coffee=1"
+        elif query == '음료':
+            sql = sql + " where drink=1"
+        elif query == '식사':
+            sql = sql + " where food=1"
             
         # 추천 목록 대상은 따로 db에 따라 적용
         elif query == '시그니처':

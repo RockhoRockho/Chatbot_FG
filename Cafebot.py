@@ -312,6 +312,7 @@ def to_client(conn, addr, params):
                         
                         # product 이름을 id로 바꾸기
                         product_id = f.search_id_from_name(product)
+                        print(option)
                         
                         # cart_items 장바구니에 안담고 바로결제했을때
                         # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임

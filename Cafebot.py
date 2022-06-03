@@ -295,8 +295,10 @@ def to_client(conn, addr, params):
                     # 선택완료 시 intent_predict 초기화 및 order_list db 추가
                     if query == '선택완료':
 
-                        # order_detail db (id, user_id)추가
+                        # 현재시간으로 회원ID를 대체함
                         user_id = int(datetime.datetime.now().strftime('%Y%m%d%H%M%S'))
+                        
+                        # order_detail db (id, user_id)추가
                         order_detail = OrderDetail(db)
                         order_detail.insert_data(pk, user_id)
 
@@ -341,6 +343,7 @@ def to_client(conn, addr, params):
                         ner_predicts = ''
 
                         # db 가져오기
+                        order_item = OrderItem(db)
                         cart_item = CartItem(db)
 
                         # 현재시간으로 임시 유저아이디를 만듦

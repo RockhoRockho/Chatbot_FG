@@ -315,7 +315,7 @@ def to_client(conn, addr, params):
                         
                         # cart_items 장바구니에 안담고 바로결제했을때
                         # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임
-                        if cart_item.search_all() == '()':
+                        if cart_item.search_all() == ():
                             order_item.insert_data(order_id, product_id, option, 1)
 
                         # 장바구니 담은것이 있다면 cart_item에 찾아 order_item insert

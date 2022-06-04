@@ -324,21 +324,17 @@ def to_client(conn, addr, params):
                         order_item = OrderItem(db)
                         cart_item = CartItem(db)
                         # product 이름을 id로 바꾸기
-                        product_id = f.search_id_from_name(product)
+                        if product != 0:
+                            product_id = f.search_id_from_name(product)
                         
-                        # cart_items 장바구니에 안담고 바로결제했을때
-                        # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임
-                        if cart_item.search_all() == ():
-                            order_item.insert_data(order_id, product_id, option, 1)
-                        # 장바구니 담은것이 있다면 cart_item에 찾아 order_item insert
-                        else:
-                            for i in range(len(cart_item.search_all())):
-                                order_item.insert_data(order_id, cart_item.search_all()[i]['product_id'],
-                                                       cart_item.search_all()[i]['option_id'], cart_item.search_all()[i]['count']) 
+                        # order_item db (order_id, product_id, option_id, count) insert
+                        for i in range(len(cart_item.search_all())):
+                            order_item.insert_data(order_id, cart_item.search_all()[i]['product_id'],
+                                                   cart_item.search_all()[i]['option_id'], cart_item.search_all()[i]['count']) 
 
-                        # order_item product + option(price) price 도출      
+                        # cart_item product + option(price) price 도출      
                         total_price = 0
-                        for i in order_item.search_all():
+                        for i in cart_item.search_all():
                             product_price = f.search_price_from_id(i['product_id'])
                             option_price = o.search_price(i['option_id'])
                             total_price += ((product_price + option_price) * i['count'])

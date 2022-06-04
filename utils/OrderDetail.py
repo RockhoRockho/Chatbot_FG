@@ -22,8 +22,9 @@ class OrderDetail():
     def search_last_id(self):
         sql = 'select id from order_detail order by id desc limit 1'
         orderDetail_id = self.db.select_one(sql)
+        pk = orderDetail_id['id']
         
-        return orderDetail_id['id']
+        return pk
         
     # db에 데이터 저장
     def insert_data(self, user_id):

@@ -56,14 +56,28 @@ def to_client(conn, addr, params):
         price = recv_json_data['Price']
         option = recv_json_data['Option']
         
-        
-        ##################################     단답처리     #############################################
-        
         word_1 = ['라떼', '커피', '음료', '식사']
         word_2 = ['추천', '인기', '시그니처']
         
+        ##################################     DB 초기화    #############################################
+        
+        if query == 'DB초기화':
+            CartItem(db).all_clear_train_data()
+            OrderItem(db).all_clear_train_data()
+            OrderDetail(db).all_clear_train_data()       
+            
+            answer = ''
+            answer_name = []
+            answer_detail = []
+            answer_image = []
+            intent_predict = 10
+            intent_name = ''
+            ner_predicts = ''
+        
+        ##################################     단답처리     #############################################
+        
         # word_1 이 들어왔을때 따로 검색단어를 가져옴
-        if query in word_1:
+        elif query in word_1:
             try:
                 p = FindProduct(db)
                 answer = p.search(query)
@@ -319,7 +333,8 @@ def to_client(conn, addr, params):
                         # 장바구니 담은것이 있다면 cart_item에 찾아 order_item insert
                         else:
                             for i in range(len(cart_item.search_all())):
-                                order_item.insert_data(order_id, cart_item.search_all()[i]['product_id'], cart_item.search_all()[i]['option_id'], cart_item.search_all()[i]['count']) 
+                                order_item.insert_data(order_id, cart_item.search_all()[i]['product_id'],
+                                                       cart_item.search_all()[i]['option_id'], cart_item.search_all()[i]['count']) 
 
                         # order_item product + option(price) price 도출      
                         total_price = 0
@@ -377,6 +392,7 @@ def to_client(conn, addr, params):
                         
                         answer = "장바구니에 {}가 담겼습니다".format(product)
                         product = 0
+                        
                     else:
                         answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                         answer_image = None

@@ -54,11 +54,7 @@ class CartItem():
     # db 수정          
     def update_data(self, product_id, option_id, count):
 
-
         sql = "UPDATE `cart_item` set `count` = '{}' where `product_id`='{}' and `option_id`='{}'".format(count, product_id, option_id)
-
-        # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
-        sql = sql.replace("'None'", "null")
 
         self.db.execute(sql)
 

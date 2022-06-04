@@ -309,20 +309,17 @@ def to_client(conn, addr, params):
                         o = ProductOption(db)
                         order_item = OrderItem(db)
                         cart_item = CartItem(db)
-                        
                         # product 이름을 id로 바꾸기
                         product_id = f.search_id_from_name(product)
-                        
                         
                         # cart_items 장바구니에 안담고 바로결제했을때
                         # order_item db (order_id, product_id, option_id, count)추가, query는 2번째 질문에 받아온 option 값임
                         if cart_item.search_all() == ():
                             order_item.insert_data(order_id, product_id, option, 1)
-
                         # 장바구니 담은것이 있다면 cart_item에 찾아 order_item insert
                         else:
                             for i in range(len(cart_item.search_all())):
-                                order_item.insert_data(order_id, cart_item[i]['product_id'], cart_item[i]['option_id'], cart_item[i]['count']) 
+                                order_item.insert_data(order_id, cart_item.search_all()[i]['product_id'], cart_item.search_all()[i]['option_id'], cart_item.search_all()[i]['count']) 
 
                         # order_item product + option(price) price 도출      
                         total_price = 0
@@ -351,17 +348,27 @@ def to_client(conn, addr, params):
                         
                         # product 이름을 id로 바꾸기
                         product_id = FindProduct(db).search_id_from_name(product)
-
+                        
+                        
                         # 바꿀 수량을 가져온다, query는 2번째 질문에 받아온 option 값임
-                        count_search = cart_item.search_count(product_id, option)
+                        
+                        #*수정전*count_search = cart_item.search_count(product_id, option)
 
                         # cart_item db 추가
                         # 있다면 update
-                        if count_search:
+                        
+                        #*수정전*if count_search:
+                        #*수정전*    cart_item.update_data(product_id, option, 1 + count_search)
+                        ## 없다면 insert
+                        #*수정전*else:
+                        #*수정전*    cart_item.insert_data(product_id, option, 1)
+                        
+                        try:
+                            count_search = cart_item.search_count(product_id, option)
                             cart_item.update_data(product_id, option, 1 + count_search)
                         # 없다면 insert
                         
-                        else:
+                        except:
                             cart_item.insert_data(product_id, option, 1)
                             
 

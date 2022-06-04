@@ -218,6 +218,91 @@ def to_client(conn, addr, params):
             except:
                 answer = "죄송해요 무슨 말인지 모르겠어요"
         
+        # 선택완료 처리
+        elif query == '선택완료':
+            
+            intent_predict = 0
+            intent_name = ''
+            ner_predicts = ''
+            answer_image = None
+            
+            try:
+
+                # 현재시간으로 회원ID를 대체함
+                user_id = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
+
+                # order_detail db (id, user_id)추가
+                order_detail = OrderDetail(db)
+                order_detail.insert_data(user_id)
+                order_id = order_detail.search_last_id()
+
+                # cart_item에 데이터 있는지 여부 확인 필요
+
+                f = FindProduct(db)
+                o = ProductOption(db)
+                order_item = OrderItem(db)
+                cart_item = CartItem(db)
+                # product 이름을 id로 바꾸기
+                if product != 0:
+                    product_id = f.search_id_from_name(product)
+
+                # order_item db (order_id, product_id, option_id, count) insert
+                for i in range(len(cart_item.search_all())):
+                    order_item.insert_data(order_id, cart_item.search_all()[i]['product_id'],
+                                           cart_item.search_all()[i]['option_id'], cart_item.search_all()[i]['count']) 
+
+                # cart_item product + option(price) price 도출      
+                total_price = 0
+                for i in cart_item.search_all():
+                    product_price = f.search_price_from_id(i['product_id'])
+                    option_price = o.search_price(i['option_id'])
+                    total_price += ((product_price + option_price) * i['count'])
+
+                answer = "주문 총 금액은 {}원 입니다".format(total_price)
+
+                # cart_item db 제거,  product 초기화
+                product = 0
+                cart_item.all_clear_train_data()
+                
+            except:
+                answer = '올바른 절차가 아닙니다'
+
+
+        # 장바구니 처리
+        elif query == '장바구니':
+            
+            intent_predict = 0
+            intent_name = ''
+            ner_predicts = ''
+            answer_image = None
+
+            try:
+                # db 가져오기
+                order_item = OrderItem(db)
+                cart_item = CartItem(db)
+
+
+                # product 이름을 id로 바꾸기
+                product_id = FindProduct(db).search_id_from_name(product)
+
+                try:
+                    count_search = cart_item.search_count(product_id, option)
+                    cart_item.update_data(product_id, option, 1 + count_search)
+
+                # 없다면 insert
+                except:
+                    cart_item.insert_data(product_id, option, 1)
+
+
+                # 다른 상품 고를 수 있게 초기화
+                answer = "장바구니에 {}가 담겼습니다".format(product)
+                product = 0
+            
+            except:
+                answer = '올바른 절차가 아닙니다'
+
+
+        
         # one_word와 관련 없을때
         else:    
         ####################################        일반 절차          ###################################
@@ -300,103 +385,13 @@ def to_client(conn, addr, params):
                         intent_name = '주문'
                         
                 except:
-                    # intent_predict, product 개체를 받은 상태이다.
-                    # 선택지 : 선택완료, 장바구니
-                    # 옵션 질문 : 사이즈업, 샷추가, 시럽
-                    # 핵심 => ★가격 변동 recv_json_data['Price']
-                    # 선택완료 = > 주문 order_list 추가
-                    
-                    # 선택완료 시 intent_predict 초기화 및 order_list db 추가
-                    if query == '선택완료':
-
-                        # 현재시간으로 회원ID를 대체함
-                        user_id = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-                        
-                        # order_detail db (id, user_id)추가
-                        order_detail = OrderDetail(db)
-                        order_detail.insert_data(user_id)
-                        order_id = order_detail.search_last_id()
-                        
-                        # cart_item에 데이터 있는지 여부 확인 필요
-
-                        f = FindProduct(db)
-                        o = ProductOption(db)
-                        order_item = OrderItem(db)
-                        cart_item = CartItem(db)
-                        # product 이름을 id로 바꾸기
-                        if product != 0:
-                            product_id = f.search_id_from_name(product)
-                        
-                        # order_item db (order_id, product_id, option_id, count) insert
-                        for i in range(len(cart_item.search_all())):
-                            order_item.insert_data(order_id, cart_item.search_all()[i]['product_id'],
-                                                   cart_item.search_all()[i]['option_id'], cart_item.search_all()[i]['count']) 
-
-                        # cart_item product + option(price) price 도출      
-                        total_price = 0
-                        for i in cart_item.search_all():
-                            product_price = f.search_price_from_id(i['product_id'])
-                            option_price = o.search_price(i['option_id'])
-                            total_price += ((product_price + option_price) * i['count'])
-                        
-                        answer = "주문 총 금액은 {}원 입니다".format(total_price)
-
-                        # cart_item db 제거,  product 초기화
-                        product = 0
-                        cart_item.all_clear_train_data()
-
-
-                    # 장바구니 시 장바구니 db 추가 후에 intent_predict = 0 으로 초기화
-                    elif query == '장바구니':
-
-                        intent_predict = 0
-                        intent_name = ''
-                        ner_predicts = ''
-                        # db 가져오기
-                        order_item = OrderItem(db)
-                        cart_item = CartItem(db)
-
-                        
-                        # product 이름을 id로 바꾸기
-                        product_id = FindProduct(db).search_id_from_name(product)
-                        
-                        
-                        # 바꿀 수량을 가져온다, query는 2번째 질문에 받아온 option 값임
-                        
-                        #*수정전*count_search = cart_item.search_count(product_id, option)
-
-                        # cart_item db 추가
-                        # 있다면 update
-                        
-                        #*수정전*if count_search:
-                        #*수정전*    cart_item.update_data(product_id, option, 1 + count_search)
-                        ## 없다면 insert
-                        #*수정전*else:
-                        #*수정전*    cart_item.insert_data(product_id, option, 1)
-                        
-                        try:
-                            count_search = cart_item.search_count(product_id, option)
-                            cart_item.update_data(product_id, option, 1 + count_search)
-                        # 없다면 insert
-                        
-                        except:
-                            cart_item.insert_data(product_id, option, 1)
-                            
-
-                        # 다른 상품 고를 수 있게 초기화
-                        
-                        
-                        answer = "장바구니에 {}가 담겼습니다".format(product)
-                        product = 0
-                        
-                    else:
-                        answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
-                        answer_image = None
-                        # intent_predict, product 값 초기화
-                        intent_predict = 0
-                        intent_name = ''
-                        ner_predicts = ''
-                        product = 0
+                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                    answer_image = None
+                    # intent_predict, product 값 초기화
+                    intent_predict = 0
+                    intent_name = ''
+                    ner_predicts = ''
+                    product = 0
             
             
             # 할인, 포인트, 결제

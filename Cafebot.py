@@ -465,7 +465,7 @@ def to_client(conn, addr, params):
             "Answer" : answer,
             "AnswerImageUrl" : answer_image,
             "Intent" : intent_name,
-            "NER" : str(ner_predicts),
+            "NER" : ner_predicts,
             "State" : 0,
             "Product" : 0,
             "Price" : 0,

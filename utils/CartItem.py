@@ -44,9 +44,6 @@ class CartItem():
             values('%s', '%s', '%s')
         ''' % (product_id, option_id, count)
 
-        # 엑셀에서 불러온 cell에 데이터가 없는 경우, null 로 치환
-        sql = sql.replace("'None'", "null")
-
         self.db.execute(sql)
 
 

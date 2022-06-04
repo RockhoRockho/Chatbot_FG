@@ -280,6 +280,8 @@ def to_client(conn, addr, params):
                 # db 가져오기
                 order_item = OrderItem(db)
                 cart_item = CartItem(db)
+                options = ProductOption(db)
+                option_name = options.option_name(option)
 
 
                 # product 이름을 id로 바꾸기
@@ -295,7 +297,7 @@ def to_client(conn, addr, params):
 
 
                 # 다른 상품 고를 수 있게 초기화
-                answer = "장바구니에 {}가 담겼습니다".format(product)
+                answer = "장바구니에 '{} - {}'이(가) 담겼습니다".format(product, option_name)
                 product = 0
             
             except:
@@ -394,32 +396,10 @@ def to_client(conn, addr, params):
                     product = 0
             
             
-            # 할인, 포인트, 결제
+            # 할인, 쿠폰, 결제
             elif state == 3:
-                
-                intent_predict = 0
-                intent_name = ''
-                ner_predicts = ''
-                
-                if query == '결제':
-                    with open('pay.txt', 'r', encoding='utf-8') as f:
-                        answer = f.read()
-                    answer_image = None
-
-
-                elif query == '쿠폰':
-                    with open('coupon.txt', 'r', encoding='utf-8') as f:
-                        answer = f.read()
-                    answer_image = 'coupon.png'
-
-
-                elif query == '할인':
-                    answer = '할인은 추천메뉴에만 적용됩니다(그 외 메뉴에는 적용되지 않습니다)'
-                    answer_image = None
-                    
-                else:
-                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
-                    answer_image = None
+                answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                answer_image = None
             
             # 주문취소 일때 주문번호도 같이 받은상태임
             elif state == 9:
@@ -441,19 +421,23 @@ def to_client(conn, addr, params):
                         intent_name = '주문취소'
                         ner_predicts = ''
                     else:
-                        # 주문취소 받기위해 intent_predict = 9, 주문 개체명이 보존되어야함
-                        # 또한 DB에 order_item에 삭제가 되어야함
-                        
-                        try:
-                            order_id = int(query)
-                            f = OrderItem(db)
+                        if query:
+                            order_item = OrderItem(db)
+                            order_detail = OrderDetail(db)
                             p = FindProduct(db)
+                            
+                            order_id = order_detail.search_id_from_orderNum(query)
                             product_id = p.search_id_from_name(product)
-                            f.delete_data(product_id, order_id)
-                            answer = "주문번호: {} {}가 취소되었습니다".format(product, order_id)
+                            order_item.delete_data(product_id, order_id)
+                            answer = "주문번호: {} '{}' 가 취소되었습니다".format(query, product)
+                            
+                            # 혹여나 detail에 연결된 item이 없다면 db 삭제
+                            if len(order_item.search_from_orderId(order_id)) == 0:
+                                order_detail.delete_data(query)
+                            
                             product = 0
 
-                        except:
+                        else:
                             answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
                             answer_image = None
                             product = 0

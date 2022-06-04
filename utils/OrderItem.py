@@ -27,6 +27,13 @@ class OrderItem():
 
         return result
     
+    # order_id 찾기
+    def search_from_orderId(self, order_id):
+        sql = "select * from order_item where order_id = '{}'".format(order_id)
+        result = self.db.select_all(sql)
+
+        return result
+    
     # db에 데이터 저장
     def insert_data(self, order_id, product_id, option_id, count):
 
@@ -41,13 +48,9 @@ class OrderItem():
     
             
     def delete_data(self, product_id, order_id):
-        product_id_db = product_id
-        order_id_db = order_id
 
         sql = '''
             DELETE FROM `order_item` WHERE `product_id` = %s AND `order_id` = %s
-        ''' % (product_id_db.value, order_id_db.value)
-
-        sql = sql.replace("'None'", "null")
+        ''' % (product_id, order_id)
 
         self.db.execute(sql)

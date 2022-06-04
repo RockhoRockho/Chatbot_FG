@@ -25,3 +25,8 @@ class ProductOption():
         option_price = self.db.select_one(sql)
         return option_price['price']
 
+
+    def option_name(self, option_id):
+        sql = "select option_name from product_option where id = {}".format(option_id)
+        option_name = self.db.select_one(sql)
+        return option_name['option_name']

@@ -57,6 +57,10 @@ class FindProduct:
             sql = sql + " where recommend = 2"
         elif query == '추천':
             sql = sql + " where recommend = 3"
+        
+        # 나머지 
+        else:
+            sql = sql + "where name = '{}'".format(query)
             
             
         return sql       

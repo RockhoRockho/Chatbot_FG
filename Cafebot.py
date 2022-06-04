@@ -82,8 +82,12 @@ def to_client(conn, addr, params):
         if query == 'DB초기화':
             ci.all_clear_train_data()
             oi.all_clear_train_data()
-            od.all_clear_train_data()       
-
+            od.all_clear_train_data()   
+            
+        ##################################     DB 초기화    #############################################
+        
+        if query == '장바구니 비우기' or '장바구니비우기':
+            ci.all_clear_train_data()
         
         ##################################     단답처리     #############################################
         

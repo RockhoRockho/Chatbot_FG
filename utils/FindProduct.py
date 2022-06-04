@@ -60,7 +60,7 @@ class FindProduct:
         
         # 나머지 
         else:
-            sql = sql + "where name = '{}'".format(query)
+            sql = sql + " where name = '{}'".format(query)
             
             
         return sql       

@@ -305,7 +305,7 @@ def to_client(conn, addr, params):
                                 answer = answer_name
 
                 except:
-                    answer = "죄송해요 무슨 말인지 모르겠어요. 조금 더 공부 할게요."
+                    answer = "저희 가게에서 지원되지 않는 제품 혹은 서비스이거나 잘못된 값을 입력하셨습니다"
                     answer_image = None
     
     

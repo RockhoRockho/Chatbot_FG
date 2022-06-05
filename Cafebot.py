@@ -55,7 +55,7 @@ def to_client(conn, addr, params):
         product = recv_json_data['Product']
         price = recv_json_data['Price']
         option = recv_json_data['Option']
-        
+
         # json data 보내는 값 default
         answer = ''
         answer_name = ''
@@ -86,7 +86,7 @@ def to_client(conn, addr, params):
             
         ##################################     DB 초기화    #############################################
         
-        if query == '장바구니 비우기' or '장바구니비우기':
+        if query == '장바구니 비우기' or query == '장바구니비우기':
             ci.all_clear_train_data()
         
         ##################################     단답처리     #############################################

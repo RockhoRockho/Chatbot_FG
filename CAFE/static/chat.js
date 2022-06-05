@@ -36,7 +36,7 @@ function send_message(){
     }
 
     $.ajax({
-        url: 'http://127.0.0.10:5000/query/TEST',
+        url: 'http://127.0.0.10:5000/query/ProjectFG_Cafe',
         type: "POST",
         data: JSON.stringify(jsonData),
         dataType: "JSON",   // 응답받을 데이터 타입

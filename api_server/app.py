@@ -1,4 +1,5 @@
 from flask import Flask, request, jsonify, abort
+
 import socket
 import json
 
@@ -25,7 +26,12 @@ def get_answer_from_engine(bottype, query):
     # 챗봇 엔진 질의 요청
     json_data = {
         'Query': query,
-        'BotType': bottype
+        'BotType': bottype,
+        "State" : 0,
+        "Product" : 0,
+        "Price" : 0,
+        "Option" : None,
+        "Detail" : None
     }
     message = json.dumps(json_data)
     mySocket.send(message.encode())
@@ -46,7 +52,7 @@ def query(bot_type):
 
     data = request.get_json()
     try:        
-        if bot_type == 'TEST':
+        if bot_type == 'ProjectFG_Cafe':
             ret = get_answer_from_engine(bottype=bot_type, query=data['query'])
             return jsonify(ret)
 

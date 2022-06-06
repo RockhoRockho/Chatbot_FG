@@ -19,11 +19,6 @@ CORS(app)
 # 챗봇 엔진 서버와 통신 (소켓 통신!)
 # 질의를 전송하고, 답변데이터를 수신한 경우 JSON 문자열을 dict 객체로 변환
 def get_answer_from_engine(bottype, query):
-    # 챗봇 엔진 서버 연결
-    mySocket = socket.socket()
-    mySocket.connect((host, port))
-
-    # 챗봇 엔진 질의 요청
     json_data = {
         'Query': query,
         'BotType': bottype,
@@ -33,17 +28,35 @@ def get_answer_from_engine(bottype, query):
         "Option" : None,
         "Detail" : None
     }
-    message = json.dumps(json_data)
-    mySocket.send(message.encode())
+    while True:
+        # 챗봇 엔진 서버 연결
+        mySocket = socket.socket()
+        mySocket.connect((host, port))
 
-    # 챗봇 엔진 답변 출력
-    data = mySocket.recv(2048).decode()
-    ret_data = json.loads(data)
+        # 챗봇 엔진 질의 요청
 
-    # 챗봇 엔진 서버 연결 소켓 닫기
-    mySocket.close()
 
-    return ret_data
+        message = json.dumps(json_data)
+        mySocket.send(message.encode())
+
+        # 챗봇 엔진 답변 출력
+        data = mySocket.recv(32768).decode()
+        ret_data = json.loads(data)
+
+        json_data['Query'] = ret_data['Query']
+        json_data['State'] = ret_data['State']
+        json_data['Product'] = ret_data['Product']
+        json_data['Price'] = ret_data['Price']
+        json_data['Option'] = ret_data['Option']
+        if ret_data['Detail'] != None:
+            json_data['Detail'] = ret_data['Detail']
+
+        
+
+        # 챗봇 엔진 서버 연결 소켓 닫기
+        mySocket.close()
+
+        return ret_data
 
 
 # 챗봇 에진 query 전송 API
@@ -54,6 +67,7 @@ def query(bot_type):
     try:        
         if bot_type == 'ProjectFG_Cafe':
             ret = get_answer_from_engine(bottype=bot_type, query=data['query'])
+
             return jsonify(ret)
 
         elif bot_type == "KAKAO":

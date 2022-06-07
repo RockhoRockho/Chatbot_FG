@@ -110,7 +110,6 @@ def to_client(conn, addr, params):
                     else:
                         temp[j['order_id']] = [fp.search_name_from_id(j['product_id'])]
                         answer.update(temp)
-            print(answer)
         
         ##################################     단답처리     #############################################
         
@@ -379,39 +378,44 @@ def to_client(conn, addr, params):
             
             # 주문취소 일때 주문번호도 같이 받은상태임
             elif state == 9:
-
+                
                 # 주문취소 외에 다른 절차를 진행한다면 초기화면으로 돌아가게 하기위한 값
                 intent_predict = 0
                 
+                
                 # 상품이름이 없을때는 다시 입력하게 함
                 if product == 0:
-                    answer = "취소하려는 상품을 정확하게 입력해주세요."
+                    try:
+                        check = int(query)
+                        answer = "상품명을 입력해주세요"
+                    except:
+                        product = query
+                        answer = "주문번호를 입력해주세요"
+                    intent_predict = 9
+                    intent_name = '주문취소'
                     
                 else:
-                    if query is None:
-                        answer = "주문번호(숫자)를 입력해주세요."
-                        intent_predict = 9
-                        intent_name = '주문취소'
-                    else:
-                        try:
-                            p = FindProduct(db)
-                            
-                            order_id = query
-                            product_id = fp.search_id_from_name(product)
-                            oi.delete_data(user_id, product_id, order_id)
-                            answer = "주문번호: {} 의 '{}' 가 취소되었습니다".format(query, product)
-                            
-                            # 혹여나 detail에 연결된 item이 없다면 db 삭제
-                            if len(oi.search_all_from_orderId(order_id)) == 0:
-                                od.delete_data(query, user_id)
-                            
-                            # product 초기화
-                            product = 0
+                    try:
+                        p = FindProduct(db)
+                        
+                        order_id = int(query)
+                        product_id = fp.search_id_from_name(product)
+                        oi.delete_data(product_id, order_id)
+                        answer = "주문번호: {} 의 '{}' 가 취소되었습니다".format(query, product)
 
-                        except:
-                            answer = "존재하지 않는 주문번호입니다."
-                            answer_image = None
-                            product = 0
+                        # 혹여나 detail에 연결된 item이 없다면 db 삭제
+                        if len(oi.search_all_from_orderId(order_id)) == 0:
+                            od.delete_data(query, user_id)
+
+                        # product 초기화
+                        product = 0
+
+                    except:
+                        answer = '''
+                        올바르지 않은 상품명 또는 주문번호입니다.
+                        상품명과 주문번호를 확인후에 다시 입력해주세요.
+                        '''
+                        product = 0
 
         
         # 검색된 답변데이터와 함께 앞서 정의한 응답하는 JSON 으로 생성

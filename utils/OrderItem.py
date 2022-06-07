@@ -45,10 +45,10 @@ class OrderItem():
         self.db.execute(sql)    
     
             
-    def delete_data(self, user_id, product_id, order_id):
+    def delete_data(self, product_id, order_id):
 
         sql = '''
-            DELETE FROM `order_item` WHERE `user_id` = %s AND `product_id` = %s AND `order_id` = %s
-        ''' % (user_id, product_id, order_id)
+            DELETE FROM `order_item` WHERE `product_id` = %s AND `order_id` = %s
+        ''' % (product_id, order_id)
 
         self.db.execute(sql)

@@ -18,16 +18,16 @@ class OrderDetail():
         ALTER TABLE order_detail
         '''
         self.db.execute(sql)
-        
-    def search_last_id(self):
-        sql = 'select id from order_detail order by id desc limit 1'
-        orderDetail_id = self.db.select_one(sql)
-        pk = orderDetail_id['id']
-        
-        return pk
     
-    def search_id_from_orderNum(self, orderNum):
-        sql = "select id from order_detail where user_id = '{}'".format(orderNum)
+    def search_all(self, user_id):
+        sql = "select id from order_detail where user_id = '{}'".format(user_id)
+        result = self.db.select_all(sql)
+        
+        return result
+
+        
+    def search_last_id(self, user_id):
+        sql = "select id from order_detail where user_id = '{}' order by id desc limit 1".format(user_id)
         orderDetail_id = self.db.select_one(sql)
         pk = orderDetail_id['id']
         
@@ -41,8 +41,8 @@ class OrderDetail():
         self.db.execute(sql)
 
     # db 삭제
-    def delete_data(self, order_id):
+    def delete_data(self, pk, user_id):
 
-        sql = "DELETE FROM order_detail WHERE user_id = '{}'".format(order_id)
+        sql = "DELETE FROM order_detail WHERE id = '{}' and user_id = '{}'".format(pk, user_id)
 
         self.db.execute(sql)

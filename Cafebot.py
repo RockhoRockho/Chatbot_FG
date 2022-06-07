@@ -14,6 +14,7 @@ from utils.ProductOption import ProductOption
 from utils.OrderItem import OrderItem
 from utils.CartItem import CartItem
 from utils.OrderDetail import OrderDetail
+from utils.UserCafe import UserCafe
 
 # 전처리 객체 생성
 p = Preprocess(word2index_dic='train_tools/dict/chatbot_dict.bin',
@@ -55,12 +56,14 @@ def to_client(conn, addr, params):
         product = recv_json_data['Product']
         price = recv_json_data['Price']
         option = recv_json_data['Option']
+        detail = recv_json_data['Detail']
+        user = recv_json_data['UserId']
 
         # json data 보내는 값 default
         answer = ''
-        answer_name = ''
-        answer_detail = ''
-        answer_image = ''
+        answer_name = []
+        answer_detail = []
+        answer_image = []
         intent_predict = ''
         intent_name = ''
         ner_predicts = ''
@@ -72,6 +75,11 @@ def to_client(conn, addr, params):
         oi = OrderItem(db)
         od = OrderDetail(db)
         ci = CartItem(db)
+        uc = UserCafe(db)
+        
+        ################### 임시로 실행 디버깅을 위해 user1 로 대체함
+        user = 'user1'  ## 임시
+        user_id = uc.search_id_from_user_id(user)
         
         
         word_1 = ['라떼', '커피', '음료', '식사']
@@ -84,10 +92,25 @@ def to_client(conn, addr, params):
             oi.all_clear_train_data()
             od.all_clear_train_data()   
             
-        ##################################     DB 초기화    #############################################
+        ##################################     장바구니     #############################################
         
         elif query == '장바구니 비우기' or query == '장바구니비우기':
             ci.all_clear_train_data()
+            
+            
+        ################################     주문내역 조회     ##########################################
+       
+        elif query == '주문내역' or query == '주문내역조회' or query == '주문내역 조회':
+            answer = {}
+            temp = {}
+            for i in od.search_all(user_id):
+                for j in oi.search_all_from_orderId(i['id']):
+                    if j['order_id'] in answer.keys():
+                            answer[j['order_id']].append(fp.search_name_from_id(j['product_id']))
+                    else:
+                        temp[j['order_id']] = [fp.search_name_from_id(j['product_id'])]
+                        answer.update(temp)
+            print(answer)
         
         ##################################     단답처리     #############################################
         
@@ -95,15 +118,13 @@ def to_client(conn, addr, params):
         elif query in word_1:
             answer = fp.search(query)
 
-            answer_name = []
-            answer_detail = []
-            answer_image = []
             for i in range(len(answer)):
                 answer_name.append(answer[i]['name'])
                 answer_detail.append(answer[i]['detail'])
                 answer_image.append(answer[i]['image'])
 
             answer = answer_name
+            detail = answer_detail
 
             intent_predict = 10
             intent_name = '메뉴'
@@ -112,15 +133,13 @@ def to_client(conn, addr, params):
         elif query in word_2:
             answer = fp.search(query)
 
-            answer_name = []
-            answer_detail = []
-            answer_image = []
             for i in range(len(answer)):
                 answer_name.append(answer[i]['name'])
                 answer_detail.append(answer[i]['detail'])
                 answer_image.append(answer[i]['image'])
 
             answer = answer_name
+            detail = answer_detail
 
             intent_predict = 2
             intent_name = '추천메뉴 검색'
@@ -188,34 +207,38 @@ def to_client(conn, addr, params):
         elif query == '선택완료':
             
             try:
-
-                # 현재시간으로 회원ID를 대체함
-                user_id = datetime.datetime.now().strftime('%Y%m%d%H%M%S')
-
                 # order_detail db (id, user_id)추가
                 od.insert_data(user_id)
-                order_id = od.search_last_id()
+                order_id = od.search_last_id(user_id)
                 
                 # product 이름을 id로 바꾸기
                 if product != 0:
                     product_id = fp.search_id_from_name(product)
-                    ci.insert_data(product_id, option, 1)
+                    ci.insert_data(user_id, product_id, option, 1)
                 
                     
                 
                 # order_item db (order_id, product_id, option_id, count) insert
-                for i in range(len(ci.search_all())):
-                    oi.insert_data(order_id, ci.search_all()[i]['product_id'],
-                                           ci.search_all()[i]['option_id'], ci.search_all()[i]['count']) 
+                for i in range(len(ci.search_all(user_id))):
+                    oi.insert_data(order_id, ci.search_all(user_id)[i]['product_id'],
+                                           ci.search_all(user_id)[i]['option_id'], ci.search_all(user_id)[i]['count']) 
 
                 # cart_item product + option(price) price 도출      
                 total_price = 0
-                for i in ci.search_all():
+                for i in ci.search_all(user_id):
                     product_price = fp.search_price_from_id(i['product_id'])
                     option_price = po.search_price(i['option_id'])
                     total_price += ((product_price + option_price) * i['count'])
 
-                answer = "주문 총 금액은 {}원 입니다".format(total_price)
+                answer = '''
+                주문 총 금액은 {}원 입니다
+                카카오 페이결제를 진행합니다.
+                '''.format(total_price)
+                
+                price = total_price
+                
+                # 주문번호는 지금띄우지 않고 카카오페이 결제후에 내역으로 뜨게끔 진행함
+                detail = od.search_last_id(user_id)
 
                 # cart_item db 제거,  product 초기화
                 product = 0
@@ -238,12 +261,12 @@ def to_client(conn, addr, params):
                 product_id = fp.search_id_from_name(product)
 
                 try:
-                    count_search = ci.search_count(product_id, option)
-                    ci.update_data(product_id, option, 1 + count_search)
+                    count_search = ci.search_count(user_id, product_id, option)
+                    ci.update_data(user_id, product_id, option, 1 + count_search)
 
                 # 없다면 insert
                 except:
-                    ci.insert_data(product_id, option, 1)
+                    ci.insert_data(user_id, product_id, option, 1)
 
                 option_name = po.option_name(option)
                 answer = "장바구니에 '{} - {}'이(가) 담겼습니다".format(product, option_name)
@@ -284,7 +307,7 @@ def to_client(conn, addr, params):
                             if tag == 'B_FOOD':
                                 product = name
                                 # detail 꺼내기
-                                answer_detail = fp.search_detail_from_name(name)
+                                detail = fp.search_detail_from_name(name)
                                 answer_image = fp.search_image_from_name(name)
 
                             # B_RECOMMEND일때 해당 상품목록 추출 
@@ -293,11 +316,13 @@ def to_client(conn, addr, params):
                                 
                                 # answer 다수값 list로 뽑기
                                 answer = fp.search(query)
+                                
                                 for i in range(len(answer)):
                                     answer_name.append(answer[i]['name'])
                                     answer_detail.append(answer[i]['detail'])
                                     answer_image.append(answer[i]['image'])
                                 answer = answer_name
+                                detail = answer_detail
 
                 except:
                     answer = "저희 가게에서 지원되지 않는 제품 혹은 서비스이거나 잘못된 값을 입력하셨습니다"
@@ -341,7 +366,6 @@ def to_client(conn, addr, params):
                         intent_name = '주문'
                         
                 except:
-                    print(query)
                     answer = "잘못된 값을 입력하셨습니다. 올바른 절차로 다시 진행해주세요"
 
                     # intent_predict, product 값 초기화
@@ -355,7 +379,7 @@ def to_client(conn, addr, params):
             
             # 주문취소 일때 주문번호도 같이 받은상태임
             elif state == 9:
-                
+
                 # 주문취소 외에 다른 절차를 진행한다면 초기화면으로 돌아가게 하기위한 값
                 intent_predict = 0
                 
@@ -372,14 +396,14 @@ def to_client(conn, addr, params):
                         try:
                             p = FindProduct(db)
                             
-                            order_id = od.search_id_from_orderNum(query)
+                            order_id = query
                             product_id = fp.search_id_from_name(product)
-                            oi.delete_data(product_id, order_id)
-                            answer = "주문번호: {} '{}' 가 취소되었습니다".format(query, product)
+                            oi.delete_data(user_id, product_id, order_id)
+                            answer = "주문번호: {} 의 '{}' 가 취소되었습니다".format(query, product)
                             
                             # 혹여나 detail에 연결된 item이 없다면 db 삭제
-                            if len(oi.search_from_orderId(order_id)) == 0:
-                                od.delete_data(query)
+                            if len(oi.search_all_from_orderId(order_id)) == 0:
+                                od.delete_data(query, user_id)
                             
                             # product 초기화
                             product = 0
@@ -399,10 +423,11 @@ def to_client(conn, addr, params):
             "NER" : ner_predicts,
             "State" : 0,
             "Product" : 0,
-            "Price" : 0,
+            "Price" : price,
             "Count" : 1,
             "Option" : 1,
-            "Detail" : '',
+            "Detail" : detail,
+            "UserId" : user,
         }
         
         # State 값 확인하여 
@@ -414,8 +439,6 @@ def to_client(conn, addr, params):
         elif intent_predict == 9:
             send_json_data_str["Product"] = product
             send_json_data_str["State"] = int(intent_predict)
-        elif intent_predict == 10:
-            send_json_data_str["Detail"] = answer_detail
         
         # 디버깅
         print(send_json_data_str)

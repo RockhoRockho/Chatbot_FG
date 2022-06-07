@@ -18,6 +18,12 @@ class FindProduct:
         p_id = product_id['id']
         return p_id
     
+    def search_name_from_id(self, pk):
+        sql = "select name from product_cafe where id = '{}'".format(pk)
+        product_id = self.db.select_one(sql)
+        p_name = product_id['name']
+        return p_name
+    
     def search_detail_from_name(self, name):
         sql = "select detail from product_cafe where name = '{}'".format(name)
         product_detail = self.db.select_one(sql)

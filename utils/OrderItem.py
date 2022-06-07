@@ -21,14 +21,14 @@ class OrderItem():
         self.db.execute(sql)
 
     # 전부찾기
-    def search_all(self):
-        sql = "select * from order_item"
+    def search_all_from_userId(self, user_id):
+        sql = "select * from order_item where user_id = '{}'".format(user_id)
         result = self.db.select_all(sql)
 
         return result
     
     # order_id 찾기
-    def search_from_orderId(self, order_id):
+    def search_all_from_orderId(self, order_id):
         sql = "select * from order_item where order_id = '{}'".format(order_id)
         result = self.db.select_all(sql)
 
@@ -42,15 +42,13 @@ class OrderItem():
             values('%s', '%s', '%s', '%s')
         ''' % (order_id, product_id, option_id, count)
 
-        self.db.execute(sql)
-
-            
+        self.db.execute(sql)    
     
             
-    def delete_data(self, product_id, order_id):
+    def delete_data(self, user_id, product_id, order_id):
 
         sql = '''
-            DELETE FROM `order_item` WHERE `product_id` = %s AND `order_id` = %s
-        ''' % (product_id, order_id)
+            DELETE FROM `order_item` WHERE `user_id` = %s AND `product_id` = %s AND `order_id` = %s
+        ''' % (user_id, product_id, order_id)
 
         self.db.execute(sql)

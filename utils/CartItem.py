@@ -22,36 +22,36 @@ class CartItem():
 
             
     # 전부찾기
-    def search_all(self):
-        sql = "select * from cart_item"
+    def search_all(self, user_id):
+        sql = "select * from cart_item where user_id = '{}'".format(user_id)
         result = self.db.select_all(sql)
 
         return result
     
     # count 찾기
-    def search_count(self, product_id, option_id):
+    def search_count(self, user_id, product_id, option_id):
         
-        sql = "select count from cart_item where product_id='{}' and option_id='{}' ".format(product_id, option_id)
+        sql = "select count from cart_item where user_id='{}' and product_id='{}' and option_id='{}' ".format(user_id, product_id, option_id)
         countdic = self.db.select_one(sql)
         count = countdic['count']
         return count
 
     # db에 데이터 저장
-    def insert_data(self, product_id, option_id, count):
+    def insert_data(self, user_id, product_id, option_id, count):
 
         sql = '''
-            INSERT cart_item(product_id, option_id, count) 
-            values('%s', '%s', '%s')
-        ''' % (product_id, option_id, count)
+            INSERT cart_item(user_id, product_id, option_id, count) 
+            values('%s', '%s', '%s', '%s')
+        ''' % (user_id, product_id, option_id, count)
 
         self.db.execute(sql)
 
 
             
     # db 수정          
-    def update_data(self, product_id, option_id, count):
+    def update_data(self, user_id, product_id, option_id, count):
 
-        sql = "UPDATE `cart_item` set `count` = '{}' where `product_id`='{}' and `option_id`='{}'".format(count, product_id, option_id)
+        sql = "UPDATE `cart_item` set `count` = '{}' where `user_id`='{}' and `product_id`='{}' and `option_id`='{}'".format(count, user_id, product_id, option_id)
 
         self.db.execute(sql)
 

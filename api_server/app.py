@@ -16,74 +16,58 @@ app = Flask(__name__)
 from flask_cors import CORS
 CORS(app)
 
-# 챗봇 엔진 서버와 통신 (소켓 통신!)
-# 질의를 전송하고, 답변데이터를 수신한 경우 JSON 문자열을 dict 객체로 변환
-def get_answer_from_engine(bottype, query):
-    json_data = {
-        'Query': query,
-        'BotType': bottype,
-        "State" : 0,
-        "Product" : 0,
-        "Price" : 0,
-        "Option" : None,
-        "Detail" : None
+
+json_data = {
+    "BotType" : "ProjectFG_Cafe",
     }
+temp_state = 0
+temp_product = 0
+temp_price = 0
+temp_option = None
+temp_detail = None
+
+@app.route('/query/<bot_type>', methods=['POST'])
+def query(bot_type):
     while True:
-        # 챗봇 엔진 서버 연결
+        global temp_state
+        global temp_product
+        global temp_price
+        global temp_option
+        global temp_detail
+
+        dataj = request.get_json()
+        query = dataj['query']
+
         mySocket = socket.socket()
         mySocket.connect((host, port))
 
-        # 챗봇 엔진 질의 요청
-
-
+        json_data["Query"] = query
+        json_data["State"] = temp_state
+        json_data["Product"] = temp_product
+        json_data['Price'] = temp_price
+        json_data['Option'] = temp_option
+        print(json_data)
         message = json.dumps(json_data)
         mySocket.send(message.encode())
 
-        # 챗봇 엔진 답변 출력
         data = mySocket.recv(32768).decode()
         ret_data = json.loads(data)
 
-        json_data['Query'] = ret_data['Query']
-        json_data['State'] = ret_data['State']
-        json_data['Product'] = ret_data['Product']
-        json_data['Price'] = ret_data['Price']
-        json_data['Option'] = ret_data['Option']
+        print("답변 : ")
+        print(ret_data['Answer'])
+        print(ret_data)
+        print(type(ret_data))
+        print("\n")
+
+        temp_state = ret_data['State']
+        temp_product = ret_data['Product']
+        temp_price = ret_data['Price']
+        temp_option = ret_data['Option']
         if ret_data['Detail'] != None:
-            json_data['Detail'] = ret_data['Detail']
+            temp_detail = ret_data['Detail']
 
-        
-
-        # 챗봇 엔진 서버 연결 소켓 닫기
         mySocket.close()
-
-        return ret_data
-
-
-# 챗봇 에진 query 전송 API
-@app.route('/query/<bot_type>', methods=['POST'])
-def query(bot_type):
-
-    data = request.get_json()
-    try:        
-        if bot_type == 'ProjectFG_Cafe':
-            ret = get_answer_from_engine(bottype=bot_type, query=data['query'])
-
-            return jsonify(ret)
-
-        elif bot_type == "KAKAO":
-            # 카카오톡 스킬 처리
-            pass
-
-        elif bot_type == "NAVER":
-            # 네이버톡톡 Web hook 처리
-            pass
-        else:
-            # 정의되지 않은 bot type인 경우 404 오류
-            abort(404)
-
-    except Exception as ex:
-        # 오류 발생시 500 에러
-        abort(500)
+        return jsonify(ret_data)
 
 
 if __name__ == '__main__':

@@ -86,7 +86,7 @@ def to_client(conn, addr, params):
             
         ##################################     DB 초기화    #############################################
         
-        if query == '장바구니 비우기' or query == '장바구니비우기':
+        elif query == '장바구니 비우기' or query == '장바구니비우기':
             ci.all_clear_train_data()
         
         ##################################     단답처리     #############################################
@@ -341,6 +341,7 @@ def to_client(conn, addr, params):
                         intent_name = '주문'
                         
                 except:
+                    print(query)
                     answer = "잘못된 값을 입력하셨습니다. 올바른 절차로 다시 진행해주세요"
 
                     # intent_predict, product 값 초기화

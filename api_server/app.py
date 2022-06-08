@@ -1,4 +1,4 @@
-from flask import Flask, request, jsonify, abort
+from flask import Flask, request, jsonify
 
 import socket
 import json
@@ -23,7 +23,7 @@ json_data = {
 temp_state = 0
 temp_product = 0
 temp_price = 0
-temp_option = None
+temp_option = 1
 temp_detail = None
 
 @app.route('/query/<bot_type>', methods=['POST'])
@@ -37,6 +37,7 @@ def query(bot_type):
 
         dataj = request.get_json()
         query = dataj['query']
+        # user = dataj['User']
 
         mySocket = socket.socket()
         mySocket.connect((host, port))
@@ -46,6 +47,8 @@ def query(bot_type):
         json_data["Product"] = temp_product
         json_data['Price'] = temp_price
         json_data['Option'] = temp_option
+        json_data['Detail'] = temp_detail
+        json_data['UserId'] = 'user1'
         print(json_data)
         message = json.dumps(json_data)
         mySocket.send(message.encode())
@@ -63,8 +66,6 @@ def query(bot_type):
         temp_product = ret_data['Product']
         temp_price = ret_data['Price']
         temp_option = ret_data['Option']
-        if ret_data['Detail'] != None:
-            temp_detail = ret_data['Detail']
 
         mySocket.close()
         return jsonify(ret_data)

@@ -1,6 +1,5 @@
 import threading
 import json
-import datetime
 
 from config.DatabaseConfig import *
 from utils.Database import Database
@@ -77,8 +76,6 @@ def to_client(conn, addr, params):
         ci = CartItem(db)
         uc = UserCafe(db)
         
-        ################### 임시로 실행 디버깅을 위해 user1 로 대체함
-        user = 'user1'  ## 임시
         user_id = uc.search_id_from_user_id(user)
         
         

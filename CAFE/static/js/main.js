@@ -65,3 +65,25 @@ function openTab(tabName) {
 function goTop() {
     $('html').scrollTop(0);
 }
+
+
+
+
+// 챗봇 모달창
+$(function () {
+
+    $(".bot").click(function () {
+        $(".modal").fadeIn();
+    });
+
+    $(".exit").click(function () {
+        $(".modal").fadeOut();
+    });
+
+
+    // $(document).on("click", function(e){
+    //     if($(".modal").is(e.target)){
+    //         $(".modal").fadeOut();
+    //     }
+    // });
+});

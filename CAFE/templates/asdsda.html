@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css"
+        integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+    <link rel="stylesheet" href="../static/css/main.css"/>
+    <title>Document</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+
+<body>
+    <div style="position: fixed">
+        <div>
+            <video muted autoplay loop>
+                <source src="../videos/weight.mp4" type="video/mp4" style="position: fixed; width: 100%" />
+            </video>
+        </div>
+    </div>
+    <div class="main_descript">
+        <div>
+            Smart Muscle<br>
+            Building Helper
+        </div>
+    </div>
+    <div>
+        asdasd
+    </div>
+
+    <header class="header">
+        <div class="row">
+            <div class="col-md-4" style="
+          /* outline: 1px solid black;" * />
+            <div class="logos" onclick="goTop()" style="cursor: pointer;">
+            </div>
+        </div>
+        <div class="col-md-4" style="
+            line-height: px;
+            font-size: 50px;
+            font-weight: bold;
+            /* outline: 1px solid black; */
+            font-family: oswald-extralight,oswald,sans-serif; cursor: pointer;" onclick="goTop()">
+            FG CAFE
+        </div>
+        <div class="menu col-md-4">
+            <div>
+                <a class="menu_tag" href="#overflow4">메인</a>
+                <a class="menu_tag" href="#overflow1">첫번째</a>
+                <a class="menu_tag" href="#overflow2">두번째</a>
+                <a class="menu_tag" href="#overflow3">세번째</a>
+            </div>
+        </div>
+        </div>
+    </header>
+
+    <div id="overflow4" class="wrap" style="
+        position: absolute;
+        top: 0px;
+        left: 0;
+        width: 100%;
+        height: 1000px;
+        background-color: #fff;
+        opacity: 0.1;
+      ">
+        <!-- <div class="main_descript">sadasdsa</div> -->
+    </div>
+    <!-- ---------------------------------------------------------------- -->
+    <div id="overflow1" class="wrapper div1 scroll-spy" style="
+        position: absolute;
+        top: 1000px;
+        left: 0;
+        width: 100%;
+        height: 1000px;
+      ">
+        <div class="inner">
+            <h2 class="back-to-position to-right delay-0">TEST</h2>
+            <h4 class="back-to-position to-left delay-1">TEST</h4>
+        </div>
+    </div>
+
+    <div id="overflow2" class="wrapper div2 scroll-spy" style="
+        position: absolute;
+        top: 2000px;
+        left: 0;
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(197, 120, 120);
+      ">
+        <div class="inner">
+            <h2 class="back-to-position to-right delay-0">TEST</h2>
+            <h4 class="back-to-position to-left delay-1">TEST</h4>
+        </div>
+    </div>
+    <!-- --------------------------------------------------------- -->
+    <div class="tab_menu"
+        style="position: absolute; top: 3000px; left: 0; width: 100%; height: 1000px; background-color: rgb(199, 153, 153);">
+        <div class="tab">
+            <div class="row tab1">
+                <div class="col-md-2 tab1_1" onclick="openTab('bench')">벤치프레스</div>
+                <div class="col-md-2 tab1_2" onclick="openTab('dead')">데드리프트</div>
+                <div class="col-md-2 tab1_3" onclick="openTab('mili')">밀리터리프레스</div>
+                <div class="col-md-2 tab1_4" onclick="openTab('squat')">스쿼트</div>
+                <div class="col-md-2 tab1_5" onclick="openTab('side')">사이드레터럴레이즈</div>
+                <div class="col-md-2 tab1_6" onclick="openTab('hang')">행잉레그레이즈</div>
+            </div>
+            <div class="row tab2">
+                <div id="bench" class="col-md-12 tab2_1 tabcontent">sadsadsad</div>
+                <div id="dead" class="col-md-12 tab2_2 tabcontent">sadasddas</div>
+                <div id="mili" class="col-md-12 tab2_3 tabcontent">sdadsadas</div>
+                <div id="squat" class="col-md-12 tab2_4 tabcontent">sdasdasda</div>
+                <div id="side" class="col-md-12 tab2_5 tabcontent">adsdsadas</div>
+                <div id="hang" class="col-md-12 tab2_6 tabcontent">adsadssad</div>
+            </div>
+        </div>
+    </div>
+    <!-- --------------------------------------------------------- -->
+    <div id="overflow3" class="wrapper div3 scroll-spy" style="
+        position: absolute;
+        top: 4000px;
+        left: 0;
+        width: 100%;
+        height: 1000px;
+        background-color: rgb(129, 223, 247);
+      ">
+        <div class="inner">
+            <h2 class="back-to-position to-right delay-0">TEST</h2>
+            <h4 class="back-to-position to-left delay-1">TEST</h4>
+        </div>
+    </div>
+    <div class="top_btn" onclick="goTop()">
+        <div class="top_arrow"></div>
+        <div style="text-align: center; font-weight: bold;">top</div>
+    </div>
+
+    <script src="../static/js/main.js"></script>
+</body>
+<script>
+
+</script>
+
+</html>

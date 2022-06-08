@@ -172,9 +172,9 @@ audio{
     margin-top: 5%;
     /* border: 1px solid black; */
 }
-.tabcontent > .cof_info.cof_picture{
+/* .tabcontent > .cof_info.cof_picture{
 }
-
+     */
 
 /* 메뉴판 화면 */
 .menu_pic{
@@ -186,7 +186,7 @@ audio{
 .menupan{
     width: 70%;
     height: 90%;
-    background: url(/img/PrintedMenus.png) no-repeat;
+    background: url(/CAFE/static/img/PrintedMenus.png) no-repeat;
     background-size: 100% 100%;
     margin: auto;
 }

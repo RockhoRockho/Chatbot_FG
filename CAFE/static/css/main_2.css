@@ -186,9 +186,10 @@ audio{
 .menupan{
     width: 70%;
     height: 90%;
-    background: url(/CAFE/static/img/PrintedMenus.png) no-repeat;
+    background: url(../img/PrintedMenus.png) no-repeat;
     background-size: 100% 100%;
     margin: auto;
+    z-index: 10;
 }
 
 /* footer */
@@ -236,7 +237,7 @@ footer{
 #sidenav > .bot{
     width: 70px;
     height: 60px;
-    background: url(/CAFE/static/img/chatbot.png) no-repeat;
+    background: url(../img/chatbot.png) no-repeat;
     background-position: center;
     background-size: 70%;
     margin-top: -10px;
@@ -245,7 +246,7 @@ footer{
 #sidenav > .top{
     width: 70px;
     height: 60px;
-    background: url(/CAFE/static/img/top.png) no-repeat;
+    background: url(../img/top.png) no-repeat;
     background-position: center;
     background-size: 70%;
 }

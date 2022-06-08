@@ -6,4 +6,5 @@ urlpatterns = [
     path('join/', views.join, name='join'),
     path('logout/', views.logout, name='logout'),
     path('needlogin/', views.needlogin, name='needlogin'),
+    path('loginok/', views.loginok, name='loginok'),
 ]

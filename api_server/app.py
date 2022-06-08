@@ -37,7 +37,7 @@ def query(bot_type):
 
         dataj = request.get_json()
         query = dataj['query']
-        # user = dataj['User']
+        user = dataj['user']
 
         mySocket = socket.socket()
         mySocket.connect((host, port))
@@ -48,7 +48,7 @@ def query(bot_type):
         json_data['Price'] = temp_price
         json_data['Option'] = temp_option
         json_data['Detail'] = temp_detail
-        json_data['UserId'] = 'user1'
+        json_data['UserId'] = user
         print(json_data)
         message = json.dumps(json_data)
         mySocket.send(message.encode())

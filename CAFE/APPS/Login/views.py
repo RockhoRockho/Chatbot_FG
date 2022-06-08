@@ -25,8 +25,7 @@ def login(request):
                 context['error'] = '비밀번호가 틀립니다.'
             else:
                 context['User'] = request.session.get('User')
-                request.session['User'] = user.user_id
-                return redirect('/')
+                return render(request, 'loginok.html', context)
         return render(request, 'login.html', context)
 
 def logout(request):
@@ -67,3 +66,7 @@ def join(request):
 
 def needlogin(request):
     return render(request, "needlogin.html")
+
+def loginok(request):
+
+    return render(request, 'loginok.html')

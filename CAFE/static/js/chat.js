@@ -33,7 +33,7 @@ function send_message(){
     // API 서버에 요청할 데이터
     const jsonData = {
         query: chattext,
-        user: '<%=(String)session.getAttribute("User")%>',
+        user: sessionStorage.getItem('User'),
     }
 
     $.ajax({

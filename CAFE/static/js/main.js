@@ -87,3 +87,52 @@ $(function () {
     //     }
     // });
 });
+
+
+
+var aud1 = document.getElementById("audio1");
+var vid1 = document.getElementById("video1");
+var aud2 = document.getElementById("audio2");
+var vid2 = document.getElementById("video2");
+var aud3 = document.getElementById("audio3");
+var vid3 = document.getElementById("video3");
+var aud4 = document.getElementById("audio4");
+var vid4 = document.getElementById("video4");
+aud1.onplay = function() {
+    vid1.style.display='block';
+    vid2.style.display='none';
+    vid3.style.display='none';
+    vid4.style.display='none';
+    aud2.pause();
+    aud3.pause();
+    aud4.pause();
+};
+aud2.onplay = function() {
+    vid2.style.display='block';
+    vid1.style.display='none';
+    vid3.style.display='none';
+    vid4.style.display='none';
+    aud1.pause();
+    aud3.pause();
+    aud4.pause();
+};
+aud3.onplay = function() {
+    vid3.style.display='block';
+    vid2.style.display='none';
+    vid1.style.display='none';
+    vid4.style.display='none';
+    aud2.pause();
+    aud1.pause();
+    aud4.pause();
+};
+aud4.onplay = function() {
+    vid4.style.display='block';
+    vid2.style.display='none';
+    vid3.style.display='none';
+    vid1.style.display='none';
+    aud2.pause();
+    aud3.pause();
+    aud1.pause();
+};
+
+

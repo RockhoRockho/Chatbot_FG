@@ -21,5 +21,6 @@ urlpatterns = [
     path('admin/', admin.site.urls),
     path('', views.main, name="main"),
     path('login/', include("APPS.Login.urls")),
+    path('order/', include("APPS.Order.urls")),
     path('chatbot/', include("APPS.ChatBot.urls")),
 ]

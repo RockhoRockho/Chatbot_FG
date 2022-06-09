@@ -2,10 +2,7 @@ from django.shortcuts import render, redirect
 import requests
 import pymysql 
 import json
-# from utils.Product import Product
-# from utils.ProductOption import ProductOption
-# from utils.OrderDetail import OrderDetail
-# from utils.OrderItem import OrderItem
+from APPS.Login.models import User
 
 
 DB_HOST = "localhost"
@@ -27,6 +24,9 @@ def chatmain(request):
 def kakaopay(request):
     # 가장최근 order 로 불러옴
     member_id = request.session.get('User')
+    user = User.objects.get(user_id=member_id)
+    user.id
+
     db = pymysql.connect(
         host=DB_HOST,
         user=DB_USER,
@@ -34,7 +34,7 @@ def kakaopay(request):
         db=DB_NAME,
         charset='utf8'
     )
-    sql = "SELECT * from order_detail where user_id = {}".format(order_id)
+    sql = "SELECT * from order_detail where user_id = {}".format(user.id)
 
     with db:
         with db.cursor() as cur:

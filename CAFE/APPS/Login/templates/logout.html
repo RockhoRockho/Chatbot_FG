@@ -1,6 +1,6 @@
 <script>
     // 해당 예제를 실행하기전 이전 세션의 데이터를 clear( ) 메서드를 사용해 전부 삭제한다.
-    window.sessionStorage.clear();
+    window.sessionStorage.removeItem("User");
     
     location.href = '{%url "main" %}'
 </script>

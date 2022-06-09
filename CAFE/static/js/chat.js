@@ -50,8 +50,12 @@ function send_message(){
             $chatbox = $("#chatbox");
 
             // 답변출력
-            const bottext = "<div style='margin:15px 0;text-align:left;'><span style='padding:3px 10px;background-color:#DDD;border-radius:3px;'>" + response.Answer + "</span></div>";
+            const bottext = "<div style='margin:15px 0;text-align:left;'><span style='padding:3px 10px;background-color:#DDD;border-radius:3px;'>" + response.Answer + response.AnswerImageUrl + "</span></div>";
             $chatbox.append(bottext);
+
+            $('#kakaopay').click(function (){
+                    location.href = "chatbot/kakaopay/";
+                })
 
             // 스크롤 조정하기
             $chatbox.animate({scrollTop: $chatbox.prop('scrollHeight')})

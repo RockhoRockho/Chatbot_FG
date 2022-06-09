@@ -24,7 +24,8 @@ def login(request):
             elif not pw == user.pw:
                 context['error'] = '비밀번호가 틀립니다.'
             else:
-                context['User'] = request.session.get('User')
+                context['User'] = user.user_id
+                request.session['User'] = user.user_id
                 return render(request, 'loginok.html', context)
         return render(request, 'login.html', context)
 

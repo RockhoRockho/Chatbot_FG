@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/static/bs/css/bootstrap.min.css">
+    <script src="/static/bs/js/bootstrap.bundle.min.css"></script>
+    <link rel="stylesheet" href="/static/css/main.css"/>
+    <title>주문목록</title>
+</head>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+</head>
+ 
+<body>
+    <div id="container">
+        <div class="wrap">
+            <div style="width: 500px; height: 120px; z-index: 10; position: absolute; left: 70px; top: 100px;">
+                <div class="p_name">Orders</div>
+                <div class="h1"></div>
+            </div>
+            <div class="d-flex flex-wrap justify-content-center col-12 py-5" style="z-index: 100; position: absolute; top: 200px;" >
+                <div class="col-6">
+                    <div class="mb-3 mt-3 clearfix">
+                        <span class="p_name" style="font-size: 30px;">총 {{count}}개</span>
+                    </div>
+                    <div class="input-group d-flex py-1">
+                        <table class="table table-hover">
+                            <thead class="table-light">
+                                <tr>
+                                    <th>주문번호</th>
+                                    <th>상품</th>
+                                    <th>옵션</th>
+                                </tr>
+                            </thead>
+                            <tbody>
+                                {%for order in orders%}
+                                <tr>
+                                    <td>{{order.id}}</td>
+                                    <td>{{order.name}}</td>
+                                    <td>{{order.option}}</td>
+                                </tr>
+                                {%endfor%}
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <video id="video1" style="display: block;" muted autoplay loop>
+                <source src="/static/video/coffee.mp4" type="video/mp4" style="position: fixed; width: 100%" />
+            </video>
+        </div>
+            <footer>
+                <div class="footer">
+                    <h2>FG CAFE</h2>
+                    <p>대표이사 : 홍길동, 주소: 서울특별시 강남구 테헤란로 146 현악빌딩</p>
+                    <p>Tel : 02-1234-5678, 사업자 등록번호 : 111-22-33333</p>
+                    <br>
+                    <p>저희 FG CAFE는 입접판매자가 등록한 상품정보 및 거래에 대해서는
+                        일체 책임지지 않습니다.</p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+</html>

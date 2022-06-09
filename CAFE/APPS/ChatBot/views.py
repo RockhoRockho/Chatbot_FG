@@ -20,7 +20,6 @@ def kakaopay(request):
     # 가장최근 order 로 불러옴
     member_id = request.session.get('User')
     user = User.objects.get(user_id=member_id)
-    user.id
 
     db = pymysql.connect(
         host=DB_HOST,
@@ -106,6 +105,7 @@ def kakaopay(request):
 
 def approval(request):
     member_id = request.session.get('User')
+    user = User.objects.get(user_id=member_id)
 
     # order 불러오기
     db = pymysql.connect(
@@ -115,7 +115,7 @@ def approval(request):
         db=DB_NAME,
         charset='utf8'
     )
-    sql = "SELECT * from order_detail where user_id = {}".format(order_id)
+    sql = "SELECT * from order_detail where user_id = {}".format(user.id)
 
     with db.cursor() as cur:
         cur.execute(sql)

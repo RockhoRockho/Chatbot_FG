@@ -158,7 +158,7 @@
                     일체 책임지지 않습니다.</p>
             </div>
         </footer>
-        <div id="sidenav">
+        <!-- <div id="sidenav">
             <div class="sn1"><a class="summary_area" href="#overflow1">Summary</a></div>
             <div class="sn2"><a class="menu_area" href="#overflow2">Menu</a></div>
             {% if user %}
@@ -166,13 +166,37 @@
             {% else %}
             <div class="sn3"><a class="login" href="{% url 'login' %}">Login</a></div>
             {% endif %}
+            {% if user %}
+            {% else %}
             <div class="sn4"><a class="sign" href="{% url 'join' %}">Join</a></div>
-            <!-- <div><a class="order_list" href="{% url 'order_list' %}">Order_List</a></div> -->
+            {% endif %}
             <hr>
             <div class="bot"></div>
             <div class="top" onclick="goTop()"></div>
+        </div> -->
+        {% if user %}
+        <div id="sidenav" style="height: 240px;">
+            <div class="sn1"><a class="summary_area" href="#overflow1">Summary</a></div>
+            <div class="sn2"><a class="menu_area" href="#overflow2">Menu</a></div>
+            <div class="sn3"><a class="logout" href="{% url 'logout' %}">Logout</a></div>
+            <hr>
+            <div class="bot"></div>
+            <!-- <a href="{% url 'needlogin2' %}" class="bot"><div></div></a> -->
+            <div class="top" onclick="goTop()"></div>
         </div>
-
+        {% else %}
+        <div id="sidenav">
+            <div class="sn1"><a class="summary_area" href="#overflow1">Summary</a></div>
+            <div class="sn2"><a class="menu_area" href="#overflow2">Menu</a></div>
+            <div class="sn3"><a class="login" href="{% url 'login' %}">Login</a></div>
+            <div class="sn4"><a class="sign" href="{% url 'join' %}">Join</a></div>
+            <hr>
+            <!-- <div class="bot"><a href="{% url 'needlogin2' %}"></a></div> -->
+            <a href="{% url 'needlogin2' %}" class="bott"><div></div></a>
+            <div class="top" onclick="goTop()"></div>
+            
+        </div>
+        {% endif %}
 
         <div class="modal">
             <div class="modal_content">

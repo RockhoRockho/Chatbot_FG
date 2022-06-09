@@ -266,7 +266,17 @@ footer {
     height: 100%;
 }
 
-#sidenav>.bot {
+#sidenav>.bot{
+    width: 70px;
+    height: 60px;
+    background: url(../img/chat-bot.png) no-repeat;
+    background-position: center;
+    background-size: 70%;
+    margin-top: -10px;
+    margin-bottom: 0px;
+}
+
+#sidenav>.bott >div{
     width: 70px;
     height: 60px;
     background: url(../img/chat-bot.png) no-repeat;

@@ -71,3 +71,6 @@ def needlogin(request):
 def loginok(request):
 
     return render(request, 'loginok.html')
+
+def needlogin2(request):
+    return render(request, 'needlogin2.html')

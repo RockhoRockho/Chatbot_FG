@@ -33,7 +33,7 @@
                     <input type="password" class="form-control" name="password" placeholder="비밀번호를 입력하세요.">
                 </div>
                 <div class="d-flex py-1">
-                    <input type="submit" class="btn btn-secondary w-100" value="회원가입">
+                    <input type="submit" class="btn btn-success w-100" value="회원가입">
                 </div>
                 <div class="d-flex py-1">
                     <span style="color:red;"><strong>{{ error }}</strong> </span>
@@ -44,5 +44,27 @@
     <video muted autoplay loop>
         <source src="/static/video/coffee.mp4" type="video/mp4" style="position: fixed; width: 100%" />
     </video>
+    <footer>
+        <div class="footer">
+            <h2>FG CAFE</h2>
+            <p>대표이사 : 홍길동, 주소: 서울특별시 강남구 테헤란로 146 현악빌딩</p>
+            <p>Tel : 02-1234-5678, 사업자 등록번호 : 111-22-33333</p>
+            <br>
+            <p>저희 FG CAFE는 입접판매자가 등록한 상품정보 및 거래에 대해서는
+                일체 책임지지 않습니다.</p>
+        </div>
+    </footer>
+    <div id="sidenav">
+        <div class="sn1"><a class="summary_area" href="{% url 'main' %}">Main</a></div>
+        <div class="sn4"><a class="sign" href="{% url 'login' %}">Login</a></div>
+        <!-- <div><a class="order_list" href="{% url 'order_list' %}">Order_List</a></div> -->
+        <hr>
+        <div class="top" onclick="goTop()"></div>
+    </div>
+    <script>
+        function goTop() {
+            $('html').scrollTop(0);
+        }
+    </script>
 </div>
 

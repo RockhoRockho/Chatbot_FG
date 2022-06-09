@@ -39,8 +39,8 @@ with db.cursor() as cur:
 
 prd_dic = {}
 for i in product:
-    pk, name, price, _, _, _, _, _, _, _ = i
-    prd_dic[pk] = [name, price]
+    pk, name, _, _, _, _, _, _, _, _ = i
+    prd_dic[pk] = name
 
 sql = ''' 
 SELECT * from product_option
@@ -68,7 +68,11 @@ for i in order_item:
     pk, order_id, product_id, option_id, count = i
     list.append([order_id, prd_dic[product_id], opt_dic[option_id], count])
 
+print(list)
 db.close()
 
 def order_list(request):
-    return render(request, 'order_list.html')
+    context = {
+        "orders" : list,
+    }
+    return render(request, 'order_list.html', context)

@@ -35,16 +35,17 @@
                                     <th>주문번호</th>
                                     <th>상품</th>
                                     <th>옵션</th>
+                                    <th>수량</th>
                                 </tr>
                             </thead>
                             <tbody>
                                 {%for order in orders%}
                                 <tr>
-                                    <td>{{order.id}}</td>
-                                    <td>{{order.name}}</td>
-                                    <td>{{order.option}}</td>
+                                {%for data in order%}
+                                    <td>{{data}}</td>
+                                    {%endfor%}
                                 </tr>
-                                {%endfor%}
+                                    {%endfor%}
                             </tbody>
                         </table>
                     </div>

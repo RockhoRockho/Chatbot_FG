@@ -161,8 +161,14 @@
         <div id="sidenav">
             <div class="sn1"><a class="summary_area" href="#overflow1">Summary</a></div>
             <div class="sn2"><a class="menu_area" href="#overflow2">Menu</a></div>
-            <div class="sn3"><a class="login" href="#">Login</a></div>
-            <div class="sn4"><a class="sign" href="#">Join</a></div>
+            {% if user %}
+            <div class="sn3"><a class="login" href="{% url 'login' %}">Login</a></div>
+            {% endif %}
+            {% if not user %}
+            <div class="sn3"><a class="login" href="{% url 'logout' %}">Logout</a></div>
+            {% endif %}
+            <div class="sn4"><a class="sign" href="{% url 'join' %}">Join</a></div>
+            <div><a class="order_list" href="{% url 'order_list' %}">Order_List</a></div>
             <hr>
             <div class="bot"></div>
             <div class="top" onclick="goTop()"></div>

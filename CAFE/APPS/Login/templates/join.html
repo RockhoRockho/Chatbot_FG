@@ -22,7 +22,7 @@
     </div>
     <div class="d-flex flex-wrap justify-content-center align-items-center h-100">
         <div class="d-flex flex-wrap justify-content-center align-items-center col-12 col-md-6 py-5" style="z-index: 100; position: absolute; top: 300px;">
-            <form class="col-6" name="login" action="{% url 'login' %}" method="POST" id="login_input">
+            <form class="col-6" name="login" action="{% url 'join' %}" method="POST" id="login_input">
                 {% csrf_token %}
                 <div class="input-group d-flex py-1">
                     <span class="input-group-text" id="addon-wrapping">아이디</span>
@@ -30,7 +30,7 @@
                 </div>
                 <div class="input-group d-flex py-1">
                     <span class="input-group-text" id="addon-wrapping">비밀번호</span>
-                    <input type="password" class="form-control" name="password" placeholder="비밀번호를 입력하세요.">
+                    <input type="password" class="form-control" name="pw" placeholder="비밀번호를 입력하세요.">
                 </div>
                 <div class="d-flex py-1">
                     <input type="submit" class="btn btn-success w-100" value="회원가입">

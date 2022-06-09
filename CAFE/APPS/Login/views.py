@@ -60,10 +60,10 @@ def join(request):
             return render(request, 'join.html', context)
         else:
             userT = User(
-                uid = uid,
+                user_id = uid,
                 pw= pw)
             userT.save() 
-        return render(request, 'login.html')
+            return render(request, 'joinok.html')
 
 def needlogin(request):
     return render(request, "needlogin.html")
@@ -71,3 +71,7 @@ def needlogin(request):
 def loginok(request):
 
     return render(request, 'loginok.html')
+
+def joinok(request):
+    
+    return render(request, 'joinok.html')

@@ -7,73 +7,83 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="/static/bs/css/bootstrap.min.css">
     <script src="/static/bs/js/bootstrap.bundle.min.css"></script>
-    <link rel="stylesheet" href="/static/css/main.css"/>
+    <link rel="stylesheet" href="/static/css/main.css" />
     <title>주문목록</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
     <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-    <link rel="stylesheet"href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css"/>
+    <link rel="stylesheet" href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css" />
     <meta http-equiv="refresh" content="60">
 </head>
+<style>
+    video {
+        width: 100%;
+        height: 100%;
+    }
+</style>
 
 <body>
-    <button type="button" class="btn btn-outline-light" style="z-index: 10; position: absolute; right: 70px; top: 50px; font-family: 'SBAggroB'; font-size: 30px;" onclick="location.href='/'">메인으로</button>
+    <button type="button" class="btn btn-outline-light"
+        style="z-index: 10; position: absolute; right: 70px; top: 50px; font-family: 'SBAggroB'; font-size: 30px;"
+        onclick="location.href='/'">메인으로</button>
     <div id="container">
         <div class="wrap">
             <div style="width: 500px; height: 120px; z-index: 10; position: absolute; left: 70px; top: 100px;">
                 <div class="p_name">Orders</div>
                 <div class="h1"></div>
             </div>
-            <div class="d-flex flex-wrap justify-content-center col-12 py-5" style="z-index: 100; position: absolute; top: 200px;" >
+            <div class="d-flex flex-wrap justify-content-center col-12 py-5"
+                style="z-index: 100; position: absolute; top: 200px;">
                 <div class="col-6">
                     <div class="row py-1">
                         <div class="col-lg-12 mx-auto">
-                          <div class="card rounded shadow border-0">
-                            <div class="card-body p-5 bg-white rounded">
-                              <div class="table-responsive">
-                                <table id="list" style="width:100%" class="table table-striped table-bordered">
-                                    <thead class="table-light" style="text-align: center;">
-                                        <tr>
-                                            <th scope="col" width="15%">주문번호</th>
-                                            <th>상품</th>
-                                            <th>옵션</th>
-                                            <th scope="col" width="15%">수량</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        {%for order in orders%}
-                                            <tr>
-                                                {%for data in order%}
+                            <div class="card rounded shadow border-0">
+                                <div class="card-body p-5 bg-white rounded">
+                                    <div class="table-responsive">
+                                        <table id="list" style="width:100%" class="table table-striped table-bordered">
+                                            <thead class="table-light" style="text-align: center;">
+                                                <tr>
+                                                    <th scope="col" width="15%">주문번호</th>
+                                                    <th>상품</th>
+                                                    <th>옵션</th>
+                                                    <th scope="col" width="15%">수량</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                {%for order in orders%}
+                                                <tr>
+                                                    {%for data in order%}
                                                     <td style="text-align: center;">{{data}}</td>
+                                                    {%endfor%}
+                                                </tr>
                                                 {%endfor%}
-                                            </tr>
-                                        {%endfor%}
-                                    </tbody>
-                                </table>
-                              </div>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
                             </div>
-                          </div>
                         </div>
-                      </div>
                     </div>
                 </div>
             </div>
-            <video id="video1" style="display: block;" muted autoplay loop>
-                <source src="/static/video/coffee.mp4" type="video/mp4" style="position: fixed; width: 100%" />
-            </video>
         </div>
-            <footer>
-                <div class="footer">
-                    <h2>FG CAFE</h2>
-                    <p>대표이사 : 홍길동, 주소: 서울특별시 강남구 테헤란로 146 현악빌딩</p>
-                    <p>Tel : 02-1234-5678, 사업자 등록번호 : 111-22-33333</p>
-                    <br>
-                    <p>저희 FG CAFE는 입접판매자가 등록한 상품정보 및 거래에 대해서는
-                        일체 책임지지 않습니다.</p>
-                </div>
-            </footer>
+        <video id="video1" style="display: block;" muted autoplay loop>
+            <source src="/static/video/coffee.mp4" type="video/mp4" style="position: fixed; width: 100%" />
+        </video>
+    </div>
+    <footer>
+        <div class="footer">
+            <h2>FG CAFE</h2>
+            <p>대표이사 : 홍길동, 주소: 서울특별시 강남구 테헤란로 146 현악빌딩</p>
+            <p>Tel : 02-1234-5678, 사업자 등록번호 : 111-22-33333</p>
+            <br>
+            <p>저희 FG CAFE는 입접판매자가 등록한 상품정보 및 거래에 대해서는
+                일체 책임지지 않습니다.</p>
         </div>
+    </footer>
+    </div>
     </div>
 </body>
+
 </html>
 
 <script src="https://code.jquery.com/jquery-3.5.1.js"></script>
@@ -83,7 +93,7 @@
 <script>
     $(document).ready(function () {
         $('#list').DataTable({
-        lengthChange: false
+            lengthChange: false
         });
     });
 </script>

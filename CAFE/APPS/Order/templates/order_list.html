@@ -16,7 +16,7 @@
 </head>
 
 <body>
-    <button type="button" class="btn btn-outline-light" style="z-index: 10; position: absolute; right: 70px; top: 50px; font-family: 'SBAggroB'; font-size: 30px;" onclick="history.back()">Back</button>
+    <button type="button" class="btn btn-outline-light" style="z-index: 10; position: absolute; right: 70px; top: 50px; font-family: 'SBAggroB'; font-size: 30px;" onclick="location.href='/'">메인으로</button>
     <div id="container">
         <div class="wrap">
             <div style="width: 500px; height: 120px; z-index: 10; position: absolute; left: 70px; top: 100px;">
@@ -40,27 +40,6 @@
                                         </tr>
                                     </thead>
                                     <tbody>
-                                        {%for order in orders%}
-                                            <tr>
-                                                {%for data in order%}
-                                                    <td style="text-align: center;">{{data}}</td>
-                                                {%endfor%}
-                                            </tr>
-                                        {%endfor%}
-                                        {%for order in orders%}
-                                            <tr>
-                                                {%for data in order%}
-                                                    <td style="text-align: center;">{{data}}</td>
-                                                {%endfor%}
-                                            </tr>
-                                        {%endfor%}
-                                        {%for order in orders%}
-                                            <tr>
-                                                {%for data in order%}
-                                                    <td style="text-align: center;">{{data}}</td>
-                                                {%endfor%}
-                                            </tr>
-                                        {%endfor%}
                                         {%for order in orders%}
                                             <tr>
                                                 {%for data in order%}

@@ -179,6 +179,9 @@
             <div class="sn1"><a class="summary_area" href="#overflow1">Summary</a></div>
             <div class="sn2"><a class="menu_area" href="#overflow2">Menu</a></div>
             <div class="sn3"><a class="logout" href="{% url 'logout' %}">Logout</a></div>
+            {% if user == admin %}
+            <div class="sn4"><a class="sign" href="{% url 'order_list' %}">Order_list</a></div>
+            {% endif %}
             <hr>
             <div class="bot"></div>
             <!-- <a href="{% url 'needlogin2' %}" class="bot"><div></div></a> -->

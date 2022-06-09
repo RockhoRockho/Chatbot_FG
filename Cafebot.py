@@ -225,7 +225,7 @@ def to_client(conn, addr, params):
                     product_price = fp.search_price_from_id(i['product_id'])
                     option_price = po.search_price(i['option_id'])
                     total_price += ((product_price + option_price) * i['count'])
-
+                
                 answer = "<div style='margin:15px 0;text-align:left;'><span style='padding:3px 10px;background-color:#DDD;border-radius:3px;'>" +\
                  '주문 총 금액은' + f'{total_price}' +  '원 입니다.<br> 카카오 페이 결제를 진행합니다' +\
                       "</span></div>" + \
@@ -308,7 +308,7 @@ def to_client(conn, addr, params):
 
                             # B_RECOMMEND일때 해당 상품목록 추출 
                             if tag == 'B_RECOMMEND':
-                                recommend = name
+                                product = name
                                 
                                 # answer 다수값 list로 뽑기
                                 answer = fp.search(query)
@@ -323,6 +323,7 @@ def to_client(conn, addr, params):
                 except:
                     answer = "저희 가게에서 지원되지 않는 제품, 서비스이거나<br> 잘못된 값을 입력하셨습니다"
                     answer_image = None
+                    product = 0
     
     
       #####################################       2차 FSM 절차         ###################################

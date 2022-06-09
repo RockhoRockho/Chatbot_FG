@@ -9,13 +9,14 @@
     <script src="/static/bs/js/bootstrap.bundle.min.css"></script>
     <link rel="stylesheet" href="/static/css/main.css"/>
     <title>주문목록</title>
-</head>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
-<script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
-<link rel="stylesheet"href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css"/>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/ScrollMagic/2.0.8/ScrollMagic.min.js"></script>
+    <script type="text/javascript" src="http://code.jquery.com/jquery-latest.js"></script>
+    <link rel="stylesheet"href="https://cdn.datatables.net/1.11.3/css/dataTables.bootstrap5.min.css"/>
+    <meta http-equiv="refresh" content="60">
 </head>
 
 <body>
+    <button type="button" class="btn btn-outline-light" style="z-index: 10; position: absolute; right: 70px; top: 50px; font-family: 'SBAggroB'; font-size: 30px;" onclick="history.back()">Back</button>
     <div id="container">
         <div class="wrap">
             <div style="width: 500px; height: 120px; z-index: 10; position: absolute; left: 70px; top: 100px;">
@@ -103,7 +104,7 @@
 <script>
     $(document).ready(function () {
         $('#list').DataTable({
-        pagingType: 'full_numbers',
+        lengthChange: false
         });
     });
 </script>

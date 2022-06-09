@@ -1,5 +1,6 @@
 from django.shortcuts import redirect, render
 from APPS.Login.models import User
+import pymysql
 
 def login(request):
     context = {
@@ -26,6 +27,7 @@ def login(request):
             else:
                 context['User'] = user.user_id
                 request.session['User'] = user.user_id
+
                 return render(request, 'loginok.html', context)
         return render(request, 'login.html', context)
 
@@ -63,6 +65,26 @@ def join(request):
                 user_id = uid,
                 pw= pw)
             userT.save() 
+
+            DB_HOST = "localhost"
+            DB_USER = "myuser118"
+            DB_PASSWORD = "1234"
+            DB_NAME = "mydb118"
+
+            db = pymysql.connect(
+            host=DB_HOST,
+            user=DB_USER,
+            passwd=DB_PASSWORD,
+            db=DB_NAME,
+            charset='utf8'
+            )
+
+            sql = "INSERT user_cafe(user_id, password) values('%s', '%s')" % (uid, pw)
+
+            with db.cursor() as cur:
+                cur.execute(sql)
+            db.commit()
+
             return render(request, 'joinok.html')
 
 def needlogin(request):

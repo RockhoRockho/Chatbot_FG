@@ -10,11 +10,6 @@ DB_USER = "myuser118"
 DB_PASSWORD = "1234"
 DB_NAME = "mydb118"
 
-def DatabaseConfig():
-    global DB_HOST, DB_USER, DB_PASSWORD, DB_NAME
-
-
-
 def chatmain(request):
 
     return render(request, 'chat_main.html')
@@ -36,10 +31,10 @@ def kakaopay(request):
     )
     sql = "SELECT * from order_detail where user_id = {}".format(user.id)
 
-    with db:
-        with db.cursor() as cur:
-            cur.execute(sql)
-            order = cur.fetchone()
+    
+    with db.cursor() as cur:
+        cur.execute(sql)
+        order = cur.fetchone()
     
     order_id = order[0]
 
@@ -55,39 +50,26 @@ def kakaopay(request):
 
     #     # 리스트 담기
     sql = "SELECT * from order_item where order_id = {}".format(order_id)
-    db = pymysql.connect(
-        host=DB_HOST,
-        user=DB_USER,
-        passwd=DB_PASSWORD,
-        db=DB_NAME,
-        charset='utf8'
-    )
+   
     product_id = []
     option_id = []
-    with db:
-        with db.cursor() as cur:
-            cur.execute(sql)
-            order_item = cur.fetchall()
-            for i in order_item:
-                product_id.append(i[2])
-                option_id.append(i[3])
-                p_qauntity += i[4]
+    
+    with db.cursor() as cur:
+        cur.execute(sql)
+        order_item = cur.fetchall()
+        for i in order_item:
+            product_id.append(i[2])
+            option_id.append(i[3])
+            p_qauntity += i[4]
 
-    db = pymysql.connect(
-        host=DB_HOST,
-        user=DB_USER,
-        passwd=DB_PASSWORD,
-        db=DB_NAME,
-        charset='utf8'
-    )
     for i in product_id:
         sql = "SELECT name, price from product_cafe where id = {}".format(i)
-        with db:
-            with db.cursor() as cur:
-                cur.execute(sql)
-                items = cur.fetchone()
-                p_name.append(items[0])
-                p_price += items[1]
+
+        with db.cursor() as cur:
+            cur.execute(sql)
+            items = cur.fetchone()
+            p_name.append(items[0])
+            p_price += items[1]
 
 
 
@@ -117,6 +99,8 @@ def kakaopay(request):
         next_url = result['next_redirect_pc_url']   # 결제 페이지로 넘어갈 url을 저장
 
         return redirect(next_url)
+    
+    db.close()
 
     return render(request, 'kakaopay.html')
 
@@ -133,10 +117,9 @@ def approval(request):
     )
     sql = "SELECT * from order_detail where user_id = {}".format(order_id)
 
-    with db:
-        with db.cursor() as cur:
-            cur.execute(sql)
-            order = cur.fetchone()
+    with db.cursor() as cur:
+        cur.execute(sql)
+        order = cur.fetchone()
     
     order_id = order[0]
 
@@ -162,5 +145,7 @@ def approval(request):
         'res': res,
         'amount': amount,
     }
+
+    db.close()
 
     return render(request, 'approval.html', context)

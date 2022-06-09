@@ -68,7 +68,6 @@ for i in order_item:
     pk, order_id, product_id, option_id, count = i
     list.append([order_id, prd_dic[product_id], opt_dic[option_id], count])
 
-print(list)
 db.close()
 
 def order_list(request):

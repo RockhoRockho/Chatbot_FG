@@ -162,7 +162,7 @@ def to_client(conn, addr, params):
             intent_name = '결제, 할인, 쿠폰'
             
         elif query == '할인':
-            answer = '할인은 추천메뉴에만 적용됩니다(그 외 메뉴에는 적용되지 않습니다)'
+            answer = '할인은 추천메뉴에만 적용됩니다<br>(그 외 메뉴에는 적용되지 않습니다)'
             answer_image = 'coupon.png'
             intent_predict = 3
             intent_name = '결제, 할인, 쿠폰'
@@ -226,10 +226,10 @@ def to_client(conn, addr, params):
                     option_price = po.search_price(i['option_id'])
                     total_price += ((product_price + option_price) * i['count'])
 
-                answer = '''
-                주문 총 금액은 {}원 입니다
-                카카오 페이결제를 진행합니다.
-                '''.format(total_price)
+                answer = "<div style='margin:15px 0;text-align:left;'><span style='padding:3px 10px;background-color:#DDD;border-radius:3px;'>" +\
+                 '주문 총 금액은' + f'{total_price}' +  '원 입니다.<br> 카카오 페이 결제를 진행합니다' +\
+                      "</span></div>" + \
+                "<button class='btn mt-5'>" + "<img src='../static/img/payment_icon_yellow_small.png' style='width:150px;'></button>"
                 
                 price = total_price
                 
@@ -321,7 +321,7 @@ def to_client(conn, addr, params):
                                 detail = answer_detail
 
                 except:
-                    answer = "저희 가게에서 지원되지 않는 제품 혹은 서비스이거나 잘못된 값을 입력하셨습니다"
+                    answer = "저희 가게에서 지원되지 않는 제품, 서비스이거나<br> 잘못된 값을 입력하셨습니다"
                     answer_image = None
     
     
@@ -341,28 +341,29 @@ def to_client(conn, addr, params):
                     if int(query) > 0 and int(query) <= 8:
                         option = int(query)
                         answer = '''
-                        다른 상품을 담고싶다면 <장바구니>를 바로결제를 원하시면 <선택완료>를 입력해주세요 
-                        옵션수정을 원하시면 해당 옵션번호를 다시 입력해주세요
+                        다른 상품을 담고싶다면 <장바구니>를<br>
+                        바로결제를 원하시면 <선택완료>를 입력해주세요<br>
+                        옵션수정을 원하시면 해당 옵션번호를 다시 입력해주세요<br><br>
                         
-                        커피, 라떼만 해당되는 옵션입니다
-                        음료는 사이즈업만 가능합니다.
-                        ===========================
-                        1 = 옵션없음
-                        2 = 샷추가
-                        3 = 시럽추가
-                        4 = 사이즈업
-                        5 = 샷 + 시럽추가
-                        6 = 샷 + 사이즈업
-                        7 = 시럽 + 사이즈업
-                        8 = 샷 + 시럽 + 사이즈업
-                        ===========================
+                        커피, 라떼만 해당되는 옵션입니다<br>
+                        음료는 사이즈업만 가능합니다.<br>
+                        ===========================<br>
+                        1 = 옵션없음<br>
+                        2 = 샷추가<br>
+                        3 = 시럽추가<br>
+                        4 = 사이즈업<br>
+                        5 = 샷 + 시럽추가<br>
+                        6 = 샷 + 사이즈업<br>
+                        7 = 시럽 + 사이즈업<br>
+                        8 = 샷 + 시럽 + 사이즈업<br>
+                        ===========================<br>
                         '''
                         
                         intent_predict = 1
                         intent_name = '주문'
                         
                 except:
-                    answer = "잘못된 값을 입력하셨습니다. 올바른 절차로 다시 진행해주세요"
+                    answer = "잘못된 값을 입력하셨습니다.<br> 올바른 절차로 다시 진행해주세요"
 
                     # intent_predict, product 값 초기화
                     intent_predict = 0
@@ -371,7 +372,7 @@ def to_client(conn, addr, params):
             
             # 할인, 쿠폰, 결제
             elif state == 3:
-                answer = "잘못된 값을 입력하셨습니다. 올바른 절차로 다시 진행해주세요"
+                answer = "잘못된 값을 입력하셨습니다.<br> 올바른 절차로 다시 진행해주세요"
             
             # 주문취소 일때 주문번호도 같이 받은상태임
             elif state == 9:
@@ -409,7 +410,7 @@ def to_client(conn, addr, params):
 
                     except:
                         answer = '''
-                        올바르지 않은 상품명 또는 주문번호입니다.
+                        올바르지 않은 상품명 또는 주문번호입니다.<br>
                         상품명과 주문번호를 확인후에 다시 입력해주세요.
                         '''
                         product = 0

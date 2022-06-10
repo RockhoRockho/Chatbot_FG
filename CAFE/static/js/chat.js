@@ -23,7 +23,9 @@ $(function(){
 })
 
 function send_message(){
+
     const chattext = $("#chattext").val().trim();
+    
 
     // 입력한 메세지가 없으면 리턴
     if(chattext == ""){
@@ -120,7 +122,19 @@ function send_message(){
                     "<image src='/static/img/" + response.AnswerImageUrl + "'></image>" + response.Detail +
                     "</div></div>" +
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    response.Answer + "</div></div>";
+                    response.Answer + 
+                    "<br><button id='one' style='width:15%; margin-right:2%;'>1번</button>" +
+                    "<button id='two' style='width:15%; margin-right:2%;'>2번</button>" +
+                    "<button id='three' style='width:15%; margin-right:2%;'>3번</button>" +
+                    "<button id='four' style='width:15%; margin-right:2%'>4번</button>" +
+                    "<button id='five' style='width:15%; margin-right:2%'>5번</button>" +
+                    "<button id='six' style='width:15%'>6번</button></div></div>" +
+                    "<script>$('#one').click(function(){send_option(1)});" +
+                    "$('#two').click(function(){send_option(2)});" +
+                    "$('#three').click(function(){send_option(3)});" +
+                    "$('#four').click(function(){send_option(4)});" +
+                    "$('#five').click(function(){send_option(5)});" +
+                    "$('#six').click(function(){send_option(6)});</script>";
                 $chatbox.append(bottext);
             }  else if (response.Intent == '원산지' && response.AnswerImageUrl != null){ //상품 하나 뽑을 때
                 var image = response.AnswerImageUrl.split(', ')
@@ -164,3 +178,38 @@ function send_message(){
 
     })
 };
+
+
+function send_option(optionNm){
+    // API 서버에 요청할 데이터
+    const jsonData = {
+        query: optionNm,
+        user: sessionStorage.getItem('User'),
+    }
+
+    $.ajax({
+        url: 'http://127.0.0.10:5000/query/ProjectFG_Cafe',
+        type: "POST",
+        data: JSON.stringify(jsonData),
+        dataType: "JSON",   // 응답받을 데이터 타입
+        contentType: "application/json; charset=utf-8",
+        crossDomain: true,
+
+        success: function(response){
+            var bottext =
+                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+                    response.Answer +
+                    "</div></div>";
+                $chatbox.append(bottext);
+
+            
+            $('#kakaopay').click(function (){
+                location.href = "chatbot/kakaopay/";
+            });
+    
+            // 스크롤 조정하기
+            $chatbox.animate({scrollTop: $chatbox.prop('scrollHeight')})
+    
+        }
+    })
+}

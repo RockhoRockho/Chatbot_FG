@@ -98,6 +98,8 @@ var aud3 = document.getElementById("audio3");
 var vid3 = document.getElementById("video3");
 var aud4 = document.getElementById("audio4");
 var vid4 = document.getElementById("video4");
+var fgcafe = document.getElementById("fgcafe")
+var time = document.getElementById("time")
 aud1.onplay = function() {
     vid1.style.display='block';
     vid2.style.display='none';
@@ -106,6 +108,10 @@ aud1.onplay = function() {
     aud2.pause();
     aud3.pause();
     aud4.pause();
+    fgcafe.style.fontFamily = 'SBAggroB'
+    time.style.fontFamily = 'SBAggroB'
+    fgcafe.style.fontSize = '80px';
+    time.style.fontSize = '60px';
 };
 aud2.onplay = function() {
     vid2.style.display='block';
@@ -115,6 +121,10 @@ aud2.onplay = function() {
     aud1.pause();
     aud3.pause();
     aud4.pause();
+    fgcafe.style.fontFamily = 'elsie';
+    time.style.fontFamily = 'elsie';
+    fgcafe.style.fontSize = '90px';
+    time.style.fontSize = '70px';
 };
 aud3.onplay = function() {
     vid3.style.display='block';
@@ -124,6 +134,10 @@ aud3.onplay = function() {
     aud2.pause();
     aud1.pause();
     aud4.pause();
+    fgcafe.style.fontFamily = 'CartooNature';
+    time.style.fontFamily = 'CartooNature';
+    fgcafe.style.fontSize = '100px';
+    time.style.fontSize = '80px';
 };
 aud4.onplay = function() {
     vid4.style.display='block';
@@ -133,6 +147,10 @@ aud4.onplay = function() {
     aud2.pause();
     aud3.pause();
     aud1.pause();
+    fgcafe.style.fontFamily = 'ocean-sunshine'
+    time.style.fontFamily = 'ocean-sunshine'
+    fgcafe.style.fontSize = '80px';
+    time.style.fontSize = '60px';
 };
 
 

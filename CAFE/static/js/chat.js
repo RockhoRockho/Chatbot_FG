@@ -89,31 +89,34 @@ function send_message(){
 
             // 답변 출력
             }   else if (response.Intent == '주문내역'){
-                const ordernum = Object.keys(response.Answer)
-                const orderproduct = Object.values(response.Answer)
+                var ordernum = Object.keys(response.Answer)
+                var orderproduct = Object.values(response.Answer)
                 
-                const bottext =
-                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    ordernum + orderproduct +
-                    "</div></div>";
+                var bottext1 =
+                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>"
+                var bottext2 = '<br>주문내역<hr>'
+                for (let i = 0; i < ordernum.length; i++){
+                    bottext2 += '주문번호 : ' + ordernum[i] + '<br>상품이름 : ' + orderproduct[i] + '<hr>'
+                }
+                var bottext = bottext1 + bottext2 + "</div></div>";
                 $chatbox.append(bottext);
 
             }   else if (response.Intent == '메뉴'){ // 상품 리스트 뽑을 때
                 for (let i = 0; i < response.AnswerImageUrl.length; i++){
-                    const bottext =
+                    var bottext =
                         "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color: #386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
                         response.Answer[i] + "<image src='/static/img/" + response.AnswerImageUrl[i] + "'></image>"+ response.Detail[i] +
                         "</div></div>";
                     $chatbox.append(bottext);
                 }
             }   else if (response.Intent == '메뉴판 요구' && response.AnswerImageUrl != null){ //메뉴판 뽑을 때
-                const bottext =
+                var bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
                     response.Answer + "<image style='width:450px' src='/static/img/" + response.AnswerImageUrl + "'></image>" + 
                     "</div></div>";
                 $chatbox.append(bottext);
             }  else if (response.Intent == '주문' && response.AnswerImageUrl != null){ //상품 하나 뽑을 때
-                const bottext =
+                var bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
                     "<image src='/static/img/" + response.AnswerImageUrl + "'></image>" + response.Detail +
                     "</div></div>" +
@@ -121,7 +124,7 @@ function send_message(){
                     response.Answer + "</div></div>";
                 $chatbox.append(bottext);
             }  else { // 텍스트만 뽑을 때
-                const bottext =
+                var bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
                     response.Answer +
                     "</div></div>";

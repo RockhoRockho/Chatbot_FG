@@ -226,7 +226,7 @@ def to_client(conn, addr, params):
                     option_price = po.search_price(i['option_id'])
                     total_price += ((product_price + option_price) * i['count'])
                 
-                answer = "<div style='margin:15px 0;text-align:left;'><span style='padding:3px 10px;background-color:#DDD;border-radius:3px;'>" +\
+                answer = "<div style='margin:15px 0;text-align:left;'><span style='padding:3px 10px;background-color: #386641;color:white;border-radius:3px;'>" +\
                 '주문 총 금액은' + f'{total_price}' +  '원 입니다.<br> 카카오 페이 결제를 진행합니다' +\
                     "</span></div>" + \
                         "<button id='kakaopay' class='btn mt-5'>" + "<img src='../static/img/payment_icon_yellow_small.png' style='width:150px;'></button>"

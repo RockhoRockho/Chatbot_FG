@@ -310,6 +310,7 @@ def to_client(conn, addr, params):
                                 product = name
                                 # detail 꺼내기
                                 detail = fp.search_detail_from_name(name)
+                                price = fp.search_price_from_name(name)
                                 answer_image = fp.search_image_from_name(name)
 
                             # B_RECOMMEND일때 해당 상품목록 추출 
@@ -355,14 +356,14 @@ def to_client(conn, addr, params):
                         커피, 라떼만 해당되는 옵션입니다<br>
                         음료는 사이즈업만 가능합니다.<br>
                         ===========================<br>
-                        1 = 옵션없음<br>
-                        2 = 샷추가<br>
-                        3 = 시럽추가<br>
-                        4 = 사이즈업<br>
-                        5 = 샷 + 시럽추가<br>
-                        6 = 샷 + 사이즈업<br>
-                        7 = 시럽 + 사이즈업<br>
-                        8 = 샷 + 시럽 + 사이즈업<br>
+                        1 = 옵션없음 (+0원)<br>
+                        2 = 샷추가 (+500원)<br>
+                        3 = 시럽추가 (+300원)<br>
+                        4 = 사이즈업 (+700원)<br>
+                        5 = 샷 + 시럽추가 (+800원)<br>
+                        6 = 샷 + 사이즈업 (+1200원)<br>
+                        7 = 시럽 + 사이즈업 (+1000원)<br>
+                        8 = 샷 + 시럽 + 사이즈업 (+1500원)<br>
                         ===========================<br>
                         '''
                         

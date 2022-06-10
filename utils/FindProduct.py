@@ -42,6 +42,12 @@ class FindProduct:
         p_price = product_price['price']
         return p_price
     
+    def search_price_from_name(self, name):
+        sql = "select price from product_cafe where name = '{}'".format(name)
+        product_price = self.db.select_one(sql)
+        p_price = product_price['price']
+        return p_price
+
     # 검색 쿼리 생성
     def _make_query(self, query):
         sql = "select * from product_cafe"

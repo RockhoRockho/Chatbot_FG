@@ -63,27 +63,26 @@ function send_message(){
 
                 var bottext1 = 
                     "<div style='width:70%;margin: 10px;'>" + 
-                    "<div id='carousel-example-generic' class='carousel slide' >" 
-                var bottext2 = 
+                    "<div id='carousel-example-generic' class='carousel slide' >" +
                     '<div class="carousel-inner" role="listbox">' + 
                     '<div class="item active" style="color:black; font-size:20px; font-weight:bold;">' + response.Answer[0] + 
                     '<image src="/static/img/' + response.AnswerImageUrl[0] + '" style="width:100%"></image>' +
                     '<div class="carousel-caption" style="color:black; text-shadow:None; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[0] + '</div></div>'
 
-                var bottext3 = ''
+                var bottext2 = ''
                 for (let i = 1; i < response.AnswerImageUrl.length; i++){
-                    bottext3 += '<div class="item" style="color:black; font-size:20px; font-weight:bold;">' + response.Answer[i] +
-                    '<div><image src="/static/img/' + response.AnswerImageUrl[i] + '" style="width:100%"></image></div>' +
+                    bottext2 += '<div class="item" style="color:black; font-size:20px; font-weight:bold;">' + response.Answer[i] +
+                    '<image src="/static/img/' + response.AnswerImageUrl[i] + '" style="width:100%"></image>' +
                     '<div class="carousel-caption" style="color:black; text-shadow:None; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[i] + '</div></div>'
                 }
-                var bottext4 =
+                var bottext3 =
                     '</div><a class="left carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="prev">' +
                     '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>' +
                     '<a class="right carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="next">' +
                     '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div></div>' +
                     '<script>$(function(){$("#carousel-example-generic").carousel({interval: 1000, pause: "hover", wrap: true, keyboard : true});});</script>'
 
-                var bottext = bottext1 + bottext2 + bottext3 + bottext4
+                var bottext = bottext1 + bottext2 + bottext3
 
                 $chatbox.append(bottext);
 
@@ -122,6 +121,27 @@ function send_message(){
                     "</div></div>" +
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
                     response.Answer + "</div></div>";
+                $chatbox.append(bottext);
+            }  else if (response.Intent == '원산지' && response.AnswerImageUrl != null){ //상품 하나 뽑을 때
+                var image = response.AnswerImageUrl.split(', ')
+                var bottext = 
+                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+                    response.Answer + "</div></div>" +
+                    "<div style='width:70%;margin: 10px;'>" + 
+                    "<div id='carousel-example-generic' class='carousel slide' >" +
+                    '<div class="carousel-inner" role="listbox">' + 
+                    '<div class="item active">' +
+                    '<image src="/static/img/' + image[0] + '" style="width:100%"></image></div>' +
+                    '<div class="item">' +
+                    '<image src="/static/img/' + image[1] + '" style="width:100%"></image></div>' +
+                    '<div class="item">' +
+                    '<image src="/static/img/' + image[2] + '" style="width:100%"></image></div>'+
+                    '</div><a class="left carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="prev">' +
+                    '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>' +
+                    '<a class="right carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="next">' +
+                    '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div></div>' +
+                    '<script>$(function(){$("#carousel-example-generic").carousel({interval: 1000, pause: "hover", wrap: true, keyboard : true});});</script>'
+
                 $chatbox.append(bottext);
             }  else { // 텍스트만 뽑을 때
                 var bottext =

@@ -88,11 +88,13 @@ def to_client(conn, addr, params):
             ci.all_clear_train_data()
             oi.all_clear_train_data()
             od.all_clear_train_data()   
+            answer = '데이터가 초기화 되었습니다'
             
         ##################################     장바구니     #############################################
         
         elif query == '장바구니 비우기' or query == '장바구니비우기':
             ci.all_clear_train_data()
+            answer = '장바구니가 비워졌습니다'
             
             
         ################################     주문내역 조회     ##########################################
@@ -393,7 +395,7 @@ def to_client(conn, addr, params):
                 if product == 0:
                     try:
                         check = int(query)
-                        answer = "상품명을 입력해주세요"
+                        answer = "상품명이 입력되지 않았습니다! 상품명을 입력해주세요"
                     except:
                         product = query
                         answer = "주문번호를 입력해주세요"

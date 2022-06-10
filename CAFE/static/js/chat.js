@@ -40,7 +40,8 @@ function send_message(){
 
     // 입력한 채팅 화면에 출력
     const addtext = "<div style='margin:15px 0;text-align:right;'> <span style='padding:8px 13px;background-color:#c08552;color:white;border-radius:3px;display:inline-block;font-weight:bold;'>" +
-    chattext + "</span></div>";
+        chattext + "</span></div>";
+    $("#chatbox").append(addtext);
 
     // 먼저 입력했던 것은 지우기
     $("#chattext").val("");
@@ -65,29 +66,37 @@ function send_message(){
 
             $chatbox = $("#chatbox");
 
-            if (response.Intent == '메뉴'){ 
+            // if (response.Intent == ''){ 
 
-                const bottext1 = 
-                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color: #F5F5DC;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    response.Answer[i] + "</div></div>"; +
+            //     const bottext1 = 
+            //         "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color: #F5F5DC;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+            //         response.Answer[i] + "</div></div>"; + "<div style='width: 300px;margin: 100px;'>" + 
+            //         "<div id='carousel-example-generic' class='carousel slide' >" + '<ol class="carousel-indicators">' +
+            //         '<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>'
+                
+            //     for (let i = 0; i < response.AnswerImageUrl.length; i++){
+            //         const bottext2 =
+            //             "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color: #386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+            //             response.Answer[i] + "<image src='/static/img/" + response.AnswerImageUrl[i] + "'></image>"+ response.Detail[i] +
+            //             "</div></div>";
+            //         $chatbox.append(bottext);
+            //     }
+            //         '<li data-target="#carousel-example-generic" data-slide-to="1"></li>' +
+            //         '</ol><div class="carousel-inner" role="listbox"><div class="item active">' +
+            //         '<img src="https://tistory2.daumcdn.net/tistory/1041549/skin/images/nowonbuntistory.png" style="width:100%">' +
+            //         '<div class="carousel-caption" style="color:black;">설명글</div></div>' + 
+            //         '<div class="item"><img src="https://www.nowonbun.com/img/nowonbuntistory1.png" style="width:100%">' +
+            //         '<div class="carousel-caption" style="color:black;"></div></div></div>' +
+            //         '<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">' +
+            //         '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>' +
+            //         '<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">' +
+            //         '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div></div>'
 
-                    "<div style='width: 300px;margin: 100px;'>" + 
-                    "<div id='carousel-example-generic' class='carousel slide' >" + '<ol class="carousel-indicators">' +
-                    '<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>' +
-                    '<li data-target="#carousel-example-generic" data-slide-to="1"></li>' +
-                    '</ol><div class="carousel-inner" role="listbox"><div class="item active">' +
-                    '<img src="https://tistory2.daumcdn.net/tistory/1041549/skin/images/nowonbuntistory.png" style="width:100%">' +
-                    '<div class="carousel-caption" style="color:black;">설명글</div></div>' + 
-                    '<div class="item"><img src="https://www.nowonbun.com/img/nowonbuntistory1.png" style="width:100%">' +
-                    '<div class="carousel-caption" style="color:black;"></div></div></div>' +
-                    '<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">' +
-                    '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>' +
-                    '<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">' +
-                    '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div></div>'
-
-                $chatbox.append(bottext);
+            //     $chatbox.append(bottext);
 
             // 답변 출력
+            // } else 
+            
             if (response.Intent == '메뉴'){ // 상품 리스트 뽑을 때
                 for (let i = 0; i < response.AnswerImageUrl.length; i++){
                     const bottext =
@@ -126,9 +135,5 @@ function send_message(){
             
         }
 
-    }
-});
-
-
-
-}
+    })
+};

@@ -232,8 +232,7 @@ def to_client(conn, addr, params):
                         "</span></div>" + \
                             "<button id='kakaopay' class='btn mt-5'>" + "<img src='../static/img/payment_icon_yellow_small.png' style='width:150px;'></button>"
                 else:
-                    answer = "<div style='margin:15px 0;text-align:left;'><span style='padding:3px 10px;background-color: #386641;color:white;border-radius:3px;'>" +\
-                    '주문을 하시려면 상품을 선택해주셔야 합니다. 메뉴판을 불러오겠습니다' + "</span></div>"
+                    answer = '주문을 하시려면 상품을 선택해주셔야 합니다.<br> 메뉴판을 불러오겠습니다<br><br>'
                     intent_predict = 0
                     intent_name = '메뉴판 요구'
                     answer_image = fa.search('메뉴판 요구', None)[1]

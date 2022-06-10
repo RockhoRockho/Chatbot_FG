@@ -66,15 +66,15 @@ function send_message(){
                     "<div id='carousel-example-generic' class='carousel slide' >" 
                 var bottext2 = 
                     '<div class="carousel-inner" role="listbox">' + 
-                    '<div class="item active" style="color:white; font-size:20px">' + response.Answer[0] + 
+                    '<div class="item active" style="color:black; font-size:20px; font-weight:bold;">' + response.Answer[0] + 
                     '<image src="/static/img/' + response.AnswerImageUrl[0] + '" style="width:100%"></image>' +
-                    '<div class="carousel-caption" style="color:white; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[0] + '</div></div>'
+                    '<div class="carousel-caption"text-shadow:None; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[0] + '</div></div>'
 
                 var bottext3 = ''
                 for (let i = 1; i < response.AnswerImageUrl.length; i++){
-                    bottext3 += '<div class="item" style="color:white; font-size:20px;">' + response.Answer[i] +
+                    bottext3 += '<div class="item" style="color:black; font-size:20px; font-weight:bold;">' + response.Answer[i] +
                     '<div><image src="/static/img/' + response.AnswerImageUrl[i] + '" style="width:100%"></image></div>' +
-                    '<div class="carousel-caption" style="color:white; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[i] + '</div></div>'
+                    '<div class="carousel-caption" style="text-shadow:None; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[i] + '</div></div>'
                 }
                 var bottext4 =
                     '</div><a class="left carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="prev">' +
@@ -99,14 +99,16 @@ function send_message(){
             }   else if (response.Intent == '메뉴판 요구' && response.AnswerImageUrl != null){ //메뉴판 뽑을 때
                 const bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    "<image style='width:450px' src='/static/img/" + response.AnswerImageUrl + "'></image>" + 
+                    response.Answer + "<image style='width:450px' src='/static/img/" + response.AnswerImageUrl + "'></image>" + 
                     "</div></div>";
                 $chatbox.append(bottext);
             }  else if (response.Intent == '주문' && response.AnswerImageUrl != null){ //상품 하나 뽑을 때
                 const bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    response.Answer + "<image src='/static/img/" + response.AnswerImageUrl + "'></image>" + response.Detail +
-                    "</div></div>";
+                    "<image src='/static/img/" + response.AnswerImageUrl + "'></image>" + response.Detail +
+                    "</div></div>" +
+                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+                    response.Answer + "</div></div>";
                 $chatbox.append(bottext);
             }  else { // 텍스트만 뽑을 때
                 const bottext =
@@ -129,17 +131,3 @@ function send_message(){
 
     })
 };
-
-// $(function(){
-//     $('#carousel-example-generic').carousel({
-//         // 슬리아딩 자동 순환 지연 시간
-//         // false면 자동 순환하지 않는다.
-//         interval: 1000,
-//         // hover를 설정하면 마우스를 가져대면 자동 순환이 멈춘다.
-//         pause: "hover",
-//         // 순환 설정, true면 1 -> 2가면 다시 1로 돌아가서 반복
-//         wrap: true,
-//         // 키보드 이벤트 설정 여부(?)
-//         keyboard : true
-//     });	
-// })

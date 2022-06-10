@@ -68,13 +68,13 @@ function send_message(){
                     '<div class="carousel-inner" role="listbox">' + 
                     '<div class="item active" style="color:black; font-size:20px; font-weight:bold;">' + response.Answer[0] + 
                     '<image src="/static/img/' + response.AnswerImageUrl[0] + '" style="width:100%"></image>' +
-                    '<div class="carousel-caption"text-shadow:None; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[0] + '</div></div>'
+                    '<div class="carousel-caption" style="color:black; text-shadow:None; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[0] + '</div></div>'
 
                 var bottext3 = ''
                 for (let i = 1; i < response.AnswerImageUrl.length; i++){
                     bottext3 += '<div class="item" style="color:black; font-size:20px; font-weight:bold;">' + response.Answer[i] +
                     '<div><image src="/static/img/' + response.AnswerImageUrl[i] + '" style="width:100%"></image></div>' +
-                    '<div class="carousel-caption" style="text-shadow:None; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[i] + '</div></div>'
+                    '<div class="carousel-caption" style="color:black; text-shadow:None; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[i] + '</div></div>'
                 }
                 var bottext4 =
                     '</div><a class="left carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="prev">' +

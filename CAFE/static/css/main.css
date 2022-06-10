@@ -5,6 +5,10 @@
     font-style: normal;
 }
 
+@font-face { font-family: elsie; src: url('elsie.ttf'); }
+@font-face { font-family: CartooNature; src: url('CartooNature.otf'); }
+@font-face { font-family: ocean-sunshine; src: url('ocean-sunshine.otf'); }
+
 html {
     scroll-behavior: smooth;
 }

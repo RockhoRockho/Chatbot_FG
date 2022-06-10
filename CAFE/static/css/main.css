@@ -267,23 +267,25 @@ footer {
 }
 
 #sidenav>.bot{
-    width: 70px;
+    width: 80px;
     height: 60px;
-    background: url(../img/chat-bot.png) no-repeat;
+    background: url(../img/chatbotlogo.png) no-repeat;
     background-position: center;
     background-size: 70%;
     margin-top: -10px;
     margin-bottom: 0px;
+    margin-left: -6px;
 }
 
 #sidenav>.bott >div{
-    width: 70px;
+    width: 80px;
     height: 60px;
-    background: url(../img/chat-bot.png) no-repeat;
+    background: url(../img/chatbotlogo.png) no-repeat;
     background-position: center;
     background-size: 70%;
     margin-top: -10px;
     margin-bottom: 0px;
+    margin-left: -6px;
 }
 
 #sidenav>.top {
@@ -332,14 +334,14 @@ footer {
 .chatheader {
     height: 10%;
     width: 100%;
-    background-color: rgb(90, 66, 0);
+    background-color: #6C584C;
     border-radius: 10px 10px 0 0;
 }
 
 #chatbox {
     width: 100%;
     height: 80%;
-    background-color: rgb(202, 161, 84);
+    background-color: #F0EAD2;
     -ms-overflow-style: none;
     scrollbar-width: none;
 }
@@ -360,7 +362,7 @@ footer {
     width: 100%;
     height: 10%;
     padding: 4% 2%;
-    background-color: rgb(175, 134, 45);
+    background-color: #A98467;
     border-radius: 0 0 10px 10px;
 }
 
@@ -392,8 +394,8 @@ footer {
 }
 
 .chatheader>.logo>img {
-    width: 50px;
-    height: 50px;
+    width: 60px;
+    height: 45px;
     margin-top: 10%;
 }
 

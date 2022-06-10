@@ -59,7 +59,7 @@ function send_message(){
 
             $chatbox = $("#chatbox");
 
-            if (response.Intent == '메뉴'){ 
+            if (response.Intent == '메뉴' || response.Intent == '추천메뉴 검색'){ 
 
                 var bottext1 = 
                     "<div style='width:70%;margin: 10px;'>" + 
@@ -88,7 +88,17 @@ function send_message(){
                 $chatbox.append(bottext);
 
             // 답변 출력
-            } else if (response.Intent == '메뉴'){ // 상품 리스트 뽑을 때
+            }   else if (response.Intent == '주문내역'){
+                const ordernum = Object.keys(response.Answer)
+                const orderproduct = Object.values(response.Answer)
+                
+                const bottext =
+                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+                    ordernum + orderproduct +
+                    "</div></div>";
+                $chatbox.append(bottext);
+
+            }   else if (response.Intent == '메뉴'){ // 상품 리스트 뽑을 때
                 for (let i = 0; i < response.AnswerImageUrl.length; i++){
                     const bottext =
                         "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color: #386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +

@@ -107,7 +107,7 @@ def to_client(conn, addr, params):
                     else:
                         temp[j['order_id']] = [fp.search_name_from_id(j['product_id'])]
                         answer.update(temp)
-        
+            intent_name = '주문내역'
         ##################################     단답처리     #############################################
         
         # word_1 이 들어왔을때 따로 검색단어를 가져옴

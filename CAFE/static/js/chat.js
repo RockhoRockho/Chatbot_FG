@@ -1,3 +1,12 @@
+$(document).ready(function(){
+    // 가장 처음 작동
+    const bottext ="<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+        "어서오세요. FG카페입니다~<br>무엇을 도와드릴까요?" + "</div></div>";
+    $("#chatbox").append(bottext);
+
+    $chatbox.animate({scrollTop: $chatbox.prop('scrollHeight')})
+    })
+
 $(function(){
     // SEND 버튼을 누르거나
     $("#sendbtn").click(function(){
@@ -12,22 +21,6 @@ $(function(){
     })
 
 })
-
-$(function(){
-    // 이미지 슬라이드 컨트롤를 사용하기 위해서는 carousel를 실행해야한다.
-    $('#carousel-example-generic').carousel({
-        // 슬리아딩 자동 순환 지연 시간
-        // false면 자동 순환하지 않는다.
-        interval: 1000,
-        // hover를 설정하면 마우스를 가져대면 자동 순환이 멈춘다.
-        pause: "hover",
-        // 순환 설정, true면 1 -> 2가면 다시 1로 돌아가서 반복
-        wrap: true,
-        // 키보드 이벤트 설정 여부(?)
-        keyboard : true
-    });	
-});
-
 
 function send_message(){
     const chattext = $("#chattext").val().trim();
@@ -66,38 +59,36 @@ function send_message(){
 
             $chatbox = $("#chatbox");
 
-            // if (response.Intent == ''){ 
+            if (response.Intent == '메뉴'){ 
 
-            //     const bottext1 = 
-            //         "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color: #F5F5DC;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-            //         response.Answer[i] + "</div></div>"; + "<div style='width: 300px;margin: 100px;'>" + 
-            //         "<div id='carousel-example-generic' class='carousel slide' >" + '<ol class="carousel-indicators">' +
-            //         '<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>'
-                
-            //     for (let i = 0; i < response.AnswerImageUrl.length; i++){
-            //         const bottext2 =
-            //             "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color: #386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-            //             response.Answer[i] + "<image src='/static/img/" + response.AnswerImageUrl[i] + "'></image>"+ response.Detail[i] +
-            //             "</div></div>";
-            //         $chatbox.append(bottext);
-            //     }
-            //         '<li data-target="#carousel-example-generic" data-slide-to="1"></li>' +
-            //         '</ol><div class="carousel-inner" role="listbox"><div class="item active">' +
-            //         '<img src="https://tistory2.daumcdn.net/tistory/1041549/skin/images/nowonbuntistory.png" style="width:100%">' +
-            //         '<div class="carousel-caption" style="color:black;">설명글</div></div>' + 
-            //         '<div class="item"><img src="https://www.nowonbun.com/img/nowonbuntistory1.png" style="width:100%">' +
-            //         '<div class="carousel-caption" style="color:black;"></div></div></div>' +
-            //         '<a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">' +
-            //         '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>' +
-            //         '<a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">' +
-            //         '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div></div>'
+                var bottext1 = 
+                    "<div style='width:70%;margin: 10px;'>" + 
+                    "<div id='carousel-example-generic' class='carousel slide' >" 
+                var bottext2 = 
+                    '<div class="carousel-inner" role="listbox">' + 
+                    '<div class="item active" style="color:white; font-size:20px">' + response.Answer[0] + 
+                    '<image src="/static/img/' + response.AnswerImageUrl[0] + '" style="width:100%"></image>' +
+                    '<div class="carousel-caption" style="color:white; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[0] + '</div></div>'
 
-            //     $chatbox.append(bottext);
+                var bottext3 = ''
+                for (let i = 1; i < response.AnswerImageUrl.length; i++){
+                    bottext3 += '<div class="item" style="color:white; font-size:20px;">' + response.Answer[i] +
+                    '<div><image src="/static/img/' + response.AnswerImageUrl[i] + '" style="width:100%"></image></div>' +
+                    '<div class="carousel-caption" style="color:white; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[i] + '</div></div>'
+                }
+                var bottext4 =
+                    '</div><a class="left carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="prev">' +
+                    '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>' +
+                    '<a class="right carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="next">' +
+                    '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div></div>' +
+                    '<script>$(function(){$("#carousel-example-generic").carousel({interval: 1000, pause: "hover", wrap: true, keyboard : true});});</script>'
+
+                var bottext = bottext1 + bottext2 + bottext3 + bottext4
+
+                $chatbox.append(bottext);
 
             // 답변 출력
-            // } else 
-            
-            if (response.Intent == '메뉴'){ // 상품 리스트 뽑을 때
+            } else if (response.Intent == '메뉴'){ // 상품 리스트 뽑을 때
                 for (let i = 0; i < response.AnswerImageUrl.length; i++){
                     const bottext =
                         "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color: #386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
@@ -123,11 +114,12 @@ function send_message(){
                     response.Answer +
                     "</div></div>";
                 $chatbox.append(bottext);
-            }
+            };
+            
 
             $('#kakaopay').click(function (){
                     location.href = "chatbot/kakaopay/";
-                })
+            });
 
             // 스크롤 조정하기
             $chatbox.animate({scrollTop: $chatbox.prop('scrollHeight')})
@@ -137,3 +129,17 @@ function send_message(){
 
     })
 };
+
+// $(function(){
+//     $('#carousel-example-generic').carousel({
+//         // 슬리아딩 자동 순환 지연 시간
+//         // false면 자동 순환하지 않는다.
+//         interval: 1000,
+//         // hover를 설정하면 마우스를 가져대면 자동 순환이 멈춘다.
+//         pause: "hover",
+//         // 순환 설정, true면 1 -> 2가면 다시 1로 돌아가서 반복
+//         wrap: true,
+//         // 키보드 이벤트 설정 여부(?)
+//         keyboard : true
+//     });	
+// })

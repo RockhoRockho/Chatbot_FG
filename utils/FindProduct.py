@@ -63,11 +63,11 @@ class FindProduct:
             sql = sql + " where food=1"
             
         # 추천 목록 대상은 따로 db에 따라 적용
-        elif query == '시그니처':
+        elif query == '추천':
             sql = sql + " where recommend = 1"
         elif query == '인기':
             sql = sql + " where recommend = 2"
-        elif query == '추천':
+        elif query == '시그니처':
             sql = sql + " where recommend = 3"
         
         # 나머지 

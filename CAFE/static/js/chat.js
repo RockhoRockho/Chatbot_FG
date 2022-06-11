@@ -1,11 +1,20 @@
 $(document).ready(function(){
     // 가장 처음 작동
     const bottext ="<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-        "어서오세요. FG카페입니다~<br>무엇을 도와드릴까요?" + "</div></div>";
+        "어서오세요. FG카페입니다~<br>무엇을 도와드릴까요?" + "</div></div>" +
+        "<button class='btn-two red rounded' id='all'>전체메뉴</button>" +
+        "<button class='btn-two cyan rounded' id='por'>인기메뉴</button>" +
+        "<button class='btn-two yellow rounded' id='ord'>주문내역</button>" +
+        "<button class='btn-two purple rounded' id='req'>할인</button>" +
+        "<button class='btn-two blue rounded' id='que'>추천메뉴</button>" +
+        "<button class='btn-two green rounded' id='ori'>원산지</button>"
+
     $("#chatbox").append(bottext);
 
     $chatbox.animate({scrollTop: $chatbox.prop('scrollHeight')})
-    })
+
+})
+
 
 $(function(){
     // SEND 버튼을 누르거나
@@ -18,9 +27,13 @@ $(function(){
         if(event.keyCode == 13){
             send_message()
         }
-    })
+    });
 
-})
+    $("#all").click(function (){
+        $("#chattext").val('전체메뉴')
+        $("#sendbtn").trigger('click')
+    });
+});
 
 function send_message(){
 
@@ -119,22 +132,32 @@ function send_message(){
             }  else if (response.Intent == '주문' && response.AnswerImageUrl != null){ //상품 하나 뽑을 때
                 var bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    "<image src='/static/img/" + response.AnswerImageUrl + "'></image>" + response.Detail +
+                    "<image src='/static/img/" + response.AnswerImageUrl + "'></image>" + response.Detail + '&emsp;' + response.Price + '원' +
                     "</div></div>" +
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    response.Answer + 
-                    "<br><button id='one' style='width:15%; margin-right:2%;'>1번</button>" +
-                    "<button id='two' style='width:15%; margin-right:2%;'>2번</button>" +
-                    "<button id='three' style='width:15%; margin-right:2%;'>3번</button>" +
-                    "<button id='four' style='width:15%; margin-right:2%'>4번</button>" +
-                    "<button id='five' style='width:15%; margin-right:2%'>5번</button>" +
-                    "<button id='six' style='width:15%'>6번</button></div></div>" +
-                    "<script>$('#one').click(function(){send_option(1)});" +
-                    "$('#two').click(function(){send_option(2)});" +
-                    "$('#three').click(function(){send_option(3)});" +
-                    "$('#four').click(function(){send_option(4)});" +
-                    "$('#five').click(function(){send_option(5)});" +
-                    "$('#six').click(function(){send_option(6)});</script>";
+                    response.Answer + "</div></div>" + 
+                    "<div style='margin-top: -25px; padding-top: 0; text-align:left; max-width:70%; background-color: rgba(0, 0, 0, 0); font-weight:bold;'>" + 
+                    "<br><button class='bb'; id='One' style='width:23.5%; background-color: #386641; color:white; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%; border:none;'>1번</button>" +
+                    "<button class='bb' id='Two' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>2번</button>" +
+                    "<button class='bb' id='Three' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>3번</button>" +
+                    "<button class='bb' id='Four' style='width:23.5%; background-color: #386641; color:white; height:30px; border-radius:5px; margin-top:-2%;border:none;'>4번</button>" +
+                    "<button class='bb' id='Five' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;margin-bottom:2%;border:none;'>5번</button>" +
+                    "<button class='bb' id='Six' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>6번</button>" +
+                    "<button class='bb' id='Seven' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>7번</button>" +
+                    "<button class='bb' id='Eight' style='width:23.5%; background-color: #386641; color:white; height:30px; border-radius:5px; margin-top:-2%;border:none;'>8번</button>" +
+                    "<button class='bb' id='cart' style='width:49%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>장바구니</button>" +
+                    "<button class='bb' id='choice' style='width:49%; background-color: #386641; color:white;height:30px; border-radius:5px;margin-top:-2%;border:none;'>선택완료</button></div>" +
+                    "<script>$('#One').click(function(){send_option(1)});" +
+                    "$('#Two').click(function(){send_option(2)});" +
+                    "$('#Three').click(function(){send_option(3)});" +
+                    "$('#Four').click(function(){send_option(4)});" +
+                    "$('#Five').click(function(){send_option(5)});" +
+                    "$('#Six').click(function(){send_option(6)});" +
+                    "$('#Seven').click(function(){send_option(7)});" +
+                    "$('#Eight').click(function(){send_option(8)});" +
+                    "$('#cart').click(function(){send_option('장바구니')});" +
+                    "$('#choice').click(function(){send_option('선택완료')});" +
+                    "$(function(){$(document).ready(function(){$('.bb').hover(function(){$(this).css('background-color','#81c147');},function(){$(this).css('background-color','#386641');});});})</script>";
                 $chatbox.append(bottext);
             }  else if (response.Intent == '원산지' && response.AnswerImageUrl != null){ //상품 하나 뽑을 때
                 var image = response.AnswerImageUrl.split(', ')
@@ -164,6 +187,8 @@ function send_message(){
                     "</div></div>";
                 $chatbox.append(bottext);
             };
+
+            
             
 
             $('#kakaopay').click(function (){
@@ -196,10 +221,14 @@ function send_option(optionNm){
         crossDomain: true,
 
         success: function(response){
+
+            $chatbox = $("#chatbox");
+
             var bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    response.Answer +
-                    "</div></div>";
+                    optionNm + "를 선택하셨습니다. <선택완료> 혹은 <장바구니>를 입력해주세요" +
+                    "</div></div>"
+                    
                 $chatbox.append(bottext);
 
             

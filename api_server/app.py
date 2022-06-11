@@ -24,7 +24,7 @@ temp_state = 0
 temp_product = 0
 temp_price = 0
 temp_option = 1
-temp_detail = None
+temp_detail = ''
 
 @app.route('/query/<bot_type>', methods=['POST'])
 def query(bot_type):

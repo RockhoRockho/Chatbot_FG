@@ -232,7 +232,8 @@ def to_client(conn, addr, params):
                     answer = "<div style='margin:15px 0;text-align:left;'><span style='padding:3px 10px;background-color: #386641;color:white;border-radius:3px;'>" +\
                     '주문 총 금액은' + f'{total_price}' +  '원 입니다.<br> 카카오 페이 결제를 진행합니다' +\
                         "</span></div>" + \
-                            "<button id='kakaopay' class='btn mt-5'>" + "<img src='../static/img/payment_icon_yellow_small.png' style='width:150px;'></button>"
+                            "<img id='kakaopay' src='../static/img/kakaopay_icon.png' style='width:98%; height:65px; margin-bottom:3%; border-radius:10px; cursor:pointer;'>" + \
+                            "<script>$(function(){$(document).ready(function(){$('#kakaopay').hover(function(){$(this).css('border','1px solid white');},function(){$(this).css('border','none');});});})</script>"
                 else:
                     answer = '주문을 하시려면 상품을 선택해주셔야 합니다.<br> 메뉴판을 불러오겠습니다<br><br>'
                     intent_predict = 0
@@ -296,7 +297,7 @@ def to_client(conn, addr, params):
                 # 개체명 파악
                 ner_predicts = ner.predict(query)
                 ner_tags = ner.predict_tags(query)
-                    
+
                 # 답변 검색, 분석된 의도와 개체명을 이용해 학습 DB 에서 답변을 검색
                 try:
                     answer_text, answer_image = fa.search(intent_name, ner_tags)
@@ -316,16 +317,17 @@ def to_client(conn, addr, params):
                                 answer_image = fp.search_image_from_name(name)
 
                             # B_RECOMMEND일때 해당 상품목록 추출 
-                            if tag == 'B_RECOMMEND':
+                            elif tag == 'B_RECOMMEND':
                                 product = name
-                                
+
                                 # answer 다수값 list로 뽑기
-                                answer = fp.search(query)
-                                
-                                for i in range(len(answer)):
-                                    answer_name.append(answer[i]['name'])
-                                    answer_detail.append(answer[i]['detail'])
-                                    answer_image.append(answer[i]['image'])
+                                rec_list = fp.search(name)
+
+                                answer_image = []
+                                for i in range(len(rec_list)):
+                                    answer_name.append(rec_list[i]['name'])
+                                    answer_detail.append(rec_list[i]['detail'])
+                                    answer_image.append(rec_list[i]['image'])
                                 answer = answer_name
                                 detail = answer_detail
 
@@ -344,7 +346,6 @@ def to_client(conn, addr, params):
                 intent_predict = 0
                 intent_name = ''
                 ner_predicts = ''
-                answer_image = None
                 
                 # 옵션값으로 숫자값을 받을 때는 입력을 받아 저장
                 try:

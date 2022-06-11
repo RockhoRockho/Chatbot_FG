@@ -2,12 +2,14 @@ $(document).ready(function(){
     // 가장 처음 작동
     const bottext ="<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
         "어서오세요. FG카페입니다~<br>무엇을 도와드릴까요?" + "</div></div>" +
-        "<button class='bb' id='all' style='width:23.5%; border-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>전체메뉴</button>" +
-        "<button class='bb' id='por' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>인기메뉴</button>" +
-        "<button class='bb' id='ord' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>주문내역</button>" +
-        "<button class='bb' id='req' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>할인</button>" +
-        "<button class='bb' id='que' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>추천메뉴</button>" +
-        "<button class='bb' id='ori' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>원산지</button>"
+        "<div style='width:70%;'>" + 
+        "<button class='bb' id='all' style='width:33%; background-color: #386641; color:white; outline:none; margin-right:0%; height:50px; border-radius:5px 0 0 0; border:none;'>전체메뉴</button>" +
+        "<button class='bb' id='por' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0px; border:none;'>인기메뉴</button>" +
+        "<button class='bb' id='ord' style='width:33%; background-color: #386641; color:white; height:50px; border-radius:5px; border-radius:0 5px 0 0; border:none;'>주문내역</button>" +
+        "<button class='bb' id='req' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0 0 0 5px; border:none;'>할인</button>" +
+        "<button class='bb' id='que' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0px; border:none;'>추천메뉴</button>" +
+        "<button class='bb' id='ori' style='width:33%; background-color: #386641; color:white; height:50px; border-radius:0 0 5px 0;border:none;'>원산지</button></div>" + 
+        "<script>$(document).ready(function(){$('.bb').hover(function(){$(this).css({'background-color':'#ffd400', 'outline':'1px solid white'});},function(){$(this).css({'background-color':'#386641', 'outline':'none'});});});</script>";
 
     $("#chatbox").append(bottext);
 
@@ -127,10 +129,10 @@ function send_message(){
                 var orderproduct = Object.values(response.Answer)
                 
                 var bottext1 =
-                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>"
+                    "<div style='margin:15px 0;text-align:left; max-width:80%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>"
                 var bottext2 = '<br>주문내역<hr>'
                 for (let i = 0; i < ordernum.length; i++){
-                    bottext2 += '주문번호 : ' + ordernum[i] + '<br>상품이름 : ' + orderproduct[i] + '<hr>'
+                    bottext2 += '주문번호 : ' + ordernum[i] + " → " + '상품명 : ' + orderproduct[i] + '<hr>'
                 }
                 var bottext = bottext1 + bottext2 + "</div></div>";
                 $chatbox.append(bottext);
@@ -145,7 +147,7 @@ function send_message(){
                 }
             }   else if (response.Intent == '메뉴판 요구' && response.AnswerImageUrl != null){ //메뉴판 뽑을 때
                 var bottext =
-                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#e8dcca;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
                     response.Answer + "<image style='width:450px' src='/static/img/" + response.AnswerImageUrl + "'></image>" + 
                     "</div></div>";
                 $chatbox.append(bottext);
@@ -246,16 +248,20 @@ function send_option(optionNm){
 
             $chatbox = $("#chatbox");
 
-            var bottext =
-                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    "👉옵션" + optionNm + "번👈을 선택하셨습니다.<br><br>" +
-                    "주문을 하시려면 ⭕선택완료⭕를<br>"+
-                    "다른 상품을 더 담으시려면 🤜장바구니🤛를<br>" +
-                    "옵션을 변경하시려면 위에 ◼숫자◼버튼을<br>" +
-                    "초기화면으로 돌아가시려면<br>❌처음으로❌를 입력해주세요" +
-                    "</div></div>"
-                    
-                $chatbox.append(bottext);
+            if (optionNm == '장바구니' || optionNm == '선택완료'){
+                var bottext = "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+                response.Answer + "</div></div>"
+            } else {
+                var bottext =
+                "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+                "👉옵션" + optionNm + "번👈을 선택하셨습니다.<br><br>" +
+                "주문을 하시려면 ⭕선택완료⭕를<br>"+
+                "다른 상품을 더 담으시려면 🤜장바구니🤛를<br>" +
+                "옵션을 변경하시려면 위에 ◼숫자◼버튼을<br>" +
+                "초기화면으로 돌아가시려면<br>❌처음으로❌를 입력해주세요" +
+                "</div></div>"
+            };
+            $chatbox.append(bottext);
 
             
             $('#kakaopay').click(function (){

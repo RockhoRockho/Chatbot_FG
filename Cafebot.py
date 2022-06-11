@@ -121,9 +121,16 @@ def to_client(conn, addr, params):
             "<button class='bb por' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0px; border:none;'>인기메뉴</button>" +\
             "<button class='bb ord' style='width:33%; background-color: #386641; color:white; height:50px; border-radius:5px; border-radius:0 5px 0 0; border:none;'>주문내역</button>" +\
             "<button class='bb req' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0 0 0 5px; border:none;'>할인</button>" +\
-            "<button class='bb que' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0px; border:none;'>추천메뉴</button>" +\
+            "<button class='bb que' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0px; border:none;'>와이파이/시설</button>" +\
             "<button class='bb ori' style='width:33%; background-color: #386641; color:white; height:50px; border-radius:0 0 5px 0;border:none;'>원산지</button></div>" +\
-            "<script>$(document).ready(function(){$('.bb').hover(function(){$(this).css({'background-color':'#ffd400', 'outline':'1px solid white'});},function(){$(this).css({'background-color':'#386641', 'outline':'none'});});});</script>";
+            "<script>$(document).ready(function(){$('.bb').hover(function(){$(this).css({'background-color':'#ffd400', 'outline':'1px solid white'});},function(){$(this).css({'background-color':'#386641', 'outline':'none'});});});" +\
+            "$(function(){$('all').click(function (){$('#chattext').val('전체메뉴')$('#sendbtn').trigger('click')});" +\
+            "$('.por').click(function (){$('#chattext').val('인기메뉴')$('#sendbtn').trigger('click')});" +\
+            "$('.ord').click(function (){$('#chattext').val('주문내역')$('#sendbtn').trigger('click')});" +\
+            "$('.req').click(function (){$('#chattext').val('할인')$('#sendbtn').trigger('click')});" +\
+            "$('.que').click(function (){$('#chattext').val('와이파이')$('#sendbtn').trigger('click')});" +\
+            "$('.ori').click(function (){$('#chattext').val('원산지')$('#sendbtn').trigger('click')});});</script>"
+
             intent_name = '처음으로'
         ##################################     단답처리     #############################################
         

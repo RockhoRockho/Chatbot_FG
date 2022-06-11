@@ -8,7 +8,7 @@
 @font-face { font-family: elsie; src: url('elsie.ttf'); }
 @font-face { font-family: CartooNature; src: url('CartooNature.otf'); }
 @font-face { font-family: ocean-sunshine; src: url('ocean-sunshine.otf'); }
-
+@font-face { font-family: Galmuri9; src: url('Galmuri9.ttf'); }
 html {
     scroll-behavior: smooth;
 }
@@ -428,4 +428,11 @@ footer {
 .exit:hover {
     cursor: pointer;
     color: grey;
+}
+
+#dtable, td, th ,.page-link, .form-control{
+    background-color: black !important;
+    color: #39FF14 !important;
+    font-family: 'Galmuri9' !important ;
+    border-color: #39FF14 !important;
 }

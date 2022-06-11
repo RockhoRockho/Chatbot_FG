@@ -2,12 +2,12 @@ $(document).ready(function(){
     // 가장 처음 작동
     const bottext ="<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
         "어서오세요. FG카페입니다~<br>무엇을 도와드릴까요?" + "</div></div>" +
-        "<button class='btn-two red rounded' id='all'>전체메뉴</button>" +
-        "<button class='btn-two cyan rounded' id='por'>인기메뉴</button>" +
-        "<button class='btn-two yellow rounded' id='ord'>주문내역</button>" +
-        "<button class='btn-two purple rounded' id='req'>할인</button>" +
-        "<button class='btn-two blue rounded' id='que'>추천메뉴</button>" +
-        "<button class='btn-two green rounded' id='ori'>원산지</button>"
+        "<button class='bb' id='all' style='width:23.5%; border-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>전체메뉴</button>" +
+        "<button class='bb' id='por' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>인기메뉴</button>" +
+        "<button class='bb' id='ord' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>주문내역</button>" +
+        "<button class='bb' id='req' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>할인</button>" +
+        "<button class='bb' id='que' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>추천메뉴</button>" +
+        "<button class='bb' id='ori' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>원산지</button>"
 
     $("#chatbox").append(bottext);
 
@@ -31,6 +31,26 @@ $(function(){
 
     $("#all").click(function (){
         $("#chattext").val('전체메뉴')
+        $("#sendbtn").trigger('click')
+    });
+    $("#por").click(function (){
+        $("#chattext").val('인기메뉴')
+        $("#sendbtn").trigger('click')
+    });
+    $("#ord").click(function (){
+        $("#chattext").val('주문내역')
+        $("#sendbtn").trigger('click')
+    });
+    $("#req").click(function (){
+        $("#chattext").val('할인')
+        $("#sendbtn").trigger('click')
+    });
+    $("#que").click(function (){
+        $("#chattext").val('와이파이 및 시설')
+        $("#sendbtn").trigger('click')
+    });
+    $("#ori").click(function (){
+        $("#chattext").val('원산지')
         $("#sendbtn").trigger('click')
     });
 });

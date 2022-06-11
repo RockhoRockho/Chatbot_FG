@@ -149,6 +149,8 @@ function send_message(){
                     response.Answer + "<image style='width:450px' src='/static/img/" + response.AnswerImageUrl + "'></image>" + 
                     "</div></div>";
                 $chatbox.append(bottext);
+            }   else if (response.Intent == '처음으로'){ // 초기화면
+                    $chatbox.append(response.Answer);
             }  else if (response.Intent == '주문' && response.AnswerImageUrl != null){ //상품 하나 뽑을 때
                 var bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
@@ -246,7 +248,11 @@ function send_option(optionNm){
 
             var bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    optionNm + "를 선택하셨습니다. <선택완료> 혹은 <장바구니>를 입력해주세요" +
+                    "👉옵션" + optionNm + "번👈을 선택하셨습니다.<br><br>" +
+                    "주문을 하시려면 ⭕선택완료⭕를<br>"+
+                    "다른 상품을 더 담으시려면 🤜장바구니🤛를<br>" +
+                    "옵션을 변경하시려면 위에 ◼숫자◼버튼을<br>" +
+                    "초기화면으로 돌아가시려면<br>❌처음으로❌를 입력해주세요" +
                     "</div></div>"
                     
                 $chatbox.append(bottext);

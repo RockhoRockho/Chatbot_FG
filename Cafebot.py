@@ -110,6 +110,19 @@ def to_client(conn, addr, params):
                         temp[j['order_id']] = [fp.search_name_from_id(j['product_id'])]
                         answer.update(temp)
             intent_name = '주문내역'
+
+        ##################################     처음으로     #############################################
+
+        elif query == '처음으로':
+            answer = "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +\
+                "어서오세요. FG카페입니다~<br>무엇을 도와드릴까요?" + "</div></div>" +\
+                "<button class='bb' id='all' style='width:23.5%; border-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>전체메뉴</button>" +\
+                "<button class='bb' id='por' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>인기메뉴</button>" +\
+                "<button class='bb' id='ord' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>주문내역</button>" +\
+                "<button class='bb' id='req' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>할인</button>" +\
+                "<button class='bb' id='que' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>추천메뉴</button>" +\
+                "<button class='bb' id='ori' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>원산지</button>"
+            intent_name = '처음으로'
         ##################################     단답처리     #############################################
         
         # word_1 이 들어왔을때 따로 검색단어를 가져옴

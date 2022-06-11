@@ -3,12 +3,12 @@ $(document).ready(function(){
     const bottext ="<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
         "어서오세요. FG카페입니다~<br>무엇을 도와드릴까요?" + "</div></div>" +
         "<div style='width:70%;'>" + 
-        "<button class='bb' id='all' style='width:33%; background-color: #386641; color:white; outline:none; margin-right:0%; height:50px; border-radius:5px 0 0 0; border:none;'>전체메뉴</button>" +
-        "<button class='bb' id='por' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0px; border:none;'>인기메뉴</button>" +
-        "<button class='bb' id='ord' style='width:33%; background-color: #386641; color:white; height:50px; border-radius:5px; border-radius:0 5px 0 0; border:none;'>주문내역</button>" +
-        "<button class='bb' id='req' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0 0 0 5px; border:none;'>할인</button>" +
-        "<button class='bb' id='que' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0px; border:none;'>추천메뉴</button>" +
-        "<button class='bb' id='ori' style='width:33%; background-color: #386641; color:white; height:50px; border-radius:0 0 5px 0;border:none;'>원산지</button></div>" + 
+        "<button class='bb all' style='width:33%; background-color: #386641; color:white; outline:none; margin-right:0%; height:50px; border-radius:5px 0 0 0; border:none;'>전체메뉴</button>" +
+        "<button class='bb por' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0px; border:none;'>인기메뉴</button>" +
+        "<button class='bb ord' style='width:33%; background-color: #386641; color:white; height:50px; border-radius:5px; border-radius:0 5px 0 0; border:none;'>주문내역</button>" +
+        "<button class='bb req' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0 0 0 5px; border:none;'>할인</button>" +
+        "<button class='bb que' style='width:33%; background-color: #386641; color:white; margin-right:0%; height:50px; border-radius:0px; border:none;'>추천메뉴</button>" +
+        "<button class='bb ori' style='width:33%; background-color: #386641; color:white; height:50px; border-radius:0 0 5px 0;border:none;'>원산지</button></div>" + 
         "<script>$(document).ready(function(){$('.bb').hover(function(){$(this).css({'background-color':'#ffd400', 'outline':'1px solid white'});},function(){$(this).css({'background-color':'#386641', 'outline':'none'});});});</script>";
 
     $("#chatbox").append(bottext);
@@ -31,27 +31,27 @@ $(function(){
         }
     });
 
-    $("#all").click(function (){
+    $(".all").click(function (){
         $("#chattext").val('전체메뉴')
         $("#sendbtn").trigger('click')
     });
-    $("#por").click(function (){
+    $(".por").click(function (){
         $("#chattext").val('인기메뉴')
         $("#sendbtn").trigger('click')
     });
-    $("#ord").click(function (){
+    $(".ord").click(function (){
         $("#chattext").val('주문내역')
         $("#sendbtn").trigger('click')
     });
-    $("#req").click(function (){
+    $(".req").click(function (){
         $("#chattext").val('할인')
         $("#sendbtn").trigger('click')
     });
-    $("#que").click(function (){
+    $(".que").click(function (){
         $("#chattext").val('와이파이 및 시설')
         $("#sendbtn").trigger('click')
     });
-    $("#ori").click(function (){
+    $(".ori").click(function (){
         $("#chattext").val('원산지')
         $("#sendbtn").trigger('click')
     });
@@ -100,7 +100,7 @@ function send_message(){
 
                 var bottext1 = 
                     "<div style='width:70%;margin: 10px;'>" + 
-                    "<div id='carousel-example-generic' class='carousel slide' >" +
+                    "<div id='carousel-example-generic' class='carousel slide carousel-generic' >" +
                     '<div class="carousel-inner" role="listbox">' + 
                     '<div class="item active" style="color:black; font-size:20px; font-weight:bold;">' + response.Answer[0] + 
                     '<image src="/static/img/' + response.AnswerImageUrl[0] + '" style="width:100%"></image>' +
@@ -113,11 +113,11 @@ function send_message(){
                     '<div class="carousel-caption" style="color:black; text-shadow:None; font-size:14px; position:relative; right:0%; left:0%">' + response.Detail[i] + '</div></div>'
                 }
                 var bottext3 =
-                    '</div><a class="left carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="prev">' +
+                    '</div><a class="left carousel-control" style="background-image:None;" href=".carousel-generic" role="button" data-slide="prev">' +
                     '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>' +
-                    '<a class="right carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="next">' +
+                    '<a class="right carousel-control" style="background-image:None;" href=".carousel-generic" role="button" data-slide="next">' +
                     '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div></div>' +
-                    '<script>$(function(){$("#carousel-example-generic").carousel({interval: 1000, pause: "hover", wrap: true, keyboard : true});});</script>'
+                    '<script>$(function(){$(".carousel-generic").carousel({interval: 1000, pause: "hover", wrap: true, keyboard : true});});</script>'
 
                 var bottext = bottext1 + bottext2 + bottext3
 
@@ -162,25 +162,25 @@ function send_message(){
                     response.Answer + "</div></div>" + 
                     "<div style='margin-top: -25px; padding-top: 0; text-align:left; max-width:70%; background-color: rgba(0, 0, 0, 0); font-weight:bold;'>" + 
                     "<br><button class='bb'; id='One' style='width:23.5%; background-color: #386641; color:white; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%; border:none;'>1번</button>" +
-                    "<button class='bb' id='Two' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>2번</button>" +
-                    "<button class='bb' id='Three' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>3번</button>" +
-                    "<button class='bb' id='Four' style='width:23.5%; background-color: #386641; color:white; height:30px; border-radius:5px; margin-top:-2%;border:none;'>4번</button>" +
-                    "<button class='bb' id='Five' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;margin-bottom:2%;border:none;'>5번</button>" +
-                    "<button class='bb' id='Six' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>6번</button>" +
-                    "<button class='bb' id='Seven' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>7번</button>" +
-                    "<button class='bb' id='Eight' style='width:23.5%; background-color: #386641; color:white; height:30px; border-radius:5px; margin-top:-2%;border:none;'>8번</button>" +
-                    "<button class='bb' id='cart' style='width:49%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>장바구니</button>" +
-                    "<button class='bb' id='choice' style='width:49%; background-color: #386641; color:white;height:30px; border-radius:5px;margin-top:-2%;border:none;'>선택완료</button></div>" +
+                    "<button class='bb Two' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; height:30px; border-radius:5px; margin-bottom:2%;border:none;'>2번</button>" +
+                    "<button class='bb Three' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>3번</button>" +
+                    "<button class='bb Four' style='width:23.5%; background-color: #386641; color:white; height:30px; border-radius:5px; margin-top:-2%;border:none;'>4번</button>" +
+                    "<button class='bb Five' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;margin-bottom:2%;border:none;'>5번</button>" +
+                    "<button class='bb Six' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>6번</button>" +
+                    "<button class='bb Seven' style='width:23.5%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>7번</button>" +
+                    "<button class='bb Eight' style='width:23.5%; background-color: #386641; color:white; height:30px; border-radius:5px; margin-top:-2%;border:none;'>8번</button>" +
+                    "<button class='bb cart' style='width:49%; background-color: #386641; color:white; margin-right:1%; height:30px; border-radius:5px; margin-right:2%; margin-bottom:2%;border:none;'>장바구니</button>" +
+                    "<button class='bb choice' style='width:49%; background-color: #386641; color:white;height:30px; border-radius:5px;margin-top:-2%;border:none;'>선택완료</button></div>" +
                     "<script>$('#One').click(function(){send_option(1)});" +
-                    "$('#Two').click(function(){send_option(2)});" +
-                    "$('#Three').click(function(){send_option(3)});" +
-                    "$('#Four').click(function(){send_option(4)});" +
-                    "$('#Five').click(function(){send_option(5)});" +
-                    "$('#Six').click(function(){send_option(6)});" +
-                    "$('#Seven').click(function(){send_option(7)});" +
-                    "$('#Eight').click(function(){send_option(8)});" +
-                    "$('#cart').click(function(){send_option('장바구니')});" +
-                    "$('#choice').click(function(){send_option('선택완료')});" +
+                    "$('.Two').click(function(){send_option(2)});" +
+                    "$('.Three').click(function(){send_option(3)});" +
+                    "$('.Four').click(function(){send_option(4)});" +
+                    "$('.Five').click(function(){send_option(5)});" +
+                    "$('.Six').click(function(){send_option(6)});" +
+                    "$('.Seven').click(function(){send_option(7)});" +
+                    "$('.Eight').click(function(){send_option(8)});" +
+                    "$('.cart').click(function(){send_option('장바구니')});" +
+                    "$('.choice').click(function(){send_option('선택완료')});" +
                     "$(function(){$(document).ready(function(){$('.bb').hover(function(){$(this).css('background-color','#81c147');},function(){$(this).css('background-color','#386641');});});})</script>";
                 $chatbox.append(bottext);
             }  else if (response.Intent == '원산지' && response.AnswerImageUrl != null){ //상품 하나 뽑을 때
@@ -189,19 +189,19 @@ function send_message(){
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
                     response.Answer + "</div></div>" +
                     "<div style='width:70%;margin: 10px;'>" + 
-                    "<div id='carousel-example-generic' class='carousel slide' >" +
-                    '<div class="carousel-inner" role="listbox">' + 
+                    "<div id='carousel-example-generic' class='carousel slide carousel-example-generic' >" +
+                    '<div class="carousel-inner" role="listbox">' +
                     '<div class="item active">' +
                     '<image src="/static/img/' + image[0] + '" style="width:100%"></image></div>' +
                     '<div class="item">' +
                     '<image src="/static/img/' + image[1] + '" style="width:100%"></image></div>' +
                     '<div class="item">' +
                     '<image src="/static/img/' + image[2] + '" style="width:100%"></image></div>'+
-                    '</div><a class="left carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="prev">' +
+                    '</div><a class="left carousel-control" style="background-image:None;" href=".carousel-example-generic" role="button" data-slide="prev">' +
                     '<span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span></a>' +
-                    '<a class="right carousel-control" style="background-image:None;" href="#carousel-example-generic" role="button" data-slide="next">' +
+                    '<a class="right carousel-control" style="background-image:None;" href=".carousel-example-generic" role="button" data-slide="next">' +
                     '<span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span></a></div></div>' +
-                    '<script>$(function(){$("#carousel-example-generic").carousel({interval: 1000, pause: "hover", wrap: true, keyboard : true});});</script>'
+                    '<script>$(function(){$(".carousel-example-generic").carousel({interval: 1000, pause: "hover", wrap: true, keyboard : true});});</script>'
 
                 $chatbox.append(bottext);
             }  else { // 텍스트만 뽑을 때

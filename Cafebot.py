@@ -175,20 +175,20 @@ def to_client(conn, addr, params):
             with open('pay.txt', 'r', encoding='utf-8') as f:
                 answer = f.read()
             intent_predict = 3
-            intent_name = '결제, 할인, 쿠폰'
+            intent_name = '결제'
             
         elif query == '쿠폰':
             with open('coupon.txt', 'r', encoding='utf-8') as f:
                 answer = f.read()
             answer_image = 'coupon.png'
             intent_predict = 3
-            intent_name = '결제, 할인, 쿠폰'
+            intent_name = '쿠폰'
             
         elif query == '할인':
             answer = '할인은 추천메뉴에만 적용됩니다<br>(그 외 메뉴에는 적용되지 않습니다)'
             answer_image = 'coupon.png'
             intent_predict = 3
-            intent_name = '결제, 할인, 쿠폰'
+            intent_name = '할인'
             
         # 원산지
         elif query == '원산지':

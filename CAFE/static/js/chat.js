@@ -144,6 +144,20 @@ function send_message(){
                         "</div></div>";
                     $chatbox.append(bottext);
                 }
+            }   else if (response.Intent == '쿠폰' && response.AnswerImageUrl != null){ //메뉴판 뽑을 때
+                var bottext =
+                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+                    response.Answer + "<image style='width:100%; margin-bottom:5px; border-radius:10px;' src='/static/img/" + response.AnswerImageUrl + "'></image>" + 
+                    "</div></div>";
+                $chatbox.append(bottext);
+                
+            }   else if (response.Intent == '할인' && response.AnswerImageUrl != null){ //메뉴판 뽑을 때
+                var bottext =
+                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+                    response.Answer + "<image style='width:100%; margin-top:5px; border-radius:10px; margin-bottom:5px;' src='/static/img/" + response.AnswerImageUrl + "'></image>" + 
+                    "</div></div>";
+                $chatbox.append(bottext);
+                
             }   else if (response.Intent == '메뉴판 요구' && response.AnswerImageUrl != null){ //메뉴판 뽑을 때
                 var bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#e8dcca;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +

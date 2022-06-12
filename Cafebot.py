@@ -114,21 +114,7 @@ def to_client(conn, addr, params):
         ##################################     처음으로     #############################################
 
         elif query == '처음으로':
-            answer = "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +\
-            "어서오세요. FG카페입니다~<br>무엇을 도와드릴까요?" + "</div></div>" +\
-            "<div style='width:70%;'>" +\
-            "<button class='bb all' style='border-radius:5px 0 0 0;'>전체메뉴</button>" +\
-            "<button class='bb por' style='border-radius:0px;'>인기메뉴</button>" +\
-            "<button class='bb ord' style='border-radius:0 5px 0 0;'>주문내역</button>" +\
-            "<button class='bb req' style='border-radius:0 0 0 5px;'>할인</button>" +\
-            "<button class='bb que' style='border-radius:0px;'>와이파이/시설</button>" +\
-            "<button class='bb ori' style='border-radius:0 0 5px 0;'>원산지</button></div>" +\
-            "<script>$(function(){$('all').click(function (){$('#chattext').val('전체메뉴')$('#sendbtn').trigger('click')});" +\
-            "$('.por').click(function (){$('#chattext').val('인기메뉴')$('#sendbtn').trigger('click')});" +\
-            "$('.ord').click(function (){$('#chattext').val('주문내역')$('#sendbtn').trigger('click')});" +\
-            "$('.req').click(function (){$('#chattext').val('할인')$('#sendbtn').trigger('click')});" +\
-            "$('.que').click(function (){$('#chattext').val('와이파이')$('#sendbtn').trigger('click')});" +\
-            "$('.ori').click(function (){$('#chattext').val('원산지')$('#sendbtn').trigger('click')});});</script>"
+            answer = ""
 
             intent_name = '처음으로'
         ##################################     단답처리     #############################################

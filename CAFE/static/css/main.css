@@ -445,3 +445,18 @@ footer {
     0%{opacity: 0;}
     100%{opacity: 1;}
     }
+
+.bb {
+    outline:2px solid white ;
+    width:33%; 
+    background-color: #386641; 
+    color:white; 
+    margin-right:0%; 
+    height:50px; 
+    border:none;
+}
+
+.bb:hover {
+    background-color : rgb(129, 193, 71) ;
+    outline:1px solid white;
+}

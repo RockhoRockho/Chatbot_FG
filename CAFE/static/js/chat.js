@@ -3,13 +3,12 @@ $(document).ready(function(){
     const bottext ="<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
         "어서오세요. FG카페입니다~<br>무엇을 도와드릴까요?" + "</div></div>" +
         "<div style='width:70%;'>" + 
-        "<button class='bb' id='all' style='width:33%; background-color: #386641; color:white; outline:2px solid white; margin-right:0%; height:50px; border-radius:5px 0 0 0; border:none;'>전체메뉴</button>" +
-        "<button class='bb' id='por' style='width:33%; background-color: #386641; color:white; outline:2px solid white;margin-right:0%; height:50px; border-radius:0px; border:none;'>인기메뉴</button>" +
-        "<button class='bb' id='ord' style='width:33%; background-color: #386641; color:white; outline:2px solid white;height:50px; border-radius:5px; border-radius:0 5px 0 0; border:none;'>주문내역</button>" +
-        "<button class='bb' id='req' style='width:33%; background-color: #386641; color:white; outline:2px solid white;margin-right:0%; height:50px; border-radius:0 0 0 5px; border:none;'>할인</button>" +
-        "<button class='bb' id='que' style='width:33%; background-color: #386641; color:white; outline:2px solid white;margin-right:0%; height:50px; border-radius:0px; border:none;'>추천메뉴</button>" +
-        "<button class='bb' id='ori' style='width:33%; background-color: #386641; color:white; outline:2px solid white;height:50px; border-radius:0 0 5px 0;border:none;'>원산지</button></div>" + 
-        "<script>$(document).ready(function(){$('.bb').hover(function(){$(this).css({'background-color':'#ffd400', 'outline':'1px solid white'});},function(){$(this).css({'background-color':'#386641', 'outline':'2px solid white;'});});});</script>";
+        "<button class='bb' id='all' style='border-radius:5px 0 0 0;'>전체메뉴</button>" +
+        "<button class='bb' id='por' style='border-radius:0px;'>인기메뉴</button>" +
+        "<button class='bb' id='ord' style='border-radius:5px; border-radius:0 5px 0 0;'>주문내역</button>" +
+        "<button class='bb' id='req' style='border-radius:0 0 0 5px;'>할인</button>" +
+        "<button class='bb' id='que' style='border-radius:0px;'>와이파이/시설</button>" +
+        "<button class='bb' id='ori' style='border-radius:0 0 5px 0;'>원산지</button></div>";
 
     $("#chatbox").append(bottext);
 

@@ -3,12 +3,12 @@ $(document).ready(function(){
     const bottext ="<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
         "어서오세요. FG카페입니다~<br>무엇을 도와드릴까요?" + "</div></div>" +
         "<div style='width:70%;'>" + 
-        "<button class='bb' id='all' style='border-radius:5px 0 0 0;'>전체메뉴</button>" +
-        "<button class='bb' id='por' style='border-radius:0px;'>인기메뉴</button>" +
-        "<button class='bb' id='ord' style='border-radius:5px; border-radius:0 5px 0 0;'>주문내역</button>" +
-        "<button class='bb' id='req' style='border-radius:0 0 0 5px;'>할인</button>" +
-        "<button class='bb' id='que' style='border-radius:0px;'>와이파이/시설</button>" +
-        "<button class='bb' id='ori' style='border-radius:0 0 5px 0;'>원산지</button></div>";
+        "<button class='bb all' id='all' style='border-radius:5px 0 0 0;'>전체메뉴</button>" +
+        "<button class='bb por' id='por' style='border-radius:0px;'>인기메뉴</button>" +
+        "<button class='bb ord' id='ord' style='border-radius:5px; border-radius:0 5px 0 0;'>주문내역</button>" +
+        "<button class='bb req' id='req' style='border-radius:0 0 0 5px;'>할인</button>" +
+        "<button class='bb que' id='que' style='border-radius:0px;'>와이파이/시설</button>" +
+        "<button class='bb ori' id='ori' style='border-radius:0 0 5px 0;'>원산지</button></div>";
 
     $("#chatbox").append(bottext);
 

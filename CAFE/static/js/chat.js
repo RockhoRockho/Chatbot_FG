@@ -388,5 +388,5 @@ function send_option(optionNm){
     
 }
 function openPop(){
-    window.open('chatbot/kakaopay/', '카페','top=10%, left=20%, height=800px, width=600px')
+    window.open('chatbot/kakaopay/', '카페','top=10%, left=20%, height=800px, width=800px')
 }

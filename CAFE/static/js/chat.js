@@ -153,8 +153,8 @@ function send_message(){
                 
             }   else if (response.Intent == '메뉴판 요구' && response.AnswerImageUrl != null){ //메뉴판 뽑을 때
                 var bottext =
-                    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#e8dcca;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    response.Answer + "<image style='width:450px' src='/static/img/" + response.AnswerImageUrl + "'></image>" + 
+                    "<div style='margin:15px 0;text-align:left; max-width:100%;'><div style='padding:3px 10px;background-color:#e8dcca;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+                    response.Answer + "<image style='width:98%;' src='/static/img/" + response.AnswerImageUrl + "'></image>" + 
                     "</div></div>";
                 $chatbox.append(bottext);
             }   else if (response.Intent == '처음으로'){ // 초기화면
@@ -177,7 +177,7 @@ function send_message(){
             }  else if (response.Intent == '주문' && response.AnswerImageUrl != null){ //상품 하나 뽑을 때
                 var bottext =
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
-                    "<image src='/static/img/" + response.AnswerImageUrl + "'></image>" + response.Detail + '&emsp;' + response.Price + '원' +
+                    "<image src='/static/img/" + response.AnswerImageUrl + "'></image><br>" + response.Detail + '&emsp;' + response.Price + '원' +
                     "</div></div>" +
                     "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
                     response.Answer + "</div></div>" + 
@@ -235,10 +235,6 @@ function send_message(){
 
             
             
-
-            $('#kakaopay').click(function (){
-                    location.href = "chatbot/kakaopay/";
-            });
 
             // 스크롤 조정하기
             $chatbox.animate({scrollTop: $chatbox.prop('scrollHeight')})
@@ -379,13 +375,18 @@ function send_option(optionNm){
             
 
             
-            $('#kakaopay').click(function (){
-                location.href = "chatbot/kakaopay/";
-            });
+            // $('#kakaopay').click(function (){
+            //     location.href = "chatbot/kakaopay/";
+            // });
     
             // 스크롤 조정하기
             $chatbox.animate({scrollTop: $chatbox.prop('scrollHeight')})
     
         }
+        
     })
+    
+}
+function openPop(){
+    window.open('chatbot/kakaopay/', '카페','top=10%, left=20%, height=800px, width=800px')
 }

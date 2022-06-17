@@ -239,7 +239,8 @@ def to_client(conn, addr, params):
                     answer = "<div style='margin:15px 0;text-align:left;'><span style='padding:3px 10px;background-color: #386641;color:white;border-radius:3px;'>" +\
                     '주문 총 금액은' + f'{total_price}' +  '원 입니다.<br> 카카오 페이 결제를 진행합니다' +\
                         "</span></div>" + \
-                            "<img id='kakaopay' src='../static/img/kakaopay_icon.png' style='width:98%; height:65px; margin-bottom:3%; border-radius:10px; cursor:pointer;'>" + \
+                            "<a onclick='openPop()' target='_blank'>" + \
+                            "<img id='kakaopay' src='../static/img/kakaopay_icon.png' style='width:98%; height:65px; margin-bottom:3%; border-radius:10px; cursor:pointer;'></a>" + \
                             "<script>$(function(){$(document).ready(function(){$('#kakaopay').hover(function(){$(this).css('border','1px solid white');},function(){$(this).css('border','none');});});})</script>"
                 else:
                     answer = '주문을 하시려면 상품을 선택해주셔야 합니다.<br> 메뉴판을 불러오겠습니다<br><br>'
@@ -463,7 +464,7 @@ def to_client(conn, addr, params):
         # 디버깅
         print(send_json_data_str)
         
-        # json 텍스트로 변환. 하여 전송
+        # json 텍스트로 변환. 하여 전송 
         message = json.dumps(send_json_data_str)
         conn.send(message.encode())  # utf-8 인코딩하여 클라이언트에 전송
         

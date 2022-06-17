@@ -317,15 +317,16 @@ footer {
     top: 0;
     left: 0;
     display: none;
+    font-size: 17px;
 }
 
 .modal_content {
-    width: 500px;
-    height: 75%;
+    width: 700px;
+    height: 95%;
     background: #fff;
     border-radius: 10px;
     position: fixed;
-    top: 20%;
+    top: 13%;
     right: 6.5%;
     margin-top: -100px;
     margin-left: -200px;
@@ -400,7 +401,7 @@ footer {
 .chatheader>.logo>img {
     width: 60px;
     height: 45px;
-    margin-top: 10%;
+    margin-top: 15%;
 }
 
 .chatheader>.ch_title {

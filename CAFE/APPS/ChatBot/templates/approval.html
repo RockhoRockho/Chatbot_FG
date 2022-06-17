@@ -34,7 +34,8 @@
             </div>
         </div>
         <div class="mt-5 pt-3 text-center">
-            <a href="{% url 'main' %}" class="btn btn-warning">완료</a>
+            <!-- <a href="{% url 'main' %}" class="btn btn-warning">완료</a> -->
+            <a onclick="closeTabClick()" class="btn btn-warning">완료</a>
         </div>
 
     </div>
@@ -42,4 +43,9 @@
 </div>
 
 </body>
+<script>
+    function closeTabClick() {
+        window.close();
+    }
+</script>
 </html>

@@ -236,10 +236,6 @@ function send_message(){
             
             
 
-            $('#kakaopay').click(function (){
-                    location.href = "chatbot/kakaopay/";
-            });
-
             // 스크롤 조정하기
             $chatbox.animate({scrollTop: $chatbox.prop('scrollHeight')})
 
@@ -379,13 +375,18 @@ function send_option(optionNm){
             
 
             
-            $('#kakaopay').click(function (){
-                location.href = "chatbot/kakaopay/";
-            });
+            // $('#kakaopay').click(function (){
+            //     location.href = "chatbot/kakaopay/";
+            // });
     
             // 스크롤 조정하기
             $chatbox.animate({scrollTop: $chatbox.prop('scrollHeight')})
     
         }
+        
     })
+    
+}
+function openPop(){
+    window.open('chatbot/kakaopay/', '카페','top=10%, left=20%, height=800px, width=600px')
 }

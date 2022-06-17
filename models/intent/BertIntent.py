@@ -1,4 +1,5 @@
 import tensorflow as tf
+import _pickle as cPickle
 
 class BertModel():
     def __init__(self, model_name, binarizer):
@@ -12,7 +13,7 @@ class BertModel():
 
         # 챗봇 Preprocess 객체
         with open(binarizer, 'rb') as f:
-            binarizer = pickle.load(f)
+            binarizer = cPickle.load(f)
         self.p = binarizer
 
     def predict_intent(self, sentence):

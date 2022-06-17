@@ -1,11 +1,13 @@
 import threading
 import json
+import tensorflow_text
+import pickle
 
 from config.DatabaseConfig import *
 from utils.Database import Database
 from utils.BotServer import BotServer
 from utils.Preprocess import Preprocess
-from models.intent.IntentModel import IntentModel
+from models.intent.BertIntent import BertModel
 from models.ner.NerModel import NerModel
 from utils.FindAnswer import FindAnswer
 from utils.FindProduct import FindProduct
@@ -20,7 +22,7 @@ p = Preprocess(word2index_dic='train_tools/dict/chatbot_dict.bin',
                userdic='utils/train.tsv')
 
 # 의도 파악 모델
-intent = IntentModel(model_name='models/intent/best_intent_model.h5', preprocess=p)
+intent = BertModel(model_name="models/intent/ko_bert/", binarizer='models/intent/ko_bert/ko_labels')
 
 # 개체명 인식 모델
 ner = NerModel(model_name='models/ner/best_ner_model.h5', preprocess=p)
@@ -299,7 +301,7 @@ def to_client(conn, addr, params):
             # 2차 질문에 해당되지 않을 때는 의도분류, 개체명인식 모델링 진행
             if state == 0:
                 # 의도 파악
-                intent_predict = intent.predict_class(query)
+                intent_predict = intent.predict_intent(query)
                 intent_name = intent.labels[intent_predict]
                 
                 # 개체명 파악

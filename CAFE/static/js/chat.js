@@ -389,4 +389,21 @@ function send_option(optionNm){
 }
 function openPop(){
     window.open('chatbot/kakaopay/', '카페','top=10%, left=20%, height=800px, width=800px')
+
+}
+
+function closeTabClick() {
+    window.close();
+    openPop2();
+}
+
+function openPop2(){
+    alert('here');
+    let bottext =
+    "<div style='margin:15px 0;text-align:left; max-width:70%;'><div style='padding:3px 10px;background-color:#386641;color:white;border-radius:3px; display:inline-block; word-break: keep-all;'>" +
+    "주문이 완료되었습니다. 처음으로 돌아갑니다" +
+    "</div></div>";
+    $chatbox.append(bottext);
+    $("#chattext").val('처음으로');
+    $("#sendbtn").trigger('click');
 }

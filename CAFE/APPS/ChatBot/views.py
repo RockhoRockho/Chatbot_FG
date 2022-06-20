@@ -4,12 +4,6 @@ import pymysql
 import json
 from APPS.Login.models import User
 
-
-DB_HOST = "localhost"
-DB_USER = "myuser118"
-DB_PASSWORD = "1234"
-DB_NAME = "mydb118"
-
 def chatmain(request):
 
     return render(request, 'chat_main.html')
@@ -17,6 +11,17 @@ def chatmain(request):
 
 
 def kakaopay(request):
+
+    global DB_HOST
+    global DB_USER
+    global DB_PASSWORD
+    global DB_NAME
+
+    DB_HOST = "localhost"
+    DB_USER = "myuser118"
+    DB_PASSWORD = "1234"
+    DB_NAME = "mydb118"
+
     # 가장최근 order 로 불러옴
     member_id = request.session.get('User')
     user = User.objects.get(user_id=member_id)
@@ -28,7 +33,7 @@ def kakaopay(request):
         db=DB_NAME,
         charset='utf8'
     )
-    sql = "SELECT * from order_detail where user_id = {}".format(user.id)
+    sql = "SELECT * from order_detail where user_id = {} order by id DESC limit 1".format(user.id)
 
     
     with db.cursor() as cur:
@@ -61,6 +66,13 @@ def kakaopay(request):
             option_id.append(i[3])
             p_qauntity += i[4]
 
+
+    sql = "SELECT price from product_option where id = {}".format(option_id[0])
+
+    with db.cursor() as cur:
+        cur.execute(sql)
+        option = cur.fetchone()
+
     for i in product_id:
         sql = "SELECT name, price from product_cafe where id = {}".format(i)
 
@@ -68,7 +80,7 @@ def kakaopay(request):
             cur.execute(sql)
             items = cur.fetchone()
             p_name.append(items[0])
-            p_price += items[1]
+            p_price += (items[1] + option[0])
 
 
 
@@ -107,6 +119,11 @@ def approval(request):
     member_id = request.session.get('User')
     user = User.objects.get(user_id=member_id)
 
+    DB_HOST = "localhost"
+    DB_USER = "myuser118"
+    DB_PASSWORD = "1234"
+    DB_NAME = "mydb118"
+    
     # order 불러오기
     db = pymysql.connect(
         host=DB_HOST,
@@ -115,7 +132,7 @@ def approval(request):
         db=DB_NAME,
         charset='utf8'
     )
-    sql = "SELECT * from order_detail where user_id = {}".format(user.id)
+    sql = "SELECT * from order_detail where user_id = {} order by id DESC limit 1".format(user.id)
 
     with db.cursor() as cur:
         cur.execute(sql)

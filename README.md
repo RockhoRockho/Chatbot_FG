@@ -21,5 +21,5 @@
 ### 사용기술 : 
    1) 데이터 : corpus, 단어사전, 의도분류 모델, 개체명 인식 모델 등 자체 데이터 생성
    2) 개발 환경 : Jupyter Notebook, VS code, Sqlite3, MySQL
-   3) 개발 언어 : Python, Javascript, HTML, CSS, AJAX
+   3) 개발 언어 : Python, Javascript, HTML, CSS
    4) 개발 라이브러리 : Django, Flask, Transformer, Tensorflow, Pandas
